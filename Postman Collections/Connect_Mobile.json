@@ -1,0 +1,859 @@
+{
+  "info": {
+    "_postman_id": "3b6cf7e6-4e79-4542-9750-9786d6040aa0",
+    "name": "Connect Mobile",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Jobs",
+      "item": [
+        {
+          "name": "Job",
+          "_postman_id": "f386b42e-293e-4793-b70a-4f9dd758abf4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/JobClient/Job/1123065"
+          },
+          "response": []
+        },
+        {
+          "name": "Jobs",
+          "_postman_id": "ceddd004-ee41-46ab-b6b1-7786891480b7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient?pageSize=15&skip=0&sortField=creationDate&sortType=Desc",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "15"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "approvalStatusIds",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "sortField",
+                  "value": "creationDate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "Desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Jobs Copy",
+          "_postman_id": "73461fe1-50bf-426c-9ef7-fd0d6341452f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient/approvalStatusTotals?approvalStatusIds=0&approvalStatusIds=1&approvalStatusIds=2&approvalStatusIds=3",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient",
+                "approvalStatusTotals"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "15",
+                  "disabled": true
+                },
+                {
+                  "key": "skip",
+                  "value": "0",
+                  "disabled": true
+                },
+                {
+                  "key": "sortField",
+                  "value": "creationDate",
+                  "disabled": true
+                },
+                {
+                  "key": "sortType",
+                  "value": "Desc",
+                  "disabled": true
+                },
+                {
+                  "key": "approvalStatusIds",
+                  "value": "0",
+                  "description": "null"
+                },
+                {
+                  "key": "approvalStatusIds",
+                  "value": "1",
+                  "description": "approved"
+                },
+                {
+                  "key": "approvalStatusIds",
+                  "value": "2",
+                  "description": "pending"
+                },
+                {
+                  "key": "approvalStatusIds",
+                  "value": "3",
+                  "description": "rejected"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Save Job",
+          "_postman_id": "67537db3-ac12-4304-814d-1e4c761c3f8b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"job\": {\r\n\t    \"HospitalId\": 3749,\r\n\t\t\"ExpertiseCode\": 304,\r\n\t\t\"ProfessionCode\": 65,\r\n\t\t\"BillingRate\": 4,\r\n\t\t\"JobTitle\": \"Test Job 14\",\r\n\t\t\"NumPositions\": 5,\r\n\t\t\"StartDate\": \"2019-08-12T07:00:00.000Z\",\r\n\t\t\"Description\": \"Test\",\r\n\t\t\"AltShift\": false,\r\n\t\t\"Hours\": null,\r\n\t\t\"Shifts\": null,\r\n\t\t\"ShiftsAlt\": null,\r\n\t\t\"HoursAlt\": null,\r\n\t\t\"ShiftM\": null,\r\n\t\t\"ShiftH\": null,\r\n\t\t\"ShiftToM\": null,\r\n\t\t\"ShiftToH\": null,\r\n\t\t\"ShiftAltM\": null,\r\n\t\t\"ShiftAltH\": null,\r\n\t\t\"ShiftAltToM\": null,\r\n\t\t\"ShiftAltToH\": null,\r\n\t\t\"UnitId\": 1786,\r\n\t\t\"TemplateId\": 1368,\r\n\t\t\"JobEnteredFrom\": 7,\r\n\t\t\"ReleaseSchedulingEnabled\": false\r\n\t},\r\n\t\"viewTypeId\": 3\r\n}"
+            },
+            "url": "{{uri}}/AyaConnectMobile/JobClient/SaveJob"
+          },
+          "response": []
+        },
+        {
+          "name": "Job Permissions",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "0094eb50-a2a1-446d-9c26-ae5eabbebc8c",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "0a449346-55e6-434f-ad8a-345a4f09cb94",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient/Permissions?viewtypeid=3",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient",
+                "Permissions"
+              ],
+              "query": [
+                {
+                  "key": "viewtypeid",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Facilities",
+          "_postman_id": "dee41384-2398-4e8f-9c32-5a4aa4d75eec",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/JobClient/Facilities"
+          },
+          "response": []
+        },
+        {
+          "name": "Job Professions",
+          "_postman_id": "c20b1e36-cabf-405f-9c2e-5126a24521b1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient/Professions?facilityProfileGroupId=3749",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient",
+                "Professions"
+              ],
+              "query": [
+                {
+                  "key": "facilityProfileGroupId",
+                  "value": "3749"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Job Expertises & Units",
+          "_postman_id": "f14dbded-0b63-4fd0-ad1c-6b13bc852d18",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient/ProfessionUnitsAndExpertise?facilityGroup=3749",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient",
+                "ProfessionUnitsAndExpertise"
+              ],
+              "query": [
+                {
+                  "key": "facilityGroup",
+                  "value": "3749"
+                },
+                {
+                  "key": "profession",
+                  "value": "46",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Template",
+          "_postman_id": "5c214dc3-2e9b-4470-b5c9-7c5cd2cf9648",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/JobClient/Template?templateId=545",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "JobClient",
+                "Template"
+              ],
+              "query": [
+                {
+                  "key": "templateId",
+                  "value": "545"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "d72385eb-897d-4ab1-abf9-245c0e777eda",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "048dce81-6246-4056-9fea-65e2de72a3fe",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e8783a6e-70b1-465a-b5f6-939c3a3a4425",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Timecards",
+      "item": [
+        {
+          "name": "Timecard",
+          "_postman_id": "29ce3772-8b75-4e57-ba4b-c5c1b7bd4b11",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/Timecard/72202/ViewType/3"
+          },
+          "response": []
+        },
+        {
+          "name": "Timecards",
+          "_postman_id": "45de2586-b35c-43c5-b55f-78d22081d67f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/Timecard/ViewType/3/?pageSize=15&skip=0&includeDeleted=false&detailStatusIds=5&detailStatusIds=6&detailStatusIds=0&sortField=date&sortType=Desc",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "Timecard",
+                "ViewType",
+                "3",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "15"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "includeDeleted",
+                  "value": "false"
+                },
+                {
+                  "key": "detailStatusIds",
+                  "value": "5"
+                },
+                {
+                  "key": "detailStatusIds",
+                  "value": "6"
+                },
+                {
+                  "key": "detailStatusIds",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "date"
+                },
+                {
+                  "key": "sortType",
+                  "value": "Desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Totals",
+          "_postman_id": "920e640d-2d57-410b-89f9-b64cc4d409e8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/Timecard/StatusTotals/ViewType/3/?detailStatusIds=5&detailStatusIds=6&detailStatusIds=0&includeDeleted=false&statusIds=5&statusIds=6&statusIds=0",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "Timecard",
+                "StatusTotals",
+                "ViewType",
+                "3",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "detailStatusIds",
+                  "value": "5"
+                },
+                {
+                  "key": "detailStatusIds",
+                  "value": "6"
+                },
+                {
+                  "key": "detailStatusIds",
+                  "value": "0"
+                },
+                {
+                  "key": "includeDeleted",
+                  "value": "false"
+                },
+                {
+                  "key": "statusIds",
+                  "value": "5"
+                },
+                {
+                  "key": "statusIds",
+                  "value": "6"
+                },
+                {
+                  "key": "statusIds",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Approve",
+          "_postman_id": "c5c07163-3419-4a60-8411-0f537c4d4a64",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"timecardIds\": [   \r\n\t\t74721\r\n\t],\r\n\t\"shiftIds\": [\r\n\t\t926577\r\n\t],\r\n\t\"reason\": \"\"\r\n}"
+            },
+            "url": "{{uri}}/AyaConnectMobile/Timecard/Approve"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "76c74b0a-6699-41ec-9279-211e09e6e443",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "bf305552-8333-4e1e-a3d3-4603d38972a6",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "6262dfef-fb26-41f2-9550-f780d7626870",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Travelers",
+      "item": [
+        {
+          "name": "Traveler Detail",
+          "_postman_id": "18177750-ff33-423b-bcd7-1a6c3cf2c1bc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "{{uri}}/AyaConnectMobile/TravelerClient/Details/127079"
+          },
+          "response": []
+        },
+        {
+          "name": "Travelers",
+          "_postman_id": "efece6e3-400b-441a-912c-bb2225b64f6c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/TravelerClient?pageSize=15&skip=0&sortField=startDate&sortType=desc&statuses=WOR",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "TravelerClient"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "15"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "startDate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "desc"
+                },
+                {
+                  "key": "statuses",
+                  "value": "WOR",
+                  "description": "traveler status of WORKING"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search",
+          "_postman_id": "d9ff11a9-b541-4651-8e51-428fdd2db587",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/TravelerClient?pageSize=0&skip=0&ExpertiseSearch=Frank",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "TravelerClient"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "0"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "ExpertiseSearch",
+                  "value": "Frank"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Status Totals",
+          "_postman_id": "82fff058-9009-4298-9ce5-a19932717155",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/TravelerClient/StatusTotals"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "1dbed0cd-cbe2-4474-9b6d-835c9f6a9478",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "8b44fe96-9729-45f8-b5a1-ce235db93310",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "18d66f96-820e-46e7-8425-19f9d095ff26",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Submittals",
+      "item": [
+        {
+          "name": "Update Status",
+          "_postman_id": "6a1f043d-c240-4a47-9528-9f937d8f7c53",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\tid: 14509,\t\n\tnewStatusId: 4\n}"
+            },
+            "url": "{{uri}}/AyaConnectMobile/Submittal/Status",
+            "description": "Updates submittal status"
+          },
+          "response": []
+        },
+        {
+          "name": "Submittals",
+          "_postman_id": "cc107913-9b98-4b15-9e55-60ff6deb857e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnectMobile/Submittal?pageSize=15&skip=0&sortField=submittaldate&sortType=Desc",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnectMobile",
+                "Submittal"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "15"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "submittaldate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "Desc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Submittal",
+          "_postman_id": "21b412d8-fe0d-4c8e-8849-239012a99bbc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/Submittal/Details/15824"
+          },
+          "response": []
+        },
+        {
+          "name": "Status Totals",
+          "_postman_id": "b775ee8f-5803-4bd9-acf9-56e421fef3f7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnectMobile/Submittal/StatusTotals"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "832653e0-8975-4e2c-8902-2cacc53d8cf2"
+    },
+    {
+      "name": "User Scope",
+      "_postman_id": "cfed1469-4536-4979-9b0c-091b306fd5ae",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{uri}}/AyaConnectMobile/auth/userscope"
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard",
+      "_postman_id": "ef317ef0-1d17-43f4-8eee-c9050d6241ea",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{uri}}/AyaConnectMobile/Dashboard"
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": {
+      "token": "{{Bearer}}"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "02d73630-6ac7-4df7-a2e7-381d80a5152b",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "41b646e5-9c09-4a5c-97fa-a981de6f5098",
+        "type": "text/javascript",
+        "exec": [
+          "pm.test(\"Status code is 200\", function () {",
+          "    pm.response.to.have.status(200);",
+          "});"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "fa6d3bfa-3b78-4cd5-8525-424815faa581",
+      "key": "uri",
+      "value": "http://localhost:8088",
+      "type": "string"
+    },
+    {
+      "id": "cd64a3fb-b445-41bf-946c-af32279af525",
+      "key": "username",
+      "value": "jwilson3@echn.org",
+      "type": "string"
+    },
+    {
+      "id": "6edda51e-b301-47b0-98b8-1d074f3c66fb",
+      "key": "password",
+      "value": "pass1",
+      "type": "string"
+    }
+  ]
+}
