@@ -1,0 +1,1031 @@
+{
+  "info": {
+    "_postman_id": "c1731fee-be76-4eb6-af90-e7d1a9a9b832",
+    "name": "Connect",
+    "description": "# Overview\nThis collection holds API calls used for Aya Connect\n\n# Authentication\nYou should first use the POST token method before making any other calls; this will save the bearer token that is used to authenticate other API calls in Connect",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Job Approvals",
+      "item": [
+        {
+          "name": "Processes",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b72f2c95-9b01-4afd-abcc-b29b2e594a39",
+                "exec": [
+                  "pm.test(\"Response time is less than 2000ms\", function() {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1cab3e1a-c4a8-4a99-a9f0-0da8d5dad4f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
+            "description": "## Should return 403 error if:\n> User does not have jobapprovalprocess.view permission \n----\n## Returns:\n> List of facility and unit processes, based on approval processes created for facilities and units the user is a member of"
+          },
+          "response": [
+            {
+              "id": "d64e721c-f117-427e-9e42-26d2ab69b0d7",
+              "name": "200 OK Response With Processes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 15:54:35 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"facilityProcesses\": [\n        {\n            \"id\": 3,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 2,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        },\n        {\n            \"id\": 4,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 6,\n                    \"tierNumber\": 1,\n                    \"tierType\": 2,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 5613,\n                    \"name\": \"Valley Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ],\n    \"unitProcesses\": [\n        {\n            \"id\": 1,\n            \"level\": 3,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 1,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n                            \"fullName\": \"Test UW\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": true,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [\n                        {\n                            \"id\": 39,\n                            \"name\": \"6 NE General Medicine\",\n                            \"hasExistingProcess\": false\n                        },\n                        {\n                            \"id\": 67,\n                            \"name\": \"4SE Short Stay/Post Op\",\n                            \"hasExistingProcess\": false\n                        }\n                    ],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eligible Units",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b72f2c95-9b01-4afd-abcc-b29b2e594a39",
+                "exec": [
+                  "pm.test(\"Response time is less than 2000ms\", function() {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "604c9212-e03f-45da-aa84-19685c0b98cd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess/units?processId=6",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobApprovalProcess",
+                "units"
+              ],
+              "query": [
+                {
+                  "key": "processId",
+                  "value": "6",
+                  "description": "Optional parameter that indicates the processId to check eligible units for"
+                }
+              ]
+            },
+            "description": "##\tShould return error if:\r\n*\t\tUser does not have jobapprovalprocess.edit permission\r\n *\t\t\tShould return 403 error code\r\n----\r\n##\tReturns\r\n*\t\tList of units, grouped by facility profile group, that can be added to a facility process by a user\r\n *\t\t\tShould not include units that are part of facilites that DO NOT have job approvals enabled\r\n*\t\tEach unit has an hasExistingProcess property. This indicates if the facility profile group is already part of another process. \r\n *\t\t\tIf you make this call with a processId parameter, hasExistingProcess will be false if the unit is a member of the process, and should equal true if the processId parameter is not included or is a member of a different process"
+          },
+          "response": [
+            {
+              "id": "494ef806-128a-43eb-9df2-d35201cb1e93",
+              "name": "200 OK Response with Units",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{uri}}/AyaConnect/JobApprovalProcess/units?processId=6",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "JobApprovalProcess",
+                    "units"
+                  ],
+                  "query": [
+                    {
+                      "key": "processId",
+                      "value": "6",
+                      "description": "Optional parameter that indicates the processId to check eligible units for"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 15:56:03 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"id\": 280,\n        \"name\": \"UW Medical Center - Roosevelt\",\n        \"units\": [\n            {\n                \"id\": 3898,\n                \"name\": \"Pharmacy\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5343,\n        \"name\": \"Harborview Medical Center\",\n        \"units\": [\n            {\n                \"id\": 1454,\n                \"name\": \"9MB TSICU Trauma/Surg\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1455,\n                \"name\": \"2EH MCICU Med/COR ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1456,\n                \"name\": \"9EH BICU BURN/PED ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1457,\n                \"name\": \"2WH NICU NEURO ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1458,\n                \"name\": \"HMC BOARDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1459,\n                \"name\": \"3E MEDICIN/TELEMETRY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1460,\n                \"name\": \"3W NEURO ACUTE UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1461,\n                \"name\": \"6MB PLANNED SURGERY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1462,\n                \"name\": \"6EH ORTHOPEDICS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1463,\n                \"name\": \"5EH MED SURG SPEC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1465,\n                \"name\": \"7E General Surgery\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1466,\n                \"name\": \"8E BURN RECONST\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1467,\n                \"name\": \"4EH MED/SURG\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1469,\n                \"name\": \"4W REHAB MEDICINE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1470,\n                \"name\": \"OPERATING ROOM\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1471,\n                \"name\": \"HMC AMBULATORY CARE UT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1472,\n                \"name\": \"HMC RECOVERY ROOM (PACU)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1473,\n                \"name\": \"HMC ANESTHESIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1474,\n                \"name\": \"Cardiology HMC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1475,\n                \"name\": \"HMC VASCULAR LAB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1476,\n                \"name\": \"HMC SLEEP DISORDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1478,\n                \"name\": \"MRI MAGNETIC RESONANCE IMAGING\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1479,\n                \"name\": \"HMC RADIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1480,\n                \"name\": \"ANGIOGRAPHY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1481,\n                \"name\": \"RESPIRATORY CARE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1482,\n                \"name\": \"HMC EMERGENCY DEPT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1484,\n                \"name\": \"ACUTE PT/OT/SPEECH\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1485,\n                \"name\": \"4W Physical Therapist -REHAB THERAPIES\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1486,\n                \"name\": \"CENTRAL PROCESSING UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1487,\n                \"name\": \"Acute Care Float MS/Tele Tele units\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1488,\n                \"name\": \"NURSING FLOATS - CC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1489,\n                \"name\": \"CLINIC FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1490,\n                \"name\": \"DIAGNOSTIC PROCEDURE SUPPORT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1633,\n                \"name\": \"Airlift Northwest\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3547,\n                \"name\": \"CNA (HA-Hospital Assistant)  FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3667,\n                \"name\": \"Ambulatory Procedure Area\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4060,\n                \"name\": \"316074- 6 Maleng\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4068,\n                \"name\": \"Women's Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4090,\n                \"name\": \"7MB Specialty Clinics\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6570,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6664,\n                \"name\": \"Family Medicine Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7109,\n                \"name\": \"HMC Psychiatry -5WA, 5WB, 5MB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7252,\n                \"name\": \"Adult Medicine Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5613,\n        \"name\": \"Valley Medical Center\",\n        \"units\": [\n            {\n                \"id\": 3429,\n                \"name\": \"O.R. - 7020\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3475,\n                \"name\": \"General Surgery 7S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3476,\n                \"name\": \"Neuro 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3477,\n                \"name\": \"Critical Care 4S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3478,\n                \"name\": \"General Medicine 2W\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3479,\n                \"name\": \"Renal Respiratory 3N\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3480,\n                \"name\": \"Joint and Spine 5S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3481,\n                \"name\": \"Outpatient Infusion\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3483,\n                \"name\": \"Blank Unit #1\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3484,\n                \"name\": \"Blank Unit #2\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3485,\n                \"name\": \"Blank Unit #3\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3533,\n                \"name\": \"ER -7230\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3534,\n                \"name\": \"Birth Center - 7000\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3544,\n                \"name\": \"ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3561,\n                \"name\": \"NICU - 6172\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3562,\n                \"name\": \"Pediatrics - Mother Baby - 6087\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3906,\n                \"name\": \"Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3907,\n                \"name\": \"Wound Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3908,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6925,\n                \"name\": \"ED TECH- ER/ CCU/PCA Nursing Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7214,\n                \"name\": \"LCSW (Licensed Clinical Social Worker)\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33256,\n        \"name\": \"University of Washington Medical Center\",\n        \"units\": [\n            {\n                \"id\": 2,\n                \"name\": \"Cardiology Clinic Regional Heart Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 39,\n                \"name\": \"6 NE General Medicine\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 67,\n                \"name\": \"4SE Short Stay/Post Op\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 68,\n                \"name\": \"4 NE Med/Surg Neuro\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Endoscopy- Digestive Health Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 112,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 153,\n                \"name\": \"7 SA Med / Surg Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 177,\n                \"name\": \"4 S Special Procedures\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 196,\n                \"name\": \"Acute Care Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 199,\n                \"name\": \"6 SA Medical and Oncology ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 206,\n                \"name\": \"ICRU Interventional Cardiology Recovery Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 251,\n                \"name\": \"8 SA\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 282,\n                \"name\": \"Urology Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 285,\n                \"name\": \"7 SE Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 301,\n                \"name\": \"5 NE Cardiothoracic Surgery, Cardiac Telemetry\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 330,\n                \"name\": \"6 SE Med / Surg Orthopaedic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 359,\n                \"name\": \"8 N Rehab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 380,\n                \"name\": \"Cardiac Cath Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 397,\n                \"name\": \"6 S Antepartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 408,\n                \"name\": \"Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 413,\n                \"name\": \"CVOR Cardiovascular Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 425,\n                \"name\": \"Electrophysiology Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 446,\n                \"name\": \"ICU Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 450,\n                \"name\": \"5 SE Cardiac Care Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 464,\n                \"name\": \"Eastside Specialty Clinic  Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 480,\n                \"name\": \"Labor & Delivery 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 494,\n                \"name\": \"Eastside  Specialty Clinic GI /Endoscopy Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 497,\n                \"name\": \"Postpartum 5 S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 505,\n                \"name\": \"Ambulatory PACU Roosevelt ASC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 524,\n                \"name\": \"7 NE BMT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 563,\n                \"name\": \"5 E Surgical ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 584,\n                \"name\": \"ED\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 602,\n                \"name\": \"8 NE Oncology/Blood & Marrow Transplant Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 604,\n                \"name\": \"Neonatal ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 667,\n                \"name\": \"5 SA Cardiovascular Critical Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 805,\n                \"name\": \"UWMC Medical Specialties Clinic Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1146,\n                \"name\": \"UW Roosevelt Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1328,\n                \"name\": \"PreAnesthesia Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1344,\n                \"name\": \"Labor and Delivery Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1376,\n                \"name\": \"Vascular Access Team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1494,\n                \"name\": \"Adult Congenital Heart Disease Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1597,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1808,\n                \"name\": \"IVF Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1871,\n                \"name\": \"Ambulatory Surgical Specialties Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2200,\n                \"name\": \"7 North\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2854,\n                \"name\": \"Bone and Joint Surgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2995,\n                \"name\": \"4WH Inpatient Trauma Rehabilitation\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3444,\n                \"name\": \"Neurosurgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3508,\n                \"name\": \"Advanced Heart Failure Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3611,\n                \"name\": \"University of Washington Lung Transplant Program\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3762,\n                \"name\": \"Mens's Health Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3866,\n                \"name\": \"Interventional Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3867,\n                \"name\": \"4S Infusion Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3874,\n                \"name\": \"Cardiac Device Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4029,\n                \"name\": \"Cardiothoracic surgery team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4320,\n                \"name\": \"Anesthesia Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6146,\n                \"name\": \"08-7300 Ambulatory Otolaryngology Clinic (ENT)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6644,\n                \"name\": \"Diabetes Care Center Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6722,\n                \"name\": \"Center for Interstitial Lung Disease\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6746,\n                \"name\": \"Urology Oncology clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6911,\n                \"name\": \"08-7152 Radiation Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7067,\n                \"name\": \"5S Postpartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7269,\n                \"name\": \"Short Stay Boarding Unit\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33364,\n        \"name\": \"UW Medicine Eastside Specialty Center\",\n        \"units\": [\n            {\n                \"id\": 3884,\n                \"name\": \"Outpatient Pharmacy\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 34045,\n        \"name\": \"Pioneer Square Clinic\",\n        \"units\": [\n            {\n                \"id\": 6946,\n                \"name\": \"31-7453 Pioneer Square Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Eligible Facilities",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b72f2c95-9b01-4afd-abcc-b29b2e594a39",
+                "exec": [
+                  "pm.test(\"Response time is less than 2000ms\", function() {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "dada387b-7231-4857-939b-1ddf44f7798e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess/facilities?processId=6",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobApprovalProcess",
+                "facilities"
+              ],
+              "query": [
+                {
+                  "key": "processId",
+                  "value": "6",
+                  "description": "optional parameter that indicates the processId",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission\r\n *\tShould return 403 error code\r\n----\r\n##\tReturns\r\n*\tList of facility profile groups that can be added to a facility process by a user\r\n *\tEach facilityProfileGroup has an hasExistingProcess property. This indicates if the facility profile group is already part of another process. \r\n  *\tIf you make this call with a processId parameter, hasExistingProcess will be false if the facility profile group is a member of the process, and should equal true if the processId parameter is not included or is a member of a different process\r\n----"
+          },
+          "response": [
+            {
+              "id": "1d516858-492e-4ae1-b87b-7b024d062599",
+              "name": "200 OK Response With Units",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{uri}}/AyaConnect/JobApprovalProcess/facilities?processId=6",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "JobApprovalProcess",
+                    "facilities"
+                  ],
+                  "query": [
+                    {
+                      "key": "processId",
+                      "value": "6",
+                      "description": "optional parameter that indicates the processId"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 15:59:54 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"id\": 280,\n        \"name\": \"UW Medical Center - Roosevelt\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5343,\n        \"name\": \"Harborview Medical Center\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5367,\n        \"name\": \"Northwest Hospital & Medical Center\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5613,\n        \"name\": \"Valley Medical Center\",\n        \"units\": [],\n        \"hasExistingProcess\": true\n    },\n    {\n        \"id\": 32593,\n        \"name\": \"Northwest Hospital Midwives Clinic\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33256,\n        \"name\": \"University of Washington Medical Center\",\n        \"units\": [],\n        \"hasExistingProcess\": true\n    },\n    {\n        \"id\": 33364,\n        \"name\": \"UW Medicine Eastside Specialty Center\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 34045,\n        \"name\": \"Pioneer Square Clinic\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 34139,\n        \"name\": \"Valley Medical Center\",\n        \"units\": [],\n        \"hasExistingProcess\": false\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Processes",
+          "_postman_id": "6ab17da0-7e79-4826-84bc-99bb45f732ed",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+            },
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
+            "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see added process as part of body returned in GET Processes"
+          },
+          "response": [
+            {
+              "id": "72792d4a-45f2-4443-8bfb-e412789f5dbd",
+              "name": "500 Error Adding Process With Existing Facility",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:00:58 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error adding facility job approval process: the following facility profile groups already have an approval process: (Id: 33256, Name: University of Washington Medical Center)  \r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.CheckExistingProcesses(JobApprovalProcessEditDto processToCheck, ApprovalProcess existingProcess) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 313\r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.AddProcessAsync(JobApprovalProcessEditDto processDto, String createdBy) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 92\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 101\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            },
+            {
+              "id": "c5a91a50-332b-4e1e-9754-bed7472a2eb3",
+              "name": "500 Response Tier Process No Tiers",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:01:43 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error with process tiers: process type is tier based, but no tiers are included\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessTiers(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 235\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessProperties(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 223\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcess(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 211\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 91\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            }
+          ]
+        },
+        {
+          "name": "Processes",
+          "_postman_id": "8ac716a8-48a2-40d5-89c1-57e08affacdf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "        {\r\n        \t\"id\": 1,\r\n            \"level\": 3,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                \t\"id\": 1,\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\", \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\"]\r\n                },\r\n                {\r\n                    \"tierNumber\": 2,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [],\r\n            \"unitIds\": [39,67]\r\n        }\r\n"
+            },
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess/",
+            "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see process with updated properties returned as part of body returned in GET Processes"
+          },
+          "response": [
+            {
+              "id": "3cfb95d6-3d3a-44db-bb09-adbbe5cc400b",
+              "name": "500 Error Updating Process Invalid ProcessId",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n        \t\"id\": 344,\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess/"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-SourceFiles",
+                  "value": "=?UTF-8?B?QzpcRGV2XEF5YUhlYWx0aGNhcmVcQXlhLkNvcmUuQXBpXEF5YS5Db3JlLkFwaVxBeWFDb25uZWN0XEpvYkFwcHJvdmFsUHJvY2Vzc1w=?="
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:09:23 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Approval process with Id: 344 was not found in database\r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.GetProcessByIdAsync(Int32 processId) in C:\\Dev\\AyaHealthcare\\Aya.Core.Api\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 241\r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.UpdateProcessAsync(JobApprovalProcessEditDto updatedProcessDto, String updatedBy) in C:\\Dev\\AyaHealthcare\\Aya.Core.Api\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 121\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.UpdateProcessAsync(JobApprovalProcessEditDto process) in C:\\Dev\\AyaHealthcare\\Aya.Core.Api\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 122\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Update(JobApprovalProcessEditDto process) in C:\\Dev\\AyaHealthcare\\Aya.Core.Api\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 68\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            }
+          ]
+        },
+        {
+          "name": "Processes",
+          "_postman_id": "1d283a35-f8b2-46ee-b8dc-aef85bc43d11",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess/{{processId}}",
+            "description": "##\tShould return error if:\r\n*\t\tUser does not have jobapprovalprocess.edit permission \r\n *\t\tShould return 403 code\r\n*\t\tNo process exists for the process id passed in\r\n*\t\tThe process includes facilities or units that the user is not a member of\r\n*\t\tThe process is a facility process (level: 2)\r\n----\r\n##\tAfter successful call, should no longer see process as part of body returned in GET Processes"
+          },
+          "response": []
+        },
+        {
+          "name": "Eligible Approvers",
+          "_postman_id": "1f134bd6-dcd6-42df-b036-34f36c20424e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess/approvers?facilityGroupIds=5343&facilityGroupIds=33256",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobApprovalProcess",
+                "approvers"
+              ],
+              "query": [
+                {
+                  "key": "facilityGroupIds",
+                  "value": "5343",
+                  "description": "(Optional) facility profile group ids to check"
+                },
+                {
+                  "key": "facilityGroupIds",
+                  "value": "33256"
+                }
+              ]
+            },
+            "description": "# Gets approvers that can be added to a process\n\n## Should return error if:\n*\t\tUser does not have jobapprovalprocess.edit permission\n *\t\tShould return 403 error code\n----\n##\tReturns\n*\t\tList of users that have job approval permissions for the facility ids/unit ids passed in the parameters"
+          },
+          "response": [
+            {
+              "id": "8d45a0c0-d288-486f-b915-60e7140c0538",
+              "name": "200 OK Response With Approvers",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{uri}}/AyaConnect/JobApprovalProcess/approvers?facilityGroupIds=5343&facilityGroupIds=33256",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "JobApprovalProcess",
+                    "approvers"
+                  ],
+                  "query": [
+                    {
+                      "key": "facilityGroupIds",
+                      "value": "5343",
+                      "description": "(Optional) facility profile group ids to check"
+                    },
+                    {
+                      "key": "facilityGroupIds",
+                      "value": "33256"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 15:53:48 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n        \"fullName\": \"Tyson Fugett\"\n    },\n    {\n        \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n        \"fullName\": \"Test UW\"\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
+      "description": "These are endpoints related to the Job Approvals Process project.\n\n\n>The tech design for this project can be found [here](https://ayadev.atlassian.net/wiki/spaces/PROJ/pages/818544693/Tech+Design+-+Approval+Processes)",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "89ff6312-8a1d-41d0-ab5c-b754ddfe918e",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e7154092-c291-4758-b7cf-9657bba57349",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Timecards",
+      "item": [
+        {
+          "name": "Timecards",
+          "_postman_id": "c0e6dfa6-6c7e-4108-8008-bc0cff60acdc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Timecard/Get?ViewTypeId=3&{%22take%22:10,%22skip%22:0,%22page%22:1,%22pageSize%22:10,%22sort%22:[{%22field%22:%22workWeekTo%22,%22dir%22:%22desc%22}],%22filter%22:{%22logic%22:%22and%22,%22filters%22:[{%22field%22:%22statusId%22,%22operator%22:%22eq%22,%22value%22:5}]}}",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Timecard",
+                "Get"
+              ],
+              "query": [
+                {
+                  "key": "ViewTypeId",
+                  "value": "3"
+                },
+                {
+                  "key": "{%22take%22:10,%22skip%22:0,%22page%22:1,%22pageSize%22:10,%22sort%22:[{%22field%22:%22workWeekTo%22,%22dir%22:%22desc%22}],%22filter%22:{%22logic%22:%22and%22,%22filters%22:[{%22field%22:%22statusId%22,%22operator%22:%22eq%22,%22value%22:5}]}}",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Approve",
+          "_postman_id": "8956cabe-32d3-4a40-bbdc-1babb88df3e4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"TimeCardIds\": [\r\n\t\t74721\r\n\t],\r\n\t\"TimeCardDetailsShiftIds\": [\r\n\t\t926575\r\n\t],\r\n\t\"viewTypeId\": 3\r\n}"
+            },
+            "url": "{{uri}}/AyaConnect/Timecard/approveTimeCard"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "066a31bc-e626-437c-b470-8ac8ee3af305",
+      "auth": {
+        "type": "bearer",
+        "bearer": {
+          "token": "{{Bearer}}"
+        }
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "ab22663f-be32-443f-a902-561cbb9d358e",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "090fff8f-d1ea-42cd-999b-db1a546f0efa",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jobs",
+      "item": [
+        {
+          "name": "Job",
+          "_postman_id": "9048daed-a67e-403b-ba0d-d2c2d5296723",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobClient/GetJobById?jobId=1134629&viewTypeId=3",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobClient",
+                "GetJobById"
+              ],
+              "query": [
+                {
+                  "key": "jobId",
+                  "value": "1134629"
+                },
+                {
+                  "key": "viewTypeId",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
+    },
+    {
+      "name": "Token - UW Facility Client",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.globals.set(\"Bearer\", jsonData.access_token);",
+              "pm.globals.set(\"refresh_token\", jsonData.refresh_token);"
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "1958377e-d6a4-47cc-896b-982e092f3e17",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "{{usernameUWFacilityClient}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{password}}",
+              "type": "text"
+            },
+            {
+              "key": "scope",
+              "value": "openid email phone profile offline_access roles ",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{uri}}/connect/token"
+      },
+      "response": []
+    },
+    {
+      "name": "Token - UW System Client",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.globals.set(\"Bearer\", jsonData.access_token);",
+              "pm.globals.set(\"refresh_token\", jsonData.refresh_token);",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "c0ef9aff-331e-40a4-af32-eb839013fb0f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "{{usernameUWSystemClient}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{password}}",
+              "type": "text"
+            },
+            {
+              "key": "scope",
+              "value": "openid email phone profile offline_access roles ",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{uri}}/connect/token"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "29ba540f-3362-49dd-aab3-6dc976dabdb6",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "8af64477-daa6-40a5-abdf-05323458dabd",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
