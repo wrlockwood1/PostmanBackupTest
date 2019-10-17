@@ -596,8 +596,8 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "url": {
@@ -622,7 +622,7 @@
                 }
               ]
             },
-            "description": "# Gets approvers that can be added to a process\n\n## Should return error if:\n*\t\tUser does not have jobapprovalprocess.edit permission\n *\t\tShould return 403 error code\n----\n##\tReturns\n*\t\tList of users that have job approval permissions for the facility ids/unit ids passed in the parameters"
+            "description": "# Gets approvers that can be added to a process\n\n## Should return error if:\n*\t\tUser does not have jobapprovalprocess.edit permission\n *\t\tShould return 403 error code\n----\n##\tReturns\n*\t\tList of users that have job approval permissions for the facility ids/unit ids passed in the parameters\n----\n## Usage\n* Used when getting users that can be added as approvers to a job approval process"
           },
           "response": [
             {
