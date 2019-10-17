@@ -149,7 +149,7 @@
                 }
               ]
             },
-            "description": "##\tShould return error if:\r\n*\t\tUser does not have jobapprovalprocess.edit permission\r\n *\t\t\tShould return 403 error code\r\n----\r\n##\tReturns\r\n*\t\tList of units, grouped by facility profile group, that can be added to a facility process by a user\r\n *\t\t\tShould not include units that are part of facilites that DO NOT have job approvals enabled\r\n*\t\tEach unit has an hasExistingProcess property. This indicates if the facility profile group is already part of another process. \r\n *\t\t\tIf you make this call with a processId parameter, hasExistingProcess will be false if the unit is a member of the process, and should equal true if the processId parameter is not included or is a member of a different process"
+            "description": "##\tShould return error if:\r\n*\t\tUser does not have jobapprovalprocess.edit permission\r\n *\t\t\tShould return 403 error code\r\n----\r\n##\tReturns\r\n*\t\tList of units, grouped by facility profile group, that can be added to a facility process by a user\r\n *\t\t\tShould not include units that are part of facilites that DO NOT have job approvals enabled\r\n*\t\tEach unit has an hasExistingProcess property. This indicates if the facility profile group is already part of another process. \r\n *\t\t\tIf you make this call with a processId parameter, hasExistingProcess will be false if the unit is a member of the process, and should equal true if the processId parameter is not included or is a member of a different process\r\n ----\r\n## Usage\r\n* Used when getting units that can be added to a unit approval process"
           },
           "response": [
             {
