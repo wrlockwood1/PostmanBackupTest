@@ -491,7 +491,7 @@
               "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
             },
             "url": "{{uri}}/AyaConnect/JobApprovalProcess",
-            "description": "##\tDescription\r\n----\r\nThis is the endpoint we are using to test job approvals with jobs that have job approval processes\r\n----\r\n##\tExpected Result\r\n----\r\nWill return jobs approved at job level, jobs approved at tier level (with ids of approvers for next tier), and jobs approved at user leve"
+            "description": "##\tDescription\r\n----\r\nThis is the endpoint we are using to test job approvals with jobs that have job approval processes\r\n----\r\n----\r\n##\tExpected Result\r\n----\r\nWill return jobs approved at job level, jobs approved at tier level (with ids of approvers for next tier), and jobs approved at user leve"
           },
           "response": [
             {
