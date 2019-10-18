@@ -593,7 +593,7 @@
           ]
         },
         {
-          "name": "Approve Jobs New Copy",
+          "name": "Approve Jobs",
           "_postman_id": "cc00add1-4af3-4ef8-a47d-3f5120774935",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
