@@ -96,7 +96,7 @@
           ]
         },
         {
-          "name": "Processes Copy",
+          "name": "Job Approval Details",
           "event": [
             {
               "listen": "test",
