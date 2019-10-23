@@ -551,7 +551,7 @@
           ]
         },
         {
-          "name": "Approve Jobs With Process",
+          "name": "Approve Jobs New",
           "_postman_id": "471854f3-3925-4e50-a0cd-caafff941044",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
