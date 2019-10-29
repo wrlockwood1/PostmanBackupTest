@@ -45,7 +45,24 @@
                 "type": "text"
               }
             ],
-            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobApprovalProcess"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
             "description": "## Should return 403 error if:\n> User does not have jobapprovalprocess.view permission \n----\n## Returns:\n> List of facility and unit processes, based on approval processes created for facilities and units the user is a member of"
           },
           "response": [
