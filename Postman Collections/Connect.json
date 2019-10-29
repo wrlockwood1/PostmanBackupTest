@@ -1551,7 +1551,7 @@
         {
           "listen": "test",
           "script": {
-            "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+            "id": "2cec65e5-4083-4308-9871-fdd4545235c8",
             "exec": [
               "var jsonData = pm.response.json();",
               "",
@@ -1565,7 +1565,7 @@
         {
           "listen": "prerequest",
           "script": {
-            "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+            "id": "0e7e0625-a9e2-4254-bce9-6e096ee94c88",
             "exec": [
               ""
             ],
