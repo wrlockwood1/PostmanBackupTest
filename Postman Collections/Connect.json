@@ -1650,7 +1650,7 @@
       "response": []
     },
     {
-      "name": "Token - UW System Client Copy",
+      "name": "Token - Admin",
       "event": [
         {
           "listen": "test",
