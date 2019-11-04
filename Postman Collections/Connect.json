@@ -1310,6 +1310,20 @@
             "description": "- Use this requests to quickly save jobs to test for job approvals: \n- Update the unitId or hospId to route to different approval processes"
           },
           "response": []
+        },
+        {
+          "name": "Enable or Disable Job Approvals For Facility",
+          "_postman_id": "e118ce4b-fb6f-4033-82ac-dcce7c6533ea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "",
+            "description": "Use to enable or disable job approvals for a facility by updating the facilityId and isEnabled properties"
+          },
+          "response": []
         }
       ],
       "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
