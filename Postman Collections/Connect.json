@@ -1690,8 +1690,8 @@
           {
             "key": "Content-Type",
             "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded",
-            "type": "text"
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
           }
         ],
         "body": {
@@ -1699,28 +1699,28 @@
           "urlencoded": [
             {
               "key": "grant_type",
-              "value": "password",
-              "type": "text"
+              "type": "text",
+              "value": "password"
             },
             {
               "key": "username",
-              "value": "{{usernameUWSystemClient}}",
-              "type": "text"
+              "type": "text",
+              "value": "{{usernameAdmin}}"
             },
             {
               "key": "password",
-              "value": "{{password}}",
-              "type": "text"
+              "type": "text",
+              "value": "{{password}}"
             },
             {
               "key": "scope",
-              "value": "openid email phone profile offline_access roles ",
-              "type": "text"
+              "type": "text",
+              "value": "openid email phone profile offline_access roles "
             },
             {
               "key": "code",
-              "value": "",
-              "type": "text"
+              "type": "text",
+              "value": ""
             }
           ]
         },
