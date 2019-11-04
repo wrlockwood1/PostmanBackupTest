@@ -1318,9 +1318,20 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": [],
-            "url": "",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"facilityId\":\"36765\",\n\t\"featureId\":6,\n\t\"isEnabled\":false\n\n}\n"
+            },
+            "url": "{{uri}}/AyaConnect/Facility/Features",
             "description": "Use to enable or disable job approvals for a facility by updating the facilityId and isEnabled properties"
           },
           "response": []
