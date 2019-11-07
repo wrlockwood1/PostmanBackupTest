@@ -773,15 +773,15 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\r\n\t\"Ids\":[1140984],\r\n\t\"viewTypeId\":3\r\n}\r\n"
             },
-            "url": "{{uri}}/AyaConnect/JobApproval/ApproveJobsWithProcess",
+            "url": "{{uri}}/AyaConnect/JobApproval/RejectJobsWithProcess",
             "description": "##\tDescription\r\n\r\n- \r\nThis is the endpoint we are using to test job rejections with jobs that have job approval processes\r\n----\r\n\r\n##\tExpected Result\r\n----\r\n\r\n- Will return number of jobs where status was updated"
           },
           "response": [
