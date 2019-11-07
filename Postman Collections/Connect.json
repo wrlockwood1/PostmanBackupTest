@@ -756,7 +756,7 @@
           ]
         },
         {
-          "name": "Approve Jobs With Process Copy",
+          "name": "Reject Jobs With Process",
           "_postman_id": "9427cc73-fd8e-43c2-a061-0bae44f8f759",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
