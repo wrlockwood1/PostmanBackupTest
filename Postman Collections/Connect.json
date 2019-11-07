@@ -1438,6 +1438,134 @@
               "body": "{\n    \"facilityProcesses\": [\n        {\n            \"id\": 3,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 2,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        },\n        {\n            \"id\": 4,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 6,\n                    \"tierNumber\": 1,\n                    \"tierType\": 2,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 5613,\n                    \"name\": \"Valley Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ],\n    \"unitProcesses\": [\n        {\n            \"id\": 1,\n            \"level\": 3,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 1,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n                            \"fullName\": \"Test UW\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": true,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [\n                        {\n                            \"id\": 39,\n                            \"name\": \"6 NE General Medicine\",\n                            \"hasExistingProcess\": false\n                        },\n                        {\n                            \"id\": 67,\n                            \"name\": \"4SE Short Stay/Post Op\",\n                            \"hasExistingProcess\": false\n                        }\n                    ],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "Approve Jobs With Process Copy",
+          "_postman_id": "9427cc73-fd8e-43c2-a061-0bae44f8f759",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"Ids\":[1140984],\r\n\t\"viewTypeId\":3\r\n}\r\n"
+            },
+            "url": "{{uri}}/AyaConnect/JobApproval/ApproveJobsWithProcess",
+            "description": "##\tDescription\r\n\r\n- \r\nThis is the endpoint we are using to test job approvals with jobs that have job approval processes\r\n----\r\n\r\n##\tExpected Result\r\n----\r\n\r\n- Will return jobs approved at job level, jobs approved at tier level (with ids of approvers for next tier), and jobs approved at user level"
+          },
+          "response": [
+            {
+              "id": "99de8401-b17d-4a4d-8a5b-861887304d7f",
+              "name": "500 Response Tier Process No Tiers",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:01:43 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error with process tiers: process type is tier based, but no tiers are included\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessTiers(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 235\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessProperties(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 223\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcess(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 211\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 91\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            },
+            {
+              "id": "e56b013c-fd0e-44ae-8021-48a6b03909ea",
+              "name": "500 Error Adding Process With Existing Facility",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:00:58 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error adding facility job approval process: the following facility profile groups already have an approval process: (Id: 33256, Name: University of Washington Medical Center)  \r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.CheckExistingProcesses(JobApprovalProcessEditDto processToCheck, ApprovalProcess existingProcess) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 313\r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.AddProcessAsync(JobApprovalProcessEditDto processDto, String createdBy) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 92\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 101\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            }
+          ]
         }
       ],
       "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
