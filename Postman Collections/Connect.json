@@ -1159,10 +1159,58 @@
               "mode": "raw",
               "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test 2 Tier 1 Approver\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 67,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
             },
-            "url": "{{uri}}/AyaConnect/JobClient/SaveJob",
-            "description": "- Use this requests to quickly save jobs to test for job approvals: \n- Update the unitId or hospId to route to different approval processes"
+            "url": "{{uri}}/AyaConnect/JobClient/SaveJob"
           },
-          "response": []
+          "response": [
+            {
+              "id": "d0ee2528-5b73-4d94-9f2f-a74dc99259d4",
+              "name": "Save New Job With Process - Type No Approval Process",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #2\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 196,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                },
+                "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 15 Nov 2019 16:40:18 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"jobId\": 1146189,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Failed to send job added notification: The SMTP server has unexpectedly disconnected.\\r\\n\\r\\nMailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.SendCommandAsync(String command, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at Aya.Core.Common.Messaging.EmailSender.BatchSender.SendAsync() in C:\\\\Dev\\\\AyaHealthcare\\\\Applications\\\\Aya.Core.Api\\\\Aya.Core.Common\\\\Messaging\\\\EmailSender.cs:line 284\"\n    ]\n}"
+            }
+          ]
         },
         {
           "name": "Enable or Disable Job Approvals For Facility",
