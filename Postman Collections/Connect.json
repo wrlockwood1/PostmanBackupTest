@@ -1498,7 +1498,7 @@
         {
           "listen": "test",
           "script": {
-            "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+            "id": "13885dd5-0f3c-4f5f-aed2-18c3488a0ec9",
             "exec": [
               "var jsonData = pm.response.json();",
               "",
@@ -1511,7 +1511,7 @@
         {
           "listen": "prerequest",
           "script": {
-            "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+            "id": "b6f956e5-0854-461f-84e4-73c5e7640eed",
             "exec": [
               ""
             ],
