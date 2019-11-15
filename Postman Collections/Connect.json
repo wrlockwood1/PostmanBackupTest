@@ -1159,7 +1159,8 @@
               "mode": "raw",
               "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test 2 Tier 1 Approver\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 67,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
             },
-            "url": "{{uri}}/AyaConnect/JobClient/SaveJob"
+            "url": "{{uri}}/AyaConnect/JobClient/SaveJob",
+            "description": "## Steps To Test\r\n* Update the hospitalId and unitId properties based on the unit you are looking to save a job for\r\n\r\n>Make sure that the unit id and facility id matchup, ie. the unit id you are saving for falls under the facility you are saving for, and that the user you are logged in as is a member of that facility\r\n\r\n>If you are saving an existing job, update the id property with the Job Id you are saving for, otherwise the id property should be set to 0\r\n\r\n>If you want to help differentiate the jobs you\u2019re saving, you can update the jobTitle property\r\n\r\n* Click **Send**\r\n\r\n>If the job was routed to a process with no approvals, the error will start with Failed to send job added notification\r\n\r\n>If the job was routed to a process that\u2019s tier based, the error will start with \"Job Pending Email Notifications disabled for specified facility.\"\r\n\r\n>If you saved an existing job, the error will probably start with \"Job Edited Email Notifications disabled for specified facility.\"\r\n\r\n>**Please use the examples saved for the Postman request as a guide, they show what I\u2019m talking about above**\r\n\r\n* To see the new ids of the saved jobs, log into Connect as the same user and go to the Jobs grid. Look for the title that matches up with the jobTitle you saved for your job\r\n\r\n* If tier based, the job should now have an approval process applied to it, and you can use the Approve/Reject Jobs With Process endpoints in Postman to test approval actions"
           },
           "response": [
             {
@@ -1209,6 +1210,102 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"jobId\": 1146189,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Failed to send job added notification: The SMTP server has unexpectedly disconnected.\\r\\n\\r\\nMailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.SendCommandAsync(String command, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at Aya.Core.Common.Messaging.EmailSender.BatchSender.SendAsync() in C:\\\\Dev\\\\AyaHealthcare\\\\Applications\\\\Aya.Core.Api\\\\Aya.Core.Common\\\\Messaging\\\\EmailSender.cs:line 284\"\n    ]\n}"
+            },
+            {
+              "id": "61bfd211-d62d-47f0-a9f0-6bcea0a5edf1",
+              "name": "Save Existing Job With Process - No Approval Type",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"1146193\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #3\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 1455,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                },
+                "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 15 Nov 2019 18:17:33 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"jobId\": 0,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Job Edited Email Notifications disabled for specified facility.\"\n    ]\n}"
+            },
+            {
+              "id": "d4027c5f-b582-4ce6-a5b5-ae3d1002f972",
+              "name": "Save New Job With Process - Routed to Tier Based Approval",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #4\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 68,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                },
+                "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 15 Nov 2019 18:18:54 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"jobId\": 0,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Job Pending Email Notifications disabled for specified facility.\"\n    ]\n}"
             }
           ]
         },
