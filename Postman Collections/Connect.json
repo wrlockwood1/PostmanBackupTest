@@ -1541,6 +1541,12 @@
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
     }
   ],
+  "auth": {
+    "type": "bearer",
+    "bearer": {
+      "token": "{{Bearer}}"
+    }
+  },
   "event": [
     {
       "listen": "prerequest",
