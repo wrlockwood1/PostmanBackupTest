@@ -510,12 +510,6 @@
             "disableBodyPruning": true
           },
           "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{Bearer}}"
-              }
-            },
             "method": "POST",
             "header": [
               {
@@ -527,7 +521,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+              "raw": "{\n    \"levels\": 2,\n    \"types\": 2,\n    \"tiers\": [\n        {\n            \"tierNumber\": 1,\n            \"tierType\": 1,\n            \"tierApproverIds\": [\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ],\n    \"canEdit\": true,\n    \"canDelete\": true,\n    \"jobs\": [],\n    \"facilityProfileGroupIds\": [\n        33256\n    ],\n    \"unitIds\": []\n}"
             },
             "url": "{{uri}}/AyaConnect/JobApprovalProcess",
             "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see added process as part of body returned in GET Processes"
