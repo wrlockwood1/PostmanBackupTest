@@ -1539,6 +1539,164 @@
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
+    },
+    {
+      "name": "Token - UW System Client",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "2cec65e5-4083-4308-9871-fdd4545235c8",
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.globals.set(\"Bearer\", jsonData.access_token);",
+              "pm.globals.set(\"refresh_token\", jsonData.refresh_token);",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "0e7e0625-a9e2-4254-bce9-6e096ee94c88",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "c0ef9aff-331e-40a4-af32-eb839013fb0f",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/x-www-form-urlencoded",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "password",
+              "type": "text"
+            },
+            {
+              "key": "username",
+              "value": "{{usernameUWSystemClient}}",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "{{password}}",
+              "type": "text"
+            },
+            {
+              "key": "scope",
+              "value": "openid email phone profile offline_access roles ",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{uri}}/connect/token"
+      },
+      "response": []
+    },
+    {
+      "name": "Token - Admin",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "2cec65e5-4083-4308-9871-fdd4545235c8",
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "",
+              "pm.globals.set(\"Bearer\", jsonData.access_token);",
+              "pm.globals.set(\"refresh_token\", jsonData.refresh_token);",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "0e7e0625-a9e2-4254-bce9-6e096ee94c88",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "a3ea3eb3-f06b-4a32-a2c7-151eb98b2b33",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "type": "text",
+            "value": "application/x-www-form-urlencoded"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "type": "text",
+              "value": "password"
+            },
+            {
+              "key": "username",
+              "type": "text",
+              "value": "{{usernameAdmin}}"
+            },
+            {
+              "key": "password",
+              "type": "text",
+              "value": "{{password}}"
+            },
+            {
+              "key": "scope",
+              "type": "text",
+              "value": "openid email phone profile offline_access roles "
+            },
+            {
+              "key": "code",
+              "type": "text",
+              "value": ""
+            }
+          ]
+        },
+        "url": "{{uri}}/connect/token"
+      },
+      "response": []
     }
   ],
   "event": [
