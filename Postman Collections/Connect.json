@@ -1339,6 +1339,109 @@
             "description": "Use to enable or disable job approvals for a facility by updating the facilityId and isEnabled properties"
           },
           "response": []
+        },
+        {
+          "name": "Processes Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b72f2c95-9b01-4afd-abcc-b29b2e594a39",
+                "exec": [
+                  "pm.test(\"Response time is less than 2000ms\", function() {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8b0d84c4-ffbc-4661-a69a-1ae7396230ca",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobApprovalProcess"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": "",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "## Should return 403 error if:\n> User does not have jobapprovalprocess.view permission \n----\n## Returns:\n> List of facility and unit processes, based on approval processes created for facilities and units the user is a member of"
+          },
+          "response": [
+            {
+              "id": "7d20d488-9577-4787-be07-b1d2e66bc0d9",
+              "name": "200 OK Response With Processes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 15:54:35 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"facilityProcesses\": [\n        {\n            \"id\": 3,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 2,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        },\n        {\n            \"id\": 4,\n            \"level\": 2,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 6,\n                    \"tierNumber\": 1,\n                    \"tierType\": 2,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n                            \"fullName\": \"Tyson Fugett\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": false,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 5613,\n                    \"name\": \"Valley Medical Center\",\n                    \"units\": [],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ],\n    \"unitProcesses\": [\n        {\n            \"id\": 1,\n            \"level\": 3,\n            \"type\": 2,\n            \"tiers\": [\n                {\n                    \"id\": 1,\n                    \"tierNumber\": 1,\n                    \"tierType\": 1,\n                    \"tierApprovers\": [\n                        {\n                            \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n                            \"fullName\": \"Test UW\"\n                        }\n                    ]\n                }\n            ],\n            \"canEdit\": true,\n            \"canDelete\": true,\n            \"jobs\": [],\n            \"facilityProfileGroups\": [\n                {\n                    \"id\": 33256,\n                    \"name\": \"University of Washington Medical Center\",\n                    \"units\": [\n                        {\n                            \"id\": 39,\n                            \"name\": \"6 NE General Medicine\",\n                            \"hasExistingProcess\": false\n                        },\n                        {\n                            \"id\": 67,\n                            \"name\": \"4SE Short Stay/Post Op\",\n                            \"hasExistingProcess\": false\n                        }\n                    ],\n                    \"hasExistingProcess\": false\n                }\n            ],\n            \"units\": []\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
