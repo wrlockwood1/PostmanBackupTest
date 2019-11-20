@@ -1339,19 +1339,6 @@
             "description": "Use to enable or disable job approvals for a facility by updating the facilityId and isEnabled properties"
           },
           "response": []
-        },
-        {
-          "name": "Demo Request",
-          "_postman_id": "53979e73-23b8-4cce-aed2-c11b29594490",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": ""
-          },
-          "response": []
         }
       ],
       "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
