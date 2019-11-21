@@ -1530,6 +1530,19 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "SaveJob(new)",
+          "_postman_id": "7212ca32-9372-4378-9315-013947498e42",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
