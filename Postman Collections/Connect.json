@@ -1543,6 +1543,19 @@
             "url": "{{uri}}//AyaConnect/JobClient"
           },
           "response": []
+        },
+        {
+          "name": "DeleteJob(new)",
+          "_postman_id": "02580ba4-f218-4a0b-b335-f89883b3bd9d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
