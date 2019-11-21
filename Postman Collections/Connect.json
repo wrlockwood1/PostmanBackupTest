@@ -1552,8 +1552,19 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
-            "url": ""
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"viewTypeId\": 3,\n\t\"id\": 1147236\n}"
+            },
+            "url": "{{uri}}/AyaConnect/JobClient/1147236"
           },
           "response": []
         }
