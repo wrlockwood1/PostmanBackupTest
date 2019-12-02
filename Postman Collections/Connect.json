@@ -1766,9 +1766,9 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/document/11960/?",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/document/11960/?",
                   "host": [
-                    "{{CoreBaseURL}}"
+                    "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
