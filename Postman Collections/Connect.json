@@ -2037,9 +2037,9 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler/job?travelerid=11960&jobid=1146199",
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?travelerid=11960&jobid=1146199",
                   "host": [
-                    "{{uri}}"
+                    "{{CoreBaseURL}}"
                   ],
                   "path": [
                     "ayaconnect",
