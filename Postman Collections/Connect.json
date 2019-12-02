@@ -1684,6 +1684,503 @@
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
+    },
+    {
+      "name": "ClientTravelers",
+      "item": [
+        {
+          "name": "Traveler",
+          "item": [
+            {
+              "name": "Traveler",
+              "_postman_id": "65d2ea04-f5a7-4aa6-882f-f72f9ab5ef6d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/?",
+                  "host": [
+                    "{{CoreBaseURL}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "11960",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Document",
+              "_postman_id": "2bd2a69b-d306-44d5-b4fa-6e1187c00acb",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/document/11960/?",
+                  "host": [
+                    "{{CoreBaseURL}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "document",
+                    "11960",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "11960",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Document By Id",
+              "_postman_id": "80cf90ee-04fb-483a-9ccb-c62ce233eb40",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/traveler/document/11960/stream/313223?",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "document",
+                    "11960",
+                    "stream",
+                    "313223"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "11960",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Traveler By Id",
+              "_postman_id": "6d6b001f-873e-4420-b63b-3dea304dee79",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/traveler/11960/?",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "11960",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "11960",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Lookup",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+                    "exec": [
+                      "var jsonData = pm.response.json();",
+                      "pm.environment.set(\"Bearer\", jsonData.access_token);",
+                      "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                },
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "f0b8e09a-099c-434e-ab7d-1304eb3a0b79",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "grant_type",
+                      "value": "password",
+                      "type": "text"
+                    },
+                    {
+                      "key": "username",
+                      "value": "ckatznovant",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "pass1",
+                      "type": "text"
+                    },
+                    {
+                      "key": "scope",
+                      "value": "openid email phone profile offline_access roles ",
+                      "type": "text"
+                    },
+                    {
+                      "key": "code",
+                      "value": "",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "TravelerJob",
+          "item": [
+            {
+              "name": "Get Jobs",
+              "_postman_id": "52a31feb-112e-46fa-9137-6f26f5601441",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "host": [
+                    "{{CoreBaseURL}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "job"
+                  ],
+                  "query": [
+                    {
+                      "key": "facilityid",
+                      "value": "36765"
+                    },
+                    {
+                      "key": "professionid",
+                      "value": "1"
+                    },
+                    {
+                      "key": "monthsback",
+                      "value": "3"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Add Job",
+              "_postman_id": "8f79ca89-2f76-4a5c-bf1b-9b3c2aedbb60",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?travelerid=11960&jobid=1146199",
+                  "host": [
+                    "{{CoreBaseURL}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "job"
+                  ],
+                  "query": [
+                    {
+                      "key": "travelerid",
+                      "value": "11960"
+                    },
+                    {
+                      "key": "jobid",
+                      "value": "1146199"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Job",
+              "_postman_id": "91ff598b-67ac-4d4d-8161-a20388f73a0c",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?travelerid=8",
+                  "host": [
+                    "{{CoreBaseURL}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "job"
+                  ],
+                  "query": [
+                    {
+                      "key": "travelerid",
+                      "value": "8"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "5872f052-451a-4519-b3bc-739e63a84998",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "login ",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"Bearer\", jsonData.access_token);",
+                  "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "6eab16d1-97de-487c-9b83-05c5083c0040",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "ckatznovant",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "pass1",
+                  "type": "text"
+                },
+                {
+                  "key": "scope",
+                  "value": "openid email phone profile offline_access roles ",
+                  "type": "text"
+                },
+                {
+                  "key": "code",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{uri}}/connect/token"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "63f5e22e-afc5-4524-a11f-202db30dc036"
     }
   ],
   "auth": {
