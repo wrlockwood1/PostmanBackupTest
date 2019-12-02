@@ -1993,9 +1993,9 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
                   "host": [
-                    "{{CoreBaseURL}}"
+                    "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
