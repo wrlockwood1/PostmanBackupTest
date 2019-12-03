@@ -19,6 +19,10 @@
                 "exec": [
                   "pm.test(\"Response time is less than 2000ms\", function() {",
                   "    pm.expect(pm.response.responseTime).to.be.below(2000);",
+                  "});",
+                  "",
+                  "pm.test(\"Response status code should be 200\", function() {",
+                  "    pm.expect(pm.response.statusCode).to.be.below(2000);",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -45,24 +49,7 @@
                 "type": "text"
               }
             ],
-            "url": {
-              "raw": "{{uri}}/AyaConnect/JobApprovalProcess",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "AyaConnect",
-                "JobApprovalProcess"
-              ],
-              "query": [
-                {
-                  "key": "",
-                  "value": "",
-                  "type": "text",
-                  "disabled": true
-                }
-              ]
-            },
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
             "description": "## Should return 403 error if:\n> User does not have jobapprovalprocess.view permission \n----\n## Returns:\n> List of facility and unit processes, based on approval processes created for facilities and units the user is a member of"
           },
           "response": [
@@ -2037,9 +2024,9 @@
                 "method": "POST",
                 "header": [],
                 "url": {
-                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?travelerid=11960&jobid=1146199",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?travelerid=11960&jobid=1146199",
                   "host": [
-                    "{{CoreBaseURL}}"
+                    "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
@@ -2077,9 +2064,9 @@
                 "method": "DELETE",
                 "header": [],
                 "url": {
-                  "raw": "{{CoreBaseURL}}/ayaconnect/client/traveler/job?travelerid=8",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?travelerid=8",
                   "host": [
-                    "{{CoreBaseURL}}"
+                    "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
