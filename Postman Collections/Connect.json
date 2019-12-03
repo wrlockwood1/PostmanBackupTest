@@ -34,12 +34,6 @@
             "disableBodyPruning": true
           },
           "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{Bearer}}"
-              }
-            },
             "method": "GET",
             "header": [
               {
