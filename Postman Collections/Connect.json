@@ -2161,7 +2161,29 @@
           "response": []
         }
       ],
-      "_postman_id": "63f5e22e-afc5-4524-a11f-202db30dc036"
+      "_postman_id": "63f5e22e-afc5-4524-a11f-202db30dc036",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "4f73f120-6f58-4e27-9564-c6c42d442b15",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "2fd5e657-2a16-47ad-8bee-3cfc405f5173",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
     }
   ],
   "auth": {
