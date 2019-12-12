@@ -1699,21 +1699,33 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler/?",
+                  "raw": "{{uri}}/ayaconnect/client/traveler?sortType=desc&facilityGroupIds=32896&statuses=CAN",
                   "host": [
                     "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
                     "client",
-                    "traveler",
-                    ""
+                    "traveler"
                   ],
                   "query": [
                     {
                       "key": "id",
                       "value": "11960",
                       "disabled": true
+                    },
+                    {
+                      "key": "sortType",
+                      "value": "desc"
+                    },
+                    {
+                      "key": "facilityGroupIds",
+                      "value": "32896"
+                    },
+                    {
+                      "key": "statuses",
+                      "value": "CAN",
+                      "type": "text"
                     }
                   ]
                 }
