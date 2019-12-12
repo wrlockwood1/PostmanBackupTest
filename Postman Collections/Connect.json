@@ -1950,6 +1950,31 @@
                 "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup"
               },
               "response": []
+            },
+            {
+              "name": "Traveler",
+              "_postman_id": "74021443-2b6a-4f2b-a34c-d316b82ebdaf",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"travelerId\": 1234,\n    \"facilityId\": 1234,\n    \"internalId\": \"1234\"\n}"
+                },
+                "url": "{{uri}}/ayaconnect/client/traveler",
+                "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler."
+              },
+              "response": []
             }
           ],
           "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
