@@ -1981,7 +1981,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"travelerId\": 1234,\n    \"facilityId\": 1234,\n    \"internalId\": \"1234\"\n}"
+                  "raw": "{\n    \"travelerId\": 666770,\n    \"facilityId\": 38994,\n    \"internalId\": \"123567\",\n    \"sclEmployeeId\": 345,\n    \"sclBadgeNumber\": 789\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler",
                 "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler."
