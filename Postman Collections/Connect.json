@@ -1662,6 +1662,30 @@
             "url": "{{uri}}/AyaConnect/JobClient/1147236"
           },
           "response": []
+        },
+        {
+          "name": "Job Modified Notification",
+          "_postman_id": "aed02172-aea5-4d54-89eb-4f1b691219cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"jobId\": 1148801,\n    \"isCreated\": true\n}"
+            },
+            "url": "{{uri}}/AyaConnect/JobClient/SendJobModifiedNotification"
+          },
+          "response": []
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
