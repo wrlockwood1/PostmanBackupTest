@@ -2206,6 +2206,88 @@
                   "body": null
                 }
               ]
+            },
+            {
+              "name": "SCL Supervisors Copy",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
+                    "exec": [
+                      "var jsonData = pm.response.json();",
+                      "pm.environment.set(\"Bearer\", jsonData.access_token);",
+                      "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                },
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "956f60a2-9739-46b5-ad2b-d5cd22786aaf",
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "c8c0aba8-5b23-4354-8e7a-0bd08e49be02",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "grant_type",
+                      "value": "password",
+                      "type": "text"
+                    },
+                    {
+                      "key": "username",
+                      "value": "ckatznovant",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "pass1",
+                      "type": "text"
+                    },
+                    {
+                      "key": "scope",
+                      "value": "openid email phone profile offline_access roles ",
+                      "type": "text"
+                    },
+                    {
+                      "key": "code",
+                      "value": "",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup",
+                "description": "Returns a list of supervisors for the SCL Health System (returns null unless the user making the request is a member of the Scl Health System and has travelers.details permissions)"
+              },
+              "response": []
             }
           ],
           "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
