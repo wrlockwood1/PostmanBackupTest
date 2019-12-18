@@ -1982,9 +1982,6 @@
                   "script": {
                     "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
                     "exec": [
-                      "var jsonData = pm.response.json();",
-                      "pm.environment.set(\"Bearer\", jsonData.access_token);",
-                      "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
                       ""
                     ],
                     "type": "text/javascript"
@@ -2021,36 +2018,6 @@
                     "type": "text"
                   }
                 ],
-                "body": {
-                  "mode": "urlencoded",
-                  "urlencoded": [
-                    {
-                      "key": "grant_type",
-                      "value": "password",
-                      "type": "text"
-                    },
-                    {
-                      "key": "username",
-                      "value": "ckatznovant",
-                      "type": "text"
-                    },
-                    {
-                      "key": "password",
-                      "value": "pass1",
-                      "type": "text"
-                    },
-                    {
-                      "key": "scope",
-                      "value": "openid email phone profile offline_access roles ",
-                      "type": "text"
-                    },
-                    {
-                      "key": "code",
-                      "value": "",
-                      "type": "text"
-                    }
-                  ]
-                },
                 "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup"
               },
               "response": []
