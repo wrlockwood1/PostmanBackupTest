@@ -2132,7 +2132,8 @@
                     }
                   ]
                 },
-                "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup"
+                "url": "{{uri}}/AyaConnect/Client/Traveler/Lookup",
+                "description": "Returns a list of supervisors for the SCL Health System (returns null unless the user making the request is a member of the Scl Health System and has travelers.details permissions)"
               },
               "response": []
             },
