@@ -2073,7 +2073,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}"
+                  "raw": "{\n\t\"id\": 140140\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789,\n    \"sclEmployeeId\": 24566,\n    \"sclDepartmentCode\": 23806207\n    \"sclHireDate\": \"2019-12-11\"\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler",
                 "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler.\n\nIf the traveler is a member of the SCL Health System, and the user sending the request is a member of the SCL Health System, they can also pass in the sclEmployeeId and sclBadgeNumber fields"
