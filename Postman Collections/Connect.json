@@ -2063,9 +2063,6 @@
                   "script": {
                     "id": "fbe4dcd2-7758-408a-a576-5e625b9765e8",
                     "exec": [
-                      "var jsonData = pm.response.json();",
-                      "pm.environment.set(\"Bearer\", jsonData.access_token);",
-                      "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
                       ""
                     ],
                     "type": "text/javascript"
