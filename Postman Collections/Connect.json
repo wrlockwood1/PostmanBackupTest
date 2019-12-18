@@ -2138,76 +2138,6 @@
               "response": []
             },
             {
-              "name": "Traveler",
-              "_postman_id": "74021443-2b6a-4f2b-a34c-d316b82ebdaf",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n\t\"id\": 140140,\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789,\n    \"sclEmployeeId\": 24566,\n    \"sclDepartmentCode\": 23806207,\n    \"sclHireDate\": \"2019-12-11\"\n}"
-                },
-                "url": "{{uri}}/ayaconnect/client/traveler",
-                "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler.\n\nIf the traveler is a member of the SCL Health System, and the user sending the request is a member of the SCL Health System, they can also pass in the sclEmployeeId and sclBadgeNumber fields"
-              },
-              "response": [
-                {
-                  "id": "bcab14c8-f265-4514-b19d-706636304ef3",
-                  "name": "Update Traveler Request",
-                  "originalRequest": {
-                    "method": "PUT",
-                    "header": [
-                      {
-                        "key": "Content-Type",
-                        "name": "Content-Type",
-                        "value": "application/json",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}"
-                    },
-                    "url": "{{uri}}/ayaconnect/client/traveler"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "plain",
-                  "header": [
-                    {
-                      "key": "Server",
-                      "value": "Kestrel"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Mon, 16 Dec 2019 18:06:12 GMT"
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "0"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": null
-                }
-              ]
-            },
-            {
               "name": "SCL Supervisors Copy",
               "event": [
                 {
@@ -2288,6 +2218,76 @@
                 "description": "Returns a list of supervisors for the SCL Health System (returns null unless the user making the request is a member of the Scl Health System and has travelers.details permissions)"
               },
               "response": []
+            },
+            {
+              "name": "Traveler",
+              "_postman_id": "74021443-2b6a-4f2b-a34c-d316b82ebdaf",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"id\": 140140,\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789,\n    \"sclEmployeeId\": 24566,\n    \"sclDepartmentCode\": 23806207,\n    \"sclHireDate\": \"2019-12-11\"\n}"
+                },
+                "url": "{{uri}}/ayaconnect/client/traveler",
+                "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler.\n\nIf the traveler is a member of the SCL Health System, and the user sending the request is a member of the SCL Health System, they can also pass in the sclEmployeeId and sclBadgeNumber fields"
+              },
+              "response": [
+                {
+                  "id": "bcab14c8-f265-4514-b19d-706636304ef3",
+                  "name": "Update Traveler Request",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}"
+                    },
+                    "url": "{{uri}}/ayaconnect/client/traveler"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 16 Dec 2019 18:06:12 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "0"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null
+                }
+              ]
             }
           ],
           "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
