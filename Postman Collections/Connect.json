@@ -2350,7 +2350,7 @@
                   ]
                 },
                 "url": {
-                  "raw": "{{uri}}/AyaConnect/Client/Traveler/scl-departments?employeeId",
+                  "raw": "{{uri}}/AyaConnect/Client/Traveler/scl-departments?employeeId=45540",
                   "host": [
                     "{{uri}}"
                   ],
@@ -2363,8 +2363,7 @@
                   "query": [
                     {
                       "key": "employeeId",
-                      "value": "",
-                      "type": "text"
+                      "value": "45540"
                     }
                   ]
                 },
