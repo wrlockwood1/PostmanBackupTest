@@ -1757,6 +1757,66 @@
               "response": []
             },
             {
+              "name": "Traveler Export",
+              "_postman_id": "856ee233-369a-4fab-bf03-5aa0127c6194",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/traveler?sortType=desc&facilityGroupIds=32896&statuses=CAN",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "11960",
+                      "disabled": true
+                    },
+                    {
+                      "key": "sortType",
+                      "value": "desc"
+                    },
+                    {
+                      "key": "facilityGroupIds",
+                      "value": "32896"
+                    },
+                    {
+                      "key": "statuses",
+                      "value": "CAN",
+                      "type": "text"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
               "name": "Document",
               "_postman_id": "2bd2a69b-d306-44d5-b4fa-6e1187c00acb",
               "protocolProfileBehavior": {
@@ -2381,66 +2441,6 @@
                   "body": null
                 }
               ]
-            },
-            {
-              "name": "Traveler Copy",
-              "_postman_id": "856ee233-369a-4fab-bf03-5aa0127c6194",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler?sortType=desc&facilityGroupIds=32896&statuses=CAN",
-                  "host": [
-                    "{{uri}}"
-                  ],
-                  "path": [
-                    "ayaconnect",
-                    "client",
-                    "traveler"
-                  ],
-                  "query": [
-                    {
-                      "key": "id",
-                      "value": "11960",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sortType",
-                      "value": "desc"
-                    },
-                    {
-                      "key": "facilityGroupIds",
-                      "value": "32896"
-                    },
-                    {
-                      "key": "statuses",
-                      "value": "CAN",
-                      "type": "text"
-                    }
-                  ]
-                }
-              },
-              "response": []
             }
           ],
           "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
