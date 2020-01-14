@@ -1758,6 +1758,31 @@
             },
             {
               "name": "Traveler Export",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "7678ff4c-a832-4802-b0f6-ad38721eb133",
+                    "exec": [
+                      "var jsonData = pm.response.json();\r",
+                      "\r",
+                      "export function downloadBlob(blob, filename) {\r",
+                      "    const link = document.createElement(\"a\");\r",
+                      "    const blobUrl = window.URL.createObjectURL(blob);\r",
+                      "    link.href = blobUrl;\r",
+                      "    link.download = filename;\r",
+                      "    document.body.appendChild(link);\r",
+                      "    link.click();\r",
+                      "    setTimeout(() => {\r",
+                      "        window.URL.revokeObjectURL(blobUrl);\r",
+                      "        document.body.removeChild(link);\r",
+                      "    }, 0);\r",
+                      "}"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
               "_postman_id": "856ee233-369a-4fab-bf03-5aa0127c6194",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -1774,8 +1799,8 @@
                   {
                     "key": "Content-Type",
                     "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
+                    "type": "text",
+                    "value": "application/json"
                   }
                 ],
                 "body": {
@@ -1783,14 +1808,15 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler?sortType=desc&facilityGroupIds=32896&statuses=CAN",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/export?sortType=desc&facilityGroupIds=32896&statuses=CAN",
                   "host": [
                     "{{uri}}"
                   ],
                   "path": [
                     "ayaconnect",
                     "client",
-                    "traveler"
+                    "traveler",
+                    "export"
                   ],
                   "query": [
                     {
@@ -1808,8 +1834,7 @@
                     },
                     {
                       "key": "statuses",
-                      "value": "CAN",
-                      "type": "text"
+                      "value": "CAN"
                     }
                   ]
                 }
