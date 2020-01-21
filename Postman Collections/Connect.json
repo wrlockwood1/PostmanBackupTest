@@ -1635,7 +1635,7 @@
               "mode": "raw",
               "raw": "{\n\t\"viewTypeId\": 3,\n\t\"Job\": {\n\t\t\"AltShift\": false,\n\t\t\"AltShift\": null,\n\t\t\"BillingRate\": null,\n\t\t\"Description\": \"Test Description\",\n\t\t\"ExpertiseCode\": 497,\n\t\t\"HospitalId\": 36765,\n\t\t\"Hours\": 8,\n\t\t\"HoursAlt\": \"\",\n\t\t\"JobEnteredFrom\": 7,\n\t\t\"JobTitle\": \"Test Save from Postman to see if process gets routed\",\n\t\t\"NumPositions\": 1,\n\t\t\"ProfessionCode\": 75,\n\t\t\"ReleaseSchedulingEnabled\": true,\n\t\t\"ShiftAltH\": null,\n\t\t\"ShiftAltM\": null,\n\t\t\"ShiftAltToH\": null,\n\t\t\"ShiftAltToM\": null,\n\t\t\"ShiftH\": 8,\n\t\t\"ShiftM\": 0,\n\t\t\"ShiftToH\": 17,\n\t\t\"ShiftToM\": 0,\n\t\t\"Shifts\": 2,\n\t\t\"ShiftsAlt\": null,\n\t\t\"StartDate\": \"11/4/2019 8:00:00 AM\",\n\t\t\"TemplateId\": null,\n\t\t\"UnitId\": 2\n\t}\n}"
             },
-            "url": "{{uri}}//AyaConnect/JobClient"
+            "url": "{{uri}}/AyaConnect/JobClient"
           },
           "response": []
         },
