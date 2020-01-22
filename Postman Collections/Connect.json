@@ -2598,6 +2598,13 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "TravelerDocuments",
+          "item": [],
+          "_postman_id": "3af5b1c7-6fcc-4d45-952d-a6720e2003c6",
+          "description": "Use to test downloading traveler documents",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "login ",
           "event": [
             {
