@@ -82,13 +82,11 @@
                 },
                 {
                   "key": "unitId",
-                  "value": "480",
-                  "type": "text"
+                  "value": "480"
                 },
                 {
                   "key": "facilityProfileGroupId",
-                  "value": "33256",
-                  "type": "text"
+                  "value": "33256"
                 }
               ]
             },
@@ -2616,6 +2614,50 @@
                     {
                       "key": "travelerid",
                       "value": "8"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Jobs Copy",
+              "_postman_id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "job"
+                  ],
+                  "query": [
+                    {
+                      "key": "facilityid",
+                      "value": "36765"
+                    },
+                    {
+                      "key": "professionid",
+                      "value": "1"
+                    },
+                    {
+                      "key": "monthsback",
+                      "value": "3"
                     }
                   ]
                 }
