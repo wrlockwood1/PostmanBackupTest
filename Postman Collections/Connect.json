@@ -2560,27 +2560,29 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "raw": "http://localhost:55518/webapi/api/ClientModule/JobsForIDWindow?facilityId=35901&professionId=1&monthsBack=3",
+                  "protocol": "http",
                   "host": [
-                    "{{uri}}"
+                    "localhost"
                   ],
+                  "port": "55518",
                   "path": [
-                    "ayaconnect",
-                    "client",
-                    "traveler",
-                    "job"
+                    "webapi",
+                    "api",
+                    "ClientModule",
+                    "JobsForIDWindow"
                   ],
                   "query": [
                     {
-                      "key": "facilityid",
-                      "value": "36765"
+                      "key": "facilityId",
+                      "value": "35901"
                     },
                     {
-                      "key": "professionid",
+                      "key": "professionId",
                       "value": "1"
                     },
                     {
-                      "key": "monthsback",
+                      "key": "monthsBack",
                       "value": "3"
                     }
                   ]
