@@ -2545,6 +2545,50 @@
               "response": []
             },
             {
+              "name": "Get Jobs Copy",
+              "_postman_id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "traveler",
+                    "job"
+                  ],
+                  "query": [
+                    {
+                      "key": "facilityid",
+                      "value": "36765"
+                    },
+                    {
+                      "key": "professionid",
+                      "value": "1"
+                    },
+                    {
+                      "key": "monthsback",
+                      "value": "3"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
               "name": "Add Job",
               "_postman_id": "8f79ca89-2f76-4a5c-bf1b-9b3c2aedbb60",
               "protocolProfileBehavior": {
@@ -2614,50 +2658,6 @@
                     {
                       "key": "travelerid",
                       "value": "8"
-                    }
-                  ]
-                }
-              },
-              "response": []
-            },
-            {
-              "name": "Get Jobs Copy",
-              "_postman_id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
-                  "host": [
-                    "{{uri}}"
-                  ],
-                  "path": [
-                    "ayaconnect",
-                    "client",
-                    "traveler",
-                    "job"
-                  ],
-                  "query": [
-                    {
-                      "key": "facilityid",
-                      "value": "36765"
-                    },
-                    {
-                      "key": "professionid",
-                      "value": "1"
-                    },
-                    {
-                      "key": "monthsback",
-                      "value": "3"
                     }
                   ]
                 }
