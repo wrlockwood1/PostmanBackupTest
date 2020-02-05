@@ -2545,7 +2545,7 @@
               "response": []
             },
             {
-              "name": "Get Jobs Copy",
+              "name": "Get Jobs (WebAPI)",
               "_postman_id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
