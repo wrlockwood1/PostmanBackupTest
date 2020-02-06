@@ -2516,7 +2516,7 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=36765&professionid=1&monthsback=3",
+                  "raw": "{{uri}}/ayaconnect/client/traveler/job?facilityid=35901&professionid=1&monthsback=3",
                   "host": [
                     "{{uri}}"
                   ],
@@ -2529,7 +2529,7 @@
                   "query": [
                     {
                       "key": "facilityid",
-                      "value": "36765"
+                      "value": "35901"
                     },
                     {
                       "key": "professionid",
