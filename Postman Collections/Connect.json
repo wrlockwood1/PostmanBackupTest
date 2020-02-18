@@ -2792,7 +2792,51 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=10&skip=0&sortField=startDate&sortType=desc&specialtyIds=304&specialtyIds=478&ToDate=2020-05-30&FromDate=2020-04-24",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Client",
+                "Shifts"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "startDate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "desc"
+                },
+                {
+                  "key": "specialtyIds",
+                  "value": "304"
+                },
+                {
+                  "key": "specialtyIds",
+                  "value": "478"
+                },
+                {
+                  "key": "ToDate",
+                  "value": "2020-05-30"
+                },
+                {
+                  "key": "FromDate",
+                  "value": "2020-04-24"
+                }
+              ]
+            }
           },
           "response": []
         }
