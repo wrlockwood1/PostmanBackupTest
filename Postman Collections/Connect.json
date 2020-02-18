@@ -2793,7 +2793,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=10&skip=0&sortField=startDate&sortType=desc&specialtyIds=304&specialtyIds=478&ToDate=2020-05-30&FromDate=2020-04-24",
+              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=10&skip=0&sortField=startDate&sortType=desc",
               "host": [
                 "{{uri}}"
               ],
@@ -2821,19 +2821,23 @@
                 },
                 {
                   "key": "specialtyIds",
-                  "value": "304"
+                  "value": "304",
+                  "disabled": true
                 },
                 {
                   "key": "specialtyIds",
-                  "value": "478"
+                  "value": "478",
+                  "disabled": true
                 },
                 {
                   "key": "ToDate",
-                  "value": "2020-05-30"
+                  "value": "2020-05-30",
+                  "disabled": true
                 },
                 {
                   "key": "FromDate",
-                  "value": "2020-04-24"
+                  "value": "2020-04-24",
+                  "disabled": true
                 }
               ]
             }
