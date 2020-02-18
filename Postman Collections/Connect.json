@@ -2779,6 +2779,12 @@
           }
         }
       ]
+    },
+    {
+      "name": "Shifts",
+      "item": [],
+      "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
+      "description": "New Shifts Controller"
     }
   ],
   "auth": {
