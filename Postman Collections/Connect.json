@@ -2782,7 +2782,21 @@
     },
     {
       "name": "Shifts",
-      "item": [],
+      "item": [
+        {
+          "name": "ClientShifts",
+          "_postman_id": "d9f3bbe9-84ad-47ab-8e86-03cd7b09b3d1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
       "description": "New Shifts Controller"
     }
