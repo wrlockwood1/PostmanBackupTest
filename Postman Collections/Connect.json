@@ -2740,8 +2740,18 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {}
+                },
                 "method": "GET",
-                "header": [],
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
                 "url": "{{uri}}/ayaconnect/client/traveler/woc/152411",
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
