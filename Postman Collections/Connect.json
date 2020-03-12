@@ -2742,7 +2742,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "",
+                "url": "{{uri}}/ayaconnect/client/traveler/woc/152411",
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
               "response": []
