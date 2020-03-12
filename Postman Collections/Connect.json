@@ -1333,7 +1333,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #2\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 196,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #2\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 196,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
               },
@@ -1381,7 +1386,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"1146193\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #3\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 1455,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"1146193\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #3\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 1455,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
               },
@@ -1429,7 +1439,12 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #4\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 68,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}"
+                  "raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #4\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 68,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
                 },
                 "url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
               },
@@ -2495,7 +2510,12 @@
                     ],
                     "body": {
                       "mode": "raw",
-                      "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}"
+                      "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
                     },
                     "url": "{{uri}}/ayaconnect/client/traveler"
                   },
@@ -2708,6 +2728,13 @@
           "item": [],
           "_postman_id": "3af5b1c7-6fcc-4d45-952d-a6720e2003c6",
           "description": "Use to test downloading traveler documents",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "TravelerWoc",
+          "item": [],
+          "_postman_id": "da27f094-8d16-4dd0-92e5-67cebfed5df1",
+          "description": "Request related to Traveler Woc in Connect",
           "_postman_isSubFolder": true
         },
         {
