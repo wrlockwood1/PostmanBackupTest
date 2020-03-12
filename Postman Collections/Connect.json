@@ -2732,7 +2732,22 @@
         },
         {
           "name": "TravelerWoc",
-          "item": [],
+          "item": [
+            {
+              "name": "WOC Pending Review",
+              "_postman_id": "890465bf-266d-4f61-a3f1-991b84aadd20",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "",
+                "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
+              },
+              "response": []
+            }
+          ],
           "_postman_id": "da27f094-8d16-4dd0-92e5-67cebfed5df1",
           "description": "Request related to Traveler Woc in Connect",
           "_postman_isSubFolder": true
