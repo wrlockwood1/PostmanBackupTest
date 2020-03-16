@@ -2780,7 +2780,7 @@
                     "value": "application/json"
                   }
                 ],
-                "url": "{{uri}}/ayaconnect/client/traveler/woc/pending-electronic-woc",
+                "url": "{{uri}}/ayaconnect/client/traveler/woc",
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
               "response": []
