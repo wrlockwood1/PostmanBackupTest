@@ -2798,7 +2798,7 @@
                     "token": "{{Bearer}}"
                   }
                 },
-                "method": "GET",
+                "method": "POST",
                 "header": [
                   {
                     "key": "Content-Type",
@@ -2806,7 +2806,7 @@
                     "value": "application/json"
                   }
                 ],
-                "url": "{{uri}}/ayaconnect/client/traveler/woc",
+                "url": "{{uri}}/ayaconnect/client/traveler/woc/151850",
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
               "response": []
