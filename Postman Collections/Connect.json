@@ -2786,7 +2786,7 @@
               "response": []
             },
             {
-              "name": "Pending WOC Travelers Copy",
+              "name": "Pending WOC Travelers",
               "_postman_id": "78b7a394-f727-4715-bc22-2372a88f9751",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
