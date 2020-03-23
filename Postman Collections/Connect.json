@@ -2812,7 +2812,7 @@
               "response": []
             },
             {
-              "name": "Pending WOC Travelers Copy",
+              "name": "Send Pending WOC Notification Email",
               "_postman_id": "7bc2be76-dccc-4a10-9e02-29d7d812b051",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
