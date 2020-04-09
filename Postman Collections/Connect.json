@@ -3043,7 +3043,7 @@
           "response": []
         },
         {
-          "name": "Add Resource Copy",
+          "name": "Send Shift Notification Email",
           "_postman_id": "ac5caa6d-8388-487b-8f95-ae57843a2bf1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
