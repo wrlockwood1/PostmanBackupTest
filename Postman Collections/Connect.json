@@ -3105,9 +3105,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "POST",
+            "method": "GET",
             "header": [],
-            "url": "{{uri}}/connect/token"
+            "url": ""
           },
           "response": []
         }
