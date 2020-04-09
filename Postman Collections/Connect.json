@@ -3052,7 +3052,7 @@
             "auth": {
               "type": "bearer",
               "bearer": {
-                "token": "{{Bearer}}"
+                "token": ""
               }
             },
             "method": "POST",
