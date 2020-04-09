@@ -3043,32 +3043,6 @@
           "response": []
         },
         {
-          "name": "Update Resource",
-          "_postman_id": "4974063d-9ad8-4c95-b918-7a65da1fe1e6",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {}
-            },
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n\t\"FirstName\": \"Update First\",\r\n\t\"MiddleName\": \"Update Middle\",\r\n\t\"LastName\": \"Update Last\",\r\n\t\"ProfessionId\": 1,\r\n\t\"Email\": \"Update Email\",\r\n\t\"Phone\": \"Update Phone\",\r\n\t\"PreferredShiftId\": 1,\r\n\t\"DOB\": \"3/18/2020\",\r\n\t\"SSN\": \"Update SSN 1\",\r\n\t\"ExpertiseIds\": [3, 8],\r\n\t\"FacilityIds\": [34, 37, 38, 39, 40, 33],\r\n\t\"Id\": 1,\r\n\t\"IsDeleted\": 0,\r\n\t\"IsActive\": 1\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{uri}}/ayaconnect/internalpool/resources/913"
-          },
-          "response": []
-        },
-        {
           "name": "Add Resource Copy",
           "_postman_id": "ac5caa6d-8388-487b-8f95-ae57843a2bf1",
           "protocolProfileBehavior": {
@@ -3084,6 +3058,32 @@
             "body": {
               "mode": "raw",
               "raw": "{\r\n\t\"FirstName\": \"Add First\",\r\n\t\"MiddleName\": \"Add Middle\",\r\n\t\"LastName\": \"Add Last\",\r\n\t\"ProfessionId\": 1,\r\n\t\"Email\": \"Add Email\",\r\n\t\"Phone\": \"Add Phone\",\r\n\t\"PreferredShiftId\": 1,\r\n\t\"DOB\": \"3/18/2020\",\r\n\t\"SSN\": \"Add SSN\",\r\n\t\"ExpertiseIds\": [3, 8],\r\n\t\"FacilityIds\": [33, 34]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/ayaconnect/internalpool/resources/913"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Resource",
+          "_postman_id": "4974063d-9ad8-4c95-b918-7a65da1fe1e6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {}
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"FirstName\": \"Update First\",\r\n\t\"MiddleName\": \"Update Middle\",\r\n\t\"LastName\": \"Update Last\",\r\n\t\"ProfessionId\": 1,\r\n\t\"Email\": \"Update Email\",\r\n\t\"Phone\": \"Update Phone\",\r\n\t\"PreferredShiftId\": 1,\r\n\t\"DOB\": \"3/18/2020\",\r\n\t\"SSN\": \"Update SSN 1\",\r\n\t\"ExpertiseIds\": [3, 8],\r\n\t\"FacilityIds\": [34, 37, 38, 39, 40, 33],\r\n\t\"Id\": 1,\r\n\t\"IsDeleted\": 0,\r\n\t\"IsActive\": 1\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
