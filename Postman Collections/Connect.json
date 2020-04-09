@@ -2836,6 +2836,32 @@
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
               "response": []
+            },
+            {
+              "name": "WOC Pending Review Copy",
+              "_postman_id": "48555c0c-c2ed-44c0-88f1-34c9c939f9d5",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{uri}}/ayaconnect/client/traveler/woc/152411",
+                "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
+              },
+              "response": []
             }
           ],
           "_postman_id": "da27f094-8d16-4dd0-92e5-67cebfed5df1",
