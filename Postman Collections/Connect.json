@@ -2760,6 +2760,32 @@
               "response": []
             },
             {
+              "name": "WOC Pending Review Copy",
+              "_postman_id": "48555c0c-c2ed-44c0-88f1-34c9c939f9d5",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "{{uri}}/ayaconnect/client/traveler/woc/152411",
+                "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
+              },
+              "response": []
+            },
+            {
               "name": "Pending WOC Travelers",
               "_postman_id": "2b2ae754-8c9d-4e08-9514-5226429ddafe",
               "protocolProfileBehavior": {
@@ -2833,32 +2859,6 @@
                   }
                 ],
                 "url": "{{uri}}/v1/wocqueue/153474",
-                "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
-              },
-              "response": []
-            },
-            {
-              "name": "WOC Pending Review Copy",
-              "_postman_id": "48555c0c-c2ed-44c0-88f1-34c9c939f9d5",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "url": "{{uri}}/ayaconnect/client/traveler/woc/152411",
                 "description": "Gets WOC Pending Review for a Facility that has electronic WOC signing enabled"
               },
               "response": []
