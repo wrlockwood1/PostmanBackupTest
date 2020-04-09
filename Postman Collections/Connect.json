@@ -3023,9 +3023,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": ""
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"FirstName\": \"Add First\",\r\n\t\"MiddleName\": \"Add Middle\",\r\n\t\"LastName\": \"Add Last\",\r\n\t\"ProfessionId\": 1,\r\n\t\"Email\": \"Add Email\",\r\n\t\"Phone\": \"Add Phone\",\r\n\t\"PreferredShiftId\": 1,\r\n\t\"DOB\": \"3/18/2020\",\r\n\t\"SSN\": \"Add SSN\",\r\n\t\"ExpertiseIds\": [3, 8],\r\n\t\"FacilityIds\": [33, 34]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/ayaconnect/internalpool/resources/913"
           },
           "response": []
         }
