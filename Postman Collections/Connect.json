@@ -3057,14 +3057,14 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"FirstName\": \"Add First\",\r\n\t\"MiddleName\": \"Add Middle\",\r\n\t\"LastName\": \"Add Last\",\r\n\t\"ProfessionId\": 1,\r\n\t\"Email\": \"Add Email\",\r\n\t\"Phone\": \"Add Phone\",\r\n\t\"PreferredShiftId\": 1,\r\n\t\"DOB\": \"3/18/2020\",\r\n\t\"SSN\": \"Add SSN\",\r\n\t\"ExpertiseIds\": [3, 8],\r\n\t\"FacilityIds\": [33, 34]\r\n}",
+              "raw": "{\r\n\t\"SystemId\": 913,\r\n\t\"FirstName\": \"Nursy\",\r\n\t\"LastName\": \"Nurse\",\r\n\t\"Profession\": \"Surgical Services\",\r\n\t\"Email\": \"nursy.nurse@ayahealthcare.com\",\r\n\t\"Facility\": \"Saint Joseph's Hospital\",\r\n\t\"Unit\": \"555051 - OR\",\r\n\t\"Expertise\": \"CVOR Tech\",\r\n\t\"StartDate\": \"4/10/2020\",\r\n\t\"Length\": 12,\r\n\t\"StartTime\": \"4/10/2020 3:00 AM\",\r\n\t\"EndTime\": \"4/10/2020 3:00 PM\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
                 }
               }
             },
-            "url": "{{uri}}/ayaconnect/internalpool/resources/913"
+            "url": "{{uri}}/ayaconnect/internalpool/shifts/1/email"
           },
           "response": []
         },
