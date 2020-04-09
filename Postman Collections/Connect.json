@@ -3097,6 +3097,19 @@
             "url": "{{uri}}/ayaconnect/internalpool/resources/913"
           },
           "response": []
+        },
+        {
+          "name": "login",
+          "_postman_id": "412d498f-590e-4ebe-9df6-f6de3d64183d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{uri}}/connect/token"
+          },
+          "response": []
         }
       ],
       "_postman_id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
