@@ -3077,7 +3077,9 @@
           "request": {
             "auth": {
               "type": "bearer",
-              "bearer": {}
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
             },
             "method": "PUT",
             "header": [],
