@@ -3071,7 +3071,7 @@
           "response": []
         },
         {
-          "name": "Add Resource Copy",
+          "name": "Get Resource Details",
           "_postman_id": "4214e131-abec-4cd9-bdaa-50d1ace117fa",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3083,7 +3083,7 @@
                 "token": ""
               }
             },
-            "method": "POST",
+            "method": "GET",
             "header": [],
             "body": {
               "mode": "raw",
@@ -3094,7 +3094,7 @@
                 }
               }
             },
-            "url": "{{uri}}/ayaconnect/internalpool/resources/913"
+            "url": "{{uri}}/ayaconnect/internalpool/resources/913/resources/1"
           },
           "response": []
         },
@@ -3206,6 +3206,19 @@
               }
             },
             "url": "{{uri}}/connect/token"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Shift Details",
+          "_postman_id": "069bc215-5b20-40ca-b5ec-ab281793f240",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
           },
           "response": []
         }
