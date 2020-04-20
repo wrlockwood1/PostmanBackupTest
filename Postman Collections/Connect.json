@@ -3227,6 +3227,19 @@
             "url": "{{uri}}/ayaconnect/internalpool/shifts/1"
           },
           "response": []
+        },
+        {
+          "name": "Get Shifts",
+          "_postman_id": "17aff24c-7e13-4c31-90a5-9f98acdd9e13",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
