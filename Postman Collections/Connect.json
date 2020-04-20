@@ -3235,9 +3235,55 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": ""
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=1000&skip=0&sortField=startTime&sortType=asc&fromDate=2020-04-19&toDate=2020-04-25&shiftVisibility=0",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Client",
+                "Shifts"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "1000"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "startTime"
+                },
+                {
+                  "key": "sortType",
+                  "value": "asc"
+                },
+                {
+                  "key": "fromDate",
+                  "value": "2020-04-19"
+                },
+                {
+                  "key": "toDate",
+                  "value": "2020-04-25"
+                },
+                {
+                  "key": "shiftVisibility",
+                  "value": "0"
+                }
+              ]
+            }
           },
           "response": []
         }
