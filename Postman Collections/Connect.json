@@ -174,7 +174,7 @@
               }
             ],
             "url": {
-              "raw": "{{uri}}/AyaConnect/ScheduledReleaseRule/professions?facilityId=36765",
+              "raw": "{{uri}}/AyaConnect/ScheduledReleaseRule/professions?facilityId=36225",
               "host": [
                 "{{uri}}"
               ],
@@ -213,7 +213,7 @@
                 },
                 {
                   "key": "facilityId",
-                  "value": "36765"
+                  "value": "36225"
                 }
               ]
             },
