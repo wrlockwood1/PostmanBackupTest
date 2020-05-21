@@ -169,18 +169,19 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobApprovalProcess?unitId=480&facilityProfileGroupId=33256",
+              "raw": "{{uri}}/AyaConnect/ScheduledReleaseRule/professions?facilityId=36765",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "JobApprovalProcess"
+                "ScheduledReleaseRule",
+                "professions"
               ],
               "query": [
                 {
@@ -190,8 +191,8 @@
                 },
                 {
                   "key": "unitSearch",
-                  "value": "",
                   "type": "text",
+                  "value": "",
                   "disabled": true
                 },
                 {
@@ -201,8 +202,8 @@
                 },
                 {
                   "key": "level",
-                  "value": "2",
                   "type": "text",
+                  "value": "2",
                   "disabled": true
                 },
                 {
@@ -211,12 +212,8 @@
                   "disabled": true
                 },
                 {
-                  "key": "unitId",
-                  "value": "480"
-                },
-                {
-                  "key": "facilityProfileGroupId",
-                  "value": "33256"
+                  "key": "facilityId",
+                  "value": "36765"
                 }
               ]
             },
