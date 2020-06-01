@@ -3457,7 +3457,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{uri}}//AyaConnect/Report/spending-by-unit-csv",
+            "url": "{{uri}}//AyaConnect/Report/spending-by-location-csv",
             "description": "Get spending-by-month-csv "
           },
           "response": []
