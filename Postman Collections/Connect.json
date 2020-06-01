@@ -3442,7 +3442,7 @@
           "response": []
         },
         {
-          "name": "{{uri}}//AyaConnect/Report/spending-by-specialty-csv",
+          "name": "{{uri}}//AyaConnect/Report/spending-by-unit-csv",
           "_postman_id": "ed0e05fd-b159-41f8-952e-1d5eeedcce08",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3458,7 +3458,7 @@
             "method": "GET",
             "header": [],
             "url": "{{uri}}//AyaConnect/Report/spending-by-unit-csv",
-            "description": "Get spending-by-month-csv "
+            "description": "Get spending-by-unit-csv"
           },
           "response": []
         },
