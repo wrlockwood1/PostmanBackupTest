@@ -3479,7 +3479,7 @@
             "method": "GET",
             "header": [],
             "url": "{{uri}}//AyaConnect/Report/spending-by-specialty-csv",
-            "description": "Get spending-by-cost-center-csv"
+            "description": "Get spending-by-specialty-csv"
           },
           "response": []
         },
