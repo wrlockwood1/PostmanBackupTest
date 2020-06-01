@@ -3418,6 +3418,12 @@
       "_postman_id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
     },
     {
+      "name": "Reports",
+      "item": [],
+      "_postman_id": "824dc6af-8885-48ac-b89b-dbc5d53b4a9b",
+      "description": "Aya.Core.Api.Controllers.AyaConnect -> Report"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
