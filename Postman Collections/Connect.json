@@ -3463,7 +3463,7 @@
           "response": []
         },
         {
-          "name": "{{uri}}//AyaConnect/Report/spending-by-specialty-csv",
+          "name": "{{uri}}//AyaConnect/Report/spending-by-cost-center-csv",
           "_postman_id": "f077594f-f9a3-4578-ae00-fc12e920e81d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
