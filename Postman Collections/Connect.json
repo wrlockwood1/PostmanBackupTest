@@ -3440,6 +3440,27 @@
             "description": "Get spending-by-month csv"
           },
           "response": []
+        },
+        {
+          "name": "{{uri}}//AyaConnect/Report/spending-by-month-csv",
+          "_postman_id": "ed0e05fd-b159-41f8-952e-1d5eeedcce08",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "CfDJ8EqvJobzXtZLloSCQstMBvu3xuqdBhEY_0jBFN0z2hLZZMRIPKfB1NerineDoRC6iaA6gOGDHl2VMPTg7AXFihwqvKDl9sibMec4A0_Ijp-tC4Bl3Ku_HVAdX7SFlQykmrdK3nhTqvYceLEpWN2YlW6fwqyXl4V6jR8GKssz_ppyQUfLJRUTPsxkz6VB6JnTVnMasDWzSa9beTmR5QOCkewdqlD_CXzfMDIqv_QdoCEQ2X7ayI3QQb65RW7oCjfS6zXOVqTHw8KUG3kV8bWizj_uALOCWxJIie8O-D0DfvyrPiUQESL7UkIDSe9Nu_RV7m6F02YyT1nrARf_-O_of4C3kNlgyomK0wtEVx5rldzSrX6miJGBBJWC_lq79SesyEh-BYF7hsj7tbOtG_5-nJW7fz35Jyh_AKcKCFBjp7_IeIrxBMQ36IBH5_EF0tIqCiFHnfBCWW0y35ZBS3JvrsHkkpC95MNlG7KWKv0YPbfViPiqkiBogxcfgxibBlW9T5qU0Cztrh03m78CQPq-Pgpx4UwQ-bcXMn-JBf_AruSga_r27dUxZuf1mJ1RJZDKQvvvO9hK6YcP86JMqsPXntndQ8DmTCQbasG_6Py8jEtwRrn7TyWbWxG6lzNyhBrbRpwPc-_ZNxHL4DZNcLfM7E4lVXeBN9KKEeFldEdT3-OmKHS0RNk0509STCqtlHeIcHZQta4se-dHiBnQcR_0TFzV0C2IdVN5kxmgmHGZLSqFQKyiyoECX_gF8xCudMvZ7GO0CJOsmUrErj7wtvoUnYeXQt_Pjt7XuibagkFRLzhpcei0WhVQJ5oWgIfLaE43lA",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}//AyaConnect/Report/spending-by-location-csv",
+            "description": "Get spending-by-month-csv "
+          },
+          "response": []
         }
       ],
       "_postman_id": "824dc6af-8885-48ac-b89b-dbc5d53b4a9b",
