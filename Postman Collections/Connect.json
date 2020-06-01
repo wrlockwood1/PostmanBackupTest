@@ -3520,7 +3520,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{uri}}//AyaConnect/Report/spending-by-supplier-csv",
+            "url": "{{uri}}//AyaConnect/Report/spending-by-cost-center-csv",
             "description": "Get spending-by-supplier-csv"
           },
           "response": []
