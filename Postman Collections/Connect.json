@@ -3505,7 +3505,7 @@
           "response": []
         },
         {
-          "name": "{{uri}}//AyaConnect/Report/spending-by-supplier-csv",
+          "name": "{{uri}}//AyaConnect/Report/spending-by-cost-center-csv Copy",
           "_postman_id": "efa13bb4-b95f-4ce7-950c-a8314dcdd013",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
