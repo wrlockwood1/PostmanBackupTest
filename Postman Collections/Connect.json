@@ -3169,9 +3169,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": ""
+            "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
           },
           "response": []
         }
