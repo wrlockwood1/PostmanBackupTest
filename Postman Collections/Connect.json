@@ -3161,6 +3161,19 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Reconfirm",
+          "_postman_id": "51ee202b-6eba-4592-a497-f6f91d661531",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
@@ -3520,7 +3533,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{uri}}//AyaConnect/Report/spending-by-cost-center-csv",
+            "url": "{{uri}}//AyaConnect/Report/spending-by-supplier-csv",
             "description": "Get spending-by-supplier-csv"
           },
           "response": []
