@@ -3600,6 +3600,49 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "awaiting-clearnace",
+          "_postman_id": "7cc0c066-ef74-4a6a-8a1c-2817f5b40c5b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/dashboard/awaiting-clearance",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "dashboard",
+                "awaiting-clearance"
+              ],
+              "query": [
+                {
+                  "key": "facilityId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "unitId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "_postman_id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
