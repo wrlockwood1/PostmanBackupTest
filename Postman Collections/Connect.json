@@ -3572,21 +3572,32 @@
               }
             },
             "method": "GET",
-            "header": [
-              {
-                "key": "facilityId",
-                "value": "",
-                "type": "text",
-                "disabled": true
-              },
-              {
-                "key": "unitId",
-                "value": "",
-                "type": "text",
-                "disabled": true
-              }
-            ],
-            "url": "{{uri}}/ayaconnect/dashboard/pending-woc"
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/dashboard/pending-woc",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "dashboard",
+                "pending-woc"
+              ],
+              "query": [
+                {
+                  "key": "facilityId",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "unitId",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
           },
           "response": []
         }
