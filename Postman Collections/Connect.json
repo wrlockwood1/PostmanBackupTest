@@ -3556,6 +3556,11 @@
       "description": "Aya.Core.Api.Controllers.AyaConnect -> Report"
     },
     {
+      "name": "Dashboard",
+      "item": [],
+      "_postman_id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
