@@ -3572,7 +3572,20 @@
               }
             },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "facilityId",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "unitId",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
             "url": "{{uri}}/ayaconnect/dashboard/pending-woc"
           },
           "response": []
