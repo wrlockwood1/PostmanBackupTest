@@ -3713,14 +3713,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/ayaconnect/dashboard/workers?endingwithindays=45&startingindays=14",
+              "raw": "{{uri}}/AyaConnect/Dashboard/pending-jobs?AgingDays=7",
               "host": [
                 "{{uri}}"
               ],
               "path": [
-                "ayaconnect",
-                "dashboard",
-                "workers"
+                "AyaConnect",
+                "Dashboard",
+                "pending-jobs"
               ],
               "query": [
                 {
@@ -3736,14 +3736,8 @@
                   "disabled": true
                 },
                 {
-                  "key": "endingwithindays",
-                  "value": "45",
-                  "type": "text"
-                },
-                {
-                  "key": "startingindays",
-                  "value": "14",
-                  "type": "text"
+                  "key": "AgingDays",
+                  "value": "7"
                 }
               ]
             }
