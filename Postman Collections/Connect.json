@@ -3790,6 +3790,53 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "pending-timecards Copy",
+          "_postman_id": "9ffe4a21-0134-4b12-95a3-4b1027b4c46a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Dashboard/pending-timecards?AgingDays=7",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Dashboard",
+                "pending-timecards"
+              ],
+              "query": [
+                {
+                  "key": "facilityId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "unitId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "AgingDays",
+                  "value": "7"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "_postman_id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
