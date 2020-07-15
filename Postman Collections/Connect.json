@@ -3602,7 +3602,7 @@
           "response": []
         },
         {
-          "name": "awaiting-clearnace",
+          "name": "awaiting-clearance",
           "_postman_id": "7cc0c066-ef74-4a6a-8a1c-2817f5b40c5b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3638,6 +3638,112 @@
                   "type": "text",
                   "value": null,
                   "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "workers",
+          "_postman_id": "561acd30-a381-4349-9896-d1a3ea4f675a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/dashboard/workers?endingwithindays=45&startingindays=14",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "dashboard",
+                "workers"
+              ],
+              "query": [
+                {
+                  "key": "facilityId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "unitId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "endingwithindays",
+                  "value": "45",
+                  "type": "text"
+                },
+                {
+                  "key": "startingindays",
+                  "value": "14",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "workers Copy",
+          "_postman_id": "6e99c126-1d75-4110-adb4-1b02b7b33e52",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/dashboard/workers?endingwithindays=45&startingindays=14",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "dashboard",
+                "workers"
+              ],
+              "query": [
+                {
+                  "key": "facilityId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "unitId",
+                  "type": "text",
+                  "value": null,
+                  "disabled": true
+                },
+                {
+                  "key": "endingwithindays",
+                  "value": "45",
+                  "type": "text"
+                },
+                {
+                  "key": "startingindays",
+                  "value": "14",
+                  "type": "text"
                 }
               ]
             }
