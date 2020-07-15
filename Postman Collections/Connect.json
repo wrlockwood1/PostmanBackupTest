@@ -3745,7 +3745,7 @@
           "response": []
         },
         {
-          "name": "pending-jobs Copy",
+          "name": "pending-timecards",
           "_postman_id": "0c70917a-883e-4844-b323-99a9dc3d68ef",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3760,14 +3760,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Dashboard/pending-jobs?AgingDays=7",
+              "raw": "{{uri}}/AyaConnect/Dashboard/pending-timecards?AgingDays=7",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
                 "Dashboard",
-                "pending-jobs"
+                "pending-timecards"
               ],
               "query": [
                 {
