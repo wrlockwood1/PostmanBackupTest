@@ -3792,7 +3792,7 @@
           "response": []
         },
         {
-          "name": "pending-timecards Copy",
+          "name": "line-of-business",
           "_postman_id": "9ffe4a21-0134-4b12-95a3-4b1027b4c46a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3807,14 +3807,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Dashboard/pending-timecards?AgingDays=7",
+              "raw": "{{uri}}/AyaConnect/line-of-business",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "Dashboard",
-                "pending-timecards"
+                "line-of-business"
               ],
               "query": [
                 {
@@ -3828,10 +3827,6 @@
                   "type": "text",
                   "value": null,
                   "disabled": true
-                },
-                {
-                  "key": "AgingDays",
-                  "value": "7"
                 }
               ]
             }
