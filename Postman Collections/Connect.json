@@ -3745,7 +3745,7 @@
           "response": []
         },
         {
-          "name": "pending-jobs Copy",
+          "name": "jobs",
           "_postman_id": "ad9b37a5-43c4-4be0-bef5-0c65557a5563",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3760,14 +3760,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Dashboard/pending-jobs?AgingDays=7",
+              "raw": "{{uri}}/AyaConnect/Dashboard/jobs",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
                 "Dashboard",
-                "pending-jobs"
+                "jobs"
               ],
               "query": [
                 {
@@ -3781,10 +3781,6 @@
                   "type": "text",
                   "value": null,
                   "disabled": true
-                },
-                {
-                  "key": "AgingDays",
-                  "value": "7"
                 }
               ]
             }
