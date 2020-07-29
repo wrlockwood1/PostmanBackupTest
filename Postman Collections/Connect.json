@@ -3861,7 +3861,21 @@
     },
     {
       "name": "Travelers",
-      "item": [],
+      "item": [
+        {
+          "name": "Get Travelers",
+          "_postman_id": "740d747d-a974-464e-8047-dcda9a2b4f29",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
     },
     {
