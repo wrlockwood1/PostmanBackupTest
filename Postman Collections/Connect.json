@@ -1091,7 +1091,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"id\": 73,\n    \"level\": 3,\n    \"type\": 2,\n    \"tiers\": [\n        {\n            \"id\": 167,\n            \"tierNumber\": 1,\n            \"tierType\": 1,\n            \"tierApproverIds\": [\n                \"4974ad87-0b6f-4095-9470-f63172205fee\",\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ],\n    \"facilityProfileGroupIds\": [],\n    \"unitIds\": [\n        1494,\n        6146\n    ]\n}"
+              "raw": "{\n    \"id\": 212,\n    \"facilityProfileGroupIds\": [\n        33256\n    ],\n    \"level\": 2,\n    \"type\": 2,\n    \"tiers\": [\n        {\n            \"id\": 0,\n            \"tierType\": 1,\n            \"tierNumber\": 1,\n            \"tierApproverIds\": [\n                \"be685f17-96c4-4e4c-af44-e091f7c98e79\"\n            ]\n        },\n        {\n            \"id\": 150,\n            \"tierType\": 1,\n            \"tierNumber\": 2,\n            \"tierApproverIds\": [\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ]\n}",
+              "options": {
+                "raw": {}
+              }
             },
             "url": "{{uri}}/AyaConnect/JobApprovalProcess/",
             "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see process with updated properties returned as part of body returned in GET Processes"
@@ -3855,6 +3858,11 @@
         }
       ],
       "_postman_id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
+    },
+    {
+      "name": "Travelers",
+      "item": [],
+      "_postman_id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
     },
     {
       "name": "Get Menu",
