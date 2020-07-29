@@ -3871,7 +3871,70 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": {
+              "raw": "{{uri}}/ayaconnect/Client/Traveler?skip=0&sortField=startDate&sortType=desc&pageSize=10",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "Client",
+                "Traveler"
+              ],
+              "query": [
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "startDate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "desc"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "hasPendingWoc",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "isStartingSoon",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "0",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "2",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "3",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
           },
           "response": []
         }
