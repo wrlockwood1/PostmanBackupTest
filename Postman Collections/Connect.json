@@ -3872,14 +3872,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Dashboard/pending-jobs?AgingDays=7",
+              "raw": "{{uri}}/AyaConnect/Dashboard/security-lists",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
                 "Dashboard",
-                "pending-jobs"
+                "security-lists"
               ],
               "query": [
                 {
@@ -3893,10 +3893,6 @@
                   "type": "text",
                   "value": null,
                   "disabled": true
-                },
-                {
-                  "key": "AgingDays",
-                  "value": "7"
                 }
               ]
             }
