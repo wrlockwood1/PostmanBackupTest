@@ -3985,6 +3985,12 @@
       "_postman_id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
     },
     {
+      "name": "Featured Logos",
+      "item": [],
+      "_postman_id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
+      "description": "Featured Logos is a functionality for facilities to upload thier own logos into connect app"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
