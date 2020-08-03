@@ -3988,7 +3988,7 @@
       "name": "Featured Logos",
       "item": [
         {
-          "name": "Get All Logos",
+          "name": "Get Logos",
           "_postman_id": "65ea0b02-6af8-4bb8-adc3-9cbae4a8a1a5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
