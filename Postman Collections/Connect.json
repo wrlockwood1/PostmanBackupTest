@@ -4048,7 +4048,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos/1"
           },
           "response": []
         }
