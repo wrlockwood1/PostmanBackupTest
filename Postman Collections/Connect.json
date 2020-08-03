@@ -3988,7 +3988,7 @@
       "name": "Featured Logos",
       "item": [
         {
-          "name": "Add Logo",
+          "name": "Get All Logos",
           "_postman_id": "65ea0b02-6af8-4bb8-adc3-9cbae4a8a1a5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3996,7 +3996,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos"
           },
           "response": []
         },
@@ -4036,6 +4036,19 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Logo",
+          "_postman_id": "bc04082a-a3a5-486c-9bef-6e9526e8c204",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
           },
           "response": []
         }
