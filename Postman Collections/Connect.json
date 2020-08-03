@@ -3986,7 +3986,21 @@
     },
     {
       "name": "Featured Logos",
-      "item": [],
+      "item": [
+        {
+          "name": "Add Logo",
+          "_postman_id": "65ea0b02-6af8-4bb8-adc3-9cbae4a8a1a5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
       "description": "Featured Logos is a functionality for facilities to upload thier own logos into connect app"
     },
