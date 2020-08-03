@@ -3999,6 +3999,45 @@
             "url": ""
           },
           "response": []
+        },
+        {
+          "name": "Add Logo",
+          "_postman_id": "effcb6cb-59e7-42e2-8df8-45a6a2700eca",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "CfDJ8GHYwkh8MblFjHkYsWik4eX-qoXotCbOPg-8_rcEBdQXVla0rGriobeC9ph5yhDA65FZZo6WGp47HHjmk4tg9W-5eZup1qBiJtXbfV23pllpmwfxhsgmI3qkKBaQFtk9oWQmb-qGxAWABFcylxmILVXZv50JrGCPf3E1cJN9gCGiY0dZLUFzLfyquado08bWEyV7NFJWjWnYMjpvqu9GjaftY2Bx9JyyeXPf_mgRtJxv8tzDlagLNKUu9zj0WCg2vvbh3m6DSuivJmesGLcgohJiRt7Rv5RPb3uGCmTXsEXuNUKMzufL3LjLMT3Ej94koY6gg_qycoNYFbqaYgfWoZvr2zBqGimnmHuWPEanCIL3dheVIDUQIQg-veAC4zzRmL4TmLAL5slmUosVzIfDAqywyv1ygQPnMYBgfhTvhUsJdUiiwjkazcxDIBSQywUzmZRG4nnAuoWbNJUwst0awBE-zn3XabBCme9AbVj5r73nOd_MXY6uA9QhyOxJpfEthv9ME7dKepRrnL0OICWT2wfHVrAQo8OlfIoTj4fwbMfOyujaFCGvyzGWGj7HQKgXSMODOA9YrBAdzXVJxEoJn3i-iY2zVDg2bRyOBcxhc9oa6p15eZwHUlCpdSN8dErxpD0CGHmz0y3Gcq8Q1Qh22XX9P0n8FK8sFG3_bwATIvStg2gQI25oIyBq_wF92MUCPb8I_8lRLbsFM9O-4iX_4R_WIh1rR03RJsvOgB2AuXffMLQ7IVduURDz2JCZXehcnolI3sLUKDlynX_Ud9XAxXMmi5VtKVhuNFjkCs05_svJR43E2got4WQkWjioR9LATlSTQGcMYbxeOomnUY02mpfGu2j66K06PgkFHxhVldxE",
+                "addTokenTo": "header"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/40x40-main.jpg"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos"
+          },
+          "response": []
         }
       ],
       "_postman_id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
