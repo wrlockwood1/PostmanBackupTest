@@ -4073,7 +4073,7 @@
       "name": "Submittals",
       "item": [
         {
-          "name": "Get",
+          "name": "Get New Submittals",
           "_postman_id": "d37ca5c5-2af9-43f5-953c-22c13cd06220",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
