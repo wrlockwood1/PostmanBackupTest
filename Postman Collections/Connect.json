@@ -4051,10 +4051,28 @@
             "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos/1"
           },
           "response": []
+        },
+        {
+          "name": "Delete Logo",
+          "_postman_id": "d5dea52d-367c-49f8-b293-8287c745b296",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
       "description": "Featured Logos is a functionality for facilities to upload thier own logos into connect app"
+    },
+    {
+      "name": "Submittals",
+      "item": [],
+      "_postman_id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
     },
     {
       "name": "Get Menu",
