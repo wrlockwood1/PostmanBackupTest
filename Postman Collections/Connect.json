@@ -4081,7 +4081,39 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Client/Submittals?skip=0&sortType=desc&pageSize=10&sortField=submissionSentOn&isRecentlySubmitted=true",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Client",
+                "Submittals"
+              ],
+              "query": [
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortType",
+                  "value": "desc"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "sortField",
+                  "value": "submissionSentOn"
+                },
+                {
+                  "key": "isRecentlySubmitted",
+                  "value": "true"
+                }
+              ]
+            }
           },
           "response": []
         }
