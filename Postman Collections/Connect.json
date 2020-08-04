@@ -4071,7 +4071,21 @@
     },
     {
       "name": "Submittals",
-      "item": [],
+      "item": [
+        {
+          "name": "Get",
+          "_postman_id": "d37ca5c5-2af9-43f5-953c-22c13cd06220",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
     },
     {
