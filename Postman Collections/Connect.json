@@ -4010,7 +4010,7 @@
             "auth": {
               "type": "oauth2",
               "oauth2": {
-                "accessToken": "CfDJ8GHYwkh8MblFjHkYsWik4eX-qoXotCbOPg-8_rcEBdQXVla0rGriobeC9ph5yhDA65FZZo6WGp47HHjmk4tg9W-5eZup1qBiJtXbfV23pllpmwfxhsgmI3qkKBaQFtk9oWQmb-qGxAWABFcylxmILVXZv50JrGCPf3E1cJN9gCGiY0dZLUFzLfyquado08bWEyV7NFJWjWnYMjpvqu9GjaftY2Bx9JyyeXPf_mgRtJxv8tzDlagLNKUu9zj0WCg2vvbh3m6DSuivJmesGLcgohJiRt7Rv5RPb3uGCmTXsEXuNUKMzufL3LjLMT3Ej94koY6gg_qycoNYFbqaYgfWoZvr2zBqGimnmHuWPEanCIL3dheVIDUQIQg-veAC4zzRmL4TmLAL5slmUosVzIfDAqywyv1ygQPnMYBgfhTvhUsJdUiiwjkazcxDIBSQywUzmZRG4nnAuoWbNJUwst0awBE-zn3XabBCme9AbVj5r73nOd_MXY6uA9QhyOxJpfEthv9ME7dKepRrnL0OICWT2wfHVrAQo8OlfIoTj4fwbMfOyujaFCGvyzGWGj7HQKgXSMODOA9YrBAdzXVJxEoJn3i-iY2zVDg2bRyOBcxhc9oa6p15eZwHUlCpdSN8dErxpD0CGHmz0y3Gcq8Q1Qh22XX9P0n8FK8sFG3_bwATIvStg2gQI25oIyBq_wF92MUCPb8I_8lRLbsFM9O-4iX_4R_WIh1rR03RJsvOgB2AuXffMLQ7IVduURDz2JCZXehcnolI3sLUKDlynX_Ud9XAxXMmi5VtKVhuNFjkCs05_svJR43E2got4WQkWjioR9LATlSTQGcMYbxeOomnUY02mpfGu2j66K06PgkFHxhVldxE",
+                "accessToken": "CfDJ8GHYwkh8MblFjHkYsWik4eWCwt7eoFpjjs6Anhzvk_ZcQDzI6BjuxXOOri3KkB1uxu6mdcqxyp-Ige1G1TTAudf6UF__S9HF7Vsfuc9SUiCiDACwSU1N93XAW6fyvAhKoqNb2P0RTlCWrmOnyaYw6Stavq5mY12W2qSBW4Kvv1C17fe_CDGHbb0S_UkHJTFKmMku62WG8hJSf56uGDaVg4GP1PH_L5gbg86yUReMT1PgNS9e6_EEeWaGlQUk75D_LD8DdzS9MkHRF5S3byIkNyDZ5hPwha0Hm7d9fePTm-2bpaqvNBF5PXk2OEhcMnNSHW-Pu8pFyFurzX5dAhkZWc_v5jxvFQom0fsBgaNCmHgLP5PcLgYK6Nh0mYCMvo8tXSuLBzRllVkwAVXjDhQXEz1YGtQXmkAvG4lIulSMlDSNDYPFr7-dYqzWoII4bimiwUrhdzEMuMEjmcHs936VgtpMz-XKm0l_7r22y1wHymYBJEX-TkvkB8cyUAeYSJNXgeNlJdI7aeGG4Lt_uITfh2ODuesxv3TOpamszU-_KkyQFJpRpclC-JSMylmyrj3j91a7wvPlITUyM_1wr3VrcEav9FTbgiJP-uRctvJiaCnlLi5Vr_5fnFqsFXjhjmNtKRUhoIkPfnbMAFHuDiu81DLPJE0C-peNXyCpyTSSFZeVBfHFk6bxEO7cLTeRCbnoLOSA83y-_kRPC0PhK03KTVPD8xU9OF70qT_X7GxVE9X-2IQAbgcC9gVCxffp_ahn8WjT3vBrBPZKi2yMvByfAaGEh1m9ZgdRRm3b1yD31cg2VY-DT3CUDF20oJQhTRkS2ES7PflPDZo2KAUue3Tw2PK7LDWafoOJMMTPI7oM_gpKy02CyRSbmic5w6JEcfuKKg",
                 "addTokenTo": "header"
               }
             },
@@ -4028,14 +4028,14 @@
                 {
                   "key": "file",
                   "type": "file",
-                  "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/40x40-main.jpg"
+                  "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/logo.PNG"
                 }
               ],
               "options": {
                 "formdata": {}
               }
             },
-            "url": "{{uri}}/AyaConnect/Admin/Facilities/38931/featuredLogos"
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/1561/featuredLogos"
           },
           "response": []
         },
