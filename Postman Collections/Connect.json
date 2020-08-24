@@ -931,9 +931,12 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"Ids\":[1146140],\r\n\t\"viewTypeId\":3\r\n}\r\n"
+              "raw": "{\r\n\t\"Ids\":[1222097],\r\n\t\"viewTypeId\":3\r\n}\r\n",
+              "options": {
+                "raw": {}
+              }
             },
-            "url": "{{uri}}/AyaConnect/JobApproval/ApproveJobsWithProcess",
+            "url": "{{uri}}/AyaConnect/JobApproval/ApproveJobs",
             "description": "##\tDescription\r\n\r\n- \r\nThis is the endpoint we are using to test job approvals with jobs that have job approval processes\r\n----\r\n\r\n##\tExpected Result\r\n----\r\n\r\n- Will return jobs approved at job level, jobs approved at tier level (with ids of approvers for next tier), and jobs approved at user level"
           },
           "response": [
