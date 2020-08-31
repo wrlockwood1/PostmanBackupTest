@@ -3903,7 +3903,7 @@
           "response": []
         },
         {
-          "name": "security-lists Copy",
+          "name": "client-prefences",
           "_postman_id": "2a38ce8e-6088-416c-beac-4f9d36e94f8f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
