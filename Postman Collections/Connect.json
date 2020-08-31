@@ -3918,14 +3918,15 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Dashboard/security-lists",
+              "raw": "{{uri}}/AyaConnect/Client/Preferences/9",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "Dashboard",
-                "security-lists"
+                "Client",
+                "Preferences",
+                "9"
               ],
               "query": [
                 {
