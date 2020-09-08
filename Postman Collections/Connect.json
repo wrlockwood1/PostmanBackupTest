@@ -1905,23 +1905,19 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobClient/GetFilteredJobs?ViewTypeId=3&%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D=",
+              "raw": "{{uri}}/AyaConnect/JobAdmin/GetFilteredJobs?{%22take%22:10,%22skip%22:0,%22page%22:1,%22pageSize%22:10,%22sort%22:[{%22field%22:%22rateCategoryOrder%22,%22dir%22:%22asc%22}]}",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "JobClient",
+                "JobAdmin",
                 "GetFilteredJobs"
               ],
               "query": [
                 {
-                  "key": "ViewTypeId",
-                  "value": "3"
-                },
-                {
-                  "key": "%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D",
-                  "value": ""
+                  "key": "{%22take%22:10,%22skip%22:0,%22page%22:1,%22pageSize%22:10,%22sort%22:[{%22field%22:%22rateCategoryOrder%22,%22dir%22:%22asc%22}]}",
+                  "value": null
                 }
               ]
             }
