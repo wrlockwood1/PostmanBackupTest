@@ -1863,7 +1863,7 @@
           "response": []
         },
         {
-          "name": "Jobs",
+          "name": "Jobs (Client)",
           "_postman_id": "68e4ca6d-d87b-433b-a45b-d8071497fd7d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
