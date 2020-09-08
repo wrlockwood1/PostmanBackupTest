@@ -1988,7 +1988,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobAdmin/jobs?skip=0&take=10",
+              "raw": "{{uri}}/AyaConnect/JobAdmin/jobs?skip=0&pageSize=10",
               "host": [
                 "{{uri}}"
               ],
@@ -2003,7 +2003,7 @@
                   "value": "0"
                 },
                 {
-                  "key": "take",
+                  "key": "pageSize",
                   "value": "10"
                 }
               ]
