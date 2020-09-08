@@ -1894,6 +1894,39 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Jobs (Admin)",
+          "_postman_id": "4969a53d-2a47-4ccf-ac52-1850729b64f4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobClient/GetFilteredJobs?ViewTypeId=3&%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D=",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobClient",
+                "GetFilteredJobs"
+              ],
+              "query": [
+                {
+                  "key": "ViewTypeId",
+                  "value": "3"
+                },
+                {
+                  "key": "%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D",
+                  "value": ""
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
