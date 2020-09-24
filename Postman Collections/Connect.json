@@ -4197,6 +4197,68 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Get Traveler by Id",
+          "_postman_id": "7a6f2000-fa30-4571-8671-5777c9353781",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/Client/traveler/176799/",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "Client",
+                "traveler",
+                "176799",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "hasPendingWoc",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "isStartingSoon",
+                  "value": "true",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "0",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "2",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "statusId",
+                  "value": "3",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "_postman_id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
