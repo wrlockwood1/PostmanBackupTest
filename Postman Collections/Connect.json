@@ -4426,9 +4426,27 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "PUT",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "url": {
+                  "raw": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "Admin",
+                    "Facility",
+                    "40105"
+                  ],
+                  "query": [
+                    {
+                      "key": "termSheetRequired",
+                      "value": "true",
+                      "disabled": true
+                    }
+                  ]
+                },
                 "description": "Gets profile for facility by Id"
               },
               "response": []
