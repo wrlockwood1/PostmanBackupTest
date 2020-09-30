@@ -4400,6 +4400,12 @@
       "_postman_id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
     },
     {
+      "name": "Admin",
+      "item": [],
+      "_postman_id": "0060b601-476e-4d52-9d35-1dc75380d5c4",
+      "description": "Contains endpoints for Connect - Admin module"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
