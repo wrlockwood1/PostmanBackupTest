@@ -4568,6 +4568,19 @@
             "url": "{{uri}}/connect/token"
           },
           "response": []
+        },
+        {
+          "name": "Add Job attachment",
+          "_postman_id": "cf9ee8cc-d349-44ee-8088-35ee3aa352ea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
