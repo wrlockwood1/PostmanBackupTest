@@ -4648,7 +4648,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/preview/129"
           },
           "response": []
         },
@@ -4661,7 +4661,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/pagecount/129"
           },
           "response": []
         }
