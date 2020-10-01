@@ -4428,7 +4428,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105/summary",
+                "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary",
                 "description": "Gets summary of facility profile:\r\n\r\nName\r\nIf user can view job release settings\r\nNumber of active vendors not added to release group"
               },
               "response": []
