@@ -4428,25 +4428,16 @@
               "request": {
                 "method": "PUT",
                 "header": [],
-                "url": {
-                  "raw": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                  "host": [
-                    "{{uri}}"
-                  ],
-                  "path": [
-                    "AyaConnect",
-                    "Admin",
-                    "Facility",
-                    "40105"
-                  ],
-                  "query": [
-                    {
-                      "key": "termSheetRequired",
-                      "value": "true",
-                      "disabled": true
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"termSheetRequired\": false\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
                     }
-                  ]
+                  }
                 },
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
                 "description": "Gets profile for facility by Id"
               },
               "response": []
