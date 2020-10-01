@@ -4576,9 +4576,46 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": ""
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/paging.PNG"
+                },
+                {
+                  "key": "internalOnly",
+                  "value": "1",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": {
+              "raw": "{{uri}}/ayaconnect/jobs/1234603/attachments",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "jobs",
+                "1234603",
+                "attachments"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            }
           },
           "response": []
         }
