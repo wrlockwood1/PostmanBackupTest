@@ -3248,87 +3248,6 @@
             "url": "{{uri}}/connect/token"
           },
           "response": []
-        },
-        {
-          "name": "login  Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "54286a96-5487-4c01-ae9b-21105c0eedb4",
-                "exec": [
-                  "var jsonData = pm.response.json();",
-                  "pm.environment.set(\"Bearer\", jsonData.access_token);",
-                  "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            },
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "07a6285d-232b-416a-99b8-71abc12b5cf8",
-                "exec": [
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "36fef586-824a-4e57-be34-6d8fb13d6da0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/x-www-form-urlencoded",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "urlencoded",
-              "urlencoded": [
-                {
-                  "key": "grant_type",
-                  "value": "password",
-                  "type": "text"
-                },
-                {
-                  "key": "username",
-                  "value": "ckatznovant",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "pass1",
-                  "type": "text"
-                },
-                {
-                  "key": "scope",
-                  "value": "openid email phone profile offline_access roles ",
-                  "type": "text"
-                },
-                {
-                  "key": "code",
-                  "value": "",
-                  "type": "text"
-                }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
-            },
-            "url": "{{uri}}/connect/token"
-          },
-          "response": []
         }
       ],
       "_postman_id": "63f5e22e-afc5-4524-a11f-202db30dc036",
@@ -4559,6 +4478,87 @@
             "method": "GET",
             "header": [],
             "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "login  Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "54286a96-5487-4c01-ae9b-21105c0eedb4",
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "pm.environment.set(\"Bearer\", jsonData.access_token);",
+                  "pm.environment.set(\"RefreshToken\", jsonData.refresh_token);",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "07a6285d-232b-416a-99b8-71abc12b5cf8",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "36fef586-824a-4e57-be34-6d8fb13d6da0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "password",
+                  "type": "text"
+                },
+                {
+                  "key": "username",
+                  "value": "ckatznovant",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "pass1",
+                  "type": "text"
+                },
+                {
+                  "key": "scope",
+                  "value": "openid email phone profile offline_access roles ",
+                  "type": "text"
+                },
+                {
+                  "key": "code",
+                  "value": "",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "urlencoded": {}
+              }
+            },
+            "url": "{{uri}}/connect/token"
           },
           "response": []
         }
