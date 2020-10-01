@@ -4428,7 +4428,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105/summary",
                 "description": "Gets profile for facility by Id"
               },
               "response": []
