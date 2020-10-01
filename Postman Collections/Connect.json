@@ -4466,6 +4466,12 @@
       "description": "Contains endpoints for Connect - Admin module"
     },
     {
+      "name": "Job Attachments",
+      "item": [],
+      "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
+      "description": "To save an attachment for a job"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
