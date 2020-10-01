@@ -4467,7 +4467,21 @@
     },
     {
       "name": "Job Attachments",
-      "item": [],
+      "item": [
+        {
+          "name": "{{uri}}/ayaconnect/jobs/1234603/attachments/1",
+          "_postman_id": "46042263-89be-42c1-bcc5-1cf3283bfbb3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
       "description": "To save an attachment for a job"
     },
