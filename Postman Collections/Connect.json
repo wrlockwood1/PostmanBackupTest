@@ -4651,6 +4651,19 @@
             "url": ""
           },
           "response": []
+        },
+        {
+          "name": "Get attachment doc page count",
+          "_postman_id": "0883a1af-8fe4-4f8d-8b9a-0cc5f0fd6adb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
