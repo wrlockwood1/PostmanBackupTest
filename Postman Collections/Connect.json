@@ -4420,6 +4420,20 @@
               "response": []
             },
             {
+              "name": "Facility Profile Copy",
+              "_postman_id": "66944e20-025a-47c0-9b49-f073c8314668",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "description": "Gets profile for facility by Id"
+              },
+              "response": []
+            },
+            {
               "name": "Update Term Sheet Required",
               "_postman_id": "440c5301-736b-4aa8-a47f-9ba4e63f3b88",
               "protocolProfileBehavior": {
