@@ -4469,7 +4469,7 @@
       "name": "Job Attachments",
       "item": [
         {
-          "name": "{{uri}}/ayaconnect/jobs/1234603/attachments/1",
+          "name": "Get Job attachment",
           "_postman_id": "46042263-89be-42c1-bcc5-1cf3283bfbb3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
