@@ -4700,6 +4700,19 @@
             "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/129"
           },
           "response": []
+        },
+        {
+          "name": "Delete job attachment",
+          "_postman_id": "25ee954c-a97f-44fa-b6d5-bf04bc7dab89",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
