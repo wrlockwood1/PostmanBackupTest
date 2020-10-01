@@ -4438,7 +4438,7 @@
                   }
                 },
                 "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                "description": "Gets profile for facility by Id"
+                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
               },
               "response": []
             }
