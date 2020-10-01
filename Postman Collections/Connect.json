@@ -4672,9 +4672,32 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": ""
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "jobId",
+                  "value": "1234603",
+                  "type": "text"
+                },
+                {
+                  "key": "id",
+                  "value": "129",
+                  "type": "text"
+                },
+                {
+                  "key": "internalOnly",
+                  "value": "true",
+                  "type": "text"
+                }
+              ],
+              "options": {
+                "formdata": {}
+              }
+            },
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/129"
           },
           "response": []
         }
