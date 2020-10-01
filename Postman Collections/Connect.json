@@ -4475,9 +4475,16 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "accessToken": "{{Bearer}}",
+                "addTokenTo": "header"
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/2"
           },
           "response": []
         },
