@@ -4708,9 +4708,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/129"
           },
           "response": []
         }
