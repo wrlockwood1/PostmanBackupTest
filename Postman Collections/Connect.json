@@ -4664,6 +4664,19 @@
             "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/pagecount/129"
           },
           "response": []
+        },
+        {
+          "name": "Update internalonly option",
+          "_postman_id": "f87bf650-3304-4971-a570-429181448e26",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
