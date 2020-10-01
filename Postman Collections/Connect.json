@@ -4618,6 +4618,19 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Get all job attachments",
+          "_postman_id": "6b370fe6-332a-4ada-8a1d-29240b923a84",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
