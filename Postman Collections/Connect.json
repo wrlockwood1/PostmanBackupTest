@@ -4635,12 +4635,12 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments"
+            "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/preview/129"
           },
           "response": []
         },
         {
-          "name": "Get job attachment review",
+          "name": "Get job attachment preview",
           "_postman_id": "81a08df0-755c-44c7-b23c-54d8a44c0608",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
