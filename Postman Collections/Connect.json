@@ -4730,7 +4730,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "",
+            "url": "{{uri}}/AyaConnect/Vendor/Facility",
             "description": "Gets list of facilities for vendor"
           },
           "response": []
