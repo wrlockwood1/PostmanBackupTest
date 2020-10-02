@@ -4719,6 +4719,12 @@
       "description": "To save an attachment for a job"
     },
     {
+      "name": "Vendor",
+      "item": [],
+      "_postman_id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
+      "description": "Requests related to vendor module"
+    },
+    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
