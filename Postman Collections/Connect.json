@@ -4720,7 +4720,22 @@
     },
     {
       "name": "Vendor",
-      "item": [],
+      "item": [
+        {
+          "name": "Facilities",
+          "_postman_id": "dc1f0735-acfd-4935-a722-fce688d3b79e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "",
+            "description": "Gets list of facilities for vendor"
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
       "description": "Requests related to vendor module"
     },
