@@ -4730,7 +4730,59 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{uri}}/AyaConnect/Vendor/Facility",
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?filter.vendorId=240&take=20&skip=0&filter.statusIds=1&filter.termsheetrequired=false&filter.name=AST&sort.field=city",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Vendors",
+                "Facility"
+              ],
+              "query": [
+                {
+                  "key": "filter.vendorId",
+                  "value": "240"
+                },
+                {
+                  "key": "take",
+                  "value": "20"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "filter.statusIds",
+                  "value": "1"
+                },
+                {
+                  "key": "filter.termsheetrequired",
+                  "value": "false"
+                },
+                {
+                  "key": "filter.systemname",
+                  "value": "dch",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.name",
+                  "value": "AST"
+                },
+                {
+                  "key": "filter.city",
+                  "value": "bos",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "sort.field",
+                  "value": "city",
+                  "type": "text"
+                }
+              ]
+            },
             "description": "Gets list of facilities for vendor"
           },
           "response": []
