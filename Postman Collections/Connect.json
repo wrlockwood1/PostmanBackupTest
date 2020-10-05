@@ -4731,7 +4731,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?filter.vendorId=240&take=20&skip=0&filter.statusIds=1&filter.termsheetrequired=false&filter.name=AST&sort.field=city",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?filter.vendorId=240&take=20&skip=0&filter.statusIds=1&filter.termsheetrequired=false&sort.field=city&filter.state=ca&sort.type=asc",
               "host": [
                 "{{uri}}"
               ],
@@ -4768,7 +4768,8 @@
                 },
                 {
                   "key": "filter.name",
-                  "value": "AST"
+                  "value": "AST",
+                  "disabled": true
                 },
                 {
                   "key": "filter.city",
@@ -4778,7 +4779,16 @@
                 },
                 {
                   "key": "sort.field",
-                  "value": "city",
+                  "value": "city"
+                },
+                {
+                  "key": "filter.state",
+                  "value": "ca",
+                  "type": "text"
+                },
+                {
+                  "key": "sort.type",
+                  "value": "asc",
                   "type": "text"
                 }
               ]
