@@ -4731,7 +4731,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
               "host": [
                 "{{uri}}"
               ],
@@ -4758,7 +4758,7 @@
                 {
                   "key": "filter.statusId",
                   "value": "4",
-                  "description": "You can pass this in more than once to filter by multiple statusIds"
+                  "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending "
                 },
                 {
                   "key": "filter.termsheetrequired",
@@ -4794,12 +4794,19 @@
                 {
                   "key": "sort.type",
                   "value": "asc",
+                  "description": "Direction to sort",
                   "disabled": true
                 },
                 {
                   "key": "filter.statusId",
                   "value": "6",
                   "disabled": true
+                },
+                {
+                  "key": "sort.field",
+                  "value": "name",
+                  "description": "Sort by",
+                  "type": "text"
                 }
               ]
             },
