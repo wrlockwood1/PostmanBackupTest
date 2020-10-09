@@ -4429,9 +4429,47 @@
                 "method": "GET",
                 "header": [],
                 "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary",
-                "description": "Gets summary of facility profile:\r\n\r\nName\r\nIf user can view job release settings\r\nNumber of active vendors not added to release group"
+                "description": "Gets summary of facility profile - sytax is Facility/{facilityId}/summary:\r\n\r\nName\r\nIf user can view job release settings\r\nNumber of active vendors not added to release group"
               },
-              "response": []
+              "response": [
+                {
+                  "id": "be89a766-e3f4-4a62-a31b-f03ea6099c70",
+                  "name": "Facility Profile Summary Request/Response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 08 Oct 2020 23:08:41 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"facilityName\": \"University of Washington Medical Center\",\n    \"canViewJobReleaseSettings\": true,\n    \"notAddedVendorsCount\": 2\n}"
+                }
+              ]
             },
             {
               "name": "Update Term Sheet Required",
@@ -4933,6 +4971,20 @@
         {
           "name": "Admin Tag",
           "_postman_id": "cfb310af-3335-4974-9b20-37f20c42f891",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
+            "description": "Returns boolean if vendor user has Admin tag"
+          },
+          "response": []
+        },
+        {
+          "name": "Admin Tag Copy",
+          "_postman_id": "6aca3192-a552-4abb-b6a0-589ccaa040e4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
