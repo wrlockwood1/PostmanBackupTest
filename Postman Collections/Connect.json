@@ -4991,7 +4991,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/status-count",
             "description": "Returns number of facilities with status for vendor\r\nCan include multiple statuses in query\r\nEligible statuses: Offered (1), Accepted (3), Declined (4), Pending (6)"
           },
           "response": []
