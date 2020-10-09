@@ -4983,7 +4983,7 @@
           "response": []
         },
         {
-          "name": "Admin Tag Copy",
+          "name": "Status Count",
           "_postman_id": "6aca3192-a552-4abb-b6a0-589ccaa040e4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -4992,7 +4992,7 @@
             "method": "GET",
             "header": [],
             "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
-            "description": "Returns boolean if vendor user has Admin tag"
+            "description": "Returns number of facilities with status for vendor\r\nCan include multiple statuses in query\r\nEligible statuses: Offered (1), Accepted (3), Declined (4), Pending (6)"
           },
           "response": []
         }
