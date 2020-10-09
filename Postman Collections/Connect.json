@@ -4978,14 +4978,15 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility/export?pagesize=20&filter.statusId=4&sort.field=name",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
                 "Vendors",
-                "Facility"
+                "Facility",
+                "export"
               ],
               "query": [
                 {
@@ -5024,8 +5025,8 @@
                 },
                 {
                   "key": "filter.city",
-                  "value": "bos",
                   "type": "text",
+                  "value": "bos",
                   "disabled": true
                 },
                 {
@@ -5039,9 +5040,9 @@
                   "disabled": true
                 },
                 {
+                  "description": "Direction to sort",
                   "key": "sort.type",
                   "value": "asc",
-                  "description": "Direction to sort",
                   "disabled": true
                 },
                 {
@@ -5056,7 +5057,7 @@
                 }
               ]
             },
-            "description": "Gets list of facilities for vendor"
+            "description": "Gets list of facilities for vendor and returns as spreadsheet"
           },
           "response": [
             {
