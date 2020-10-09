@@ -4969,7 +4969,7 @@
           ]
         },
         {
-          "name": "Facilities Copy",
+          "name": "Facilities Export",
           "_postman_id": "e4849350-ae86-4337-bc11-1e8bba7997c7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -5052,8 +5052,7 @@
                 {
                   "key": "sort.field",
                   "value": "name",
-                  "description": "Sort by",
-                  "type": "text"
+                  "description": "Sort by"
                 }
               ]
             },
