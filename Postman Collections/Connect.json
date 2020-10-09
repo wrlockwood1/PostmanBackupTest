@@ -4969,7 +4969,7 @@
           ]
         },
         {
-          "name": "Facilities Export",
+          "name": "Facilities Copy",
           "_postman_id": "e4849350-ae86-4337-bc11-1e8bba7997c7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -4978,15 +4978,14 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility/export?pagesize=20&filter.statusId=4&sort.field=name",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
                 "Vendors",
-                "Facility",
-                "export"
+                "Facility"
               ],
               "query": [
                 {
@@ -5025,8 +5024,8 @@
                 },
                 {
                   "key": "filter.city",
-                  "type": "text",
                   "value": "bos",
+                  "type": "text",
                   "disabled": true
                 },
                 {
@@ -5040,9 +5039,9 @@
                   "disabled": true
                 },
                 {
-                  "description": "Direction to sort",
                   "key": "sort.type",
                   "value": "asc",
+                  "description": "Direction to sort",
                   "disabled": true
                 },
                 {
@@ -5057,7 +5056,7 @@
                 }
               ]
             },
-            "description": "Gets list of facilities for vendor and returns as spreadsheet"
+            "description": "Gets list of facilities for vendor"
           },
           "response": [
             {
