@@ -5186,72 +5186,16 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility/export-selected",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "AyaConnect",
-                "Vendors",
-                "Facility",
-                "export-selected"
-              ],
-              "query": [
-                {
-                  "key": "filter.vms",
-                  "value": "aya",
-                  "disabled": true
-                },
-                {
-                  "key": "skip",
-                  "value": "40",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.termsheetrequired",
-                  "value": "false",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.systemname",
-                  "value": "dch",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.name",
-                  "value": "AST",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.city",
-                  "type": "text",
-                  "value": "bos",
-                  "disabled": true
-                },
-                {
-                  "key": "sort.field",
-                  "value": "city",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.state",
-                  "value": "ca",
-                  "disabled": true
-                },
-                {
-                  "description": "Direction to sort",
-                  "key": "sort.type",
-                  "value": "asc",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.statusId",
-                  "value": "6",
-                  "disabled": true
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"facilityIds\": [\r\n        \r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
                 }
-              ]
+              }
             },
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/export-selected",
             "description": "Gets list of facilities for vendor and returns as spreadsheet"
           },
           "response": [
