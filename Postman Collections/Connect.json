@@ -5188,7 +5188,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"facilityIds\": [\r\n        \r\n    ]\r\n}",
+              "raw": "[\r\n    40790,\r\n    44278\r\n]\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -5196,7 +5196,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/export-selected",
-            "description": "Gets list of facilities for vendor and returns as spreadsheet"
+            "description": "Gets list of facilities for vendor and returns as spreadsheet based of selected facilities (using facility id)"
           },
           "response": [
             {
