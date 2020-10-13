@@ -5035,7 +5035,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
-            "description": "Gets list of facilities for vendor"
+            "description": "Updates status for a list of vendors"
           },
           "response": []
         },
