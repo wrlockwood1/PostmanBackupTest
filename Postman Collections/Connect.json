@@ -5025,6 +5025,15 @@
           "request": {
             "method": "PUT",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": 4,\r\n    \"facilityIds\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
             "description": "Gets list of facilities for vendor"
           },
