@@ -4786,7 +4786,8 @@
                 },
                 {
                   "key": "pagesize",
-                  "value": "20"
+                  "value": "20",
+                  "description": "Number of records to retrieve"
                 },
                 {
                   "key": "sort.field",
