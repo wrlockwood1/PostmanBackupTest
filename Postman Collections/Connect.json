@@ -5023,9 +5023,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/lookups",
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
             "description": "Gets list of facilities for vendor"
           },
           "response": []
