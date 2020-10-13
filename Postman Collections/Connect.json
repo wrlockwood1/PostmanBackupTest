@@ -4769,7 +4769,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&filter.name=AST",
               "host": [
                 "{{uri}}"
               ],
@@ -4787,6 +4787,17 @@
                 {
                   "key": "pagesize",
                   "value": "20"
+                },
+                {
+                  "key": "sort.field",
+                  "value": "city",
+                  "disabled": true
+                },
+                {
+                  "key": "sort.type",
+                  "value": "asc",
+                  "description": "Direction to sort (asc or desc)",
+                  "disabled": true
                 },
                 {
                   "key": "skip",
@@ -4810,8 +4821,7 @@
                 },
                 {
                   "key": "filter.name",
-                  "value": "AST",
-                  "disabled": true
+                  "value": "AST"
                 },
                 {
                   "key": "filter.city",
@@ -4820,31 +4830,14 @@
                   "disabled": true
                 },
                 {
-                  "key": "sort.field",
-                  "value": "city",
-                  "disabled": true
-                },
-                {
                   "key": "filter.state",
                   "value": "ca",
-                  "disabled": true
-                },
-                {
-                  "key": "sort.type",
-                  "value": "asc",
-                  "description": "Direction to sort",
                   "disabled": true
                 },
                 {
                   "key": "filter.statusId",
                   "value": "6",
                   "disabled": true
-                },
-                {
-                  "key": "sort.field",
-                  "value": "name",
-                  "description": "Sort by",
-                  "type": "text"
                 }
               ]
             },
