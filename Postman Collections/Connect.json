@@ -4780,30 +4780,26 @@
               ],
               "query": [
                 {
-                  "key": "filter.vms",
-                  "value": "aya",
-                  "disabled": true
-                },
-                {
                   "key": "pagesize",
                   "value": "20",
                   "description": "Number of records to retrieve"
                 },
                 {
+                  "key": "skip",
+                  "value": "40",
+                  "description": "Number of records to skip",
+                  "disabled": true
+                },
+                {
                   "key": "sort.field",
                   "value": "city",
+                  "description": "Field to sort by",
                   "disabled": true
                 },
                 {
                   "key": "sort.type",
                   "value": "asc",
                   "description": "Direction to sort (asc or desc)",
-                  "disabled": true
-                },
-                {
-                  "key": "skip",
-                  "value": "40",
-                  "description": "Number of records to skip",
                   "disabled": true
                 },
                 {
@@ -4829,6 +4825,11 @@
                   "key": "filter.city",
                   "value": "bos",
                   "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.vms",
+                  "value": "aya",
                   "disabled": true
                 },
                 {
