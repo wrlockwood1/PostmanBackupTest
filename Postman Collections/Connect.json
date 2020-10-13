@@ -5027,7 +5027,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"status\": 4,\r\n    \"facilityIds\": []\r\n}",
+              "raw": "{\r\n    \"status\": 3,\r\n    \"facilityIds\": [41240, 41241]\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
