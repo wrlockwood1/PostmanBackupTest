@@ -4982,90 +4982,12 @@
           },
           "response": [
             {
-              "id": "b07804db-1951-49aa-86c9-19a04ee56a87",
-              "name": "Facilities Response",
+              "id": "0d618ac5-bd19-4c97-9792-472629131b85",
+              "name": "Lookups Response",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "url": {
-                  "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
-                  "host": [
-                    "{{uri}}"
-                  ],
-                  "path": [
-                    "AyaConnect",
-                    "Vendors",
-                    "Facility"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter.vms",
-                      "value": "aya",
-                      "disabled": true
-                    },
-                    {
-                      "key": "pagesize",
-                      "value": "20"
-                    },
-                    {
-                      "key": "skip",
-                      "value": "40",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.statusId",
-                      "value": "4",
-                      "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending "
-                    },
-                    {
-                      "key": "filter.termsheetrequired",
-                      "value": "false",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.systemname",
-                      "value": "dch",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.name",
-                      "value": "AST",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.city",
-                      "value": "bos",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.field",
-                      "value": "city",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.state",
-                      "value": "ca",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.type",
-                      "value": "asc",
-                      "description": "Direction to sort",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.statusId",
-                      "value": "6",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.field",
-                      "value": "name",
-                      "description": "Sort by"
-                    }
-                  ]
-                }
+                "url": "{{uri}}/AyaConnect/Vendors/Facility/lookups"
               },
               "status": "OK",
               "code": 200,
@@ -5089,12 +5011,12 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Wed, 07 Oct 2020 21:11:32 GMT"
+                  "value": "Mon, 12 Oct 2020 19:24:36 GMT"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"id\": 34438,\n            \"name\": \"Abbott Northwestern - WestHealth\",\n            \"city\": \"Plymouth\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.35\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 3416,\n            \"name\": \"Abbott Northwestern Hospital\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.417\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37484,\n            \"name\": \"Allina Health Annandale Clinic\",\n            \"city\": \"Annandale\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.67\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 14186,\n            \"name\": \"Allina Health Bandana Square Clinic\",\n            \"city\": \"Saint Paul\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.963\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37508,\n            \"name\": \"Allina Health Blaine Clinic\",\n            \"city\": \"Blaine\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.79\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37486,\n            \"name\": \"Allina Health Bloomington Clinic\",\n            \"city\": \"Bloomington\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.68\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37512,\n            \"name\": \"Allina Health Brooklyn Park Clinic\",\n            \"city\": \"Brooklyn Park\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.81\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37514,\n            \"name\": \"Allina Health Burnsville Clinic\",\n            \"city\": \"Burnsville\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.82\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37560,\n            \"name\": \"Allina Health Centennial Lakes Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.12\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37522,\n            \"name\": \"Allina Health Champlin Clinic\",\n            \"city\": \"Champlin\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.867\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37558,\n            \"name\": \"Allina Health Chanhassen Clinic\",\n            \"city\": \"Chanhassen\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.103\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37524,\n            \"name\": \"Allina Health Chaska Clinic\",\n            \"city\": \"Chaska\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.877\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 33743,\n            \"name\": \"Allina Health Cokato Clinic\",\n            \"city\": \"Cokato\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.323\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37526,\n            \"name\": \"Allina Health Coon Rapids Clinic\",\n            \"city\": \"Coon Rapids\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.887\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37518,\n            \"name\": \"Allina Health Cottage Grove Clinic\",\n            \"city\": \"Cottage Grove\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.843\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37532,\n            \"name\": \"Allina Health Dean Lakes Clinic\",\n            \"city\": \"Shakopee\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.927\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37536,\n            \"name\": \"Allina Health Eagan Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.95\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37538,\n            \"name\": \"Allina Health Eagan Womens Health Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.96\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37488,\n            \"name\": \"Allina Health East Lake Street Clinic\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.69\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37562,\n            \"name\": \"Allina Health Edina Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.13\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        }\n    ],\n    \"filtered\": 0,\n    \"total\": 73\n}"
+              "body": "{\n    \"statuses\": [\n        {\n            \"id\": 3,\n            \"name\": \"Accepted\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Pending\"\n        }\n    ],\n    \"states\": [\n        {\n            \"name\": \"Alabama\",\n            \"id\": 1\n        },\n        {\n            \"name\": \"Alaska\",\n            \"id\": 2\n        },\n        {\n            \"name\": \"Arizona\",\n            \"id\": 3\n        },\n        {\n            \"name\": \"Arkansas\",\n            \"id\": 4\n        },\n        {\n            \"name\": \"California\",\n            \"id\": 5\n        },\n        {\n            \"name\": \"Colorado\",\n            \"id\": 7\n        },\n        {\n            \"name\": \"Connecticut\",\n            \"id\": 8\n        },\n        {\n            \"name\": \"Delaware\",\n            \"id\": 9\n        },\n        {\n            \"name\": \"District of Columbia\",\n            \"id\": 10\n        },\n        {\n            \"name\": \"Florida\",\n            \"id\": 11\n        },\n        {\n            \"name\": \"Georgia\",\n            \"id\": 12\n        },\n        {\n            \"name\": \"Hawaii\",\n            \"id\": 13\n        },\n        {\n            \"name\": \"Idaho\",\n            \"id\": 14\n        },\n        {\n            \"name\": \"Illinois\",\n            \"id\": 15\n        },\n        {\n            \"name\": \"Indiana\",\n            \"id\": 16\n        },\n        {\n            \"name\": \"Iowa\",\n            \"id\": 17\n        },\n        {\n            \"name\": \"Kansas\",\n            \"id\": 18\n        },\n        {\n            \"name\": \"Kentucky\",\n            \"id\": 19\n        },\n        {\n            \"name\": \"Louisiana\",\n            \"id\": 20\n        },\n        {\n            \"name\": \"Maine\",\n            \"id\": 21\n        },\n        {\n            \"name\": \"Maryland\",\n            \"id\": 22\n        },\n        {\n            \"name\": \"Massachusetts\",\n            \"id\": 23\n        },\n        {\n            \"name\": \"Michigan\",\n            \"id\": 24\n        },\n        {\n            \"name\": \"Minnesota\",\n            \"id\": 25\n        },\n        {\n            \"name\": \"Mississippi\",\n            \"id\": 26\n        },\n        {\n            \"name\": \"Missouri\",\n            \"id\": 27\n        },\n        {\n            \"name\": \"Montana\",\n            \"id\": 28\n        },\n        {\n            \"name\": \"Nebraska\",\n            \"id\": 29\n        },\n        {\n            \"name\": \"Nevada\",\n            \"id\": 30\n        },\n        {\n            \"name\": \"New Hampshire\",\n            \"id\": 31\n        },\n        {\n            \"name\": \"New Jersey\",\n            \"id\": 32\n        },\n        {\n            \"name\": \"New Mexico\",\n            \"id\": 33\n        },\n        {\n            \"name\": \"New York\",\n            \"id\": 34\n        },\n        {\n            \"name\": \"North Carolina\",\n            \"id\": 35\n        },\n        {\n            \"name\": \"North Dakota\",\n            \"id\": 36\n        },\n        {\n            \"name\": \"Ohio\",\n            \"id\": 37\n        },\n        {\n            \"name\": \"Oklahoma\",\n            \"id\": 38\n        },\n        {\n            \"name\": \"Oregon\",\n            \"id\": 39\n        },\n        {\n            \"name\": \"Pennsylvania\",\n            \"id\": 40\n        },\n        {\n            \"name\": \"Rhode Island\",\n            \"id\": 41\n        },\n        {\n            \"name\": \"South Carolina\",\n            \"id\": 42\n        },\n        {\n            \"name\": \"South Dakota\",\n            \"id\": 43\n        },\n        {\n            \"name\": \"Tennessee\",\n            \"id\": 44\n        },\n        {\n            \"name\": \"Texas\",\n            \"id\": 45\n        },\n        {\n            \"name\": \"Utah\",\n            \"id\": 46\n        },\n        {\n            \"name\": \"Vermont\",\n            \"id\": 47\n        },\n        {\n            \"name\": \"Virginia\",\n            \"id\": 48\n        },\n        {\n            \"name\": \"Washington\",\n            \"id\": 49\n        },\n        {\n            \"name\": \"West Virginia\",\n            \"id\": 50\n        },\n        {\n            \"name\": \"Wisconsin\",\n            \"id\": 51\n        },\n        {\n            \"name\": \"Wyoming\",\n            \"id\": 52\n        }\n    ]\n}"
             }
           ]
         },
@@ -5189,123 +5111,7 @@
             },
             "description": "Gets list of facilities for vendor and returns as spreadsheet"
           },
-          "response": [
-            {
-              "id": "b31f9793-ad36-4b1a-898d-f78817a8b582",
-              "name": "Facilities Response",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&sort.field=name",
-                  "host": [
-                    "{{uri}}"
-                  ],
-                  "path": [
-                    "AyaConnect",
-                    "Vendors",
-                    "Facility"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter.vms",
-                      "value": "aya",
-                      "disabled": true
-                    },
-                    {
-                      "key": "pagesize",
-                      "value": "20"
-                    },
-                    {
-                      "key": "skip",
-                      "value": "40",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.statusId",
-                      "value": "4",
-                      "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending "
-                    },
-                    {
-                      "key": "filter.termsheetrequired",
-                      "value": "false",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.systemname",
-                      "value": "dch",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.name",
-                      "value": "AST",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.city",
-                      "value": "bos",
-                      "type": "text",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.field",
-                      "value": "city",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.state",
-                      "value": "ca",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.type",
-                      "value": "asc",
-                      "description": "Direction to sort",
-                      "disabled": true
-                    },
-                    {
-                      "key": "filter.statusId",
-                      "value": "6",
-                      "disabled": true
-                    },
-                    {
-                      "key": "sort.field",
-                      "value": "name",
-                      "description": "Sort by"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Transfer-Encoding",
-                  "value": "chunked"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Server",
-                  "value": "Kestrel"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 07 Oct 2020 21:11:32 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"data\": [\n        {\n            \"id\": 34438,\n            \"name\": \"Abbott Northwestern - WestHealth\",\n            \"city\": \"Plymouth\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.35\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 3416,\n            \"name\": \"Abbott Northwestern Hospital\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.417\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37484,\n            \"name\": \"Allina Health Annandale Clinic\",\n            \"city\": \"Annandale\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.67\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 14186,\n            \"name\": \"Allina Health Bandana Square Clinic\",\n            \"city\": \"Saint Paul\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.963\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37508,\n            \"name\": \"Allina Health Blaine Clinic\",\n            \"city\": \"Blaine\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.79\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37486,\n            \"name\": \"Allina Health Bloomington Clinic\",\n            \"city\": \"Bloomington\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.68\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37512,\n            \"name\": \"Allina Health Brooklyn Park Clinic\",\n            \"city\": \"Brooklyn Park\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.81\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37514,\n            \"name\": \"Allina Health Burnsville Clinic\",\n            \"city\": \"Burnsville\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.82\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37560,\n            \"name\": \"Allina Health Centennial Lakes Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.12\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37522,\n            \"name\": \"Allina Health Champlin Clinic\",\n            \"city\": \"Champlin\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.867\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37558,\n            \"name\": \"Allina Health Chanhassen Clinic\",\n            \"city\": \"Chanhassen\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.103\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37524,\n            \"name\": \"Allina Health Chaska Clinic\",\n            \"city\": \"Chaska\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.877\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 33743,\n            \"name\": \"Allina Health Cokato Clinic\",\n            \"city\": \"Cokato\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.323\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37526,\n            \"name\": \"Allina Health Coon Rapids Clinic\",\n            \"city\": \"Coon Rapids\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.887\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37518,\n            \"name\": \"Allina Health Cottage Grove Clinic\",\n            \"city\": \"Cottage Grove\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.843\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37532,\n            \"name\": \"Allina Health Dean Lakes Clinic\",\n            \"city\": \"Shakopee\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.927\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37536,\n            \"name\": \"Allina Health Eagan Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.95\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37538,\n            \"name\": \"Allina Health Eagan Womens Health Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.96\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37488,\n            \"name\": \"Allina Health East Lake Street Clinic\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.69\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37562,\n            \"name\": \"Allina Health Edina Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.13\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        }\n    ],\n    \"filtered\": 0,\n    \"total\": 73\n}"
-            }
-          ]
+          "response": []
         },
         {
           "name": "Facilities Export Selected",
@@ -5447,20 +5253,6 @@
           ]
         },
         {
-          "name": "Admin Tag",
-          "_postman_id": "cfb310af-3335-4974-9b20-37f20c42f891",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
-            "description": "Returns boolean if vendor user has Admin tag"
-          },
-          "response": []
-        },
-        {
           "name": "Status Count",
           "_postman_id": "6aca3192-a552-4abb-b6a0-589ccaa040e4",
           "protocolProfileBehavior": {
@@ -5471,6 +5263,20 @@
             "header": [],
             "url": "{{uri}}/AyaConnect/Vendors/Facility/status-count",
             "description": "Returns number of facilities with status for vendor\r\nCan include multiple statuses in query\r\nEligible statuses: Offered (1), Accepted (3), Declined (4), Pending (6)"
+          },
+          "response": []
+        },
+        {
+          "name": "Admin Tag",
+          "_postman_id": "cfb310af-3335-4974-9b20-37f20c42f891",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
+            "description": "Returns boolean if vendor user has Admin tag"
           },
           "response": []
         }
