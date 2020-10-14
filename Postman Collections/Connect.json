@@ -5149,7 +5149,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/export-selected",
-            "description": "Gets list of facilities for vendor and returns as spreadsheet based of selected facilities (using facility id)"
+            "description": "Gets list of facilities for vendor and returns as spreadsheet based of selected facilities (using facility id)\r\nSelect *Send and Download* from the *Send* dropdown for the request\r\nTo simulate, insert the ids of the facilities you want to be included in the request body array"
           },
           "response": [
             {
