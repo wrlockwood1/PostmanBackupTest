@@ -4769,7 +4769,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&sort.field=statusDate&sort.dir=desc&filter.statusId=4",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&sort.field=statusDate&sort.dir=asc&filter.statusId=4",
               "host": [
                 "{{uri}}"
               ],
@@ -4797,7 +4797,7 @@
                 },
                 {
                   "key": "sort.dir",
-                  "value": "desc",
+                  "value": "asc",
                   "description": "Direction to sort (asc or desc)"
                 },
                 {
