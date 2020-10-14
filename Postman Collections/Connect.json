@@ -4769,7 +4769,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&filter.statusId=4&filter.name=AST",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&sort.field=statusDate&sort.type=desc&filter.statusId=4",
               "host": [
                 "{{uri}}"
               ],
@@ -4792,15 +4792,13 @@
                 },
                 {
                   "key": "sort.field",
-                  "value": "city",
-                  "description": "Field to sort by",
-                  "disabled": true
+                  "value": "statusDate",
+                  "description": "Field to sort by"
                 },
                 {
                   "key": "sort.type",
-                  "value": "asc",
-                  "description": "Direction to sort (asc or desc)",
-                  "disabled": true
+                  "value": "desc",
+                  "description": "Direction to sort (asc or desc)"
                 },
                 {
                   "key": "filter.statusId",
@@ -4819,7 +4817,8 @@
                 },
                 {
                   "key": "filter.name",
-                  "value": "AST"
+                  "value": "AST",
+                  "disabled": true
                 },
                 {
                   "key": "filter.city",
