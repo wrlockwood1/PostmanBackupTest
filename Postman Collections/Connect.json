@@ -5047,7 +5047,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Vendors/Facility/export?pagesize=20&filter.statusId=4&sort.field=name",
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility/export?pagesize=20&filter.statusId=4&filter.name=AST&sort.field=name",
               "host": [
                 "{{uri}}"
               ],
@@ -5089,8 +5089,7 @@
                 },
                 {
                   "key": "filter.name",
-                  "value": "AST",
-                  "disabled": true
+                  "value": "AST"
                 },
                 {
                   "key": "filter.city",
