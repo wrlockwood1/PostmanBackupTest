@@ -5055,7 +5055,7 @@
                 }
               }
             },
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
             "description": "Accepts list of facilities for vendor"
           },
           "response": []
@@ -5339,6 +5339,29 @@
             "header": [],
             "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
             "description": "Returns boolean if vendor user has Admin tag"
+          },
+          "response": []
+        },
+        {
+          "name": "Accept Facilities Copy",
+          "_postman_id": "615bed1a-7414-474f-bf07-91806d6fdd6f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    40790,\r\n    44278\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
+            "description": "Accepts list of facilities for vendor"
           },
           "response": []
         }
