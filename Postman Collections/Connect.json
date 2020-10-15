@@ -5125,7 +5125,7 @@
                 }
               ]
             },
-            "description": "Gets list of facilities for vendor and returns as spreadsheet"
+            "description": "- Gets list of facilities for vendor and returns as spreadsheet\r\n- Select *Send and Download* from the *Send* dropdown for the request"
           },
           "response": []
         },
