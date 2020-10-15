@@ -5015,29 +5015,6 @@
           ]
         },
         {
-          "name": "Update Status",
-          "_postman_id": "a4a9e17d-c6f3-434f-b748-5e7a3356126c",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"status\": 3,\r\n    \"facilityIds\": [41240, 41241]\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
-            "description": "Updates status for a list of vendors"
-          },
-          "response": []
-        },
-        {
           "name": "Accept Facilities",
           "_postman_id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
           "protocolProfileBehavior": {
