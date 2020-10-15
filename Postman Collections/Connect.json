@@ -5277,7 +5277,30 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/status-count",
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Vendors/Facility/status-count?statusId=4",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Vendors",
+                "Facility",
+                "status-count"
+              ],
+              "query": [
+                {
+                  "key": "statusId",
+                  "value": "4"
+                },
+                {
+                  "key": "statusId",
+                  "value": "6",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
             "description": "- Returns number of facilities with status for vendor\r\n- Can include multiple statuses in query\r\n- *New* tab: Offered (1), *Accepted* tab: Accepted (3), Pending (6), *Declined* tab: Declined (4),"
           },
           "response": []
