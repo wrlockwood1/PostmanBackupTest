@@ -5078,7 +5078,7 @@
                 }
               }
             },
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/decline",
             "description": "Accepts list of facilities for vendor"
           },
           "response": []
