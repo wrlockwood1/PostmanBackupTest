@@ -5038,6 +5038,29 @@
           "response": []
         },
         {
+          "name": "Update Status Copy",
+          "_postman_id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": 3,\r\n    \"facilityIds\": [41240, 41241]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
+            "description": "Updates status for a list of vendors"
+          },
+          "response": []
+        },
+        {
           "name": "Facilities Export",
           "_postman_id": "e4849350-ae86-4337-bc11-1e8bba7997c7",
           "protocolProfileBehavior": {
@@ -5316,29 +5339,6 @@
             "header": [],
             "url": "{{uri}}/AyaConnect/Vendors/Facility/admin",
             "description": "Returns boolean if vendor user has Admin tag"
-          },
-          "response": []
-        },
-        {
-          "name": "Update Status Copy",
-          "_postman_id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"status\": 3,\r\n    \"facilityIds\": [41240, 41241]\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
-            "description": "Updates status for a list of vendors"
           },
           "response": []
         }
