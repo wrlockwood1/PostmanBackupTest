@@ -5301,7 +5301,7 @@
                 }
               ]
             },
-            "description": "- Returns number of facilities with status for vendor\r\n- Can include multiple statuses in query\r\n- *New* tab: Offered (1), *Accepted* tab: Accepted (3), Pending (6), *Declined* tab: Declined (4),"
+            "description": "- Returns number of facilities with status for vendor\r\n- Can include multiple statuses in query\r\n- *New* tab: Offered (statusId=1), *Accepted* tab: Accepted (statusId=3), Pending (statusId=6), *Declined* tab: Declined (statusId=4),"
           },
           "response": []
         },
