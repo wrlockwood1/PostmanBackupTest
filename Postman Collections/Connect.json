@@ -5038,7 +5038,7 @@
           "response": []
         },
         {
-          "name": "Update Status Copy",
+          "name": "Accept Facilities",
           "_postman_id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -5048,7 +5048,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"status\": 3,\r\n    \"facilityIds\": [41240, 41241]\r\n}",
+              "raw": "[\r\n    40790,\r\n    44278\r\n]",
               "options": {
                 "raw": {
                   "language": "json"
@@ -5056,7 +5056,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/status",
-            "description": "Updates status for a list of vendors"
+            "description": "Accepts list of facilities for vendor"
           },
           "response": []
         },
