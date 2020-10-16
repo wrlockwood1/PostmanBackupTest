@@ -4506,6 +4506,19 @@
                 "url": "{{uri}}/AyaConnect/admin/facility/42502/email-notification-features"
               },
               "response": []
+            },
+            {
+              "name": "Jobs Management Features",
+              "_postman_id": "f613973b-e9bc-49ed-93b6-cbbc92f833db",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
