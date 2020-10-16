@@ -4516,7 +4516,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/AyaConnect/admin/facility/42502/job-management-features"
               },
               "response": []
             }
