@@ -5059,7 +5059,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
-            "description": "- Accepts list of facilities for vendor\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
+            "description": "- Accepts list of facilities for vendor, body is array of facilityIds you are accepting\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
           },
           "response": [
             {
@@ -5129,7 +5129,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/decline",
-            "description": "Accepts list of facilities for vendor"
+            "description": "Declines list of facilities for vendor, body is array of facilityIds to decline"
           },
           "response": [
             {
