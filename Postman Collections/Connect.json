@@ -4493,6 +4493,19 @@
                 "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
               },
               "response": []
+            },
+            {
+              "name": "Email Notification Features",
+              "_postman_id": "4bfdc17f-f152-4513-a1ca-49c20a8c02b6",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
