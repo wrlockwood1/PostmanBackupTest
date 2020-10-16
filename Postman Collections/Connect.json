@@ -5061,7 +5061,54 @@
             "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
             "description": "- Accepts list of facilities for vendor\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
           },
-          "response": []
+          "response": [
+            {
+              "id": "1149712f-1fb2-4dff-aa11-01a084d9517d",
+              "name": "Accept Facilities Request",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    40790,\r\n    44278\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Vendors/Facility/accept"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "Request-Context",
+                  "value": "appId=cid-v1:cd308522-ac28-4ba5-9947-fb1f929f8a57"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 16 Oct 2020 15:09:14 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         },
         {
           "name": "Decline Facilities",
@@ -5084,7 +5131,50 @@
             "url": "{{uri}}/AyaConnect/Vendors/Facility/decline",
             "description": "Accepts list of facilities for vendor"
           },
-          "response": []
+          "response": [
+            {
+              "id": "7756ca6c-56f3-448e-92e3-d21644af9ae7",
+              "name": "Decline Facilities Request",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    40790,\r\n    44278\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Vendors/Facility/decline"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 15 Oct 2020 15:24:57 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         },
         {
           "name": "Facilities Export",
