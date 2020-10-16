@@ -5059,7 +5059,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
-            "description": "Accepts list of facilities for vendor\r\nVendor should also be added to default release group of any facility that has scheduled release enabled"
+            "description": "- Accepts list of facilities for vendor\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
           },
           "response": []
         },
