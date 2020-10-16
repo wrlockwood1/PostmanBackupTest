@@ -4503,7 +4503,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/AyaConnect/admin/facility/42502/email-notification-features"
               },
               "response": []
             }
