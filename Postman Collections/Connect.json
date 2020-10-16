@@ -5059,7 +5059,7 @@
               }
             },
             "url": "{{uri}}/AyaConnect/Vendors/Facility/accept",
-            "description": "- Accepts list of facilities for vendor, body is array of facilityIds you are accepting\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
+            "description": "- Accepts list of facilities for vendor, body is array of facilityIds you are accepting\r\n- If facility requires a term sheet and it's not signed with vendor, status will be Pending, otherwise it should be Accepted\r\n- Vendor should also be added to default release group of any facility that has scheduled release enabled"
           },
           "response": [
             {
