@@ -4406,122 +4406,7 @@
           "name": "Facility",
           "item": [
             {
-              "name": "Facility Profile",
-              "_postman_id": "c7b3f0c7-9510-4c85-8d5d-bf9868e4ed4c",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                "description": "Gets profile for facility by Id"
-              },
-              "response": []
-            },
-            {
-              "name": "Update Term Sheet Required",
-              "_postman_id": "440c5301-736b-4aa8-a47f-9ba4e63f3b88",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"termSheetRequired\": false\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
-              },
-              "response": []
-            },
-            {
-              "name": "Facility Profile Summary",
-              "_postman_id": "66944e20-025a-47c0-9b49-f073c8314668",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary",
-                "description": "Gets summary of facility profile - sytax is Facility/{facilityId}/summary:\r\n\r\nName\r\nIf user can view job release settings\r\nNumber of active vendors not added to release group"
-              },
-              "response": [
-                {
-                  "id": "be89a766-e3f4-4a62-a31b-f03ea6099c70",
-                  "name": "Facility Profile Summary Request/Response",
-                  "originalRequest": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Transfer-Encoding",
-                      "value": "chunked"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8"
-                    },
-                    {
-                      "key": "Server",
-                      "value": "Kestrel"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ASP.NET"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Thu, 08 Oct 2020 23:08:41 GMT"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"facilityName\": \"University of Washington Medical Center\",\n    \"canViewJobReleaseSettings\": true,\n    \"notAddedVendorsCount\": 2\n}"
-                }
-              ]
-            },
-            {
-              "name": "Email Notification Features",
-              "_postman_id": "4bfdc17f-f152-4513-a1ca-49c20a8c02b6",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/admin/facility/42502/email-notification-features"
-              },
-              "response": []
-            },
-            {
-              "name": "Jobs Management Features",
-              "_postman_id": "f613973b-e9bc-49ed-93b6-cbbc92f833db",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/admin/facility/42502/job-management-features"
-              },
-              "response": []
-            },
-            {
-              "name": "Facilities Copy",
+              "name": "Vendors",
               "_postman_id": "c996f79a-8c28-43d3-8d76-c504cecc1f76",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -4530,14 +4415,16 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{uri}}/AyaConnect/Vendors/Facility?pagesize=20&sort.field=statusDate&sort.dir=desc&filter.statusId=3&filter.city=san",
+                  "raw": "{{uri}}/AyaConnect/Admin/Facility/2229/vendors?pagesize=20&filter.isactive=true",
                   "host": [
                     "{{uri}}"
                   ],
                   "path": [
                     "AyaConnect",
-                    "Vendors",
-                    "Facility"
+                    "Admin",
+                    "Facility",
+                    "2229",
+                    "vendors"
                   ],
                   "query": [
                     {
@@ -4546,34 +4433,32 @@
                       "description": "Number of records to retrieve"
                     },
                     {
+                      "description": "Number of records to skip",
                       "key": "skip",
                       "value": "40",
-                      "description": "Number of records to skip",
                       "disabled": true
                     },
                     {
                       "key": "sort.field",
                       "value": "statusDate",
-                      "description": "Field to sort by"
+                      "description": "Field to sort by",
+                      "disabled": true
                     },
                     {
                       "key": "sort.dir",
                       "value": "desc",
-                      "description": "Direction to sort (asc or desc)"
+                      "description": "Direction to sort (asc or desc)",
+                      "disabled": true
                     },
                     {
                       "key": "filter.statusId",
                       "value": "3",
-                      "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending "
-                    },
-                    {
-                      "key": "filter.termsheetrequired",
-                      "value": "false",
+                      "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending ",
                       "disabled": true
                     },
                     {
-                      "key": "filter.systemname",
-                      "value": "dch",
+                      "key": "filter.termsheetsigned",
+                      "value": "false",
                       "disabled": true
                     },
                     {
@@ -4584,11 +4469,6 @@
                     {
                       "key": "filter.city",
                       "value": "san",
-                      "type": "text"
-                    },
-                    {
-                      "key": "filter.vms",
-                      "value": "aya",
                       "disabled": true
                     },
                     {
@@ -4600,6 +4480,10 @@
                       "key": "filter.statusId",
                       "value": "6",
                       "disabled": true
+                    },
+                    {
+                      "key": "filter.isactive",
+                      "value": "true"
                     }
                   ]
                 },
@@ -4722,6 +4606,121 @@
                   "body": "{\n    \"data\": [\n        {\n            \"id\": 34438,\n            \"name\": \"Abbott Northwestern - WestHealth\",\n            \"city\": \"Plymouth\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.35\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 3416,\n            \"name\": \"Abbott Northwestern Hospital\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.417\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37484,\n            \"name\": \"Allina Health Annandale Clinic\",\n            \"city\": \"Annandale\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.67\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 14186,\n            \"name\": \"Allina Health Bandana Square Clinic\",\n            \"city\": \"Saint Paul\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:42.963\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37508,\n            \"name\": \"Allina Health Blaine Clinic\",\n            \"city\": \"Blaine\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.79\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37486,\n            \"name\": \"Allina Health Bloomington Clinic\",\n            \"city\": \"Bloomington\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.68\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37512,\n            \"name\": \"Allina Health Brooklyn Park Clinic\",\n            \"city\": \"Brooklyn Park\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.81\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37514,\n            \"name\": \"Allina Health Burnsville Clinic\",\n            \"city\": \"Burnsville\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.82\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37560,\n            \"name\": \"Allina Health Centennial Lakes Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.12\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37522,\n            \"name\": \"Allina Health Champlin Clinic\",\n            \"city\": \"Champlin\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.867\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37558,\n            \"name\": \"Allina Health Chanhassen Clinic\",\n            \"city\": \"Chanhassen\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.103\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37524,\n            \"name\": \"Allina Health Chaska Clinic\",\n            \"city\": \"Chaska\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.877\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 33743,\n            \"name\": \"Allina Health Cokato Clinic\",\n            \"city\": \"Cokato\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.323\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37526,\n            \"name\": \"Allina Health Coon Rapids Clinic\",\n            \"city\": \"Coon Rapids\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.887\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37518,\n            \"name\": \"Allina Health Cottage Grove Clinic\",\n            \"city\": \"Cottage Grove\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.843\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37532,\n            \"name\": \"Allina Health Dean Lakes Clinic\",\n            \"city\": \"Shakopee\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.927\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37536,\n            \"name\": \"Allina Health Eagan Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.95\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37538,\n            \"name\": \"Allina Health Eagan Womens Health Clinic\",\n            \"city\": \"Eagan\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.96\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37488,\n            \"name\": \"Allina Health East Lake Street Clinic\",\n            \"city\": \"Minneapolis\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:43.69\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        },\n        {\n            \"id\": 37562,\n            \"name\": \"Allina Health Edina Clinic\",\n            \"city\": \"Edina\",\n            \"state\": \"MN\",\n            \"systemName\": \"Allina Health\",\n            \"termSheetRequired\": true,\n            \"vms\": \"Aya Healthcare MSP\",\n            \"statusId\": 4,\n            \"status\": \"Declined\",\n            \"statusDate\": \"2020-10-07T09:14:44.13\",\n            \"isAyaMSP\": true,\n            \"isAyaPriority\": false\n        }\n    ],\n    \"filtered\": 0,\n    \"total\": 73\n}"
                 }
               ]
+            },
+            {
+              "name": "Facility Profile",
+              "_postman_id": "c7b3f0c7-9510-4c85-8d5d-bf9868e4ed4c",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "description": "Gets profile for facility by Id"
+              },
+              "response": []
+            },
+            {
+              "name": "Update Term Sheet Required",
+              "_postman_id": "440c5301-736b-4aa8-a47f-9ba4e63f3b88",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"termSheetRequired\": false\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
+              },
+              "response": []
+            },
+            {
+              "name": "Facility Profile Summary",
+              "_postman_id": "66944e20-025a-47c0-9b49-f073c8314668",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary",
+                "description": "Gets summary of facility profile - sytax is Facility/{facilityId}/summary:\r\n\r\nName\r\nIf user can view job release settings\r\nNumber of active vendors not added to release group"
+              },
+              "response": [
+                {
+                  "id": "be89a766-e3f4-4a62-a31b-f03ea6099c70",
+                  "name": "Facility Profile Summary Request/Response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/Admin/Facility/36765/summary"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Thu, 08 Oct 2020 23:08:41 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"facilityName\": \"University of Washington Medical Center\",\n    \"canViewJobReleaseSettings\": true,\n    \"notAddedVendorsCount\": 2\n}"
+                }
+              ]
+            },
+            {
+              "name": "Email Notification Features",
+              "_postman_id": "4bfdc17f-f152-4513-a1ca-49c20a8c02b6",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/admin/facility/42502/email-notification-features"
+              },
+              "response": []
+            },
+            {
+              "name": "Jobs Management Features",
+              "_postman_id": "f613973b-e9bc-49ed-93b6-cbbc92f833db",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/admin/facility/42502/job-management-features"
+              },
+              "response": []
             }
           ],
           "_postman_id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
