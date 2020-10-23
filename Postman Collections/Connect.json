@@ -4415,7 +4415,7 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "{{uri}}/AyaConnect/Admin/Facility/36765/vendors?pagesize=10&filter.name=law&filter.city=omaha&filter.state=ca&filter.isactive=true",
+                  "raw": "{{uri}}/AyaConnect/Admin/Facility/37165/vendors?pagesize=10&filter.city=omaha&filter.isactive=true",
                   "host": [
                     "{{uri}}"
                   ],
@@ -4423,7 +4423,7 @@
                     "AyaConnect",
                     "Admin",
                     "Facility",
-                    "36765",
+                    "37165",
                     "vendors"
                   ],
                   "query": [
@@ -4463,7 +4463,8 @@
                     },
                     {
                       "key": "filter.name",
-                      "value": "law"
+                      "value": "law",
+                      "disabled": true
                     },
                     {
                       "key": "filter.city",
@@ -4471,7 +4472,8 @@
                     },
                     {
                       "key": "filter.state",
-                      "value": "ca"
+                      "value": "ca",
+                      "disabled": true
                     },
                     {
                       "key": "filter.statusId",
