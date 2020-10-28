@@ -4124,7 +4124,21 @@
       "item": [
         {
           "name": "Extensions",
-          "item": [],
+          "item": [
+            {
+              "name": "Complete Request",
+              "_postman_id": "5f798070-d8df-4003-83e5-9335120c9528",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
+            }
+          ],
           "_postman_id": "bf2875b4-6c05-427c-9c11-c6f254499914",
           "_postman_isSubFolder": true
         },
