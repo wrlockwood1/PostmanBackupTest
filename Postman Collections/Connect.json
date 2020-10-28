@@ -4123,6 +4123,12 @@
       "name": "Travelers",
       "item": [
         {
+          "name": "Extensions",
+          "item": [],
+          "_postman_id": "bf2875b4-6c05-427c-9c11-c6f254499914",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Get Travelers",
           "_postman_id": "740d747d-a974-464e-8047-dcda9a2b4f29",
           "protocolProfileBehavior": {
