@@ -4132,9 +4132,15 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "POST",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/ayaconnect/client/traveler/extension/request/182108/complete"
               },
               "response": []
             }
