@@ -4746,6 +4746,19 @@
                 "url": "{{uri}}/AyaConnect/admin/facility/42502/job-management-features"
               },
               "response": []
+            },
+            {
+              "name": "Create Scheduled Release Rule",
+              "_postman_id": "b9f63dbd-158a-4fe9-a309-b0a9a7651e74",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
