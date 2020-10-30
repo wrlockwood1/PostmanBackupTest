@@ -4754,9 +4754,18 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "POST",
                 "header": [],
-                "url": ""
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"facilityId\": \"5834\",\r\n    \"name\": \"\",\r\n    \"delayDays\": 200,\r\n    \"includeWeekends\": null,\r\n    \"timeOfDayUtc\": null,\r\n    \"hasAllProfessions\": false,\r\n    \"professions\": [],\r\n    \"releaseGroups\": [],\r\n    \"vendors\": []\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/scheduledreleaserule"
               },
               "response": []
             }
