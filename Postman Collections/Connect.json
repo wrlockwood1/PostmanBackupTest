@@ -4642,9 +4642,51 @@
                 "method": "GET",
                 "header": [],
                 "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                "description": "Gets profile for facility by Id"
+                "description": "Gets profile for facility by Id, number at end of request is id of facility"
               },
-              "response": []
+              "response": [
+                {
+                  "id": "6fd74273-eb55-49d1-934a-f31d6ab3a8c5",
+                  "name": "Facility Profile",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/Admin/Facility/34702"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Transfer-Encoding",
+                      "value": "chunked"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "Request-Context",
+                      "value": "appId=cid-v1:cd308522-ac28-4ba5-9947-fb1f929f8a57"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 03 Nov 2020 16:28:08 GMT"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"id\": 34702,\n    \"name\": \"Abilene State Supported Living Center\",\n    \"address\": \"2501 Maple Street\",\n    \"city\": \"Abilene\",\n    \"stateCode\": \"TX\",\n    \"zipcode\": \"79602\",\n    \"mainPhone\": \"(325) 795-3900\",\n    \"associationName\": \"Texas Health and Human Services (DADS/DSHS)\",\n    \"accountManagerFirstName\": \"Scott\",\n    \"accountManagerLastName\": \"Young\",\n    \"termSheetRequired\": null\n}"
+                }
+              ]
             },
             {
               "name": "Update Term Sheet Required",
