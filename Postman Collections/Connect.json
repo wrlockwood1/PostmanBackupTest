@@ -5376,7 +5376,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"statusId\": 1,\r\n    \"vendorIds\": [374, 809, 669],  //Assist Healthcare Staffing, AHS Staffing, Access Healthcare LLC\r\n    \"note\": \"\"\r\n}",
+                  "raw": "{\r\n    \"statusId\": 1,\r\n    \"vendorIds\": [374, 809, 669],  //Assist Healthcare Staffing, AHS Staffing, Access Healthcare LLC\r\n    \"note\": \"test exclude note\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
