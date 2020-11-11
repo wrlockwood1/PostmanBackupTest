@@ -5366,6 +5366,29 @@
               "response": []
             },
             {
+              "name": "Update Term Sheet Required Copy",
+              "_postman_id": "bfbf0b95-a73f-499a-9049-8f50a0742024",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"termSheetRequired\": false\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
+                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
+              },
+              "response": []
+            },
+            {
               "name": "Facility Profile Summary",
               "_postman_id": "66944e20-025a-47c0-9b49-f073c8314668",
               "protocolProfileBehavior": {
