@@ -5376,14 +5376,14 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"termSheetRequired\": false\r\n}",
+                  "raw": "{\r\n    \"statusId\": 1,\r\n    \"vendorIds\": [374, 809, 669],  //Assist Healthcare Staffing, AHS Staffing, Access Healthcare LLC\r\n    \"note\": \"\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
                     }
                   }
                 },
-                "url": "{{uri}}/AyaConnect/Admin/Facility/40105/vendors/status",
+                "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/status",
                 "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
               },
               "response": []
