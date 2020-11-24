@@ -4198,9 +4198,24 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "CfDJ8EeLgppTECZBnAamSgjXDtXxlO4Ve52QZwIVq_Ysx1YvMfOE7dVKn8pDAEU8hM94Gp-y0GGML8yRQ0NrtN3J3PDzPuCwnMmCiE3QJ4hpAr5NmZBArmnWiQFtzlQVIVUEGmwT-Z92VdEzo1wPQb8C2Iq3bmB5uy-xeF6aNL4sYB7fryGnePno1O2e_dw-xh7fam32NRi_uXi66izrpNFUKZZHSw5WraKS1lbNRkVMGSLRwESwx04H9A7ySCfZT3DDvvh1dNoI7NHMAyFKbfySEh_eCtr0wMLsmstTbWkPV2xOZ8UHnOebhDDH6ucZM1TqAhLVysD1YSoqSjuM4HrBzR6An2xjo34sHL9UiLtz8TgjhBMzfovdp-xkr_CKqASAagijNZUFTy1yeUvy-cwxgQlJ1GVzUaaYYdaxYxzRbPz7mVhqQv0ALFXK38lN4paY-3joFUz4LnQqmkKHsRLsXutoC5NWvlhd0PlrbOHak7EG_9_dywX3wOJRpspWhcQo3SM8uh3eW-7BXsIDkZ4qZJ6CuG2VMh0xm-xuRSg_XIHzPiqNuSOR39qdDJ4_KZKd3X6rR3L6RmJjDrL7CPSpoRZ88sjeRsKquTc8-JyaWPKYh65rikxzfNGUJ6VdLbroG-h6-o5qjUzPb7qOzTVaOqOKmIFynuTAWDMrMQyQbKWrT-TJcVWGkn8xqtvSbNvZ30CB69ELq119H0IS_QpI-KY-itAL3YZTEXCqVi4LxhiM"
+                  }
+                },
+                "method": "POST",
                 "header": [],
-                "url": ""
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"TravelerId\": 659697,\r\n    \"FirstName\": \"Lindsey C\",\r\n    \"LastName\": \"Jones\",\r\n    \"Email\": \"lcj4100@gmail.com\",\r\n    \"ProfessionId\": 1,\r\n    \"ExpertiseId\": 230,\r\n    \"BrandId\": 1,\r\n    \"SystemId\": 1000,\r\n    \"FacilityId\": 2569,\r\n    \"UnitId\": 1454,\r\n    \"JobTypeId\": 1,\r\n    \"RestrictionLevelId\": 1,\r\n    \"CategoryId\": 1,\r\n    \"ReasonId\": 2,\r\n    \"OriginId\": 1,\r\n    \"ExpirationDate\": \"12/31/20\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory"
               },
               "response": []
             }
