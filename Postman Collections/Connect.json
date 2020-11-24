@@ -3478,10 +3478,7 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "CfDJ8EeLgppTECZBnAamSgjXDtXxlO4Ve52QZwIVq_Ysx1YvMfOE7dVKn8pDAEU8hM94Gp-y0GGML8yRQ0NrtN3J3PDzPuCwnMmCiE3QJ4hpAr5NmZBArmnWiQFtzlQVIVUEGmwT-Z92VdEzo1wPQb8C2Iq3bmB5uy-xeF6aNL4sYB7fryGnePno1O2e_dw-xh7fam32NRi_uXi66izrpNFUKZZHSw5WraKS1lbNRkVMGSLRwESwx04H9A7ySCfZT3DDvvh1dNoI7NHMAyFKbfySEh_eCtr0wMLsmstTbWkPV2xOZ8UHnOebhDDH6ucZM1TqAhLVysD1YSoqSjuM4HrBzR6An2xjo34sHL9UiLtz8TgjhBMzfovdp-xkr_CKqASAagijNZUFTy1yeUvy-cwxgQlJ1GVzUaaYYdaxYxzRbPz7mVhqQv0ALFXK38lN4paY-3joFUz4LnQqmkKHsRLsXutoC5NWvlhd0PlrbOHak7EG_9_dywX3wOJRpspWhcQo3SM8uh3eW-7BXsIDkZ4qZJ6CuG2VMh0xm-xuRSg_XIHzPiqNuSOR39qdDJ4_KZKd3X6rR3L6RmJjDrL7CPSpoRZ88sjeRsKquTc8-JyaWPKYh65rikxzfNGUJ6VdLbroG-h6-o5qjUzPb7qOzTVaOqOKmIFynuTAWDMrMQyQbKWrT-TJcVWGkn8xqtvSbNvZ30CB69ELq119H0IS_QpI-KY-itAL3YZTEXCqVi4LxhiM"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
@@ -3524,28 +3521,7 @@
                 "urlencoded": {}
               }
             },
-            "url": {
-              "raw": "{{uri}}/ayaconnect/client/traveler/staffing-advisory?facilityId=2569&travelerId=659697",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "ayaconnect",
-                "client",
-                "traveler",
-                "staffing-advisory"
-              ],
-              "query": [
-                {
-                  "key": "facilityId",
-                  "value": "2569"
-                },
-                {
-                  "key": "travelerId",
-                  "value": "659697"
-                }
-              ]
-            }
+            "url": "{{uri}}/connect/token"
           },
           "response": []
         },
