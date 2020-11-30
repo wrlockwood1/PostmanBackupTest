@@ -1799,6 +1799,15 @@
           "request": {
             "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"jobs\": [\r\n        1266983\r\n    ],\r\n    \"vendors\": [\r\n        19,\r\n        49,\r\n        157\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": "{{uri}}/AyaConnect/VendorRelease/Manual"
           },
           "response": []
