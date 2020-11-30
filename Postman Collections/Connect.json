@@ -1791,35 +1791,15 @@
           "response": []
         },
         {
-          "name": "Job Copy",
+          "name": "Manual Vendor Release",
           "_postman_id": "b13ac191-847f-41c9-8375-b9c3a620d338",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": {
-              "raw": "{{uri}}/AyaConnect/JobClient/GetJobById?jobId=1134629&viewTypeId=3",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "AyaConnect",
-                "JobClient",
-                "GetJobById"
-              ],
-              "query": [
-                {
-                  "key": "jobId",
-                  "value": "1134629"
-                },
-                {
-                  "key": "viewTypeId",
-                  "value": "3"
-                }
-              ]
-            }
+            "url": "{{uri}}/AyaConnect/VendorRelease/Manual"
           },
           "response": []
         },
