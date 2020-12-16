@@ -300,7 +300,7 @@
                 "type": "text"
               }
             ],
-            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess.lookups",
             "description": "## Should return 403 error if:\n> User does not have jobapprovalprocess.view permission \n----\n## Returns:\n> List of facility and unit processes, based on approval processes created for facilities and units the user is a member of"
           },
           "response": [
@@ -3299,6 +3299,12 @@
     {
       "name": "Shifts",
       "item": [
+        {
+          "name": "ShiftAttachments",
+          "item": [],
+          "_postman_id": "d0fbeb9a-5fad-425d-bea7-bff6698385de",
+          "_postman_isSubFolder": true
+        },
         {
           "name": "ClientShifts",
           "_postman_id": "d9f3bbe9-84ad-47ab-8e86-03cd7b09b3d1",
