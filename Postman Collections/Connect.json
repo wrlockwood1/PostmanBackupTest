@@ -3301,7 +3301,21 @@
       "item": [
         {
           "name": "ShiftAttachments",
-          "item": [],
+          "item": [
+            {
+              "name": "Add Attachments",
+              "_postman_id": "fa6e5710-02b6-4366-940c-64328b60498a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
+            }
+          ],
           "_postman_id": "d0fbeb9a-5fad-425d-bea7-bff6698385de",
           "_postman_isSubFolder": true
         },
