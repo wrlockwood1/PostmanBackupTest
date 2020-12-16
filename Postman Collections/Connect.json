@@ -3314,6 +3314,19 @@
                 "url": ""
               },
               "response": []
+            },
+            {
+              "name": "Get Attachments",
+              "_postman_id": "45ae6281-f7db-442b-8e1f-04cdb1db3e94",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "d0fbeb9a-5fad-425d-bea7-bff6698385de",
