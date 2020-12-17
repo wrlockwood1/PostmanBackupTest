@@ -3309,9 +3309,64 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "auth": {
+                  "type": "oauth2",
+                  "oauth2": {
+                    "addTokenTo": "header"
+                  }
+                },
+                "method": "POST",
                 "header": [],
-                "url": ""
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/40x40-main.jpg"
+                    },
+                    {
+                      "key": "shiftId",
+                      "value": "286492",
+                      "type": "text"
+                    },
+                    {
+                      "key": "internalOnly",
+                      "value": "true",
+                      "type": "text"
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": {
+                  "raw": "{{uri}}/ayaconnect/client/shifts/286492/attachments",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "ayaconnect",
+                    "client",
+                    "shifts",
+                    "286492",
+                    "attachments"
+                  ],
+                  "query": [
+                    {
+                      "key": "file",
+                      "value": null,
+                      "type": "text",
+                      "disabled": true
+                    },
+                    {
+                      "key": "",
+                      "value": null,
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ]
+                }
               },
               "response": []
             },
