@@ -3416,9 +3416,9 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "DELETE",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/ayaconnect/client/shifts/286492/attachments/2"
               },
               "response": []
             }
@@ -4365,6 +4365,38 @@
                   }
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory"
+              },
+              "response": []
+            },
+            {
+              "name": "Add Staffing Advisory Document",
+              "_postman_id": "2940abad-e4fb-4ce8-a18a-6ce1a779d7b5",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "CfDJ8AeGsPH6xAREvvFWeXO13pgxPNFn1jsCn33-IwPLur5xTVu2Md4NF597rtIGbcQRazLgMS70xGOIw3m7xHPDcFUctqY-5k7rGEO54pWCZYdiRBsr2BxhSLvdiSl1SzbkYoNVMwLe4h7tl9ZTVG2Mda7cfl3cqhu_kE30F1PJnJ3rtLtFlCz7ILUggGHiR2K7iodxyqcvBBnB0hwc66LEVOfoHnJLoZjuw342virCsSaTF6JzberlIQd1y5K9UNtxwCzFuUc7aftxUu3njDdD0PsNmvlBLuntqIeitB04zyETLIQ4IdT38718Kl8DxTfLva_5D-Z1CiDkTO3iFSK4FJVASK5UYAzN7m40HNWxlfeevVSZFS8KEdq8Oe3BWgbf6oD_FIPYayQMTqy4QrfZy2ImaMeBetk5ItM6qgwoWtofVo4V02_AO4XavfYbJspeY7PAJvV30y_z_Dk9TruIVyv2JluLGmvXwQ8twZa0U44HnhiS7sEcGmTOd97WdxwKIgzdOnm0r6lV0oUGQ_VtJFfwpwmDjzlX_eT8Yd4XF3xv9JLLigLJO9CvSURMuEcdDAhDW76btmPC7lEOFqjr1VoGW94RoI65QAkZtee5C0R1BCnozFvCplK6n5IIvohuiHV_4uc3DW25MTS0JfdTe4n_rqRGGMF86EJXjd543E92_RTJJUdKJSQ285QIsx35JQ0osN4MMkhWrcj-LIb5RBwLazxOMVHh7B6GaVO2iBej"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "type": "file",
+                      "value": null
+                    }
+                  ],
+                  "options": {
+                    "formdata": {}
+                  }
+                },
+                "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory/1/attachments"
               },
               "response": []
             }
