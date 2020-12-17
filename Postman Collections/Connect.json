@@ -3324,7 +3324,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/ayaconnect/client/shifts/286492/attachments/2"
               },
               "response": []
             },
@@ -3350,7 +3350,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": ""
+                "url": "{{uri}}/ayaconnect/client/shifts/286492/attachments/3"
               },
               "response": []
             },
