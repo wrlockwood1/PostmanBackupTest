@@ -3499,6 +3499,19 @@
             "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
           },
           "response": []
+        },
+        {
+          "name": "Shift-Status",
+          "_postman_id": "bbbe12fe-1939-4273-b31f-4cd7e69f0c32",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
