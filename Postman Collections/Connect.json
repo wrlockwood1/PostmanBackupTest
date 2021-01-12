@@ -3310,9 +3310,9 @@
               },
               "request": {
                 "auth": {
-                  "type": "oauth2",
-                  "oauth2": {
-                    "addTokenTo": "header"
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
                   }
                 },
                 "method": "POST",
@@ -3419,6 +3419,48 @@
                 "method": "DELETE",
                 "header": [],
                 "url": "{{uri}}/ayaconnect/client/shifts/286492/attachments/2"
+              },
+              "response": []
+            },
+            {
+              "name": "Update Attachment",
+              "_postman_id": "dd09990b-453b-414a-bc7c-e1383d72276c",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "urlencoded",
+                  "urlencoded": [
+                    {
+                      "key": "Id",
+                      "value": "8",
+                      "type": "text"
+                    },
+                    {
+                      "key": "FileName",
+                      "value": "logo",
+                      "type": "text"
+                    },
+                    {
+                      "key": "InternalOnly",
+                      "value": "false",
+                      "type": "text"
+                    },
+                    {
+                      "key": "UserId",
+                      "value": "",
+                      "type": "text",
+                      "disabled": true
+                    }
+                  ],
+                  "options": {
+                    "urlencoded": {}
+                  }
+                },
+                "url": "{{uri}}/ayaconnect/client/shifts/291710/attachments/8"
               },
               "response": []
             }
