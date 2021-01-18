@@ -6957,11 +6957,6 @@
       "description": "Requests related to vendor module"
     },
     {
-      "name": "Lookups",
-      "item": [],
-      "_postman_id": "7a487a4d-9cae-4029-a72c-5f1e68346f59"
-    },
-    {
       "name": "Get Menu",
       "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
