@@ -3469,6 +3469,42 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Lookups",
+          "item": [
+            {
+              "name": "Client - Get Lookups",
+              "_postman_id": "f75bfac8-9cfd-42d4-99ad-588cf9a54c4f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{uri}}/AyaConnect/PerDiemSchedulerClient/GetLookups?ViewTypeId=3",
+                  "host": [
+                    "{{uri}}"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "PerDiemSchedulerClient",
+                    "GetLookups"
+                  ],
+                  "query": [
+                    {
+                      "key": "ViewTypeId",
+                      "value": "3"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "59cd025a-f872-46a2-ab5c-183444820fcc",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "ClientShifts",
           "_postman_id": "d9f3bbe9-84ad-47ab-8e86-03cd7b09b3d1",
           "protocolProfileBehavior": {
