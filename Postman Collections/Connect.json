@@ -2094,9 +2094,15 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{uri}}/AyaConnect/Job/222026/history"
           },
           "response": []
         }
