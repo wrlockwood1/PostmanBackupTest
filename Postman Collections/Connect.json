@@ -3594,32 +3594,16 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=10&skip=0&sortField=startDate&sortType=desc",
+              "raw": "{{uri}}/AyaConnect/report/cancellations",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "Client",
-                "Shifts"
+                "report",
+                "cancellations"
               ],
               "query": [
-                {
-                  "key": "pageSize",
-                  "value": "10"
-                },
-                {
-                  "key": "skip",
-                  "value": "0"
-                },
-                {
-                  "key": "sortField",
-                  "value": "startDate"
-                },
-                {
-                  "key": "sortType",
-                  "value": "desc"
-                },
                 {
                   "key": "specialtyIds",
                   "value": "304",
