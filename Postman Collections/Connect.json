@@ -3585,33 +3585,7 @@
           "response": []
         },
         {
-          "name": "Reconfirm",
-          "_postman_id": "51ee202b-6eba-4592-a497-f6f91d661531",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
-          },
-          "response": []
-        },
-        {
-          "name": "Shift-Status",
-          "_postman_id": "bbbe12fe-1939-4273-b31f-4cd7e69f0c32",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": ""
-          },
-          "response": []
-        },
-        {
-          "name": "ClientShifts Copy",
+          "name": "Report Cancellations",
           "_postman_id": "89001151-ea41-456a-9fc6-84bbe527a364",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3668,6 +3642,32 @@
                 }
               ]
             }
+          },
+          "response": []
+        },
+        {
+          "name": "Reconfirm",
+          "_postman_id": "51ee202b-6eba-4592-a497-f6f91d661531",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
+          },
+          "response": []
+        },
+        {
+          "name": "Shift-Status",
+          "_postman_id": "bbbe12fe-1939-4273-b31f-4cd7e69f0c32",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
           },
           "response": []
         }
