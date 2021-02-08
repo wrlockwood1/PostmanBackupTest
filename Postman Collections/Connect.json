@@ -3609,6 +3609,67 @@
             "url": ""
           },
           "response": []
+        },
+        {
+          "name": "ClientShifts Copy",
+          "_postman_id": "89001151-ea41-456a-9fc6-84bbe527a364",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/Client/Shifts?pageSize=10&skip=0&sortField=startDate&sortType=desc",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "Client",
+                "Shifts"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "10"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sortField",
+                  "value": "startDate"
+                },
+                {
+                  "key": "sortType",
+                  "value": "desc"
+                },
+                {
+                  "key": "specialtyIds",
+                  "value": "304",
+                  "disabled": true
+                },
+                {
+                  "key": "specialtyIds",
+                  "value": "478",
+                  "disabled": true
+                },
+                {
+                  "key": "ToDate",
+                  "value": "2020-05-30",
+                  "disabled": true
+                },
+                {
+                  "key": "FromDate",
+                  "value": "2020-04-24",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
