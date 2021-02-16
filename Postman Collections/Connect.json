@@ -3520,7 +3520,30 @@
         },
         {
           "name": "Shift Approvals",
-          "item": [],
+          "item": [
+            {
+              "name": "Set Approval Process",
+              "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    304242\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}//ayaconnect/client/shifts/set-approvals"
+              },
+              "response": []
+            }
+          ],
           "id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441"
         },
         {
@@ -3652,19 +3675,6 @@
             "method": "GET",
             "header": [],
             "url": ""
-          },
-          "response": []
-        },
-        {
-          "name": "Reconfirm Copy",
-          "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
           },
           "response": []
         }
@@ -7088,6 +7098,13 @@
           ""
         ]
       }
+    }
+  ],
+  "variable": [
+    {
+      "id": "fa937c46-b949-41e0-98fd-fe7b29eae2a6",
+      "key": "uri",
+      "value": "http://localhost:8088"
     }
   ]
 }
