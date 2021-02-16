@@ -3522,7 +3522,7 @@
           "name": "Shift Approvals",
           "item": [
             {
-              "name": "Set Approval Process",
+              "name": "Reconfirm Copy",
               "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -3530,16 +3530,7 @@
               "request": {
                 "method": "PUT",
                 "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\r\n    304242\r\n]",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}//ayaconnect/client/shifts/set-approvals"
+                "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
               },
               "response": []
             }
