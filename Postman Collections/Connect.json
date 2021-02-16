@@ -3520,21 +3520,7 @@
         },
         {
           "name": "Shift Approvals",
-          "item": [
-            {
-              "name": "Reconfirm Copy",
-              "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
-              },
-              "response": []
-            }
-          ],
+          "item": [],
           "id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441"
         },
         {
@@ -3666,6 +3652,19 @@
             "method": "GET",
             "header": [],
             "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Reconfirm Copy",
+          "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": "{{uri}}//ayaconnect/client/shifts/233574/reconfirm"
           },
           "response": []
         }
