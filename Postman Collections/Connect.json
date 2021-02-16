@@ -3532,7 +3532,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "[\r\n    304242\r\n]",
+                  "raw": "{\r\n    \"shiftIds\": [304242],\r\n    \"hasApprovalStatus\": false\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7102,7 +7102,7 @@
   ],
   "variable": [
     {
-      "id": "fa937c46-b949-41e0-98fd-fe7b29eae2a6",
+      "id": "4bcd57c5-556d-4ccd-9930-623b103f3aee",
       "key": "uri",
       "value": "http://localhost:8088"
     }
