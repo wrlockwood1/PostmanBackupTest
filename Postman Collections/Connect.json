@@ -7075,7 +7075,7 @@
   "auth": {
     "type": "bearer",
     "bearer": {
-      "token": "{{Bearer}}"
+      "token": "CfDJ8CqnBBQT0z1LovQMSJRYS5CWB3IVPcZAzRdevXrMFrQGMh7Tua37KBX8hT-YFC5u0ZyXUisPoJjeNc2zirO9_ckR1X7JRFQJ0Iy_6Zrt_QhYxc81H6CG0wOC4xzzlx6sKucC40Um7XV-CFzxhi18BiGBcrEY7A8FKmAQTtBqsGjs7DvJsl7wSPKc-lqYEK-pprmudQ4qVCz70-BvPuspTV_CBzo_mTOrTDejQv0OzygoU9uX0DSk4hoIAKwND2GNv-6t57QGBveqqSOdtf_Owfht1qmSawePZuc41fRE_ZXtdoF5WQlqVdlHbf8LKC7Q_rry9-XgH86KOz2C-FdFo1Tr6oa6uwW-v6iasbOCQ-Uzx47lPH9i67KVlyM5FA7Cc8fMt2j5BetksKUIlh__w6pe-vPqBgFVCFtTpnLzTWWhHcldMk58IGbAQFbvfUNr_PvaNracjqz5EKR2meB6wgDjIeJ06-fTsfDCNF5XuZO2B5Dsvp61sDrxWZGtkkLNMxKR61F2o4AE1mlGSu6d4t4z6T_owT1w_j0H80MJrq4iPNNoQR4OgghSNKPY1Nyn3CxeN_oMT-x9Do8W3ldFcehemzB3NCjDzsO5g08yNkEfm_Wma8aYJvg-ToFWaj6ZzPgLbJtgJnSvs1umrCuq2vyY8KIBe1teaVZgz0Ht6WABLmAvi0deiVL73x-qZEJCnjIvO8IK3oD8vX2yOkfwUA8gC2K4s6TMxLpghqcNwz3rAchn8LKMGCukicZqj-F-nDkxIh3jYOOJtkbUv13e5N8"
     }
   },
   "event": [
@@ -7102,12 +7102,12 @@
   ],
   "variable": [
     {
-      "id": "8efb8d58-3d1c-4c2e-b3df-5528b0877cc6",
+      "id": "e4f835ab-ffe6-40bb-b602-12eaaf6aac65",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "e59b6a53-b083-44c2-b865-ea13c40f47eb",
+      "id": "92d36427-f936-483c-9d69-eac2617439fa",
       "key": "Bearer",
       "value": "CfDJ8CqnBBQT0z1LovQMSJRYS5A-uXw74iSDW4wW2PrnvCRHw0VrfpHQ1TBQwU5W2M1S5hkIyDfYoPxHM6DgTVNtXOeRIC0DN66wiKmkUB5yIVoNj6RlwSpf6qtbhKVpBCYxkl0nQGQrp98wcrcN36pDqFXkcoqOtacu35Hm2aw7_vIVHjvmFC-SaB48aZksbFW6o1OQzrfQS8qejg6jC9tiFLBef0avsVETuc2HSIo7qqmpt-tlEvzIKtUfqmKNJb8A_CbGP_-oWFUPeZRM59kcJ32ZK6hzfdUgm1yjKL_SQ-C_4OtkF3Eng2bjnH0av6Gn566QYSHfBFXjpOhQP7XqZ_SMLLaAJdE-QZXH8M6e4hx6WEyKFb17rlHEjQBVpagNQDWXZ0QcHrAgEdgOKoaFE14dp1WUikvoElNEhJR0HlzFkA4FrmASzGs6ARTHfOzi4PnH9ZGc4T3KlwOjxJxgQjLm7NPlAs3Lw4JVH3flPXFWjF1JibB-YeF4gBKcK4RNF2VU1f2VsnA2Kh_Mrdz-zHqxwcLe6rC1XkC4IewdLzCGMcODI8B_3f44pqAG3w4tV0flF0UjVlMKz6IuwZMGRiW5igD9_uIy3zurEzA6WENv9LXgnE-Jef_1w_d5VUCjyi7sY2ww_02Gq2jJpaDoS5He5pJLfMm2MdfW6bEhMPIl5CDJBFqECa1C-g3Newm18Pk54QXeRnr-9gUOCf-63c94YOZlBG8tCwWm6pGsVbS-8jx8AF5uc7N-zCYS0Tb9OA1Bcs__kd8rAH7uG9GX3NE"
     }
