@@ -1888,7 +1888,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobClient/GetFilteredJobs?ViewTypeId=3&%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D=",
+              "raw": "{{uri}}/AyaConnect/JobClient/GetFilteredJobs?ViewTypeId=3&%257B%2522filter%2522%253A%257B%2522filters%2522%253A%255B%255D%257D%252C%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%257D=\n",
               "host": [
                 "{{uri}}"
               ],
@@ -1903,8 +1903,8 @@
                   "value": "3"
                 },
                 {
-                  "key": "%257B%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%252C%2522filter%2522%253A%257B%2522logic%2522%253A%2522and%2522%252C%2522filters%2522%253A%255B%257B%2522field%2522%253A%2522approvalStatusId%2522%252C%2522operator%2522%253A%2522eq%2522%252C%2522value%2522%253A2%257D%255D%257D%257D",
-                  "value": ""
+                  "key": "%257B%2522filter%2522%253A%257B%2522filters%2522%253A%255B%255D%257D%252C%2522sort%2522%253A%255B%257B%2522field%2522%253A%2522id%2522%252C%2522dir%2522%253A%2522desc%2522%257D%255D%252C%2522take%2522%253A10%252C%2522skip%2522%253A0%257D",
+                  "value": "\n"
                 }
               ]
             }
@@ -7102,12 +7102,12 @@
   ],
   "variable": [
     {
-      "id": "b796d3a7-b861-404e-b129-08b8b70efa55",
+      "id": "ba69d3d1-406a-4a4b-b339-de2bacba53f4",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "9735cc08-e178-4b8b-af24-35ceb01830ce",
+      "id": "5d7969d7-8901-4cff-977e-64dc7b0295d0",
       "key": "Bearer",
       "value": "CfDJ8HSvJkOx3aBKizbhqGx6at1BwNi9vulVL3imdjqQXCqFyXBUTxBu_LxJ4CLGVMTmDUdtkW7OAumOw4IGaS-5M9KmFvSzQntxMpLwPzgMq8-B_AQExdK9KgVFQccmwkonSM31HF4hkWDrY3LcO51d6kPNRGMN57BhBPcXlGJnKPgpfu4OrLNmRsm6HwLHcP7_gzf3P9K41TjbMOxCmJv4QpdtDNFWlqzFn5hm1AxtWD7TJiqS13GVWQCRhdT0K1bIdPmkDLofdUkE1JLp84gPRYtmXgiiCZrnNSd_cE7ki9iy-CnDyu_6xp1L7TqfxSacL_dZ_p0iwynZqwj7mVt4UD-jA5GMuKSHOarCEq1m5FFivFgKahuLh019_3ksAzrwvA3kfdywI-RjHicdaFQdIzCNfPHWV0PBRbW0uo09ND55gR9mVXW9Gdyb3R4AjQQOVikARbHvWMXJUD3PtH0aSMpdxcO_zTbIgkJ8h54kSmcWucithkvBwgUskT9-BmEKzC8LafEtoyc9-SwXSpk33KXWAigzVgLVpHan8vWAJXRumn-RKr06L_dSaAylb0XvLpLOQvjuWrNNGcCBX4UDEwwCSyBlA2UA3wANs_vnJPynzrFGIH8t5tFdTopQdmcQDP9o8xQonYfKk92BxE4ZtDIB2h7VOA9xcWecT9LNuk2hflZj41lImB7yZcdizUd8ePaW4GBWn6p-N0VywClv-gj1Fht0s4HEMw3CFXx7KPsVWyMOSzHvdwe_LeUxhQ96Qkbsz4yRWgL3xgWUSWQZckg"
     }
