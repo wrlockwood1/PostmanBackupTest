@@ -3555,19 +3555,6 @@
                 "url": "{{uri}}//ayaconnect/client/shifts/approval/306847/approve"
               },
               "response": []
-            },
-            {
-              "name": "Approve Shift Series",
-              "id": "9d5c1751-f7c4-4cc3-b6fc-fb67c690800f",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}//ayaconnect/client/shifts/approvals/4A0EE247-3945-494C-8019-21A6B107D24/approve-series"
-              },
-              "response": []
             }
           ],
           "id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441"
@@ -7156,12 +7143,12 @@
   ],
   "variable": [
     {
-      "id": "3a8743d6-6150-43f3-93ac-44b9055f3f50",
+      "id": "e85039d3-0fde-4065-b643-d2ca73a90c0f",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "f60e8f30-0b07-4322-8055-e366afe318f0",
+      "id": "68af136d-5c15-4859-be5b-7dd2aac32118",
       "key": "Bearer",
       "value": "CfDJ8CqnBBQT0z1LovQMSJRYS5A-uXw74iSDW4wW2PrnvCRHw0VrfpHQ1TBQwU5W2M1S5hkIyDfYoPxHM6DgTVNtXOeRIC0DN66wiKmkUB5yIVoNj6RlwSpf6qtbhKVpBCYxkl0nQGQrp98wcrcN36pDqFXkcoqOtacu35Hm2aw7_vIVHjvmFC-SaB48aZksbFW6o1OQzrfQS8qejg6jC9tiFLBef0avsVETuc2HSIo7qqmpt-tlEvzIKtUfqmKNJb8A_CbGP_-oWFUPeZRM59kcJ32ZK6hzfdUgm1yjKL_SQ-C_4OtkF3Eng2bjnH0av6Gn566QYSHfBFXjpOhQP7XqZ_SMLLaAJdE-QZXH8M6e4hx6WEyKFb17rlHEjQBVpagNQDWXZ0QcHrAgEdgOKoaFE14dp1WUikvoElNEhJR0HlzFkA4FrmASzGs6ARTHfOzi4PnH9ZGc4T3KlwOjxJxgQjLm7NPlAs3Lw4JVH3flPXFWjF1JibB-YeF4gBKcK4RNF2VU1f2VsnA2Kh_Mrdz-zHqxwcLe6rC1XkC4IewdLzCGMcODI8B_3f44pqAG3w4tV0flF0UjVlMKz6IuwZMGRiW5igD9_uIy3zurEzA6WENv9LXgnE-Jef_1w_d5VUCjyi7sY2ww_02Gq2jJpaDoS5He5pJLfMm2MdfW6bEhMPIl5CDJBFqECa1C-g3Newm18Pk54QXeRnr-9gUOCf-63c94YOZlBG8tCwWm6pGsVbS-8jx8AF5uc7N-zCYS0Tb9OA1Bcs__kd8rAH7uG9GX3NE"
     }
