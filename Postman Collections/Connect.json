@@ -3528,11 +3528,17 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
                 "method": "PUT",
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"shiftIds\": [304242],\r\n    \"hasApprovalStatus\": false\r\n}",
+                  "raw": "{\r\n    \"shiftIds\": [304270, 304284],\r\n    \"hasApprovalStatus\": false\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7125,14 +7131,14 @@
   "auth": {
     "type": "bearer",
     "bearer": {
-      "token": "CfDJ8HSvJkOx3aBKizbhqGx6at3eNriLLhIxrLgkY-QkQaE7tNZGeKZlT3z62nZXOGSgjXP1dLPNg2xYmczqAjj9DRiIyYNP_g67L5FB6WVOtCGOK3gpXCV0b51gN3PyUAo-hC1m5SHm0doAkChBFlf5cu6MM0_B2_ZkKJRDBx52bU2UNanTCv2ZvonBfXUAVf57d-2jpjL44yq2mHUqb5X-5JGby1-WOZSSQE0XfFv7Rv89gnhOG7u4kcWZTZdIE8rGLcUo1RV2vbqOcrZxJaDjozy7uX6I-IIaB7lO0kTURF5w3ExLiwRZ7nSSNHcGmo0QjN1HWKGyI4pXDmyXty88dnO9PzZyMA04x6BryPl-Uyik1IIBChAvnVGLqSAZquav6nrcgP7pLZDhVkpfExbwFXvsti99ODKdEiwVP6rDUkyFt9RP6fl8amnRsi9qR-uV4w8Mfv3En1iW-433mkjHMW60PgnjuMAlHj9hnpEArQHoi71_XDEY8S7RV3FvH1HAgsJGPmIuPy_F9tjwoMU68yUfCie5N1gC2ZFPjMEH5dpEQbcI6S-Uz7ZHy-DnCnZl3ylHRleg1zAjqNwpUrjbXo8yua4uvYKPIHB6NfUUKstxk4e_sraCjLmmlOgh4KUSBcrS-JxBzkIQZ4eKFcquEyxMOSOd8d9Ie8psiRZgA-rIwH4QPdW44x54Thsh5kPdK223DJWlc0iAkOoeeiOYKCqyrkcNG2CL7MjFt84Ur0e4cz9QGizFYMHagKuWpWCYXRFs0KOsD8BYyWZCGc3CtX4"
+      "token": "CfDJ8AI82Ji-bNlCsa67tRYCJH2e7SNvV_p6VntiGSNqu_Fx0eccMjbXyUj-kSru1q73WHWC2LM7tBiiqFtkloxBnGSw03ptQQzr_hfFX15s-sV16Yh1eebCb0kInRtGJXkOWoUdMLVkPoEG_0rDEj9fm1azxYCa1hGnTJH7t1wM9-na81gCHKsE1yr5MVTgerc_VWJ7I5SkPzNmU7dlOwm_CvG_x6na1I1Yknn9vlVI3veglCy2OuAjveZAyai5gMzmPH2Uxcx-5FmWU-_y1FWRWZ2cPlUyzIShE6gN_egBb2_koccz5Ia7wj9nfHt3haab3gO-Rt5WsLGMvO4ZjH_8kltcbLHbB8bKCDTfuTwizOoYxCZPDwWrEq4sjCvK-mCcw6c_EZSaDh08jEj-f7ZR6Svk7CnsKY08oXd74f5ZtwRd0upXZRH-8wlC0qPpEb9N7JQYi6inIA8ZJGawhTGK6-vLaLq9qFmKhDY_wgN6klu2EUaKPd78q4M4aIaqOQEcoGGZYsfK6X8ynsUnFX_qnHe1c_ETrX4jF0iOl_yCw_K3GZ3z6bf_hKyNm8b489Ag676KcBNT_CxSJqFEziAAR-0Z3YeGTCjiqwiaGr2bEcdPIIK1cM4KpMj_0jZ5xW2FV7gjnIcNG9vR2L_F3guFgG5FvymF1qV7VZA-fOEl2dHCd_SYWi2w-zIX9pBdbfe6i865jQWa9PK1wAYUo5uJ2sr5tiINiYEiE2BupGnOK5smHgpQr9Hidw7w4WGsxEHMkQ"
     }
   },
   "event": [
     {
       "listen": "prerequest",
       "script": {
-        "id": "29ba540f-3362-49dd-aab3-6dc976dabdb6",
+        "id": "d4c65f70-6e37-405f-bcfe-307afde189a7",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7142,7 +7148,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "8af64477-daa6-40a5-abdf-05323458dabd",
+        "id": "436b4655-9710-4a09-812a-45a7b81062e0",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7152,12 +7158,12 @@
   ],
   "variable": [
     {
-      "id": "bb471005-115a-47cc-be10-3838a7b8d59f",
+      "id": "afb0df25-59e9-4fe6-b496-2a7112cd7785",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "4731d933-3a5e-4148-bf27-93924c2d29cc",
+      "id": "c26d1344-27ea-4532-9f5c-7df8c3283ea7",
       "key": "Bearer",
       "value": "CfDJ8CqnBBQT0z1LovQMSJRYS5A-uXw74iSDW4wW2PrnvCRHw0VrfpHQ1TBQwU5W2M1S5hkIyDfYoPxHM6DgTVNtXOeRIC0DN66wiKmkUB5yIVoNj6RlwSpf6qtbhKVpBCYxkl0nQGQrp98wcrcN36pDqFXkcoqOtacu35Hm2aw7_vIVHjvmFC-SaB48aZksbFW6o1OQzrfQS8qejg6jC9tiFLBef0avsVETuc2HSIo7qqmpt-tlEvzIKtUfqmKNJb8A_CbGP_-oWFUPeZRM59kcJ32ZK6hzfdUgm1yjKL_SQ-C_4OtkF3Eng2bjnH0av6Gn566QYSHfBFXjpOhQP7XqZ_SMLLaAJdE-QZXH8M6e4hx6WEyKFb17rlHEjQBVpagNQDWXZ0QcHrAgEdgOKoaFE14dp1WUikvoElNEhJR0HlzFkA4FrmASzGs6ARTHfOzi4PnH9ZGc4T3KlwOjxJxgQjLm7NPlAs3Lw4JVH3flPXFWjF1JibB-YeF4gBKcK4RNF2VU1f2VsnA2Kh_Mrdz-zHqxwcLe6rC1XkC4IewdLzCGMcODI8B_3f44pqAG3w4tV0flF0UjVlMKz6IuwZMGRiW5igD9_uIy3zurEzA6WENv9LXgnE-Jef_1w_d5VUCjyi7sY2ww_02Gq2jJpaDoS5He5pJLfMm2MdfW6bEhMPIl5CDJBFqECa1C-g3Newm18Pk54QXeRnr-9gUOCf-63c94YOZlBG8tCwWm6pGsVbS-8jx8AF5uc7N-zCYS0Tb9OA1Bcs__kd8rAH7uG9GX3NE"
     }
