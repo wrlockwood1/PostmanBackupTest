@@ -3567,7 +3567,7 @@
                     }
                   }
                 },
-                "url": "{{uri}}//ayaconnect/client/shifts/approve"
+                "url": "{{uri}}//ayaconnect/client/shifts/approval-statuses"
               },
               "response": []
             }
@@ -7138,7 +7138,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "08eae6fb-3113-4636-a671-e31200b1d51e",
+        "id": "979191ed-be1f-4d1e-90ed-6bc4187b15f8",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7148,7 +7148,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "2f8d2f01-92de-46b3-9eeb-3f308015abec",
+        "id": "71a867e7-29a5-4597-a8da-c037c1661869",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7158,12 +7158,12 @@
   ],
   "variable": [
     {
-      "id": "2cda447d-29b1-4f04-aa94-d0a96dac34b6",
+      "id": "644d90fd-1e05-4b94-a6ef-30c8217505d4",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "54dc1b2c-6959-4440-b139-c24edfb1cf92",
+      "id": "517715cc-16e4-4662-a788-36695da0fe76",
       "key": "Bearer",
       "value": "\"CfDJ8AI82Ji-bNlCsa67tRYCJH3nVfQFRC_2wLA-XnRldg5INGkGc7d1OSHtO0hmGsWHflq_pLVbzeENAV3hRl2u0Knmyv1h6t4WFunB14SFyILRqVh25GTZOGXHBLapQH_ONqlxbeCCRHvjF07qKYk1rwjGmsl4Xr5omW36UXaEJBNVshuBbO06Udc7zpCoFbVcEKvFFPmes1iRAAuAPnNiznI8tLKE9-RTXk2V3kZyjSnC5zFbhIw25D1h9P-4ETieABcvdLiW7AYqdpD-TfnQG6heoVMfLc17QT8yJr0wUUqNIcNZ-_jv3I8x_ZNxuUUfA1Mqw5CMH_w98JSsz9DaQ15fjViY7IIBz2Bje9LOGkqF8LMc1VA7A69m_VKZFgD6henkLQymOaDmrmiWKQ45qXKlctP8dT4Iw7c6uAxoUk62hG0N8XgKOjQ2DQhAsLWPNO-DNiVH5r1Z8zeim9kJR8MLG-zE0NKB5O9A-12fIPA0Phcig89I3eqsfqYmZWGVD6coZJ9T1bHWt55MqAyb4PLV7xMkqSzwDFQZhG5Z874lSflG1FVrbvMpKOx-Y08Wm0DTUoo1F6u_iShy8wDMI_QyJ70j_21CWqFMEL5-qdYx-r8ARrOc5pwfjhooMeMxhwPzjY7z25Ft3d_A2zYs_Rya_ztvkSMg0ljBKPAUZo0_Y8PtGf2TfPnaFzYlaLupDwMNNt_hqi_EZN4X4eOgZtGXuVXMiOZaJ-POLkKkNXayzQykSEFwwVfLyaqHNCqRYg\""
     }
