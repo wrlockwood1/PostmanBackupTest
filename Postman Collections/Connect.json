@@ -2918,7 +2918,7 @@
                   "raw": "{\n\t\"id\": 140140,\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789,\n    \"sclEmployeeId\": 24566,\n    \"sclDepartmentCode\": 23806207,\n    \"sclHireDate\": \"2019-12-11\"\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler",
-                "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler.\n\nIf the traveler is a member of the SCL Health System, and the user sending the request is a member of the SCL Health System, they can also pass in the sclEmployeeId and sclBadgeNumber fields"
+                "description": "This is an extension of the PUT Traveler method.  It has all the same properties plus BuildingId, FloorId, etc"
               },
               "response": [
                 {
@@ -7239,12 +7239,12 @@
   ],
   "variable": [
     {
-      "id": "9b4dace5-6bcd-492e-a33f-dab0c19dc2d2",
+      "id": "8bcae37a-f254-4b2f-a3bc-9658394358de",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "bcfc0b4e-1494-4c8f-bcb3-9b7d9752a3c7",
+      "id": "22d84d3a-a797-49a6-a1a8-f307dbf2c951",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
