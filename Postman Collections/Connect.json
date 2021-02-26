@@ -2896,6 +2896,81 @@
                   "body": null
                 }
               ]
+            },
+            {
+              "name": "Nyu Traveler",
+              "id": "9193b522-b6aa-4aa4-a41e-4260d77a4dd0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"id\": 140140,\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789,\n    \"sclEmployeeId\": 24566,\n    \"sclDepartmentCode\": 23806207,\n    \"sclHireDate\": \"2019-12-11\"\n}"
+                },
+                "url": "{{uri}}/ayaconnect/client/traveler",
+                "description": "Used to update the internalId of a traveler.\n\nThe request body is a DTO with the travelerId, facilityId, and internalId of the traveler.\n\nIf the traveler is a member of the SCL Health System, and the user sending the request is a member of the SCL Health System, they can also pass in the sclEmployeeId and sclBadgeNumber fields"
+              },
+              "response": [
+                {
+                  "id": "1456e99c-182a-4b9e-8e6d-5e58a44cf376",
+                  "name": "Update Traveler Request",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n    \"travelerId\": 840046,\n    \"facilityId\": 35902,\n    \"internalId\": \"89\",\n    \"sclEmployeeId\": \"C135Updated\",\n    \"sclBadgeNumber\": 789\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{uri}}/ayaconnect/client/traveler"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "plain",
+                  "header": [
+                    {
+                      "key": "Server",
+                      "value": "Kestrel"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ASP.NET"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 16 Dec 2019 18:06:12 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "0"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": null
+                }
+              ]
             }
           ],
           "id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a"
@@ -3556,6 +3631,12 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
                 "method": "PUT",
                 "header": [],
                 "body": {
@@ -7138,7 +7219,7 @@
     {
       "listen": "prerequest",
       "script": {
-        "id": "c430fd92-c04a-40f4-a148-404c794a4060",
+        "id": "130095b4-405f-4551-9475-e261739c6f1b",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7148,7 +7229,7 @@
     {
       "listen": "test",
       "script": {
-        "id": "e5e3386b-df68-4dc5-9d5a-5c39e297dd4d",
+        "id": "e9380aea-1584-4798-90a7-f325d8394b30",
         "type": "text/javascript",
         "exec": [
           ""
@@ -7158,12 +7239,12 @@
   ],
   "variable": [
     {
-      "id": "955923a9-9a81-4fb3-90bb-4e95e571e242",
+      "id": "9b4dace5-6bcd-492e-a33f-dab0c19dc2d2",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "01b23e08-eb9c-4ecf-9100-109ffe1c05d9",
+      "id": "bcfc0b4e-1494-4c8f-bcb3-9b7d9752a3c7",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
