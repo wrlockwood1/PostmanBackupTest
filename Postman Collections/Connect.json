@@ -3620,7 +3620,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"shiftIds\": [308670, 308671],\r\n    \"hasApprovalStatus\": true  \r\n}",
+                  "raw": "{\r\n    \"shiftIds\": [308670, 308671],\r\n    \"hasApprovalStatus\": true  //TRUE: the shifts already have a PerDiem.ShiftApprovalStatus entry; FALSE: shifts do not have a PerDiem.ShiftApprovalStatus entry\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7280,12 +7280,12 @@
   ],
   "variable": [
     {
-      "id": "f20fee3d-5dc8-4eb7-ba7a-c1ba5e8ab541",
+      "id": "0b3379ae-664a-4958-b977-ae6066a0251c",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "079c04ed-029a-4e32-8995-c2040f21d176",
+      "id": "85b2c6c7-9a48-4921-979e-625ee7177fde",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
