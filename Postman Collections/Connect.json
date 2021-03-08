@@ -3672,9 +3672,24 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
                 "method": "GET",
                 "header": [],
-                "url": "",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"seriesId\": \"3A12CF41-CDF8-448C-AC32-EC6FBF777B98\",\r\n    \"shiftId\": \"295421\",\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": false,\r\n    \"shouldSendShiftNotification\": false,\r\n       \"ShiftSchedules\":[{\"shiftLength\" : 10,\r\n     \"startDates\" : [\"04/01/2021\", \"04/08/2021\", \"04/18/2021\", \"04/25/2021\", \"04/29/2021\"],\r\n    \"startTime\": \"2021-04-01T20:50:00Z\"},\r\n    {\"shiftLength\" : 15.50,\r\n     \"startDates\" : [\"04/05/2021\", \"04/14/2021\", \"04/21/2021\"],\r\n    \"startTime\": \"2021-04-05T10:00:00Z\"}\r\n    \r\n                     ],\r\n    \"hasInternalPoolAccess\": false\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Client/Shifts/Edit",
                 "description": "You can use alexisdemo for testing.\r\n\r\nQuery:\r\nSELECT TOP (1000) s.*\r\nFROM  [nurses].[PerDiem].[Shifts] s WHERE s.SeriesId IS NOT NULL"
               },
               "response": []
@@ -7300,12 +7315,12 @@
   ],
   "variable": [
     {
-      "id": "2e6f5a85-61b3-4a02-9b8c-1d9567bde283",
+      "id": "91442146-c54a-46c3-bd79-762342e821e9",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "862496ee-47c0-4668-b030-f67976d12913",
+      "id": "2b11ff52-bdd0-4aa6-afea-8d5cadfbd0e7",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
