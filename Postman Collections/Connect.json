@@ -29,7 +29,7 @@
               }
             }
           ],
-          "_postman_id": "1cab3e1a-c4a8-4a99-a9f0-0da8d5dad4f3",
+          "id": "1cab3e1a-c4a8-4a99-a9f0-0da8d5dad4f3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -159,7 +159,7 @@
               }
             }
           ],
-          "_postman_id": "33f8a61c-5148-40c1-b9c6-0cf876cd60a4",
+          "id": "33f8a61c-5148-40c1-b9c6-0cf876cd60a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -286,7 +286,7 @@
               }
             }
           ],
-          "_postman_id": "f67d6d6b-fcc2-48de-914d-253c4ea7bc30",
+          "id": "f67d6d6b-fcc2-48de-914d-253c4ea7bc30",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -366,7 +366,7 @@
               }
             }
           ],
-          "_postman_id": "1bcf8023-0b20-4abc-bce4-f22ec1b959dc",
+          "id": "1bcf8023-0b20-4abc-bce4-f22ec1b959dc",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -452,7 +452,7 @@
               }
             }
           ],
-          "_postman_id": "604c9212-e03f-45da-aa84-19685c0b98cd",
+          "id": "604c9212-e03f-45da-aa84-19685c0b98cd",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -636,7 +636,7 @@
               }
             }
           ],
-          "_postman_id": "dada387b-7231-4857-939b-1ddf44f7798e",
+          "id": "dada387b-7231-4857-939b-1ddf44f7798e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -743,7 +743,7 @@
         },
         {
           "name": "Processes",
-          "_postman_id": "6ab17da0-7e79-4826-84bc-99bb45f732ed",
+          "id": "6ab17da0-7e79-4826-84bc-99bb45f732ed",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -909,7 +909,7 @@
         },
         {
           "name": "Approve Jobs With Process",
-          "_postman_id": "471854f3-3925-4e50-a0cd-caafff941044",
+          "id": "471854f3-3925-4e50-a0cd-caafff941044",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -931,10 +931,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"Ids\":[1222097],\r\n\t\"viewTypeId\":3\r\n}\r\n",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\r\n\t\"Ids\":[1222097],\r\n\t\"viewTypeId\":3\r\n}\r\n"
             },
             "url": "{{uri}}/AyaConnect/JobApproval/ApproveJobs",
             "description": "##\tDescription\r\n\r\n- \r\nThis is the endpoint we are using to test job approvals with jobs that have job approval processes\r\n----\r\n\r\n##\tExpected Result\r\n----\r\n\r\n- Will return jobs approved at job level, jobs approved at tier level (with ids of approvers for next tier), and jobs approved at user level"
@@ -992,7 +989,7 @@
         },
         {
           "name": "Reject Jobs With Process",
-          "_postman_id": "9427cc73-fd8e-43c2-a061-0bae44f8f759",
+          "id": "9427cc73-fd8e-43c2-a061-0bae44f8f759",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1072,7 +1069,7 @@
         },
         {
           "name": "Processes",
-          "_postman_id": "8ac716a8-48a2-40d5-89c1-57e08affacdf",
+          "id": "8ac716a8-48a2-40d5-89c1-57e08affacdf",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1094,10 +1091,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"id\": 212,\n    \"facilityProfileGroupIds\": [\n        33256\n    ],\n    \"level\": 2,\n    \"type\": 2,\n    \"tiers\": [\n        {\n            \"id\": 0,\n            \"tierType\": 1,\n            \"tierNumber\": 1,\n            \"tierApproverIds\": [\n                \"be685f17-96c4-4e4c-af44-e091f7c98e79\"\n            ]\n        },\n        {\n            \"id\": 150,\n            \"tierType\": 1,\n            \"tierNumber\": 2,\n            \"tierApproverIds\": [\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ]\n}",
-              "options": {
-                "raw": {}
-              }
+              "raw": "{\n    \"id\": 212,\n    \"facilityProfileGroupIds\": [\n        33256\n    ],\n    \"level\": 2,\n    \"type\": 2,\n    \"tiers\": [\n        {\n            \"id\": 0,\n            \"tierType\": 1,\n            \"tierNumber\": 1,\n            \"tierApproverIds\": [\n                \"be685f17-96c4-4e4c-af44-e091f7c98e79\"\n            ]\n        },\n        {\n            \"id\": 150,\n            \"tierType\": 1,\n            \"tierNumber\": 2,\n            \"tierApproverIds\": [\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ]\n}"
             },
             "url": "{{uri}}/AyaConnect/JobApprovalProcess/",
             "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see process with updated properties returned as part of body returned in GET Processes"
@@ -1203,7 +1197,7 @@
         },
         {
           "name": "Processes",
-          "_postman_id": "1d283a35-f8b2-46ee-b8dc-aef85bc43d11",
+          "id": "1d283a35-f8b2-46ee-b8dc-aef85bc43d11",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1233,7 +1227,7 @@
         },
         {
           "name": "Eligible Approvers",
-          "_postman_id": "1f134bd6-dcd6-42df-b036-34f36c20424e",
+          "id": "1f134bd6-dcd6-42df-b036-34f36c20424e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1423,7 +1417,7 @@
         },
         {
           "name": "Save Job With Process",
-          "_postman_id": "1538949b-a8ee-4ac0-b1cd-0cb9c659b0f8",
+          "id": "1538949b-a8ee-4ac0-b1cd-0cb9c659b0f8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1614,7 +1608,7 @@
         },
         {
           "name": "Enable or Disable Job Approvals For Facility",
-          "_postman_id": "e118ce4b-fb6f-4033-82ac-dcce7c6533ea",
+          "id": "e118ce4b-fb6f-4033-82ac-dcce7c6533ea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1638,7 +1632,7 @@
           "response": []
         }
       ],
-      "_postman_id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
+      "id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
       "description": "These are endpoints related to the Job Approvals Process project.\n\n\n>The tech design for this project can be found [here](https://ayadev.atlassian.net/wiki/spaces/PROJ/pages/818544693/Tech+Design+-+Approval+Processes)",
       "event": [
         {
@@ -1668,7 +1662,7 @@
       "item": [
         {
           "name": "Timecards",
-          "_postman_id": "c0e6dfa6-6c7e-4108-8008-bc0cff60acdc",
+          "id": "c0e6dfa6-6c7e-4108-8008-bc0cff60acdc",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1701,7 +1695,7 @@
         },
         {
           "name": "Approve",
-          "_postman_id": "8956cabe-32d3-4a40-bbdc-1babb88df3e4",
+          "id": "8956cabe-32d3-4a40-bbdc-1babb88df3e4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1724,7 +1718,7 @@
           "response": []
         }
       ],
-      "_postman_id": "066a31bc-e626-437c-b470-8ac8ee3af305",
+      "id": "066a31bc-e626-437c-b470-8ac8ee3af305",
       "auth": {
         "type": "bearer",
         "bearer": {
@@ -1759,7 +1753,7 @@
       "item": [
         {
           "name": "Job",
-          "_postman_id": "9048daed-a67e-403b-ba0d-d2c2d5296723",
+          "id": "9048daed-a67e-403b-ba0d-d2c2d5296723",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1792,7 +1786,7 @@
         },
         {
           "name": "Manual Vendor Release",
-          "_postman_id": "b13ac191-847f-41c9-8375-b9c3a620d338",
+          "id": "b13ac191-847f-41c9-8375-b9c3a620d338",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1814,7 +1808,7 @@
         },
         {
           "name": "SaveJob(new)",
-          "_postman_id": "7212ca32-9372-4378-9315-013947498e42",
+          "id": "7212ca32-9372-4378-9315-013947498e42",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1838,7 +1832,7 @@
         },
         {
           "name": "DeleteJob(new)",
-          "_postman_id": "02580ba4-f218-4a0b-b335-f89883b3bd9d",
+          "id": "02580ba4-f218-4a0b-b335-f89883b3bd9d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1862,7 +1856,7 @@
         },
         {
           "name": "Job Modified Notification",
-          "_postman_id": "aed02172-aea5-4d54-89eb-4f1b691219cf",
+          "id": "aed02172-aea5-4d54-89eb-4f1b691219cf",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1886,7 +1880,7 @@
         },
         {
           "name": "Jobs (Client)",
-          "_postman_id": "68e4ca6d-d87b-433b-a45b-d8071497fd7d",
+          "id": "68e4ca6d-d87b-433b-a45b-d8071497fd7d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1919,7 +1913,7 @@
         },
         {
           "name": "Jobs (Admin)",
-          "_postman_id": "4969a53d-2a47-4ccf-ac52-1850729b64f4",
+          "id": "4969a53d-2a47-4ccf-ac52-1850729b64f4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2002,7 +1996,7 @@
         },
         {
           "name": "Jobs (Admin) - Refactored",
-          "_postman_id": "28960141-19d3-4172-9ac3-b37f209cc9b7",
+          "id": "28960141-19d3-4172-9ac3-b37f209cc9b7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2089,7 +2083,7 @@
         },
         {
           "name": "Job History",
-          "_postman_id": "f52bdf4a-1791-4951-b29f-897a10f97efe",
+          "id": "f52bdf4a-1791-4951-b29f-897a10f97efe",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2108,7 +2102,7 @@
         },
         {
           "name": "Hospital Profile",
-          "_postman_id": "f4c961fe-029c-448d-853a-bac990139897",
+          "id": "f4c961fe-029c-448d-853a-bac990139897",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -2120,7 +2114,7 @@
           "response": []
         }
       ],
-      "_postman_id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
+      "id": "20b08685-f50e-42c5-a4e4-6db4f3f046a8"
     },
     {
       "name": "ClientTravelers",
@@ -2130,7 +2124,7 @@
           "item": [
             {
               "name": "Traveler",
-              "_postman_id": "65d2ea04-f5a7-4aa6-882f-f72f9ab5ef6d",
+              "id": "65d2ea04-f5a7-4aa6-882f-f72f9ab5ef6d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2215,7 +2209,7 @@
                   }
                 }
               ],
-              "_postman_id": "856ee233-369a-4fab-bf03-5aa0127c6194",
+              "id": "856ee233-369a-4fab-bf03-5aa0127c6194",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2275,7 +2269,7 @@
             },
             {
               "name": "Document",
-              "_postman_id": "2bd2a69b-d306-44d5-b4fa-6e1187c00acb",
+              "id": "2bd2a69b-d306-44d5-b4fa-6e1187c00acb",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2394,7 +2388,7 @@
             },
             {
               "name": "Document By Id",
-              "_postman_id": "80cf90ee-04fb-483a-9ccb-c62ce233eb40",
+              "id": "80cf90ee-04fb-483a-9ccb-c62ce233eb40",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2445,7 +2439,7 @@
             },
             {
               "name": "Traveler By Id",
-              "_postman_id": "6d6b001f-873e-4420-b63b-3dea304dee79",
+              "id": "6d6b001f-873e-4420-b63b-3dea304dee79",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2584,7 +2578,7 @@
                   }
                 }
               ],
-              "_postman_id": "f0b8e09a-099c-434e-ab7d-1304eb3a0b79",
+              "id": "f0b8e09a-099c-434e-ab7d-1304eb3a0b79",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2677,7 +2671,7 @@
                   }
                 }
               ],
-              "_postman_id": "a6c402c2-a7e7-4c0d-af3c-70d3e64079ff",
+              "id": "a6c402c2-a7e7-4c0d-af3c-70d3e64079ff",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2756,7 +2750,7 @@
                   }
                 }
               ],
-              "_postman_id": "c8c0aba8-5b23-4354-8e7a-0bd08e49be02",
+              "id": "c8c0aba8-5b23-4354-8e7a-0bd08e49be02",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2830,7 +2824,7 @@
             },
             {
               "name": "Traveler",
-              "_postman_id": "74021443-2b6a-4f2b-a34c-d316b82ebdaf",
+              "id": "74021443-2b6a-4f2b-a34c-d316b82ebdaf",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2905,7 +2899,7 @@
             },
             {
               "name": "Nyu Traveler",
-              "_postman_id": "9193b522-b6aa-4aa4-a41e-4260d77a4dd0",
+              "id": "9193b522-b6aa-4aa4-a41e-4260d77a4dd0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2921,10 +2915,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"id\": 259344,\n    \"travelerId\": 671437,\n    \"facilityId\": 42211,\n    \"internalId\": null,\n    \"sclEmployeeId\": null,\n    \"sclBadgeNumber\": null,\n    \"sclEmployeeId\": null,\n    \"sclDepartmentCode\": null,\n    \"sclHireDate\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5\n}",
-                  "options": {
-                    "raw": {}
-                  }
+                  "raw": "{\n    \"id\": 259344,\n    \"travelerId\": 671437,\n    \"facilityId\": 42211,\n    \"internalId\": null,\n    \"sclEmployeeId\": null,\n    \"sclBadgeNumber\": null,\n    \"sclEmployeeId\": null,\n    \"sclDepartmentCode\": null,\n    \"sclHireDate\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/nyu",
                 "description": "This is an extension of the PUT Traveler method.  It has all the same properties plus DepartmentId, BuildingId, FloorId, etc"
@@ -2983,7 +2974,7 @@
             },
             {
               "name": "New Request",
-              "_postman_id": "99f4a683-4c91-4d58-9b03-ff37a25639b8",
+              "id": "99f4a683-4c91-4d58-9b03-ff37a25639b8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -2995,15 +2986,14 @@
               "response": []
             }
           ],
-          "_postman_id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a",
-          "_postman_isSubFolder": true
+          "id": "45d0eea8-fee1-478b-8912-b3e2abbd5e6a"
         },
         {
           "name": "TravelerJob",
           "item": [
             {
               "name": "Get Jobs",
-              "_postman_id": "52a31feb-112e-46fa-9137-6f26f5601441",
+              "id": "52a31feb-112e-46fa-9137-6f26f5601441",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3047,7 +3037,7 @@
             },
             {
               "name": "Get Jobs (WebAPI)",
-              "_postman_id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
+              "id": "7576f415-6d73-4fb0-a0c3-c7c093d4c257",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3093,7 +3083,7 @@
             },
             {
               "name": "Add Job",
-              "_postman_id": "8f79ca89-2f76-4a5c-bf1b-9b3c2aedbb60",
+              "id": "8f79ca89-2f76-4a5c-bf1b-9b3c2aedbb60",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3133,7 +3123,7 @@
             },
             {
               "name": "Delete Job",
-              "_postman_id": "91ff598b-67ac-4d4d-8161-a20388f73a0c",
+              "id": "91ff598b-67ac-4d4d-8161-a20388f73a0c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3168,22 +3158,20 @@
               "response": []
             }
           ],
-          "_postman_id": "5872f052-451a-4519-b3bc-739e63a84998",
-          "_postman_isSubFolder": true
+          "id": "5872f052-451a-4519-b3bc-739e63a84998"
         },
         {
           "name": "TravelerDocuments",
           "item": [],
-          "_postman_id": "3af5b1c7-6fcc-4d45-952d-a6720e2003c6",
-          "description": "Use to test downloading traveler documents",
-          "_postman_isSubFolder": true
+          "id": "3af5b1c7-6fcc-4d45-952d-a6720e2003c6",
+          "description": "Use to test downloading traveler documents"
         },
         {
           "name": "TravelerWoc",
           "item": [
             {
               "name": "WOC Pending Review",
-              "_postman_id": "890465bf-266d-4f61-a3f1-991b84aadd20",
+              "id": "890465bf-266d-4f61-a3f1-991b84aadd20",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3209,7 +3197,7 @@
             },
             {
               "name": "Agency Offer",
-              "_postman_id": "48555c0c-c2ed-44c0-88f1-34c9c939f9d5",
+              "id": "48555c0c-c2ed-44c0-88f1-34c9c939f9d5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3235,7 +3223,7 @@
             },
             {
               "name": "Pending WOC Travelers",
-              "_postman_id": "2b2ae754-8c9d-4e08-9514-5226429ddafe",
+              "id": "2b2ae754-8c9d-4e08-9514-5226429ddafe",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3261,7 +3249,7 @@
             },
             {
               "name": "Pending WOC Travelers",
-              "_postman_id": "78b7a394-f727-4715-bc22-2372a88f9751",
+              "id": "78b7a394-f727-4715-bc22-2372a88f9751",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3287,7 +3275,7 @@
             },
             {
               "name": "Send Pending WOC Notification Email",
-              "_postman_id": "7bc2be76-dccc-4a10-9e02-29d7d812b051",
+              "id": "7bc2be76-dccc-4a10-9e02-29d7d812b051",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3312,9 +3300,8 @@
               "response": []
             }
           ],
-          "_postman_id": "da27f094-8d16-4dd0-92e5-67cebfed5df1",
-          "description": "Request related to Traveler Woc in Connect",
-          "_postman_isSubFolder": true
+          "id": "da27f094-8d16-4dd0-92e5-67cebfed5df1",
+          "description": "Request related to Traveler Woc in Connect"
         },
         {
           "name": "login ",
@@ -3343,7 +3330,7 @@
               }
             }
           ],
-          "_postman_id": "6eab16d1-97de-487c-9b83-05c5083c0040",
+          "id": "6eab16d1-97de-487c-9b83-05c5083c0040",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3395,7 +3382,7 @@
           "response": []
         }
       ],
-      "_postman_id": "63f5e22e-afc5-4524-a11f-202db30dc036",
+      "id": "63f5e22e-afc5-4524-a11f-202db30dc036",
       "event": [
         {
           "listen": "prerequest",
@@ -3427,7 +3414,7 @@
           "item": [
             {
               "name": "Add Attachments",
-              "_postman_id": "fa6e5710-02b6-4366-940c-64328b60498a",
+              "id": "fa6e5710-02b6-4366-940c-64328b60498a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3458,10 +3445,7 @@
                       "value": "true",
                       "type": "text"
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": {
                   "raw": "{{uri}}/ayaconnect/client/shifts/286492/attachments",
@@ -3495,7 +3479,7 @@
             },
             {
               "name": "Get Attachments",
-              "_postman_id": "45ae6281-f7db-442b-8e1f-04cdb1db3e94",
+              "id": "45ae6281-f7db-442b-8e1f-04cdb1db3e94",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3508,7 +3492,7 @@
             },
             {
               "name": "Get File",
-              "_postman_id": "7009302e-06b7-4aeb-9460-3fa472b43055",
+              "id": "7009302e-06b7-4aeb-9460-3fa472b43055",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3521,7 +3505,7 @@
             },
             {
               "name": "Get Page Count for Viewer",
-              "_postman_id": "fca26010-693c-4a30-9f8e-c1d124f49f8f",
+              "id": "fca26010-693c-4a30-9f8e-c1d124f49f8f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3534,7 +3518,7 @@
             },
             {
               "name": "Get Delete",
-              "_postman_id": "87d41ac7-978c-47fb-8d3e-8a70cef8f7c3",
+              "id": "87d41ac7-978c-47fb-8d3e-8a70cef8f7c3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3547,7 +3531,7 @@
             },
             {
               "name": "Update Attachment",
-              "_postman_id": "dd09990b-453b-414a-bc7c-e1383d72276c",
+              "id": "dd09990b-453b-414a-bc7c-e1383d72276c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3578,25 +3562,21 @@
                       "type": "text",
                       "disabled": true
                     }
-                  ],
-                  "options": {
-                    "urlencoded": {}
-                  }
+                  ]
                 },
                 "url": "{{uri}}/ayaconnect/client/shifts/291710/attachments/8"
               },
               "response": []
             }
           ],
-          "_postman_id": "d0fbeb9a-5fad-425d-bea7-bff6698385de",
-          "_postman_isSubFolder": true
+          "id": "d0fbeb9a-5fad-425d-bea7-bff6698385de"
         },
         {
           "name": "Lookups",
           "item": [
             {
               "name": "Client - Get Lookups",
-              "_postman_id": "f75bfac8-9cfd-42d4-99ad-588cf9a54c4f",
+              "id": "f75bfac8-9cfd-42d4-99ad-588cf9a54c4f",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3624,15 +3604,14 @@
               "response": []
             }
           ],
-          "_postman_id": "59cd025a-f872-46a2-ab5c-183444820fcc",
-          "_postman_isSubFolder": true
+          "id": "59cd025a-f872-46a2-ab5c-183444820fcc"
         },
         {
           "name": "Shift Approvals",
           "item": [
             {
               "name": "Set Approval Process",
-              "_postman_id": "ef618116-8d5f-4051-8fcd-48086eac285d",
+              "id": "ef618116-8d5f-4051-8fcd-48086eac285d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3654,7 +3633,7 @@
             },
             {
               "name": "Approve Or Reject Shifts",
-              "_postman_id": "9d2f9579-f2dc-4f0e-86e4-35a6f5defb6e",
+              "id": "9d2f9579-f2dc-4f0e-86e4-35a6f5defb6e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3681,15 +3660,14 @@
               "response": []
             }
           ],
-          "_postman_id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441",
-          "_postman_isSubFolder": true
+          "id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441"
         },
         {
           "name": "Shift Series",
           "item": [
             {
               "name": "Update Single Shift in a Series",
-              "_postman_id": "4c5c6d7f-7349-42bd-b4e2-3f467d3fe5f5",
+              "id": "4c5c6d7f-7349-42bd-b4e2-3f467d3fe5f5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3718,7 +3696,7 @@
             },
             {
               "name": "Add Shift Series",
-              "_postman_id": "c3cd0f92-06d1-4549-ac76-898c9842e962",
+              "id": "c3cd0f92-06d1-4549-ac76-898c9842e962",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -3745,12 +3723,11 @@
               "response": []
             }
           ],
-          "_postman_id": "27696859-43c4-4f27-9e6e-bcb9198dbd69",
-          "_postman_isSubFolder": true
+          "id": "27696859-43c4-4f27-9e6e-bcb9198dbd69"
         },
         {
           "name": "ClientShifts",
-          "_postman_id": "d9f3bbe9-84ad-47ab-8e86-03cd7b09b3d1",
+          "id": "d9f3bbe9-84ad-47ab-8e86-03cd7b09b3d1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3811,7 +3788,7 @@
         },
         {
           "name": "Report Cancellations",
-          "_postman_id": "89001151-ea41-456a-9fc6-84bbe527a364",
+          "id": "89001151-ea41-456a-9fc6-84bbe527a364",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3856,7 +3833,7 @@
         },
         {
           "name": "Reconfirm",
-          "_postman_id": "51ee202b-6eba-4592-a497-f6f91d661531",
+          "id": "51ee202b-6eba-4592-a497-f6f91d661531",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3869,7 +3846,7 @@
         },
         {
           "name": "Shift-Status",
-          "_postman_id": "bbbe12fe-1939-4273-b31f-4cd7e69f0c32",
+          "id": "bbbe12fe-1939-4273-b31f-4cd7e69f0c32",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3881,7 +3858,7 @@
           "response": []
         }
       ],
-      "_postman_id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
+      "id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
       "description": "New Shifts Controller"
     },
     {
@@ -3889,7 +3866,7 @@
       "item": [
         {
           "name": "Add Resource",
-          "_postman_id": "6d08aac7-cddd-4259-82c2-cd7bbb17ee39",
+          "id": "6d08aac7-cddd-4259-82c2-cd7bbb17ee39",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3917,7 +3894,7 @@
         },
         {
           "name": "Get Resource Details",
-          "_postman_id": "4214e131-abec-4cd9-bdaa-50d1ace117fa",
+          "id": "4214e131-abec-4cd9-bdaa-50d1ace117fa",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3945,7 +3922,7 @@
         },
         {
           "name": "Send Shift Notification Email",
-          "_postman_id": "ac5caa6d-8388-487b-8f95-ae57843a2bf1",
+          "id": "ac5caa6d-8388-487b-8f95-ae57843a2bf1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -3973,7 +3950,7 @@
         },
         {
           "name": "Update Resource",
-          "_postman_id": "4974063d-9ad8-4c95-b918-7a65da1fe1e6",
+          "id": "4974063d-9ad8-4c95-b918-7a65da1fe1e6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4001,7 +3978,7 @@
         },
         {
           "name": "login",
-          "_postman_id": "412d498f-590e-4ebe-9df6-f6de3d64183d",
+          "id": "412d498f-590e-4ebe-9df6-f6de3d64183d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4045,10 +4022,7 @@
                   "value": "application/x-www-form-urlencoded",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": "{{uri}}/connect/token"
           },
@@ -4056,7 +4030,7 @@
         },
         {
           "name": "Get Shift Details",
-          "_postman_id": "069bc215-5b20-40ca-b5ec-ab281793f240",
+          "id": "069bc215-5b20-40ca-b5ec-ab281793f240",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4075,7 +4049,7 @@
         },
         {
           "name": "Get Shifts",
-          "_postman_id": "17aff24c-7e13-4c31-90a5-9f98acdd9e13",
+          "id": "17aff24c-7e13-4c31-90a5-9f98acdd9e13",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4134,7 +4108,7 @@
         },
         {
           "name": "Reconfirm",
-          "_postman_id": "d8fd49b2-4d7e-4f93-a6cc-8ea21cc0d9d4",
+          "id": "d8fd49b2-4d7e-4f93-a6cc-8ea21cc0d9d4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4146,14 +4120,14 @@
           "response": []
         }
       ],
-      "_postman_id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
+      "id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
     },
     {
       "name": "Reports",
       "item": [
         {
           "name": "{{uri}}//AyaConnect/Report/spending-by-month-csv",
-          "_postman_id": "1c309544-dee1-4f0e-89cc-482d295c0eed",
+          "id": "1c309544-dee1-4f0e-89cc-482d295c0eed",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4173,7 +4147,7 @@
         },
         {
           "name": "{{uri}}//AyaConnect/Report/spending-by-unit-csv",
-          "_postman_id": "ed0e05fd-b159-41f8-952e-1d5eeedcce08",
+          "id": "ed0e05fd-b159-41f8-952e-1d5eeedcce08",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4194,7 +4168,7 @@
         },
         {
           "name": "{{uri}}//AyaConnect/Report/spending-by-specialty-csv",
-          "_postman_id": "f077594f-f9a3-4578-ae00-fc12e920e81d",
+          "id": "f077594f-f9a3-4578-ae00-fc12e920e81d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4215,7 +4189,7 @@
         },
         {
           "name": "{{uri}}//AyaConnect/Report/spending-by-cost-center-csv",
-          "_postman_id": "caa4d9e4-5751-4e4c-a171-f479edcc8cd6",
+          "id": "caa4d9e4-5751-4e4c-a171-f479edcc8cd6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4236,7 +4210,7 @@
         },
         {
           "name": "{{uri}}//AyaConnect/Report/spending-by-supplier-csv",
-          "_postman_id": "efa13bb4-b95f-4ce7-950c-a8314dcdd013",
+          "id": "efa13bb4-b95f-4ce7-950c-a8314dcdd013",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4256,7 +4230,7 @@
           "response": []
         }
       ],
-      "_postman_id": "824dc6af-8885-48ac-b89b-dbc5d53b4a9b",
+      "id": "824dc6af-8885-48ac-b89b-dbc5d53b4a9b",
       "description": "Aya.Core.Api.Controllers.AyaConnect -> Report"
     },
     {
@@ -4264,7 +4238,7 @@
       "item": [
         {
           "name": "pending-woc",
-          "_postman_id": "09f1d61c-5f4a-44af-9054-cba4dbe79d48",
+          "id": "09f1d61c-5f4a-44af-9054-cba4dbe79d48",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4307,7 +4281,7 @@
         },
         {
           "name": "awaiting-clearance",
-          "_postman_id": "7cc0c066-ef74-4a6a-8a1c-2817f5b40c5b",
+          "id": "7cc0c066-ef74-4a6a-8a1c-2817f5b40c5b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4350,7 +4324,7 @@
         },
         {
           "name": "workers",
-          "_postman_id": "561acd30-a381-4349-9896-d1a3ea4f675a",
+          "id": "561acd30-a381-4349-9896-d1a3ea4f675a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4403,7 +4377,7 @@
         },
         {
           "name": "pending-jobs",
-          "_postman_id": "6e99c126-1d75-4110-adb4-1b02b7b33e52",
+          "id": "6e99c126-1d75-4110-adb4-1b02b7b33e52",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4450,7 +4424,7 @@
         },
         {
           "name": "jobs",
-          "_postman_id": "ad9b37a5-43c4-4be0-bef5-0c65557a5563",
+          "id": "ad9b37a5-43c4-4be0-bef5-0c65557a5563",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4493,7 +4467,7 @@
         },
         {
           "name": "pending-timecards",
-          "_postman_id": "0c70917a-883e-4844-b323-99a9dc3d68ef",
+          "id": "0c70917a-883e-4844-b323-99a9dc3d68ef",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4540,7 +4514,7 @@
         },
         {
           "name": "line-of-business",
-          "_postman_id": "9ffe4a21-0134-4b12-95a3-4b1027b4c46a",
+          "id": "9ffe4a21-0134-4b12-95a3-4b1027b4c46a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4559,7 +4533,7 @@
         },
         {
           "name": "security-lists",
-          "_postman_id": "95810575-de7f-49d1-8310-b414ca9ee2b4",
+          "id": "95810575-de7f-49d1-8310-b414ca9ee2b4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4602,7 +4576,7 @@
         },
         {
           "name": "client-prefences",
-          "_postman_id": "2a38ce8e-6088-416c-beac-4f9d36e94f8f",
+          "id": "2a38ce8e-6088-416c-beac-4f9d36e94f8f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4645,7 +4619,7 @@
           "response": []
         }
       ],
-      "_postman_id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
+      "id": "d0b2ee62-7a60-433d-974b-10be7302a97d"
     },
     {
       "name": "Travelers",
@@ -4655,7 +4629,7 @@
           "item": [
             {
               "name": "Complete Request",
-              "_postman_id": "5f798070-d8df-4003-83e5-9335120c9528",
+              "id": "5f798070-d8df-4003-83e5-9335120c9528",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4673,15 +4647,14 @@
               "response": []
             }
           ],
-          "_postman_id": "bf2875b4-6c05-427c-9c11-c6f254499914",
-          "_postman_isSubFolder": true
+          "id": "bf2875b4-6c05-427c-9c11-c6f254499914"
         },
         {
           "name": "Staffing Advisory",
           "item": [
             {
               "name": "Get StaffingAdvisory",
-              "_postman_id": "870a7a22-3316-4189-a384-18b426a1e3a3",
+              "id": "870a7a22-3316-4189-a384-18b426a1e3a3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4721,7 +4694,7 @@
             },
             {
               "name": "Add Staffing Advisory",
-              "_postman_id": "dd263bf5-96af-4759-abdf-5f063dfccbeb",
+              "id": "dd263bf5-96af-4759-abdf-5f063dfccbeb",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4749,7 +4722,7 @@
             },
             {
               "name": "Add Staffing Advisory Document",
-              "_postman_id": "2940abad-e4fb-4ce8-a18a-6ce1a779d7b5",
+              "id": "2940abad-e4fb-4ce8-a18a-6ce1a779d7b5",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4770,10 +4743,7 @@
                       "type": "file",
                       "value": null
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory/1638/attachments"
               },
@@ -4781,7 +4751,7 @@
             },
             {
               "name": "Get All Staffing Advisory Documents",
-              "_postman_id": "a3910d5c-b872-4789-acb0-0fb220e7afd1",
+              "id": "a3910d5c-b872-4789-acb0-0fb220e7afd1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4802,10 +4772,7 @@
                       "type": "file",
                       "value": null
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory/1638/attachments"
               },
@@ -4813,7 +4780,7 @@
             },
             {
               "name": "Get Staffing Advisory Document",
-              "_postman_id": "f317f2c3-556b-4498-9511-33d1cdcd9a5a",
+              "id": "f317f2c3-556b-4498-9511-33d1cdcd9a5a",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -4834,22 +4801,18 @@
                       "type": "file",
                       "value": null
                     }
-                  ],
-                  "options": {
-                    "formdata": {}
-                  }
+                  ]
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/staffing-advisory/1638/attachments/1"
               },
               "response": []
             }
           ],
-          "_postman_id": "82b6b985-f2f9-4239-ab04-b897f4441316",
-          "_postman_isSubFolder": true
+          "id": "82b6b985-f2f9-4239-ab04-b897f4441316"
         },
         {
           "name": "Get Travelers",
-          "_postman_id": "740d747d-a974-464e-8047-dcda9a2b4f29",
+          "id": "740d747d-a974-464e-8047-dcda9a2b4f29",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4925,7 +4888,7 @@
         },
         {
           "name": "Get Traveler by Id",
-          "_postman_id": "7a6f2000-fa30-4571-8671-5777c9353781",
+          "id": "7a6f2000-fa30-4571-8671-5777c9353781",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -4986,14 +4949,14 @@
           "response": []
         }
       ],
-      "_postman_id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
+      "id": "74649f18-81e4-46cb-abf5-d5ebf675f1a5"
     },
     {
       "name": "Featured Logos",
       "item": [
         {
           "name": "Get Logos",
-          "_postman_id": "65ea0b02-6af8-4bb8-adc3-9cbae4a8a1a5",
+          "id": "65ea0b02-6af8-4bb8-adc3-9cbae4a8a1a5",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5006,7 +4969,7 @@
         },
         {
           "name": "Add Logo",
-          "_postman_id": "effcb6cb-59e7-42e2-8df8-45a6a2700eca",
+          "id": "effcb6cb-59e7-42e2-8df8-45a6a2700eca",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5034,10 +4997,7 @@
                   "type": "file",
                   "src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/logo.PNG"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": "{{uri}}/AyaConnect/Admin/Facilities/1561/featuredLogos"
           },
@@ -5045,7 +5005,7 @@
         },
         {
           "name": "Get Logo",
-          "_postman_id": "bc04082a-a3a5-486c-9bef-6e9526e8c204",
+          "id": "bc04082a-a3a5-486c-9bef-6e9526e8c204",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5058,7 +5018,7 @@
         },
         {
           "name": "Delete Logo",
-          "_postman_id": "d5dea52d-367c-49f8-b293-8287c745b296",
+          "id": "d5dea52d-367c-49f8-b293-8287c745b296",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5070,7 +5030,7 @@
           "response": []
         }
       ],
-      "_postman_id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
+      "id": "3ba7ebff-d1b3-41f0-aadb-87a3ed35de37",
       "description": "Featured Logos is a functionality for facilities to upload thier own logos into connect app"
     },
     {
@@ -5078,7 +5038,7 @@
       "item": [
         {
           "name": "Get New Submittals",
-          "_postman_id": "d37ca5c5-2af9-43f5-953c-22c13cd06220",
+          "id": "d37ca5c5-2af9-43f5-953c-22c13cd06220",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -5122,7 +5082,7 @@
           "response": []
         }
       ],
-      "_postman_id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
+      "id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
     },
     {
       "name": "Admin",
@@ -5132,7 +5092,7 @@
           "item": [
             {
               "name": "Vendors",
-              "_postman_id": "c996f79a-8c28-43d3-8d76-c504cecc1f76",
+              "id": "c996f79a-8c28-43d3-8d76-c504cecc1f76",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5341,7 +5301,7 @@
             },
             {
               "name": "Vendors Count",
-              "_postman_id": "a2678a9d-73d4-4c03-b8de-c1dae4f0cddc",
+              "id": "a2678a9d-73d4-4c03-b8de-c1dae4f0cddc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5492,7 +5452,7 @@
             },
             {
               "name": "Vendor Lookups",
-              "_postman_id": "e910c511-ff2e-4cf6-a160-aa9ae89f9285",
+              "id": "e910c511-ff2e-4cf6-a160-aa9ae89f9285",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5622,7 +5582,7 @@
             },
             {
               "name": "Vendors Status History",
-              "_postman_id": "eebb005f-e7ea-433d-9792-7ebf0b999489",
+              "id": "eebb005f-e7ea-433d-9792-7ebf0b999489",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5771,7 +5731,7 @@
             },
             {
               "name": "Vendors For Export",
-              "_postman_id": "0e34cf1e-f951-48e2-9993-79666fc33acc",
+              "id": "0e34cf1e-f951-48e2-9993-79666fc33acc",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -5981,7 +5941,7 @@
             },
             {
               "name": "Selected Vendors For Export",
-              "_postman_id": "c19b1b35-cac1-4318-871c-7b3aebfb5e17",
+              "id": "c19b1b35-cac1-4318-871c-7b3aebfb5e17",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6120,7 +6080,7 @@
             },
             {
               "name": "Facility Profile",
-              "_postman_id": "c7b3f0c7-9510-4c85-8d5d-bf9868e4ed4c",
+              "id": "c7b3f0c7-9510-4c85-8d5d-bf9868e4ed4c",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6176,7 +6136,7 @@
             },
             {
               "name": "Update Term Sheet Required",
-              "_postman_id": "440c5301-736b-4aa8-a47f-9ba4e63f3b88",
+              "id": "440c5301-736b-4aa8-a47f-9ba4e63f3b88",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6199,7 +6159,7 @@
             },
             {
               "name": "Update Status",
-              "_postman_id": "bfbf0b95-a73f-499a-9049-8f50a0742024",
+              "id": "bfbf0b95-a73f-499a-9049-8f50a0742024",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6222,7 +6182,7 @@
             },
             {
               "name": "Update Term Sheet Signed",
-              "_postman_id": "80636e2f-f42c-43fa-9501-b52236b3975d",
+              "id": "80636e2f-f42c-43fa-9501-b52236b3975d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6245,7 +6205,7 @@
             },
             {
               "name": "Facility Profile Summary",
-              "_postman_id": "66944e20-025a-47c0-9b49-f073c8314668",
+              "id": "66944e20-025a-47c0-9b49-f073c8314668",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6297,7 +6257,7 @@
             },
             {
               "name": "Email Notification Features",
-              "_postman_id": "4bfdc17f-f152-4513-a1ca-49c20a8c02b6",
+              "id": "4bfdc17f-f152-4513-a1ca-49c20a8c02b6",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6310,7 +6270,7 @@
             },
             {
               "name": "Jobs Management Features",
-              "_postman_id": "f613973b-e9bc-49ed-93b6-cbbc92f833db",
+              "id": "f613973b-e9bc-49ed-93b6-cbbc92f833db",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6323,7 +6283,7 @@
             },
             {
               "name": "Create Scheduled Release Rule",
-              "_postman_id": "b9f63dbd-158a-4fe9-a309-b0a9a7651e74",
+              "id": "b9f63dbd-158a-4fe9-a309-b0a9a7651e74",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6345,7 +6305,7 @@
             },
             {
               "name": "Facility Permission",
-              "_postman_id": "5dab37f3-ad42-40ef-b40d-cd2b139b1ae8",
+              "id": "5dab37f3-ad42-40ef-b40d-cd2b139b1ae8",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6372,16 +6332,15 @@
               "response": []
             }
           ],
-          "_postman_id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
-          "description": "Contains endpoints related to Connect Admin Facility module",
-          "_postman_isSubFolder": true
+          "id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
+          "description": "Contains endpoints related to Connect Admin Facility module"
         },
         {
           "name": "Vendor-Candidates",
           "item": [
             {
               "name": "{{url}}/AyaConnect/admin/vendor-candidates/86636/State/{stateId}",
-              "_postman_id": "37f4a478-ed53-47cc-b953-49428c2614b1",
+              "id": "37f4a478-ed53-47cc-b953-49428c2614b1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -6393,11 +6352,10 @@
               "response": []
             }
           ],
-          "_postman_id": "11021d71-3752-4eff-ae6f-3c64db83a1b1",
-          "_postman_isSubFolder": true
+          "id": "11021d71-3752-4eff-ae6f-3c64db83a1b1"
         }
       ],
-      "_postman_id": "0060b601-476e-4d52-9d35-1dc75380d5c4",
+      "id": "0060b601-476e-4d52-9d35-1dc75380d5c4",
       "description": "Contains endpoints for Connect - Admin module"
     },
     {
@@ -6405,7 +6363,7 @@
       "item": [
         {
           "name": "Get Job attachment",
-          "_postman_id": "46042263-89be-42c1-bcc5-1cf3283bfbb3",
+          "id": "46042263-89be-42c1-bcc5-1cf3283bfbb3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6450,7 +6408,7 @@
               }
             }
           ],
-          "_postman_id": "36fef586-824a-4e57-be34-6d8fb13d6da0",
+          "id": "36fef586-824a-4e57-be34-6d8fb13d6da0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6495,10 +6453,7 @@
                   "value": "",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "urlencoded": {}
-              }
+              ]
             },
             "url": "{{uri}}/connect/token"
           },
@@ -6506,7 +6461,7 @@
         },
         {
           "name": "Add Job attachment",
-          "_postman_id": "cf9ee8cc-d349-44ee-8088-35ee3aa352ea",
+          "id": "cf9ee8cc-d349-44ee-8088-35ee3aa352ea",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6526,10 +6481,7 @@
                   "value": "1",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": {
               "raw": "{{uri}}/ayaconnect/jobs/1234603/attachments",
@@ -6556,7 +6508,7 @@
         },
         {
           "name": "Get all job attachments",
-          "_postman_id": "6b370fe6-332a-4ada-8a1d-29240b923a84",
+          "id": "6b370fe6-332a-4ada-8a1d-29240b923a84",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6576,7 +6528,7 @@
         },
         {
           "name": "Get job attachment preview",
-          "_postman_id": "81a08df0-755c-44c7-b23c-54d8a44c0608",
+          "id": "81a08df0-755c-44c7-b23c-54d8a44c0608",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6589,7 +6541,7 @@
         },
         {
           "name": "Get attachment doc page count",
-          "_postman_id": "0883a1af-8fe4-4f8d-8b9a-0cc5f0fd6adb",
+          "id": "0883a1af-8fe4-4f8d-8b9a-0cc5f0fd6adb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6602,7 +6554,7 @@
         },
         {
           "name": "Update internalonly option",
-          "_postman_id": "f87bf650-3304-4971-a570-429181448e26",
+          "id": "f87bf650-3304-4971-a570-429181448e26",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6627,10 +6579,7 @@
                   "value": "true",
                   "type": "text"
                 }
-              ],
-              "options": {
-                "formdata": {}
-              }
+              ]
             },
             "url": "{{uri}}/ayaconnect/jobs/1234603/attachments/129"
           },
@@ -6638,7 +6587,7 @@
         },
         {
           "name": "Delete job attachment",
-          "_postman_id": "25ee954c-a97f-44fa-b6d5-bf04bc7dab89",
+          "id": "25ee954c-a97f-44fa-b6d5-bf04bc7dab89",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6650,7 +6599,7 @@
           "response": []
         }
       ],
-      "_postman_id": "05d49437-487f-491d-9d0e-1b2a834828d1",
+      "id": "05d49437-487f-491d-9d0e-1b2a834828d1",
       "description": "To save an attachment for a job"
     },
     {
@@ -6659,12 +6608,11 @@
         {
           "name": "Candidates",
           "item": [],
-          "_postman_id": "6a3fada1-f786-47c3-bf5c-319b98c693d8",
-          "_postman_isSubFolder": true
+          "id": "6a3fada1-f786-47c3-bf5c-319b98c693d8"
         },
         {
           "name": "Facilities",
-          "_postman_id": "dc1f0735-acfd-4935-a722-fce688d3b79e",
+          "id": "dc1f0735-acfd-4935-a722-fce688d3b79e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6862,7 +6810,7 @@
         },
         {
           "name": "Lookups",
-          "_postman_id": "8cbda281-936f-4241-bac0-4f505d893671",
+          "id": "8cbda281-936f-4241-bac0-4f505d893671",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6914,7 +6862,7 @@
         },
         {
           "name": "Accept Facilities",
-          "_postman_id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
+          "id": "0cbd84d4-74ba-4e96-9ec5-defc2af99ddb",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -6984,7 +6932,7 @@
         },
         {
           "name": "Decline Facilities",
-          "_postman_id": "615bed1a-7414-474f-bf07-91806d6fdd6f",
+          "id": "615bed1a-7414-474f-bf07-91806d6fdd6f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7050,7 +6998,7 @@
         },
         {
           "name": "Facilities Export",
-          "_postman_id": "e4849350-ae86-4337-bc11-1e8bba7997c7",
+          "id": "e4849350-ae86-4337-bc11-1e8bba7997c7",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7142,7 +7090,7 @@
         },
         {
           "name": "Facilities Export Selected",
-          "_postman_id": "a4f43efd-ad13-42bd-8aa5-6f5301cd3e43",
+          "id": "a4f43efd-ad13-42bd-8aa5-6f5301cd3e43",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7281,7 +7229,7 @@
         },
         {
           "name": "Status Count",
-          "_postman_id": "6aca3192-a552-4abb-b6a0-589ccaa040e4",
+          "id": "6aca3192-a552-4abb-b6a0-589ccaa040e4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7318,7 +7266,7 @@
         },
         {
           "name": "Admin Tag",
-          "_postman_id": "cfb310af-3335-4974-9b20-37f20c42f891",
+          "id": "cfb310af-3335-4974-9b20-37f20c42f891",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -7331,7 +7279,7 @@
           "response": []
         }
       ],
-      "_postman_id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
+      "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
       "description": "Requests related to vendor module"
     },
     {
@@ -7342,7 +7290,7 @@
           "item": [
             {
               "name": "NYU-UpdateUnit",
-              "_postman_id": "37b524a1-c21f-4032-82f4-c7645db93ced",
+              "id": "37b524a1-c21f-4032-82f4-c7645db93ced",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -7363,15 +7311,14 @@
               "response": []
             }
           ],
-          "_postman_id": "1d7f8ea8-5c6a-439b-b2dc-cbcd6753ae13",
-          "_postman_isSubFolder": true
+          "id": "1d7f8ea8-5c6a-439b-b2dc-cbcd6753ae13"
         }
       ],
-      "_postman_id": "ca1989f3-1772-40ef-ad5e-af3ab7ab010c"
+      "id": "ca1989f3-1772-40ef-ad5e-af3ab7ab010c"
     },
     {
       "name": "Get Menu",
-      "_postman_id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
+      "id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -7404,7 +7351,7 @@
           }
         }
       ],
-      "_postman_id": "fe26bfb6-3dc6-4d6b-8047-8c565e06186d",
+      "id": "fe26bfb6-3dc6-4d6b-8047-8c565e06186d",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -7445,10 +7392,7 @@
               "value": "local",
               "type": "text"
             }
-          ],
-          "options": {
-            "urlencoded": {}
-          }
+          ]
         },
         "url": "{{uri}}/connect/token"
       },
@@ -7485,16 +7429,14 @@
   ],
   "variable": [
     {
-      "id": "7559d02a-3722-4e29-927c-8614799d7946",
+      "id": "2b1b1951-23a6-4704-82d1-aab71001707c",
       "key": "uri",
-      "value": "http://localhost:8088",
-      "type": "string"
+      "value": "http://localhost:8088"
     },
     {
-      "id": "f3908501-0385-4023-b23b-77bac647bb5d",
+      "id": "d284ec22-5c05-40e0-bd14-e3c6d2f859d9",
       "key": "Bearer",
-      "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ",
-      "type": "string"
+      "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
   ]
 }
