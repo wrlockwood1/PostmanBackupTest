@@ -6339,7 +6339,7 @@
           "name": "Vendor-Candidates",
           "item": [
             {
-              "name": "{{url}}/AyaConnect/admin/vendor-candidates/86636/State/{stateId}",
+              "name": "RemoveLicense",
               "id": "37f4a478-ed53-47cc-b953-49428c2614b1",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -7429,12 +7429,12 @@
   ],
   "variable": [
     {
-      "id": "2b1b1951-23a6-4704-82d1-aab71001707c",
+      "id": "0950e700-ee89-4db6-8170-55f20bfe5810",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "d284ec22-5c05-40e0-bd14-e3c6d2f859d9",
+      "id": "b685d09c-5a1a-4175-ae05-3b041e9178dd",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
