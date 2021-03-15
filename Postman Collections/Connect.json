@@ -6397,6 +6397,19 @@
                 "url": "{{uri}}/AyaConnect/admin/vendor-candidates/86636/State/4"
               },
               "response": []
+            },
+            {
+              "name": "RemoveCertification",
+              "_postman_id": "4e3f24ab-0d48-44df-a84e-0e921514a63e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "_postman_id": "11021d71-3752-4eff-ae6f-3c64db83a1b1",
@@ -7425,13 +7438,13 @@
   ],
   "variable": [
     {
-      "id": "db8bc6ba-6c15-47db-9914-085e1c537beb",
+      "id": "be02b767-f998-4e3e-8f88-35506d965c09",
       "key": "uri",
       "value": "http://localhost:8088",
       "type": "string"
     },
     {
-      "id": "e3be98bd-f392-4fd6-97c7-b954ef81c7bb",
+      "id": "46e9785b-0b26-4b10-9d85-accf73f5c1fe",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ",
       "type": "string"
