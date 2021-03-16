@@ -6405,9 +6405,24 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "CfDJ8OkN94RRNIZGo_dGqQa2mrfLtUb_1bhXjQK4ozE0iaH2XIKZCvI3QOZ66zxjAmgnTjRpW2GnLqnx0hd2g8NiTpPjesmCncIIcJt6TKInL8ePJlOSZ87mlFhYXCo8EG2mq9NRXGIhnW2qiHXQTil1zBl1C45gqN5KnPDgLI9bdX5MHPXz13xWcfb9KnFm-rhxJfaAvWHA9GUi9YRclvW6oI7QG3mO7UZuHY-vxjOFNgIY4YWRFI0o6JpEXHy33qcpKWeVmIBnVF-wYxtujR9H3LVNMg7ZsKPVTfAi2LO1_t8A60CbeAKfto7u5GBl86-SNK6uzz17PvaT48S4vTnafjxMqZSDzPXinYO-ByN6KoK9KQqwKpZwP1cMv8ZKfEIg4Ob94atWYRThz2Yt8CfIPZuOtkJfpMaeIgtxKgDKmWxZHjI7RK3310fN64PKat0tfM9F1MtsxgWn6eNQSJ7QNhROx_An5hyDEJwNVIWtJn6WT5pJ4bfC2xcSySWiU2UqmPW6Uz3rte_293PrzC8T1LuaYzB7KpT6ZoH4eDiexaPmJnQs28LaTHkVVAd0Te0hezU-X9Svt-zy4ivKiARPn1bF6lkFLgltf1Rw-tGBRL6NUQnkGIT4u5zCsGfWiym01Mp2asORHbljNobjyO7APNqtzuIfA_hmdYf7bvmlEyUJRYLSTJUmyhweJSWpeTOLOnz01V3P8jWG23SxL4OGOfEHkbUmzRNfQy4Cp6_bgVPL3H1-0nQRLNVmqufYGJ4KaL06lf617BwEe651karG424"
+              }
+            },
+            "method": "PATCH",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"achBeneficiaryName\": \"24-Hour Medical Staffing Services, LLC\",\r\n    \"achRoutingNumber\": \"11111\",\r\n    \"achAccountNumber\": \"4724913645\",\r\n    \"achWireRoutingNumber\": null,\r\n    \"achAccountTypeId\": 1,\r\n    \"achBankId\": 139,\r\n    \"accountingId\": 227\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Admin/vendors/240/bank"
           },
           "response": []
         }
@@ -7467,12 +7482,12 @@
   ],
   "variable": [
     {
-      "id": "dac73ab9-82e0-44cd-9383-afff532736e0",
+      "id": "08c93608-d786-4315-a0ef-cc67915a8681",
       "key": "uri",
       "value": "http://localhost:8088"
     },
     {
-      "id": "6012cf91-7500-44d3-ade3-0aa9c7dc2253",
+      "id": "4baa9ea7-2e7a-4a69-bf61-93720645f04e",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ"
     }
