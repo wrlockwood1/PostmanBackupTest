@@ -7465,7 +7465,7 @@
             "auth": {
               "type": "bearer",
               "bearer": {
-                "token": "{{Bearer}}"
+                "token": "CfDJ8OkN94RRNIZGo_dGqQa2mreS-PKylBIi2jlzn6VmOFgJO8bMAogMRqbg0p9QD89NCAQn0TGpXp9CVgv49pIxsUx7jiZtAEAAXxF3Vol_YDO-ZH5Fh9BABnpkN6zab4yAHiH95xsgDeBh932Te2Je1lKGibNFk88HW36b4N38Fu4LSV5bHBMY-_AOIKOdEifeZ8BuEOREpNotlY-rcctfUDFTHJa9eS8ocAX5f-DDyoBlSS816FfQYakZGmpS7N8a6dsfwOfWhIxcAIOj-d1XdpY0ag24I9Ilk4IRnhKqgLhCOAPhIOT0C7YjAq2Vbmu92SfF8WN6Zc1qkeEeCm5hUJmosKfstGxTqKarhQmUdDF25VdkYLQW7CzYJkigZVbbvNChb05vMoErIZ2NxeD6zQIIhQJ8D7CeYJQbtMLXcnXmDgx3_ADA16VWBhVr9zdjS-25OeoIKm4p2upEFCR1ctepkKJfzFejHzhtaDDqjxWJwIOf_m1ROF2E3Jfg4wLbYz2qSR211B6KDQcObsxPR6w-5ullir-REj300fUaviaVZYYIi0ap3DTtdLV9B8I1RucU5v2qOueo4q_2My02CHwvg8yxV6ViR7W2Jwd9-1HdOwLM3i-l41ryNdBW7oC8Ykdv9JPVsVCG9PX4I4iqWbk_o7nWTJUNy5AKmmdrPGlk57awEW7v5TPiVBtiG3lMIPDRZOTj6v2GP83JinB9kDIKkkClZKg4gLQKFXJ-PSSH"
               }
             },
             "method": "POST",
@@ -7562,13 +7562,13 @@
   ],
   "variable": [
     {
-      "id": "2ce290a6-02a5-4851-bcce-5b4017777ad0",
+      "id": "906934d4-d265-4715-a4a6-140f47e58150",
       "key": "uri",
       "value": "http://localhost:8088",
       "type": "string"
     },
     {
-      "id": "42120c2e-1aaa-4425-b713-2eb0a519f22e",
+      "id": "f6b223ad-3f8e-4ac1-957d-4c709e228215",
       "key": "Bearer",
       "value": "CfDJ8AI82Ji-bNlCsa67tRYCJH1tun1egBOPJZToqM03iQTcfbHZhoJU3wMH_J4h3fCrcjWeztWmE3hQf3glCbeQB6yzXXmoEXsFViZWpvQAHQz9q0HCRGvDQA-AhK_46_ZqqlPWOBFvDAQAE6vrKeWqB6BZd0qlp4ryS3AIZPyC_TS7otLR5n1TqUCW-6z6Huwmu5A83o7XeHTg-OwSWvWk8Cz9ptgyLcx-Mv6hFS-aWVV5tVXBylBWkx3zxE4yYL3jXKgPfkAXJGkNzELCFcd4_7RUjX0PS0n_fNCYu1RIw0DDanpbb92jqQQEUImcUtlmC88crPdV8rrPtK3L_3-HdvUuRya_U8SJLcV22e1DquhF_POA33zPNefWwkk5mLw5CsBrQBWL8dA8JKTVxHPzOgoUZi8AGCRdsepW3N2Q0CJCh5cOKo_iFo9P3Lym3m_5UN3iXOD9Q4KF8vIo68xbOj2a5mZoaN9hmz5eCyMzBEujXElEAQ_nAY8oFfzH3_phCAupyw0XnTwiPJkk6mZDjfiMuxX6riUD4bqc8FYdmsSQ9fSqyxGbnggUkQtbmmNbR3x-p85P_rWgKlpOSvX5DOEu1BhiOJo3yFYU-Lme4vl5n21H_pAw2X2J4s6CC5rupuyy9uOsbw12kJQX4MDszPiGFl8vM_7If1ibH_zqF1HS6Fy0E26MceYlhuNmBmH8Re0Enh8nYEadfB4aH5ZIROrS1kTo8_oimsYAiEduYEYGm2j2tcqRjpH989RbXpZFOQ",
       "type": "string"
