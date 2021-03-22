@@ -6391,7 +6391,7 @@
                 },
                 "method": "DELETE",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/admin/vendor-candidates/86636/professions/1/specialties/8"
+                "url": "{{uri}}/AyaConnect/admin/vendors/97/candidates/67/professions/1/specialties/80"
               },
               "response": []
             }
@@ -7760,7 +7760,7 @@
   ],
   "variable": [
     {
-      "id": "b8bcc261-5386-4279-b186-256e78bb672f",
+      "id": "e20dd65b-d280-4f91-9d66-8ceb99fd888e",
       "key": "uri",
       "value": "http://localhost:8088"
     }
