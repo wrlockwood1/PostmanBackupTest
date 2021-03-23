@@ -3682,7 +3682,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"seriesId\": \"3A12CF41-CDF8-448C-AC32-EC6FBF777B98\",\r\n    \"shiftId\": \"295421\",\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": false,\r\n    \"shouldSendShiftNotification\": false,\r\n    \"ShiftSchedules\": [\r\n        {\r\n            \"shiftLength\": 10,\r\n            \"startDates\": [\r\n                \"04/01/2021\",\r\n                \"04/08/2021\",\r\n                \"04/18/2021\",\r\n                \"04/25/2021\",\r\n                \"04/29/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-01T20:50:00Z\"\r\n        },\r\n        {\r\n            \"shiftLength\": 15.50,\r\n            \"startDates\": [\r\n                \"04/05/2021\",\r\n                \"04/14/2021\",\r\n                \"04/21/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-05T10:00:00Z\"\r\n        }\r\n    ],\r\n    \"hasInternalPoolAccess\": false\r\n}",
+                  "raw": "{\r\n    \"seriesId\": \"9F589CA3-0082-430B-84D1-0519B6109A20\",\r\n    \"shiftId\": \"315540\",\r\n    \"candidateId\": \"1611868\",\r\n    \"isInternalPool\": false,\r\n    \"shouldSendShiftNotification\": false,\r\n    \"ShiftSchedules\": [\r\n        {\r\n            \"shiftLength\": 10,\r\n            \"startDates\": [\r\n                \"04/01/2021\",\r\n                \"04/08/2021\",\r\n                \"04/18/2021\",\r\n                \"04/25/2021\",\r\n                \"04/29/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-01T20:50:00Z\"\r\n        },\r\n        {\r\n            \"shiftLength\": 15.50,\r\n            \"startDates\": [\r\n                \"04/05/2021\",\r\n                \"04/14/2021\",\r\n                \"04/21/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-05T10:00:00Z\"\r\n        }\r\n    ],\r\n    \"hasInternalPoolAccess\": false\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7760,7 +7760,7 @@
   ],
   "variable": [
     {
-      "id": "b2bf45f2-e3b0-445d-b1d7-878b65673b75",
+      "id": "3af76eae-672d-4bb7-ab3d-5102ca94bb1f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
