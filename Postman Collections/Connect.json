@@ -3682,7 +3682,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"seriesId\": \"9F589CA3-0082-430B-84D1-0519B6109A20\",\r\n    \"shiftId\": \"315540\",\r\n    \"candidateId\": \"1611868\",\r\n    \"isInternalPool\": false,\r\n    \"shouldSendShiftNotification\": false,\r\n    \"ShiftSchedules\": [\r\n        {\r\n            \"shiftLength\": 10,\r\n            \"startDates\": [\r\n                \"04/01/2021\",\r\n                \"04/08/2021\",\r\n                \"04/18/2021\",\r\n                \"04/25/2021\",\r\n                \"04/29/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-01T20:50:00Z\"\r\n        },\r\n        {\r\n            \"shiftLength\": 15.50,\r\n            \"startDates\": [\r\n                \"04/05/2021\",\r\n                \"04/14/2021\",\r\n                \"04/21/2021\"\r\n            ],\r\n            \"startTime\": \"2021-04-05T10:00:00Z\"\r\n        }\r\n    ],\r\n    \"hasInternalPoolAccess\": false\r\n}",
+                  "raw": "{\r\n    \"seriesId\": \"9F589CA3-0082-430B-84D1-0519B6109A20\",\r\n    \"shiftId\": \"315540\",\r\n    \"candidateId\": \"1611868\",\r\n    \"isInternalPool\": false,\r\n    \"shouldSendShiftNotification\": false,   \r\n    \"startDate\": \"04/29/2021\",\r\n    \"startTime\": \"2021-04-01T20:50:00Z\",\r\n    \"duration\": 12,   \r\n    \"hasInternalPoolAccess\": false\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7788,7 +7788,7 @@
   ],
   "variable": [
     {
-      "id": "23a2db80-9571-4bb5-8497-975010057afe",
+      "id": "15dd372b-f467-4781-8679-94804bcba756",
       "key": "uri",
       "value": "http://localhost:8088"
     }
