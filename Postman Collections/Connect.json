@@ -3745,6 +3745,34 @@
               "response": []
             },
             {
+              "name": "Add Shift Series Copy",
+              "_postman_id": "54ce08fc-4e20-41d2-ada0-b9ac624b4bb3",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "   {\"id\":0,\"facilityId\":45052,\"professionId\":1,\"specialtyId\":16,\"unitId\":\"\",\"comments\":\"\",\"jobCode\":\"JOB code\",\"unionCodeId\":1,\"chartString\":\"Chart String\",\"address\":\"\",\"addressAlt\":\"\",\"city\":\"\",\"stateId\":\"\",\"zipCode\":\"\",\"candidateId\":null,\"isInternalPool\":false,\"conversionType\":0,\r\n    \"ShiftSchedules\":[{\"shiftLength\" : 16,\r\n     \"startDates\" : [\"05/01/2021\", \"05/03/2021\", \"05/05/2021\", \"05/29/2021\"],\r\n    \"startTime\": \"2021-05-01T11:00:00Z\"},\r\n    {\"shiftLength\" : 13,\r\n     \"startDates\" : [\"05/13/2021\", \"05/14/2021\"],\r\n    \"startTime\": \"2021-04-05T10:00:00Z\"},\r\n    {\"shiftLength\" : 14,\r\n     \"startDates\" : [\"05/22/2021\"],\r\n    \"startTime\": \"2021-05-22T08:00:00Z\"}\r\n                     ],\r\n    \"shouldSendShiftNotification\":false}  \r\n",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Client/Shifts/Add"
+              },
+              "response": []
+            },
+            {
               "name": "Get Vendor Shifts with SeriesIds",
               "_postman_id": "63e718ba-b199-4585-a2ef-c957d0e7a7bb",
               "protocolProfileBehavior": {
@@ -3797,34 +3825,6 @@
                   }
                 },
                 "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-series"
-              },
-              "response": []
-            },
-            {
-              "name": "Add Shift Series Copy",
-              "_postman_id": "54ce08fc-4e20-41d2-ada0-b9ac624b4bb3",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "   {\"id\":0,\"facilityId\":45052,\"professionId\":1,\"specialtyId\":16,\"unitId\":\"\",\"comments\":\"\",\"jobCode\":\"JOB code\",\"unionCodeId\":1,\"chartString\":\"Chart String\",\"address\":\"\",\"addressAlt\":\"\",\"city\":\"\",\"stateId\":\"\",\"zipCode\":\"\",\"candidateId\":null,\"isInternalPool\":false,\"conversionType\":0,\r\n    \"ShiftSchedules\":[{\"shiftLength\" : 16,\r\n     \"startDates\" : [\"05/01/2021\", \"05/03/2021\", \"05/05/2021\", \"05/29/2021\"],\r\n    \"startTime\": \"2021-05-01T11:00:00Z\"},\r\n    {\"shiftLength\" : 13,\r\n     \"startDates\" : [\"05/13/2021\", \"05/14/2021\"],\r\n    \"startTime\": \"2021-04-05T10:00:00Z\"},\r\n    {\"shiftLength\" : 14,\r\n     \"startDates\" : [\"05/22/2021\"],\r\n    \"startTime\": \"2021-05-22T08:00:00Z\"}\r\n                     ],\r\n    \"shouldSendShiftNotification\":false}  \r\n",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Client/Shifts/Add"
               },
               "response": []
             }
@@ -7898,7 +7898,7 @@
   ],
   "variable": [
     {
-      "id": "b21b992b-5be8-48c2-84f7-56e297cc132a",
+      "id": "4605bb5f-9a36-4f10-a3c1-86038b01a8cf",
       "key": "uri",
       "value": "http://localhost:8088",
       "type": "string"
