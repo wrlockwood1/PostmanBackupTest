@@ -3757,9 +3757,24 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "POST",
                 "header": [],
-                "url": ""
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n   \"seriesId\": \"79212739-B792-40A1-9440-0B1BE51879E1\",\r\n    \"shiftId\": \"315582\",\r\n    \"other\": null,\r\n    \"IsSingleDelete\": true,\r\n    \"canceledBy\": 1,   \r\n    \"perDiemReasonCode\": 5\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-series"
               },
               "response": []
             }
@@ -7801,7 +7816,7 @@
   ],
   "variable": [
     {
-      "id": "8ef068dd-842a-4983-b525-f7fe35716867",
+      "id": "e613a9ea-e9c0-4505-b874-12d8fe753e67",
       "key": "uri",
       "value": "http://localhost:8088"
     }
