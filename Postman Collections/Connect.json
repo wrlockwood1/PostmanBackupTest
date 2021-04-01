@@ -3806,6 +3806,19 @@
                 "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-series"
               },
               "response": []
+            },
+            {
+              "name": "Check Availbility ",
+              "id": "dfe9a6d6-5192-40cb-910c-9d1983e6df81",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "id": "27696859-43c4-4f27-9e6e-bcb9198dbd69"
@@ -7845,7 +7858,7 @@
   ],
   "variable": [
     {
-      "id": "7530da84-0762-4e0c-9585-254ea42ea382",
+      "id": "569084c8-c641-4306-9503-fe6e2038e21f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
