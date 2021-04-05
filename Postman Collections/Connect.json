@@ -6768,7 +6768,21 @@
       "item": [
         {
           "name": "Candidates",
-          "item": [],
+          "item": [
+            {
+              "name": "AvailableShifts",
+              "id": "2a4d9fd9-7f2c-4bdb-bb76-302f4c5c325f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
+            }
+          ],
           "id": "6a3fada1-f786-47c3-bf5c-319b98c693d8"
         },
         {
@@ -7858,7 +7872,7 @@
   ],
   "variable": [
     {
-      "id": "569084c8-c641-4306-9503-fe6e2038e21f",
+      "id": "1687d92b-8f69-4e87-8e81-b76f655824e0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
