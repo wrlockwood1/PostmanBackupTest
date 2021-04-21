@@ -3819,6 +3819,19 @@
                 "url": ""
               },
               "response": []
+            },
+            {
+              "name": "Update Shift Series",
+              "id": "96e99412-5224-4b73-8805-ab2528602ec7",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": ""
+              },
+              "response": []
             }
           ],
           "id": "27696859-43c4-4f27-9e6e-bcb9198dbd69"
@@ -7896,7 +7909,7 @@
   ],
   "variable": [
     {
-      "id": "6d188fe2-4eff-44e4-9a55-e8477adb58ed",
+      "id": "51176c0a-8b3f-4ec6-a567-cfd1c2323ec0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
