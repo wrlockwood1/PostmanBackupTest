@@ -3837,7 +3837,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"id\":0,\"facilityId\":46432,\"facility\":\" Per Diem - NYU Tisch Hospital MSP\",\"professionId\":1,\"profession\":\"Registered Nurse\",\"specialtyId\":16,\"specialty\":\"ICU\",\"unitId\":null,\"unit\":null,\"comments\":\"\",\"jobCode\":\"test\",\"unionCode\":null,\"unionCodeId\":1,\"chartString\":\"test\",\"startDate\":\"2021-04-19T00:00:00Z\",\"startTime\":\"2021-04-19T03:45:00Z\",\"shiftHours\":10,\"address\":null,\"addressAlt\":null,\"city\":null,\"stateId\":null,\"zipCode\":null,\"seriesId\":\"4d2e3a2d-9062-4277-80ee-f1f3b21a7ed0\",\"shiftsCount\":6,\"seriesDates\":[\"2021-04-20T00:00:00\",\"2021-04-21T00:00:00\",\"2021-04-28T00:00:00\",\"2021-04-29T00:00:00\",\"2021-04-30T00:00:00\"],\"startDates\":[],\"duration\":10,\"candidateId\":null,\"isInternalPool\":true,\"conversionType\":0,\"shouldSendShiftNotification\":false,\"shiftSchedules\":[{\"startDates\":[\"2021-04-19T00:00:00Z\",\"2021-04-20T00:00:00Z\",\"2021-04-21T00:00:00Z\"],\"shiftLength\":10,\"startTime\":\"2021-04-19T03:45:00Z\",\"endTime\":\"2021-04-19T13:45:00\"},{\"startDates\":[\"2021-04-28T00:00:00Z\",\"2021-04-29T00:00:00Z\",\"2021-04-30T00:00:00Z\"],\"shiftLength\":1.5,\"startTime\":\"2021-04-28T06:30:00Z\",\"endTime\":\"2021-04-28T10:30:00\"}]}",
+                  "raw": "{\r\n  \"id\": 0,\r\n  \"facilityId\": 46432,\r\n  \"facility\": \" Per Diem - NYU Tisch Hospital MSP\",\r\n  \"professionId\": 1,\r\n  \"profession\": \"Registered Nurse\",\r\n  \"specialtyId\": 16,\r\n  \"specialty\": \"ICU\",\r\n  \"unitId\": null,\r\n  \"unit\": null,\r\n  \"comments\": \"\",\r\n  \"jobCode\": \"test\",\r\n  \"unionCode\": null,\r\n  \"unionCodeId\": 1,\r\n  \"chartString\": \"test\",\r\n  \"startDate\": \"2021-04-19T00:00:00Z\",\r\n  \"startTime\": \"2021-04-19T03:45:00Z\",\r\n  \"shiftHours\": 10,\r\n  \"address\": null,\r\n  \"addressAlt\": null,\r\n  \"city\": null,\r\n  \"stateId\": null,\r\n  \"zipCode\": null,\r\n  \"seriesId\": \"4d2e3a2d-9062-4277-80ee-f1f3b21a7ed0\",\r\n  \"shiftsCount\": 6,\r\n  \"seriesDates\": [\r\n    \"2021-04-20T00:00:00\",\r\n    \"2021-04-21T00:00:00\",\r\n    \"2021-04-28T00:00:00\",\r\n    \"2021-04-29T00:00:00\",\r\n    \"2021-04-30T00:00:00\"\r\n  ],\r\n  \"startDates\": [],\r\n  \"duration\": 10,\r\n  \"candidateId\": null,\r\n  \"isInternalPool\": true,\r\n  \"conversionType\": 0,\r\n  \"shouldSendShiftNotification\": false,\r\n  \"shiftSchedules\": [\r\n    {\r\n      \"startDates\": [\r\n        \"2021-04-19T00:00:00Z\",\r\n        \"2021-04-20T00:00:00Z\",\r\n        \"2021-04-21T00:00:00Z\"\r\n      ],\r\n      \"shiftLength\": 10,\r\n      \"startTime\": \"2021-04-19T03:45:00Z\",\r\n      \"endTime\": \"2021-04-19T13:45:00\"\r\n    },\r\n    {\r\n      \"startDates\": [\r\n        \"2021-04-28T00:00:00Z\",\r\n        \"2021-04-29T00:00:00Z\",\r\n        \"2021-04-30T00:00:00Z\"\r\n      ],\r\n      \"shiftLength\": 1.5,\r\n      \"startTime\": \"2021-04-28T06:30:00Z\",\r\n      \"endTime\": \"2021-04-28T10:30:00\"\r\n    }\r\n  ]\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7924,7 +7924,7 @@
   ],
   "variable": [
     {
-      "id": "4aa80f5e-f9eb-4eb8-8fa6-4f9d3291a9b4",
+      "id": "d69872b5-9357-40ff-a2fe-06411c71c996",
       "key": "uri",
       "value": "http://localhost:8088"
     }
