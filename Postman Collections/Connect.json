@@ -5208,7 +5208,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Shift Client Submittals",
           "id": "cf8350b9-70f8-4bba-97bc-83bb0604e560",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7937,7 +7937,7 @@
   ],
   "variable": [
     {
-      "id": "6396bece-de72-4386-acf9-741fbd9c2e27",
+      "id": "64dafcf7-9064-457c-a849-864a85473c3b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
