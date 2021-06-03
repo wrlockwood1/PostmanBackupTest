@@ -3666,11 +3666,6 @@
           "name": "Shift Series",
           "item": [
             {
-              "name": "New Folder",
-              "item": [],
-              "id": "d340dd97-fb22-4bfe-aa34-f8e92c40fc37"
-            },
-            {
               "name": "Update Single Shift in a Series",
               "id": "4c5c6d7f-7349-42bd-b4e2-3f467d3fe5f5",
               "protocolProfileBehavior": {
@@ -7955,7 +7950,7 @@
   ],
   "variable": [
     {
-      "id": "aef44df0-92d8-44f0-a433-b9cf9413e5c8",
+      "id": "7129260f-f9da-4291-932e-2951e4b66d1d",
       "key": "uri",
       "value": "http://localhost:8088"
     }
