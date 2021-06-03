@@ -3982,6 +3982,19 @@
             "url": ""
           },
           "response": []
+        },
+        {
+          "name": "{{uri}}/AyaConnect/Client/Shifts/913/Candidates/342432",
+          "id": "f9932f23-9d0c-43cf-9846-335921c93f04",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Client/Shifts/913/Candidates/342432"
+          },
+          "response": []
         }
       ],
       "id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
@@ -7937,7 +7950,7 @@
   ],
   "variable": [
     {
-      "id": "64dafcf7-9064-457c-a849-864a85473c3b",
+      "id": "4958b37e-b4e7-4dbe-a359-a33a30c50ec1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
