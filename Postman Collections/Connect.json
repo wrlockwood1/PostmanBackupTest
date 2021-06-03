@@ -3847,6 +3847,19 @@
                 "url": "{{uri}}/AyaConnect/Client/Shifts/Series"
               },
               "response": []
+            },
+            {
+              "name": "New Request",
+              "id": "25136ef1-97ad-4c6a-82b7-dd2990f557a4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
             }
           ],
           "id": "27696859-43c4-4f27-9e6e-bcb9198dbd69"
@@ -7950,7 +7963,7 @@
   ],
   "variable": [
     {
-      "id": "940a7373-0753-43fe-85f9-f8fc4f425868",
+      "id": "20b8d1a5-06b6-4985-bb1e-099a20ac5ca9",
       "key": "uri",
       "value": "http://localhost:8088"
     }
