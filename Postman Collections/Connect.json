@@ -5263,7 +5263,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"shiftId\": 342439,\r\n    \"seriesId\": null,\r\n    \"candidateIds\": [1677793]\r\n}",
+              "raw": "{\r\n    \"shiftId\": 342439,\r\n    \"seriesId\": \"22F80D59-270D-4F21-A1AF-298D2EABC750\",\r\n    \"candidateIds\": [1677793] \r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -7991,7 +7991,7 @@
   ],
   "variable": [
     {
-      "id": "6a01c4ce-2ee1-4f0c-b74d-569d4284f047",
+      "id": "149013de-99e7-4bb3-af02-5ded75cae82e",
       "key": "uri",
       "value": "http://localhost:8088"
     }
