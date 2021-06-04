@@ -5261,6 +5261,15 @@
             },
             "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"shiftId\": 342439,\r\n    \"seriesId\": null,\r\n    \"candidateIds\": [1677793]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": "{{uri}}/AyaConnect/Client/Submittals/Shifts"
           },
           "response": []
@@ -7982,7 +7991,7 @@
   ],
   "variable": [
     {
-      "id": "5d628d5f-9de6-4db6-ab0e-c96276ebb5bc",
+      "id": "6a01c4ce-2ee1-4f0c-b74d-569d4284f047",
       "key": "uri",
       "value": "http://localhost:8088"
     }
