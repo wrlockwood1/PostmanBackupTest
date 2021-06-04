@@ -5242,7 +5242,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{uri}}/AyaConnect/Client/Submittals"
           },
           "response": []
         },
@@ -7976,7 +7976,7 @@
   ],
   "variable": [
     {
-      "id": "bd0fd7af-24f4-4238-86dd-43ef455da781",
+      "id": "3d5a5631-7faf-44c5-af35-e3c2e9408a0c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
