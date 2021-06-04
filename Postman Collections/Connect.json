@@ -5240,9 +5240,15 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": "{{uri}}/AyaConnect/Client/Submittals"
+            "url": "{{uri}}/AyaConnect/Client/Shifts/342441/submittals"
           },
           "response": []
         },
@@ -7991,7 +7997,7 @@
   ],
   "variable": [
     {
-      "id": "149013de-99e7-4bb3-af02-5ded75cae82e",
+      "id": "e733d668-b788-40a4-8927-f24fc12325bd",
       "key": "uri",
       "value": "http://localhost:8088"
     }
