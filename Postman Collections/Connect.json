@@ -7900,7 +7900,7 @@
       "id": "7b5f041e-7feb-4284-9cd2-a397a9f65cfc"
     },
     {
-      "name": "New Folder",
+      "name": "Common",
       "item": [],
       "id": "0329bf1d-a88a-4a00-af3d-282652e80c91"
     },
@@ -8021,7 +8021,7 @@
   ],
   "variable": [
     {
-      "id": "563d1577-f5e6-401d-be1d-c638a8584e61",
+      "id": "7c38885f-de09-4cd3-ad17-db826a7ec9d8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
