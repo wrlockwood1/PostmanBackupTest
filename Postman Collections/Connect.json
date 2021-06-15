@@ -7911,7 +7911,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{uri}}/AyaConnect/States"
           },
           "response": []
         }
@@ -8035,7 +8035,7 @@
   ],
   "variable": [
     {
-      "id": "f5006951-0ed8-45ef-a0b7-83a02187476b",
+      "id": "1ab130cd-fc7d-4e14-88d5-266904f6b618",
       "key": "uri",
       "value": "http://localhost:8088"
     }
