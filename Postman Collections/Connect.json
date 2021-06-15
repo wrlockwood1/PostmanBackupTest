@@ -7848,7 +7848,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": null
+                "url": "{{uri}}/AyaConnect/admin/client-contacts/types"
               },
               "response": []
             }
@@ -7898,6 +7898,11 @@
         }
       ],
       "id": "7b5f041e-7feb-4284-9cd2-a397a9f65cfc"
+    },
+    {
+      "name": "New Folder",
+      "item": [],
+      "id": "0329bf1d-a88a-4a00-af3d-282652e80c91"
     },
     {
       "name": "Get Menu",
@@ -8016,7 +8021,7 @@
   ],
   "variable": [
     {
-      "id": "2d33d9a3-5de4-480b-865a-d4e0977525de",
+      "id": "62ba8b96-2645-4bb8-831d-d824b946e31f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
