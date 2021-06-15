@@ -7840,7 +7840,7 @@
           "name": "Client-Contact",
           "item": [
             {
-              "name": "New Request",
+              "name": "ClientContactTypes",
               "id": "0dd643d0-1115-4d26-8339-bd51b57e12be",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8016,7 +8016,7 @@
   ],
   "variable": [
     {
-      "id": "476495e2-bed0-4124-8a90-f1a8718fa24b",
+      "id": "2d33d9a3-5de4-480b-865a-d4e0977525de",
       "key": "uri",
       "value": "http://localhost:8088"
     }
