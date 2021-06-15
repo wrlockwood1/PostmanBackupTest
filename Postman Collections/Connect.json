@@ -7838,7 +7838,21 @@
         },
         {
           "name": "Client-Contact",
-          "item": [],
+          "item": [
+            {
+              "name": "New Request",
+              "id": "0dd643d0-1115-4d26-8339-bd51b57e12be",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
+            }
+          ],
           "id": "181680c5-451c-4704-adff-c587761220f4"
         }
       ],
@@ -8002,7 +8016,7 @@
   ],
   "variable": [
     {
-      "id": "ab7aa08b-eaf1-41b8-bb3e-4380528a300d",
+      "id": "8209c5f3-51d6-4350-9aa7-4296fc9483bb",
       "key": "uri",
       "value": "http://localhost:8088"
     }
