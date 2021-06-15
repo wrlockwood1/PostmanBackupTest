@@ -7903,7 +7903,7 @@
       "name": "Common",
       "item": [
         {
-          "name": "New Request",
+          "name": "GetStates",
           "id": "7b37dd46-1bd7-4864-811e-4302c4a3eab6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8041,7 +8041,7 @@
   ],
   "variable": [
     {
-      "id": "f2d318ad-1ece-4536-ab5d-26bc7f5cfb00",
+      "id": "2afc63b2-f943-4f22-8dde-adeff20f20f6",
       "key": "uri",
       "value": "http://localhost:8088"
     }
