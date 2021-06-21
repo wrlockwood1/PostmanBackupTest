@@ -5281,7 +5281,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Email-Offer",
           "id": "6edbd00a-83ac-42fb-85e3-3ed90c2e3745",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8054,7 +8054,7 @@
   ],
   "variable": [
     {
-      "id": "d1584443-4af2-4532-b6ec-34a438ee6c58",
+      "id": "c22bdddd-ef4e-4c65-ac56-83ebad35732c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
