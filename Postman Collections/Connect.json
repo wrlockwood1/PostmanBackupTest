@@ -5300,7 +5300,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Shift Submittal Profile",
           "id": "741f070c-dadd-41b9-b4e4-b30d9675fcb6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8073,7 +8073,7 @@
   ],
   "variable": [
     {
-      "id": "03c49921-5b55-4a3c-9299-215381191086",
+      "id": "acb6fe6a-e8b2-45b0-abf6-0894125b16aa",
       "key": "uri",
       "value": "http://localhost:8088"
     }
