@@ -5287,6 +5287,25 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Client/Submittals/1/Shift/Offer-Email"
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "741f070c-dadd-41b9-b4e4-b30d9675fcb6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
             "method": "GET",
             "header": [],
             "url": null
@@ -8054,7 +8073,7 @@
   ],
   "variable": [
     {
-      "id": "c22bdddd-ef4e-4c65-ac56-83ebad35732c",
+      "id": "0148616a-bdcd-4d8e-aad6-e3e56b59d2b0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
