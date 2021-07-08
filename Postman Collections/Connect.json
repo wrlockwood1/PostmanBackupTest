@@ -5311,6 +5311,19 @@
             "url": "{{uri}}/AyaConnect/Client/submittals/1/shift/profile"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "92de4b23-016f-4cd9-b019-784813a0575c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
@@ -8073,7 +8086,7 @@
   ],
   "variable": [
     {
-      "id": "dba7ef8e-b96d-4b6d-b987-38a45b23121b",
+      "id": "39c71a9d-5713-4d85-be56-02ffb9d6fdef",
       "key": "uri",
       "value": "http://localhost:8088"
     }
