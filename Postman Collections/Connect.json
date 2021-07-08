@@ -5313,7 +5313,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Shift Submittal Applied",
           "id": "92de4b23-016f-4cd9-b019-784813a0575c",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8086,7 +8086,7 @@
   ],
   "variable": [
     {
-      "id": "ca4ed849-ab5e-4f52-8b06-798028a82249",
+      "id": "6d066f38-0022-47c1-917c-e4859f8676da",
       "key": "uri",
       "value": "http://localhost:8088"
     }
