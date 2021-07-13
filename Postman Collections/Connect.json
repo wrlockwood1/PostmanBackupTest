@@ -5840,7 +5840,7 @@
                     "disableBodyPruning": true
                   },
                   "request": {
-                    "method": "GET",
+                    "method": "POST",
                     "header": [],
                     "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/1/status-history",
                     "description": "Gets status history for vendor and facility"
@@ -7744,7 +7744,7 @@
   ],
   "variable": [
     {
-      "id": "ca2c90bc-a164-49d3-bfe5-deb098630461",
+      "id": "cc92eba8-ba54-4b88-b993-87d368af433b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
