@@ -1758,10 +1758,16 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "CfDJ8BQ9ZEzoChNCghkzpyClS3PC4VSDq2r9YQsSsYQ-SJCiOp7Kv_3gcAuiRu1QsKvWPezpLyANk4CqhMq6yvzLUWgm5TPkGd4fcDUmK6OqscYk5JDlEA_dp5Y9wTwqaTx_onScbqgNbmRy1G8NtTg7fuK_a5MrRRPRkOnQy5JsBxBAyYzyrBGApT4cukG0k9sbPqofLej0qyHP3j2XpKVO6ysI0JbaKQJhqkB2zNgEaYAnZFiQJLay1QHUF4y1Uy8iV_ZzahLVZVXc7RSUNn8BZjojLTFCOHQ7ufiAG9V-PPPZB0Rti68SIrqIfxL254-AL5FHmBc8SRZR_01ozFqCLuEVH5F24PZtOR_bimE9Ei0_SP-UAxP-1KD49fvG16SiTUjASHkcGj3QVjNsVzvkOLqXKf8e5UwHijBhgPejoEYKSUWW5kyCU6_lTEi8BWd3uUOoKW6F-U1wafiJPpckiF40XIjJW1IOSsrdto32PCEbXizF60sfl8_hsMXVNWDvx3UAeYg4uG4YmTaXxEfKzFGlsGROe9MszagSCWZ5u-DRwe4F2Qr9qXRxfirpdT3b3sNB6w130d_DC4G9ZKbqZ9TZExY0eVtNVbJMHWxd9svqD_PsSK9ANyhLfBacDlUWnRfgtkHSDLF-9rXTjkMqtT3X4n33YpC9r6oB4KtuG_eUDAwTwKnzFGy2-5ciNKUp_fijcantNsDeOGNX-PWyQlqsMxr2U3f6hysIEB0wEtzp3GS1np2y8GeBrQE-FVjBs7xTgmam5XC1OEbkyr5VDfJJ4K0joyJhGgP-qNqACRTB"
+              }
+            },
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobClient/GetJobById?jobId=1306116&viewTypeId=3",
+              "raw": "{{uri}}/AyaConnect/JobClient/GetJobById?jobId=1393234&viewTypeId=3",
               "host": [
                 "{{uri}}"
               ],
@@ -1773,7 +1779,7 @@
               "query": [
                 {
                   "key": "jobId",
-                  "value": "1306116"
+                  "value": "1393234"
                 },
                 {
                   "key": "viewTypeId",
@@ -5684,7 +5690,7 @@
                         }
                       ]
                     },
-                    "description": "Gets list of vendors for facility based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
+                    "description": "Gets list of vendors for facility based on filtering and sorting\n\nTo simulate the vendor facility grid based on how it works now:\n- Use pagesize = 20\n- For paging, use multiples of 20 as the value\n- To simulate the *Active* tab, set *isActive*=true\n- To simulate the *Inactive* tab, set *isActive*=false\n- You can check and uncheck params to add/remove them, and update the values to test\n- The *total* property indicates the number of facilities that meet criteria"
                   },
                   "response": []
                 },
@@ -7753,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "fa1623b3-28a8-440a-8b9d-0ff682158a72",
+      "id": "d72e5bcb-34d4-4874-9fe6-65e103878175",
       "key": "uri",
       "value": "http://localhost:8088"
     }
