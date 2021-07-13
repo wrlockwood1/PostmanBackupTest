@@ -5797,7 +5797,7 @@
                     "method": "GET",
                     "header": [],
                     "url": "{{uri}}/AyaConnect/Admin/Facility/vendors/lookups",
-                    "description": "Gets lookups needed for vendors grid"
+                    "description": "Gets lookups needed for vendors grid (both Active and Inactive)"
                   },
                   "response": [
                     {
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "0ef5fa8b-4c58-4e46-a4d4-5f05509b51e1",
+      "id": "ff4355f1-6d15-4d3d-8297-b707c7035181",
       "key": "uri",
       "value": "http://localhost:8088"
     }
