@@ -5454,12 +5454,12 @@
                   "response": [
                     {
                       "id": "1a1ba8df-f9bb-4871-bbc9-0604781f3e7b",
-                      "name": "Vendors",
+                      "name": "Vendors Response",
                       "originalRequest": {
                         "method": "GET",
                         "header": [],
                         "url": {
-                          "raw": "{{uri}}/AyaConnect/Admin/Facility/52209/vendors?pagesize=10&sort.field=name&filter.isactive=true",
+                          "raw": "{{uri}}/AyaConnect/Admin/Facility/52209/vendors?pagesize=10&sort.field=name&filter.statusId=0&filter.isactive=false",
                           "host": [
                             "{{uri}}"
                           ],
@@ -5522,8 +5522,7 @@
                             {
                               "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending ",
                               "key": "filter.statusId",
-                              "value": "3",
-                              "disabled": true
+                              "value": "0"
                             },
                             {
                               "key": "filter.termsheetsigned",
@@ -5538,7 +5537,7 @@
                             },
                             {
                               "key": "filter.isactive",
-                              "value": "true"
+                              "value": "false"
                             },
                             {
                               "key": "filter.autooffer",
@@ -5617,7 +5616,65 @@
                     },
                     "description": "Gets list of vendors for facility based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
                   },
-                  "response": []
+                  "response": [
+                    {
+                      "id": "1e0db26a-105a-4e3c-9c43-dbb2cc50cce2",
+                      "name": "Vendors Count",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{uri}}/AyaConnect/Admin/Facility/52209/vendors/count?isActive=true",
+                          "host": [
+                            "{{uri}}"
+                          ],
+                          "path": [
+                            "AyaConnect",
+                            "Admin",
+                            "Facility",
+                            "52209",
+                            "vendors",
+                            "count"
+                          ],
+                          "query": [
+                            {
+                              "key": "isActive",
+                              "value": "true",
+                              "description": "TRUE: number of active vendors; FALSE: number of inactive vendors"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Length",
+                          "value": "3"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Microsoft-IIS/10.0"
+                        },
+                        {
+                          "key": "X-Powered-By",
+                          "value": "ASP.NET"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Tue, 13 Jul 2021 18:34:25 GMT"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "134"
+                    }
+                  ]
                 },
                 {
                   "name": "Vendor Lookups",
@@ -7759,7 +7816,7 @@
   ],
   "variable": [
     {
-      "id": "aca9a8da-311a-42b4-8a57-853971c08c0c",
+      "id": "2f85b25d-e2fb-4f56-bf43-53c8f28bde01",
       "key": "uri",
       "value": "http://localhost:8088"
     }
