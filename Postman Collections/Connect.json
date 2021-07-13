@@ -5362,7 +5362,7 @@
                       }
                     },
                     "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/term-sheet-signed",
-                    "description": "Updates if term sheet is signed for one or more vendors"
+                    "description": "Updates if term sheet is signed for one or more vendors\n\nCalled when user selects one or more vendors and clicks TS Signed or updates TS Signed dropdown for a vendor"
                   },
                   "response": []
                 },
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "2d3ceac0-07cd-4f01-8450-4fc15a8a6f47",
+      "id": "d5ab31ea-917c-436e-a2e7-57bfa69b9328",
       "key": "uri",
       "value": "http://localhost:8088"
     }
