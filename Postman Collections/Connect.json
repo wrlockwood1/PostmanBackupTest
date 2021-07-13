@@ -5455,7 +5455,7 @@
                         }
                       ]
                     },
-                    "description": "Gets list of vendors for facility based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
+                    "description": "Gets list of vendors for facility based on filtering and sorting\n\nTo simulate the vendor facility grid based on how it works now:\n- To simulate the *Active* tab, set *isActive*=true\n- To simulate the *Inactive* tab, set *isActive*=false\n- You can check and uncheck params to add/remove them, and update the values to test\n- The *total* property indicates the number of facilities that meet criteria"
                   },
                   "response": [
                     {
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "c297d97d-8104-47ad-917b-470fe3a8b5ee",
+      "id": "0ef5fa8b-4c58-4e46-a4d4-5f05509b51e1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
