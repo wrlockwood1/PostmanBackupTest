@@ -5866,7 +5866,7 @@
                     "method": "GET",
                     "header": [],
                     "url": "{{uri}}/AyaConnect/Admin/Facility/52209/vendors/96/status-history",
-                    "description": "Gets status history for vendor and facility"
+                    "description": "Gets status history for vendor and facility\n- First id in request is facility, second id in request is vendor"
                   },
                   "response": []
                 },
@@ -7753,7 +7753,7 @@
   ],
   "variable": [
     {
-      "id": "aa1ac63a-6c51-4575-bc02-80bf1b1822ab",
+      "id": "d5922bdc-a07b-4e70-bf8c-596dc9af39db",
       "key": "uri",
       "value": "http://localhost:8088"
     }
