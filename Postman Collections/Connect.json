@@ -5858,7 +5858,7 @@
                       }
                     },
                     "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/1/status-history",
-                    "description": "Gets status history for vendor and facility\n\nThe first id in the endpoint represents the facility, and second id represents the vendor\n\nCalled when user clicks on Status hyperlink for a facility"
+                    "description": "Adds status history for vendor and facility\n\nThe first id in the endpoint represents the facility, and second id represents the vendor\n\nCalled when user updates a note for a status history entry in the status history modal for a vendor and facility"
                   },
                   "response": []
                 },
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "d5ab31ea-917c-436e-a2e7-57bfa69b9328",
+      "id": "3a6c378f-1b5b-45ef-861a-60722a24cc47",
       "key": "uri",
       "value": "http://localhost:8088"
     }
