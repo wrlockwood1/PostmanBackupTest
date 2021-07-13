@@ -5690,7 +5690,7 @@
                         }
                       ]
                     },
-                    "description": "Gets list of vendors for facility based on filtering and sorting\n\nTo simulate the vendor facility grid based on how it works now:\n- To simulate the *Active* tab, set *isActive*=true\n- To simulate the *Inactive* tab, set *isActive*=false\n- You can check and uncheck params to add/remove them, and update the values to test\n- The *total* property indicates the number of facilities that meet criteria"
+                    "description": "Gets list of vendors for facility based on filtering and sorting and returns in excel file\n\nCalled when user clicks on Export button (active or inactive tab)\n\nTo simulate the vendor facility grid based on how it works now:\n- To simulate the *Active* tab, set *isActive*=true\n- To simulate the *Inactive* tab, set *isActive*=false\n- You can check and uncheck params to add/remove them, and update the values to test\n- The *total* property indicates the number of facilities that meet criteria"
                   },
                   "response": []
                 },
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "7922c1fc-d6bd-441c-b10d-0f4c5ee8f17c",
+      "id": "39fc6a06-3802-43a7-aac6-d1af15d9f055",
       "key": "uri",
       "value": "http://localhost:8088"
     }
