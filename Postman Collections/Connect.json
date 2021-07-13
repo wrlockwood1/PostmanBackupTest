@@ -5619,7 +5619,7 @@
                   "response": [
                     {
                       "id": "1e0db26a-105a-4e3c-9c43-dbb2cc50cce2",
-                      "name": "Vendors Count",
+                      "name": "Vendors Count Response",
                       "originalRequest": {
                         "method": "GET",
                         "header": [],
@@ -5685,7 +5685,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/lookups",
+                    "url": "{{uri}}/AyaConnect/Admin/Facility/vendors/lookups",
                     "description": "Gets lookups needed for vendors grid"
                   },
                   "response": []
@@ -7816,7 +7816,7 @@
   ],
   "variable": [
     {
-      "id": "626c3ab7-7b60-47bb-9e50-4bd844b29975",
+      "id": "def9d05c-259e-4562-9caf-a00b020cf2ea",
       "key": "uri",
       "value": "http://localhost:8088"
     }
