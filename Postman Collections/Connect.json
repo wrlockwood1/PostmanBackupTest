@@ -5688,7 +5688,45 @@
                     "url": "{{uri}}/AyaConnect/Admin/Facility/vendors/lookups",
                     "description": "Gets lookups needed for vendors grid"
                   },
-                  "response": []
+                  "response": [
+                    {
+                      "id": "8ed01852-2efe-49ff-89a3-197a570b2448",
+                      "name": "Vendor Lookups",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": "{{uri}}/AyaConnect/Admin/Facility/vendors/lookups"
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Length",
+                          "value": "1660"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Microsoft-IIS/10.0"
+                        },
+                        {
+                          "key": "X-Powered-By",
+                          "value": "ASP.NET"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Tue, 13 Jul 2021 18:58:32 GMT"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n    \"statuses\": [\n        {\n            \"id\": 0,\n            \"name\": \"N/A\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"Offered\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Excluded\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Accepted\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Declined\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Removed\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Pending\"\n        }\n    ],\n    \"states\": [\n        {\n            \"name\": \"Alabama\",\n            \"id\": 1\n        },\n        {\n            \"name\": \"Alaska\",\n            \"id\": 2\n        },\n        {\n            \"name\": \"Arizona\",\n            \"id\": 3\n        },\n        {\n            \"name\": \"Arkansas\",\n            \"id\": 4\n        },\n        {\n            \"name\": \"California\",\n            \"id\": 5\n        },\n        {\n            \"name\": \"Colorado\",\n            \"id\": 7\n        },\n        {\n            \"name\": \"Connecticut\",\n            \"id\": 8\n        },\n        {\n            \"name\": \"Delaware\",\n            \"id\": 9\n        },\n        {\n            \"name\": \"District of Columbia\",\n            \"id\": 10\n        },\n        {\n            \"name\": \"Florida\",\n            \"id\": 11\n        },\n        {\n            \"name\": \"Georgia\",\n            \"id\": 12\n        },\n        {\n            \"name\": \"Hawaii\",\n            \"id\": 13\n        },\n        {\n            \"name\": \"Idaho\",\n            \"id\": 14\n        },\n        {\n            \"name\": \"Illinois\",\n            \"id\": 15\n        },\n        {\n            \"name\": \"Indiana\",\n            \"id\": 16\n        },\n        {\n            \"name\": \"Iowa\",\n            \"id\": 17\n        },\n        {\n            \"name\": \"Kansas\",\n            \"id\": 18\n        },\n        {\n            \"name\": \"Kentucky\",\n            \"id\": 19\n        },\n        {\n            \"name\": \"Louisiana\",\n            \"id\": 20\n        },\n        {\n            \"name\": \"Maine\",\n            \"id\": 21\n        },\n        {\n            \"name\": \"Maryland\",\n            \"id\": 22\n        },\n        {\n            \"name\": \"Massachusetts\",\n            \"id\": 23\n        },\n        {\n            \"name\": \"Michigan\",\n            \"id\": 24\n        },\n        {\n            \"name\": \"Minnesota\",\n            \"id\": 25\n        },\n        {\n            \"name\": \"Mississippi\",\n            \"id\": 26\n        },\n        {\n            \"name\": \"Missouri\",\n            \"id\": 27\n        },\n        {\n            \"name\": \"Montana\",\n            \"id\": 28\n        },\n        {\n            \"name\": \"Nebraska\",\n            \"id\": 29\n        },\n        {\n            \"name\": \"Nevada\",\n            \"id\": 30\n        },\n        {\n            \"name\": \"New Hampshire\",\n            \"id\": 31\n        },\n        {\n            \"name\": \"New Jersey\",\n            \"id\": 32\n        },\n        {\n            \"name\": \"New Mexico\",\n            \"id\": 33\n        },\n        {\n            \"name\": \"New York\",\n            \"id\": 34\n        },\n        {\n            \"name\": \"North Carolina\",\n            \"id\": 35\n        },\n        {\n            \"name\": \"North Dakota\",\n            \"id\": 36\n        },\n        {\n            \"name\": \"Ohio\",\n            \"id\": 37\n        },\n        {\n            \"name\": \"Oklahoma\",\n            \"id\": 38\n        },\n        {\n            \"name\": \"Oregon\",\n            \"id\": 39\n        },\n        {\n            \"name\": \"Pennsylvania\",\n            \"id\": 40\n        },\n        {\n            \"name\": \"Rhode Island\",\n            \"id\": 41\n        },\n        {\n            \"name\": \"South Carolina\",\n            \"id\": 42\n        },\n        {\n            \"name\": \"South Dakota\",\n            \"id\": 43\n        },\n        {\n            \"name\": \"Tennessee\",\n            \"id\": 44\n        },\n        {\n            \"name\": \"Texas\",\n            \"id\": 45\n        },\n        {\n            \"name\": \"Utah\",\n            \"id\": 46\n        },\n        {\n            \"name\": \"Vermont\",\n            \"id\": 47\n        },\n        {\n            \"name\": \"Virginia\",\n            \"id\": 48\n        },\n        {\n            \"name\": \"Washington\",\n            \"id\": 49\n        },\n        {\n            \"name\": \"West Virginia\",\n            \"id\": 50\n        },\n        {\n            \"name\": \"Wisconsin\",\n            \"id\": 51\n        },\n        {\n            \"name\": \"Wyoming\",\n            \"id\": 52\n        }\n    ]\n}"
+                    }
+                  ]
                 },
                 {
                   "name": "Vendors Status History",
@@ -7700,7 +7738,7 @@
   ],
   "variable": [
     {
-      "id": "ec144fa8-33af-4461-b1c4-b0f3c8219acb",
+      "id": "24909dff-9a6c-49d5-9b9c-c6b5d97865b5",
       "key": "uri",
       "value": "http://localhost:8088"
     }
