@@ -5863,7 +5863,7 @@
                   "response": []
                 },
                 {
-                  "name": "Vendors Status History",
+                  "name": "Vendor Status History",
                   "id": "31e35a08-5c34-485a-9677-bb5a854973e1",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "476054ee-c62b-43dc-81ac-3ee198e9f32d",
+      "id": "9231a8d2-09e4-4f39-8967-8b93e1b2436b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
