@@ -5691,7 +5691,7 @@
                   "response": [
                     {
                       "id": "8ed01852-2efe-49ff-89a3-197a570b2448",
-                      "name": "Vendor Lookups",
+                      "name": "Vendor Lookups Response",
                       "originalRequest": {
                         "method": "GET",
                         "header": [],
@@ -5758,100 +5758,6 @@
                       ]
                     },
                     "description": "Gets status history for vendor and facility"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Vendors For Export",
-                  "id": "0e34cf1e-f951-48e2-9993-79666fc33acc",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": {
-                      "raw": "{{uri}}/AyaConnect/Admin/Facility/37165/vendors/export?pagesize=10&filter.isactive=true&sort.field=city&sort.type=descending&filter.autooffer=false",
-                      "host": [
-                        "{{uri}}"
-                      ],
-                      "path": [
-                        "AyaConnect",
-                        "Admin",
-                        "Facility",
-                        "37165",
-                        "vendors",
-                        "export"
-                      ],
-                      "query": [
-                        {
-                          "key": "pagesize",
-                          "value": "10",
-                          "description": "Number of records to retrieve"
-                        },
-                        {
-                          "description": "Number of records to skip",
-                          "key": "skip",
-                          "value": "40",
-                          "disabled": true
-                        },
-                        {
-                          "description": "Field to sort by",
-                          "key": "sort.field",
-                          "value": "statusDate",
-                          "disabled": true
-                        },
-                        {
-                          "description": "Direction to sort (asc or desc)",
-                          "key": "sort.dir",
-                          "value": "desc",
-                          "disabled": true
-                        },
-                        {
-                          "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending ",
-                          "key": "filter.statusId",
-                          "value": "3",
-                          "disabled": true
-                        },
-                        {
-                          "key": "filter.termsheetsigned",
-                          "value": "false",
-                          "disabled": true
-                        },
-                        {
-                          "key": "filter.name",
-                          "value": "law",
-                          "disabled": true
-                        },
-                        {
-                          "key": "filter.state",
-                          "value": "ca",
-                          "disabled": true
-                        },
-                        {
-                          "key": "filter.statusId",
-                          "value": "6",
-                          "disabled": true
-                        },
-                        {
-                          "key": "filter.isactive",
-                          "value": "true"
-                        },
-                        {
-                          "key": "sort.field",
-                          "value": "city"
-                        },
-                        {
-                          "key": "sort.type",
-                          "value": "descending"
-                        },
-                        {
-                          "key": "filter.autooffer",
-                          "value": "false"
-                        }
-                      ]
-                    },
-                    "description": "Gets list of vendors for facility based on filtering and sorting for export\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
                   },
                   "response": []
                 },
@@ -7738,7 +7644,7 @@
   ],
   "variable": [
     {
-      "id": "be3bfb99-62ce-4c80-a04e-cc5913578066",
+      "id": "6f99b59d-60d0-4052-a650-72624f0c7dcd",
       "key": "uri",
       "value": "http://localhost:8088"
     }
