@@ -5895,7 +5895,7 @@
                       }
                     },
                     "url": "{{uri}}/AyaConnect/Admin/Facility/37165/vendors/export-selected",
-                    "description": "Gets list of selected vendors for export \r\nFacility and vendorIds passed into body"
+                    "description": "Gets list of selected vendors for export \nFacility and vendorIds passed into body\n\nCalled when user selects one or more vendors and clicks export button (active or inactive tab)"
                   },
                   "response": [
                     {
@@ -7759,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "0858b34b-bb09-4665-bf27-8a12d71f4610",
+      "id": "2d3ceac0-07cd-4f01-8450-4fc15a8a6f47",
       "key": "uri",
       "value": "http://localhost:8088"
     }
