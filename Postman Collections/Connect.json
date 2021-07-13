@@ -5336,7 +5336,31 @@
           "item": [
             {
               "name": "Vendors Tab",
-              "item": [],
+              "item": [
+                {
+                  "name": "Update Term Sheet Signed",
+                  "id": "80636e2f-f42c-43fa-9501-b52236b3975d",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"termSheetSigned\": true,\r\n    \"vendorIds\": [381, 488, 806]\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/term-sheet-signed",
+                    "description": "Updates if term sheet is signed for one or more vendors"
+                  },
+                  "response": []
+                }
+              ],
               "id": "f5ae4d73-9266-4cc7-8d44-85461752676f"
             },
             {
@@ -6426,29 +6450,6 @@
                 },
                 "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
                 "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
-              },
-              "response": []
-            },
-            {
-              "name": "Update Term Sheet Signed",
-              "id": "80636e2f-f42c-43fa-9501-b52236b3975d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"termSheetSigned\": true,\r\n    \"vendorIds\": [381, 488, 806]\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/term-sheet-signed",
-                "description": "Updates if term sheet is signed for one or more vendors"
               },
               "response": []
             },
@@ -8091,7 +8092,7 @@
   ],
   "variable": [
     {
-      "id": "1c5ea5bd-b95d-4b37-b8d3-3e76401263f3",
+      "id": "17017c4b-3c89-49fa-83e9-b19bdd4158a1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
