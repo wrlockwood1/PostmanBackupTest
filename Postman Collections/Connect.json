@@ -5842,6 +5842,15 @@
                   "request": {
                     "method": "POST",
                     "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n    \"id\": 1, // The id of the status history note that is being modified\r\n    \"note\": \"new note\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
                     "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/1/status-history",
                     "description": "Gets status history for vendor and facility"
                   },
@@ -7744,7 +7753,7 @@
   ],
   "variable": [
     {
-      "id": "cc92eba8-ba54-4b88-b993-87d368af433b",
+      "id": "d1a34273-6f43-4723-8a18-bea51df5de17",
       "key": "uri",
       "value": "http://localhost:8088"
     }
