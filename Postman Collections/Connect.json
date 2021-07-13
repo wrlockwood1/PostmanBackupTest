@@ -6323,6 +6323,29 @@
               ]
             },
             {
+              "name": "Update Status",
+              "id": "bfbf0b95-a73f-499a-9049-8f50a0742024",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"statusId\": 3,  // Statuses: 1 (Offered), 2 (Excluded, should include note), 3 (Accepted)\r\n    \"vendorIds\": [381, 488, 806], \r\n    \"note\": \"test exclude note\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/status",
+                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
+              },
+              "response": []
+            },
+            {
               "name": "Facility Profile",
               "id": "c7b3f0c7-9510-4c85-8d5d-bf9868e4ed4c",
               "protocolProfileBehavior": {
@@ -6397,29 +6420,6 @@
                   }
                 },
                 "url": "{{uri}}/AyaConnect/Admin/Facility/40105",
-                "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
-              },
-              "response": []
-            },
-            {
-              "name": "Update Status",
-              "id": "bfbf0b95-a73f-499a-9049-8f50a0742024",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"statusId\": 3,  // Statuses: 1 (Offered), 2 (Excluded, should include note), 3 (Accepted)\r\n    \"vendorIds\": [381, 488, 806], \r\n    \"note\": \"test exclude note\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Admin/Facility/5834/vendors/status",
                 "description": "Updates if term sheet is required for facility\r\n\r\nAcceptable termSheetRequired values: true, false, null"
               },
               "response": []
@@ -8086,7 +8086,7 @@
   ],
   "variable": [
     {
-      "id": "e2deafa6-3808-4718-91e2-66e326afe7f8",
+      "id": "cb84e8e5-d1e8-411e-920a-4c52de2bd452",
       "key": "uri",
       "value": "http://localhost:8088"
     }
