@@ -5451,7 +5451,138 @@
                     },
                     "description": "Gets list of vendors for facility based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
                   },
-                  "response": []
+                  "response": [
+                    {
+                      "id": "1a1ba8df-f9bb-4871-bbc9-0604781f3e7b",
+                      "name": "Vendors",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                          "raw": "{{uri}}/AyaConnect/Admin/Facility/52209/vendors?pagesize=10&sort.field=name&filter.isactive=true",
+                          "host": [
+                            "{{uri}}"
+                          ],
+                          "path": [
+                            "AyaConnect",
+                            "Admin",
+                            "Facility",
+                            "52209",
+                            "vendors"
+                          ],
+                          "query": [
+                            {
+                              "key": "pagesize",
+                              "value": "10",
+                              "description": "Number of records to retrieve"
+                            },
+                            {
+                              "description": "Number of records to skip",
+                              "key": "skip",
+                              "value": "40",
+                              "disabled": true
+                            },
+                            {
+                              "key": "sort.field",
+                              "value": "name",
+                              "description": "Field to sort by"
+                            },
+                            {
+                              "key": "sort.type",
+                              "value": "descending",
+                              "description": "Direction to sort (asc or desc)",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.name",
+                              "value": "law",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.city",
+                              "value": "omaha",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.state",
+                              "value": "ca",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.statusDate",
+                              "value": "6/18/2020",
+                              "type": "text",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.status",
+                              "value": "1",
+                              "disabled": true
+                            },
+                            {
+                              "description": "You can pass this in more than once to filter by multiple statusIds\n1 = Offered, 3 = Accepted, 4 = Declined, 6 = Pending ",
+                              "key": "filter.statusId",
+                              "value": "3",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.termsheetsigned",
+                              "value": "false",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.numberWorkingCandidates",
+                              "value": "5",
+                              "type": "text",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.isactive",
+                              "value": "true"
+                            },
+                            {
+                              "key": "filter.autooffer",
+                              "value": "false",
+                              "disabled": true
+                            },
+                            {
+                              "key": "filter.inclExclNotes",
+                              "value": "test",
+                              "disabled": true
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Length",
+                          "value": "2528"
+                        },
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json; charset=utf-8"
+                        },
+                        {
+                          "key": "Server",
+                          "value": "Microsoft-IIS/10.0"
+                        },
+                        {
+                          "key": "X-Powered-By",
+                          "value": "ASP.NET"
+                        },
+                        {
+                          "key": "Date",
+                          "value": "Tue, 13 Jul 2021 18:29:30 GMT"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n    \"data\": [\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": null,\n            \"id\": 96,\n            \"name\": \"ABI Arbor, Inc.\",\n            \"city\": \"Palm Coast\",\n            \"state\": \"Florida\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": \"\",\n            \"id\": 381,\n            \"name\": \"Accountable Healthcare Staffing, Inc.\",\n            \"city\": \"Boca Raton\",\n            \"state\": \"Florida\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": null,\n            \"id\": 739,\n            \"name\": \"ADEX Healthcare Staffing, LLC\",\n            \"city\": \"Temple Terrace\",\n            \"state\": \"Florida\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": null,\n            \"id\": 610,\n            \"name\": \"Advantis Medical Staffing, LLC\",\n            \"city\": \"Mill Valley\",\n            \"state\": \"California\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-24T06:00:02.383Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": null,\n            \"id\": 483,\n            \"name\": \"Aequor Healthcare Services, LLC\",\n            \"city\": \"Piscataway\",\n            \"state\": \"New Jersey\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": false,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": null,\n            \"inclExclNotes\": \"Approval: By Approval Only + CentraCare\",\n            \"id\": 621,\n            \"name\": \"Aerotek Scientific, LLC\",\n            \"city\": \"Hanover\",\n            \"state\": \"Maryland\",\n            \"statusId\": 2,\n            \"status\": \"Excluded\",\n            \"statusDate\": \"2021-06-14T16:15:26.987Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": \"\",\n            \"id\": 374,\n            \"name\": \"AHS Staffing, LLC\",\n            \"city\": \"Edmond\",\n            \"state\": \"Oklahoma\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": null,\n            \"id\": 474,\n            \"name\": \"Alegiant Services, LLC\",\n            \"city\": \"Oviedo\",\n            \"state\": \"Florida\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": false,\n            \"inclExclNotes\": null,\n            \"id\": 15,\n            \"name\": \"All Source Recruiting Group, Inc\",\n            \"city\": \"Coral Springs\",\n            \"state\": \"Florida\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        },\n        {\n            \"termSheetSigned\": true,\n            \"numberWorkingCandidates\": 0,\n            \"autoOffer\": true,\n            \"inclExclNotes\": \"\",\n            \"id\": 47,\n            \"name\": \"Alliant Staffing, LLC\",\n            \"city\": \"Bethesda\",\n            \"state\": \"Maryland\",\n            \"statusId\": 3,\n            \"status\": \"Accepted\",\n            \"statusDate\": \"2021-06-14T16:15:14.59Z\"\n        }\n    ],\n    \"filtered\": 0,\n    \"total\": 134\n}"
+                    }
+                  ]
                 },
                 {
                   "name": "Vendors Count",
@@ -7628,7 +7759,7 @@
   ],
   "variable": [
     {
-      "id": "c9fe18d8-756f-41e4-8233-1a8932f30f68",
+      "id": "8a474c42-c354-4952-9bf9-520ab682e482",
       "key": "uri",
       "value": "http://localhost:8088"
     }
