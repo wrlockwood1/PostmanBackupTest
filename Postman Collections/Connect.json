@@ -5361,7 +5361,7 @@
                   "response": []
                 },
                 {
-                  "name": "Vendors",
+                  "name": "Vendors For Export",
                   "id": "c996f79a-8c28-43d3-8d76-c504cecc1f76",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -7879,7 +7879,7 @@
   ],
   "variable": [
     {
-      "id": "12a054a6-e7d1-4172-835c-0ea6b34f8e4a",
+      "id": "15e01693-4fab-43cf-82f8-acd07b7baecd",
       "key": "uri",
       "value": "http://localhost:8088"
     }
