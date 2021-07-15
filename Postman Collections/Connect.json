@@ -4016,7 +4016,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Booked Candidates",
           "id": "76d4a298-4504-4639-9614-c3e195322974",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7772,7 +7772,7 @@
   ],
   "variable": [
     {
-      "id": "a35e62a0-72e5-4570-98be-ef43d12308c8",
+      "id": "39d5bc3a-bf22-4193-8312-70677ba18ae0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
