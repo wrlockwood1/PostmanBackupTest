@@ -5379,7 +5379,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Shift Vendor Submittals",
           "id": "4c1a60fa-7e1c-4463-b6a7-c4d6c67e0fc6",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7819,7 +7819,7 @@
   ],
   "variable": [
     {
-      "id": "1bf1cbb8-e20d-4d03-a621-ed972289589a",
+      "id": "e74660ab-b1fb-410b-9b8b-b002fd48d880",
       "key": "uri",
       "value": "http://localhost:8088"
     }
