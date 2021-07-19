@@ -908,7 +908,7 @@
           ]
         },
         {
-          "name": "Processes Copy",
+          "name": "Dismiss Approver",
           "id": "67ee2497-ccc2-406c-8079-e3dee3b9d110",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7991,7 +7991,7 @@
   ],
   "variable": [
     {
-      "id": "01bd2f4b-4442-4c3e-b7ea-dbe6be0b84e1",
+      "id": "25548ab1-1346-4034-b54a-8ff3c6961ae8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
