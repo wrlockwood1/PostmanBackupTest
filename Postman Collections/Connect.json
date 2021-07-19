@@ -5357,9 +5357,18 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"shiftId\": 304317,\r\n    \"seriesId\": \"\",\r\n    \"candidateIds\": [34231] \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Vendor/Shifts/Submittals"
           },
           "response": []
         }
@@ -7791,7 +7800,7 @@
   ],
   "variable": [
     {
-      "id": "bcbc6749-3a3e-46ce-80e9-19a445d749be",
+      "id": "50532cc4-8123-4fcf-b8c2-28a75aa93243",
       "key": "uri",
       "value": "http://localhost:8088"
     }
