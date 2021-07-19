@@ -1630,6 +1630,172 @@
             "description": "Use to enable or disable job approvals for a facility by updating the facilityId and isEnabled properties"
           },
           "response": []
+        },
+        {
+          "name": "Processes Copy",
+          "id": "67ee2497-ccc2-406c-8079-e3dee3b9d110",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"levels\": 2,\n    \"types\": 2,\n    \"tiers\": [\n        {\n            \"tierNumber\": 1,\n            \"tierType\": 1,\n            \"tierApproverIds\": [\n                \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"\n            ]\n        }\n    ]\n    \"facilityProfileGroupIds\": [\n        33256\n    ],\n    \"unitIds\": []\n}"
+            },
+            "url": "{{uri}}/AyaConnect/JobApprovalProcess",
+            "description": "##\tShould return error if:\r\n*\tUser does not have jobapprovalprocess.edit permission (see New Permissions For Job Approvals testing section above for instructions on how to set)\r\n*\tIf type: 2 (tierBased)\r\n *\t\tProcess does not include tiers or tiers: [],\r\n *\t\tProcess tiers are not in sequential order (based on tierNumber property for each tier)\r\n *\t\tOne or more tier does not include any tierApproverIds or tierApproverIds: []\r\n *\t\tThe process includes facilityIds or unitIds that the user is not a member of\r\n *\t\tThe process includes facilityIds or unitIds that are already part of another process\r\n----\r\n##\tAfter successful call, should be able to see added process as part of body returned in GET Processes"
+          },
+          "response": [
+            {
+              "id": "e594f81b-4acc-46c6-af9b-eb979c356713",
+              "name": "500 Error Adding Process With Existing Facility",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:00:58 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error adding facility job approval process: the following facility profile groups already have an approval process: (Id: 33256, Name: University of Washington Medical Center)  \r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.CheckExistingProcesses(JobApprovalProcessEditDto processToCheck, ApprovalProcess existingProcess) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 313\r\n   at Aya.Core.Repository.Repositories.Job.JobApprovalProcessRepository.AddProcessAsync(JobApprovalProcessEditDto processDto, String createdBy) in D:\\a\\1\\s\\Aya.Core.Repository\\Repositories\\Job\\JobApprovalProcessRepository.cs:line 92\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 101\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            },
+            {
+              "id": "14fbeef3-0f46-46b1-90bb-cbed5901805b",
+              "name": "500 Response Tier Process No Tiers",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 2,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ 33256 ],\r\n            \"unitIds\": []\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                },
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 07 Oct 2019 16:01:43 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "Aya.Core.Common.Exceptions.ValidationException: Error with process tiers: process type is tier based, but no tiers are included\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessTiers(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 235\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessProperties(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 223\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcess(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 211\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 91\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
+            },
+            {
+              "id": "6dd60d77-e9b6-43e5-8918-2a1e66484608",
+              "name": "200 OK Request/Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "        {\r\n            \"level\": 3,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ ],\r\n            \"unitIds\": [450]\r\n        }\r\n\r\n"
+                },
+                "url": "{{uri}}/AyaConnect/JobApprovalProcess"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "Kestrel"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 20 Nov 2019 01:17:26 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": null
+            }
+          ]
         }
       ],
       "id": "1ea67c6e-3f3a-4280-82d6-1334462b14f5",
@@ -7825,7 +7991,7 @@
   ],
   "variable": [
     {
-      "id": "02c8f146-0acc-4442-9531-412e6bdd5633",
+      "id": "ed802348-3e58-4de7-a6f5-1d3add930fa4",
       "key": "uri",
       "value": "http://localhost:8088"
     }
