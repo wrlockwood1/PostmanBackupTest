@@ -5357,6 +5357,12 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "addTokenTo": "header"
+              }
+            },
             "method": "POST",
             "header": [],
             "body": {
@@ -5368,7 +5374,7 @@
                 }
               }
             },
-            "url": "{{uri}}/AyaConnect/Vendor/Shifts/Submittals"
+            "url": "{{uri}}/AyaConnect/vendors/Shifts/Submittals"
           },
           "response": []
         }
@@ -7800,7 +7806,7 @@
   ],
   "variable": [
     {
-      "id": "50532cc4-8123-4fcf-b8c2-28a75aa93243",
+      "id": "cadbc5ed-9cd5-407d-84eb-d49a07a7f125",
       "key": "uri",
       "value": "http://localhost:8088"
     }
