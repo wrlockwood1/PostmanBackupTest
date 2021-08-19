@@ -7131,7 +7131,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/ayaconnect/vendors/vendorjobs/states",
+              "raw": "{{uri}}/ayaconnect/vendors/vendorjobs/export",
               "host": [
                 "{{uri}}"
               ],
@@ -7139,7 +7139,7 @@
                 "ayaconnect",
                 "vendors",
                 "vendorjobs",
-                "states"
+                "export"
               ],
               "query": [
                 {
@@ -7176,6 +7176,11 @@
                 {
                   "key": "filter.state",
                   "value": "ca",
+                  "disabled": true
+                },
+                {
+                  "key": "filte",
+                  "value": null,
                   "disabled": true
                 }
               ]
@@ -7894,7 +7899,7 @@
   ],
   "variable": [
     {
-      "id": "4709bfa1-4839-4d83-95bd-cb5297cdbaa0",
+      "id": "69ae21c9-6b79-4bca-91aa-3394b1bd66f8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
