@@ -7198,14 +7198,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/ayaconnect/vendorjobs/export",
+              "raw": "{{uri}}/ayaconnect/vendorjobs",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "ayaconnect",
-                "vendorjobs",
-                "export"
+                "vendorjobs"
               ],
               "query": [
                 {
@@ -7965,7 +7964,7 @@
   ],
   "variable": [
     {
-      "id": "91881aa0-4b4a-4197-8dd1-444f01df4fa2",
+      "id": "c262dfe7-e0a4-4d39-8314-2010102f263c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
