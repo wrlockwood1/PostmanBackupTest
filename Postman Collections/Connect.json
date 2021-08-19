@@ -6952,14 +6952,15 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/ayaconnect/vendors/facility?pageSize=25&skip=0&sort.field=city&sort.type=asc&filter.statusId=1",
+              "raw": "{{uri}}/ayaconnect/vendors/vendorjobs/states",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "ayaconnect",
                 "vendors",
-                "facility"
+                "vendorjobs",
+                "states"
               ],
               "query": [
                 {
@@ -6997,26 +6998,6 @@
                   "key": "filter.state",
                   "value": "ca",
                   "disabled": true
-                },
-                {
-                  "key": "pageSize",
-                  "value": "25"
-                },
-                {
-                  "key": "skip",
-                  "value": "0"
-                },
-                {
-                  "key": "sort.field",
-                  "value": "city"
-                },
-                {
-                  "key": "sort.type",
-                  "value": "asc"
-                },
-                {
-                  "key": "filter.statusId",
-                  "value": "1"
                 }
               ]
             },
@@ -7850,7 +7831,7 @@
   ],
   "variable": [
     {
-      "id": "ec11e42b-d6c4-483d-8386-feb359bbcf5c",
+      "id": "ef7fa158-45cf-4348-b552-a9651c03f32c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
