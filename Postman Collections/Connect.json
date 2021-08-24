@@ -3770,7 +3770,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"id\": 0,\r\n    \"facilityId\": 45052,\r\n    \"professionId\": 1,\r\n    \"specialtyId\": 16,\r\n    \"unitId\": \"\",\r\n    \"comments\": \"\",\r\n    \"jobCode\": \"JOB code\",\r\n    \"unionCodeId\": 1,\r\n    \"chartString\": \"Chart String\",\r\n    \"address\": \"\",\r\n    \"addressAlt\": \"\",\r\n    \"city\": \"\",\r\n    \"stateId\": \"\",\r\n    \"zipCode\": \"\",\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": false,\r\n    \"conversionType\": 0,\r\n    \"ShiftSchedules\": [\r\n        {\r\n            \"shiftLength\": 14,\r\n            \"startDates\": [\r\n                \"05/22/2021\"\r\n            ],\r\n            \"startTime\": \"2021-05-22T08:00:00Z\"\r\n        }\r\n    ],\r\n    \"shouldSendShiftNotification\": false\r\n}",
+                  "raw": "{\r\n    \"id\": 0,\r\n    \"facilityId\": 45052,\r\n    \"professionId\": 1,\r\n    \"specialtyId\": 16,\r\n    \"unitId\": \"\",\r\n    \"comments\": \"\",\r\n    \"jobCode\": \"JOB code\",\r\n    \"unionCodeId\": 1,\r\n    \"chartString\": \"Chart String\",\r\n    \"address\": \"\",\r\n    \"addressAlt\": \"\",\r\n    \"city\": \"\",\r\n    \"stateId\": \"\",\r\n    \"zipCode\": \"\",\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": false,\r\n    \"conversionType\": 0,\r\n    \"ShiftSchedules\": [\r\n        {\r\n            \"shiftLength\": 14,\r\n            \"startDates\": [\r\n                \"05/22/2021\"\r\n            ],\r\n            \"startTime\": \"2021-05-22T08:00:00Z\"\r\n        }\r\n    ],\r\n    \"shouldSendShiftNotification\": true\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"
@@ -7964,7 +7964,7 @@
   ],
   "variable": [
     {
-      "id": "c262dfe7-e0a4-4d39-8314-2010102f263c",
+      "id": "805473f9-2f16-4f24-822a-bd4ee4529818",
       "key": "uri",
       "value": "http://localhost:8088"
     }
