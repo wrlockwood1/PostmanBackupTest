@@ -6756,7 +6756,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": null
+                "url": "{{uri}}/AyaConnect/Vendors/Reports"
               },
               "response": []
             }
@@ -7983,7 +7983,7 @@
   ],
   "variable": [
     {
-      "id": "f599d931-e694-4fcf-a34e-ba150ce69533",
+      "id": "1385b3c7-0b4e-4a56-92c5-0a033c8d90ac",
       "key": "uri",
       "value": "http://localhost:8088"
     }
