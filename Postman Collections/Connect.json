@@ -6745,6 +6745,11 @@
           "id": "e71c733d-7b5c-40de-be31-e13d8a3e1090"
         },
         {
+          "name": "New Folder",
+          "item": [],
+          "id": "1df1e8c3-be8e-453b-8775-877a3435f739"
+        },
+        {
           "name": "Facilities",
           "id": "dc1f0735-acfd-4935-a722-fce688d3b79e",
           "protocolProfileBehavior": {
@@ -7964,7 +7969,7 @@
   ],
   "variable": [
     {
-      "id": "805473f9-2f16-4f24-822a-bd4ee4529818",
+      "id": "a0e659c7-2f8c-4bc4-957a-7b1d51160501",
       "key": "uri",
       "value": "http://localhost:8088"
     }
