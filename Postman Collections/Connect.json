@@ -6745,7 +6745,7 @@
           "id": "e71c733d-7b5c-40de-be31-e13d8a3e1090"
         },
         {
-          "name": "New Folder",
+          "name": "Reports",
           "item": [],
           "id": "1df1e8c3-be8e-453b-8775-877a3435f739"
         },
@@ -7969,7 +7969,7 @@
   ],
   "variable": [
     {
-      "id": "a0e659c7-2f8c-4bc4-957a-7b1d51160501",
+      "id": "d1d65b65-ed1f-4b95-ad36-e2c5fd992f3d",
       "key": "uri",
       "value": "http://localhost:8088"
     }
