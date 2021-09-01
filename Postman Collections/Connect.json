@@ -6748,7 +6748,7 @@
           "name": "Reports",
           "item": [
             {
-              "name": "New Request",
+              "name": "Reports",
               "id": "eebaa111-fb4d-4f64-8c37-70f1e1b77107",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -7983,7 +7983,7 @@
   ],
   "variable": [
     {
-      "id": "3f504b8d-1b75-42fb-9a50-f5c4202c5c93",
+      "id": "f599d931-e694-4fcf-a34e-ba150ce69533",
       "key": "uri",
       "value": "http://localhost:8088"
     }
