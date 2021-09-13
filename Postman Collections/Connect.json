@@ -7793,6 +7793,19 @@
                 "url": "{{uri}}/AyaConnect/admin/client-contacts/types"
               },
               "response": []
+            },
+            {
+              "name": "New Request",
+              "id": "2f8990f2-07e5-41e3-a46b-f6bbc3e4693a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
             }
           ],
           "id": "181680c5-451c-4704-adff-c587761220f4"
@@ -7983,7 +7996,7 @@
   ],
   "variable": [
     {
-      "id": "90b1975b-cc21-4f60-b957-0b0d3cee5ccb",
+      "id": "94ce34db-9ecc-4f1c-86ad-61848215f334",
       "key": "uri",
       "value": "http://localhost:8088"
     }
