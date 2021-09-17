@@ -7903,7 +7903,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": "{{url}}/ayaconnect/invoices/getfiltered"
           },
           "response": []
         }
@@ -8027,7 +8027,7 @@
   ],
   "variable": [
     {
-      "id": "aa7511a4-3ab1-437f-8fac-9e224a6a30a6",
+      "id": "8a6daeb6-71a1-464c-8bce-4fde1e6ae5e6",
       "key": "uri",
       "value": "http://localhost:8088"
     }
