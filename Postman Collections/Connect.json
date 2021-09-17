@@ -7895,7 +7895,7 @@
       "name": "Invoices",
       "item": [
         {
-          "name": "New Request",
+          "name": "GetFilteredInvoices",
           "id": "81360a33-568b-4d87-9128-037bc34c887f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8027,7 +8027,7 @@
   ],
   "variable": [
     {
-      "id": "bfcb49dd-187c-478e-ad84-f9f08edf0e92",
+      "id": "aa7511a4-3ab1-437f-8fac-9e224a6a30a6",
       "key": "uri",
       "value": "http://localhost:8088"
     }
