@@ -7892,7 +7892,7 @@
       "id": "0329bf1d-a88a-4a00-af3d-282652e80c91"
     },
     {
-      "name": "Invoices",
+      "name": "New Folder",
       "item": [],
       "id": "316b79fc-2c43-44c8-86c2-c331961c7ca7"
     },
@@ -8013,7 +8013,7 @@
   ],
   "variable": [
     {
-      "id": "1ab0a637-a82d-4b82-8d13-49ee6c0e2dd4",
+      "id": "54ba1ceb-f549-4afa-91a2-5115be98646f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
