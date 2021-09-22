@@ -7220,7 +7220,7 @@
           "response": []
         },
         {
-          "name": "Job Export Copy",
+          "name": "Job Details",
           "id": "111593d6-647e-4872-87bb-3c3f1dc4b949",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8156,7 +8156,7 @@
   ],
   "variable": [
     {
-      "id": "6e8757aa-330c-4def-9a23-c9a6e4ba6a70",
+      "id": "811d3fc9-9b7a-4353-99c7-e854ad8c38ff",
       "key": "uri",
       "value": "http://localhost:8088"
     }
