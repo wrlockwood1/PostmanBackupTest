@@ -7220,6 +7220,73 @@
           "response": []
         },
         {
+          "name": "Job Export Copy",
+          "id": "111593d6-647e-4872-87bb-3c3f1dc4b949",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/ayaconnect/vendorjobs/export",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "ayaconnect",
+                "vendorjobs",
+                "export"
+              ],
+              "query": [
+                {
+                  "key": "skip",
+                  "value": "40",
+                  "description": "Number of records to skip",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.termsheetrequired",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.systemname",
+                  "value": "dch",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.name",
+                  "value": "duplicate covid",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.city",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.vms",
+                  "value": "aya",
+                  "disabled": true
+                },
+                {
+                  "key": "filter.state",
+                  "value": "ca",
+                  "disabled": true
+                },
+                {
+                  "key": "filte",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Gets list of facilities for vendor based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
+          },
+          "response": []
+        },
+        {
           "name": "Jobs",
           "id": "86aa336e-6891-4682-b88d-965a21151755",
           "protocolProfileBehavior": {
@@ -7754,73 +7821,6 @@
             "description": "Returns boolean if vendor user has Admin tag"
           },
           "response": []
-        },
-        {
-          "name": "Job Export Copy",
-          "id": "111593d6-647e-4872-87bb-3c3f1dc4b949",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "{{uri}}/ayaconnect/vendorjobs/export",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "ayaconnect",
-                "vendorjobs",
-                "export"
-              ],
-              "query": [
-                {
-                  "key": "skip",
-                  "value": "40",
-                  "description": "Number of records to skip",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.termsheetrequired",
-                  "value": "false",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.systemname",
-                  "value": "dch",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.name",
-                  "value": "duplicate covid",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.city",
-                  "value": "",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.vms",
-                  "value": "aya",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.state",
-                  "value": "ca",
-                  "disabled": true
-                },
-                {
-                  "key": "filte",
-                  "value": null,
-                  "disabled": true
-                }
-              ]
-            },
-            "description": "Gets list of facilities for vendor based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
-          },
-          "response": []
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8156,7 +8156,7 @@
   ],
   "variable": [
     {
-      "id": "62f49b3c-14b3-4f6f-83c8-e09931010e12",
+      "id": "6e8757aa-330c-4def-9a23-c9a6e4ba6a70",
       "key": "uri",
       "value": "http://localhost:8088"
     }
