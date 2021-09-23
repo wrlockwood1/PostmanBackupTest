@@ -7755,6 +7755,19 @@
             "description": "Returns boolean if vendor user has Admin tag"
           },
           "response": []
+        },
+        {
+          "name": "jOBS",
+          "id": "8bf37908-c530-4e59-a555-15ce237a8db2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8090,7 +8103,7 @@
   ],
   "variable": [
     {
-      "id": "2aed73db-24fb-4129-a1e3-8ba91f62c4ca",
+      "id": "27d7a665-b99c-40bf-a0e0-bbe07815ebac",
       "key": "uri",
       "value": "http://localhost:8088"
     }
