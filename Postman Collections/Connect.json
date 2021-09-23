@@ -7757,7 +7757,7 @@
           "response": []
         },
         {
-          "name": "Jobs",
+          "name": "New Request",
           "id": "8bf37908-c530-4e59-a555-15ce237a8db2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8103,7 +8103,7 @@
   ],
   "variable": [
     {
-      "id": "f7867933-3e31-4389-94d5-91bc9e209cb4",
+      "id": "c8a9a5f8-b573-4f1c-a7e6-ad3827e8cff2",
       "key": "uri",
       "value": "http://localhost:8088"
     }
