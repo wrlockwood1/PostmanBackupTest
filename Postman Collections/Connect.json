@@ -4373,7 +4373,7 @@
           "response": []
         },
         {
-          "name": "http://localhost:8088/AyaConnect/InternalPool/Resources/913",
+          "name": "Update Resource New",
           "id": "b92879d2-d4cc-4ca5-84d2-a0f29bb051a0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8272,7 +8272,7 @@
   ],
   "variable": [
     {
-      "id": "9306e63e-6b64-44f1-bb92-3c0349bcfa86",
+      "id": "93acab7d-41de-41b5-ae76-7a7870728be0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
