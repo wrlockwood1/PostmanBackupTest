@@ -4320,6 +4320,57 @@
             "url": "{{uri}}//ayaconnect/internalpool/shifts/6/reconfirm"
           },
           "response": []
+        },
+        {
+          "name": "http://localhost:8088/AyaConnect/Internalpool/Resources/913/Resources/1836091",
+          "id": "32111d4d-1555-4e88-928e-ab5461e38a15",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "sec-ch-ua",
+                "value": "\"Chromium\";v=\"94\", \"Google Chrome\";v=\"94\", \";Not A Brand\";v=\"99\""
+              },
+              {
+                "key": "Accept",
+                "value": "application/json, text/plain, */*"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer CfDJ8O6Rjztk2PlChhSmDH56-Ynb_XGff6J1hJOBqx2QtfwhkCAoIIk6MbRa4NDiuOgjnjQ6wdpAyjp1lsl-dS05octFXyuNU1qFR6rMcA00gKUJcQpA0JfPZGwxLp78QBr1uXDgk2inxHEXWuUJPXGLHrFCh-71hFz7yHPAGa1K-euWwLITP9K4wMgn2MPglVQVEqPxalxoWL-j015ygmJ-_mii_Lplj-0m2F3VIM5TJ89kuo_gkF5D935ERol5oGB-blTEqdUZKo8OFEDUF6Tj9dzBR67kptz1l1Q0UoAL080mihz31mHqYXFGNJScwAdiVnLqdrZXpNnmn-h0fZVw8j3ZZCYD_XHUxuzSp2xT-Omhn0T_q32a4_lkIpOaM1LtndlMaWQxPth4L-3Wgwow56SoV5FAB5BBOQNbD6ojQP8P6eEEoyP7JObN4WVLvjP9mOIbkOs7v6fpvJhlkARroK4i9vi0LG4o_GrpxJ65V5Whj6pAXTVZd-wC927sMC8eIPwhjg9rSz0-PUNkhYw4fzh0gQHsPrg2nki5sYS3kECgsN4XlsbyzNsLdpkc7BZD5zTC5N_LBYASnEGKbR99BnKd4KC4EYq_3EnwNJPGdUgaiYJSlB_n55z0aN5c1caM5xLDAEpheO9exi8wB7C4pa7Biz5EZfaC3dACO8aRi3ensGbrcqoiJHNtwcKhd5M7XlY8pUU3ev37xyoG3Nu0Yw0ZRjvXWMtWQXHDiVZ3NbwFyG6AZIBPD_a5ZFkq1BRsmotgQa5x77k7WEcWxzC0VMhq6FMzqu0vhUNLQf2MUZ9ECEi8pRlqZ31QvIBw31QfAw"
+              },
+              {
+                "key": "sec-ch-ua-mobile",
+                "value": "?0"
+              },
+              {
+                "key": "User-Agent",
+                "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"
+              },
+              {
+                "key": "sec-ch-ua-platform",
+                "value": "\"Windows\""
+              },
+              {
+                "key": "Sec-Fetch-Site",
+                "value": "same-site"
+              },
+              {
+                "key": "Sec-Fetch-Mode",
+                "value": "cors"
+              },
+              {
+                "key": "Sec-Fetch-Dest",
+                "value": "empty"
+              }
+            ],
+            "url": "http://localhost:8088/AyaConnect/Internalpool/Resources/913/Resources/1836091",
+            "description": "Get Reosuce Details with Professional info"
+          },
+          "response": []
         }
       ],
       "id": "72b2ab4a-dc4f-48d6-8de2-72e8598dcb50"
@@ -7757,7 +7808,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Jobs",
           "id": "8bf37908-c530-4e59-a555-15ce237a8db2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8103,7 +8154,7 @@
   ],
   "variable": [
     {
-      "id": "c8a9a5f8-b573-4f1c-a7e6-ad3827e8cff2",
+      "id": "5cb2211b-e9d5-4020-ba32-7524f4da3d5f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
