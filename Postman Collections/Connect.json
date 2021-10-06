@@ -8007,7 +8007,21 @@
         },
         {
           "name": "Hospital-Profile",
-          "item": [],
+          "item": [
+            {
+              "name": "New Request",
+              "id": "b54ed561-878a-45f0-b117-3e9f191755d4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
+            }
+          ],
           "id": "36e0ced1-895b-4113-aabe-75ba63e7f42d"
         }
       ],
@@ -8277,7 +8291,7 @@
   ],
   "variable": [
     {
-      "id": "6eec3103-a258-4fd2-afd5-7d67670ea256",
+      "id": "2a0d48e6-4468-4aef-9ea4-eff7ee6aa5a1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
