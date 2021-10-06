@@ -8017,7 +8017,30 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": null
+                "url": {
+                  "raw": "https://api-int.ayahealthcare.com/AyaConnect/Client/hospital-profile?professionId=1&facilityProfileGroupId=1",
+                  "protocol": "https",
+                  "host": [
+                    "api-int",
+                    "ayahealthcare",
+                    "com"
+                  ],
+                  "path": [
+                    "AyaConnect",
+                    "Client",
+                    "hospital-profile"
+                  ],
+                  "query": [
+                    {
+                      "key": "professionId",
+                      "value": "1"
+                    },
+                    {
+                      "key": "facilityProfileGroupId",
+                      "value": "1"
+                    }
+                  ]
+                }
               },
               "response": []
             }
@@ -8291,7 +8314,7 @@
   ],
   "variable": [
     {
-      "id": "4811a2b8-2bda-49c1-85ec-1bfc1f4b2ef5",
+      "id": "7b9edb7f-63e4-488e-b3ac-132ea082b13b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
