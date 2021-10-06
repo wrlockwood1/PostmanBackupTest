@@ -8004,6 +8004,11 @@
             }
           ],
           "id": "181680c5-451c-4704-adff-c587761220f4"
+        },
+        {
+          "name": "New Folder",
+          "item": [],
+          "id": "36e0ced1-895b-4113-aabe-75ba63e7f42d"
         }
       ],
       "id": "ca1989f3-1772-40ef-ad5e-af3ab7ab010c"
@@ -8272,7 +8277,7 @@
   ],
   "variable": [
     {
-      "id": "746878d9-165d-4433-9b4d-7c5b74981e6b",
+      "id": "a8778b86-56b8-4f83-a9b8-a80d20bf8c16",
       "key": "uri",
       "value": "http://localhost:8088"
     }
