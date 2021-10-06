@@ -8006,7 +8006,7 @@
           "id": "181680c5-451c-4704-adff-c587761220f4"
         },
         {
-          "name": "New Folder",
+          "name": "Hospital-Profile",
           "item": [],
           "id": "36e0ced1-895b-4113-aabe-75ba63e7f42d"
         }
@@ -8277,7 +8277,7 @@
   ],
   "variable": [
     {
-      "id": "749b320e-f3de-494c-98d0-82cdca3676b2",
+      "id": "6eec3103-a258-4fd2-afd5-7d67670ea256",
       "key": "uri",
       "value": "http://localhost:8088"
     }
