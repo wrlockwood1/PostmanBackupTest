@@ -8009,7 +8009,7 @@
           "name": "Hospital-Profile",
           "item": [
             {
-              "name": "New Request",
+              "name": "HospitalProfile",
               "id": "b54ed561-878a-45f0-b117-3e9f191755d4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8291,7 +8291,7 @@
   ],
   "variable": [
     {
-      "id": "5ab4c635-f858-4c2d-9163-6001e942e72a",
+      "id": "4811a2b8-2bda-49c1-85ec-1bfc1f4b2ef5",
       "key": "uri",
       "value": "http://localhost:8088"
     }
