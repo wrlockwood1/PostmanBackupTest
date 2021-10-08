@@ -7924,19 +7924,6 @@
             "description": "Returns boolean if vendor user has Admin tag"
           },
           "response": []
-        },
-        {
-          "name": "Jobs",
-          "id": "8bf37908-c530-4e59-a555-15ce237a8db2",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": null
-          },
-          "response": []
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8314,7 +8301,7 @@
   ],
   "variable": [
     {
-      "id": "7b9edb7f-63e4-488e-b3ac-132ea082b13b",
+      "id": "dc54d0fd-9f3c-452e-a3a2-20ad0ab279f9",
       "key": "uri",
       "value": "http://localhost:8088"
     }
