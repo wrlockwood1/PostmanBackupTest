@@ -7934,7 +7934,38 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": {
+              "raw": "{{uri}}/AyaConnect/VendorJobs?pageSize=25&skip=0&sort.field=profession&sort.type=asc&filter.isHot=false",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "VendorJobs"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "25"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sort.field",
+                  "value": "profession"
+                },
+                {
+                  "key": "sort.type",
+                  "value": "asc"
+                },
+                {
+                  "key": "filter.isHot",
+                  "value": "false"
+                }
+              ]
+            }
           },
           "response": []
         }
@@ -8314,7 +8345,7 @@
   ],
   "variable": [
     {
-      "id": "7746c38e-f6b7-4812-ab50-ae39695db7f2",
+      "id": "bec0434f-e608-410d-8613-ee4f5881e4f4",
       "key": "uri",
       "value": "http://localhost:8088"
     }
