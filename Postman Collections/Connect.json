@@ -7924,6 +7924,19 @@
             "description": "Returns boolean if vendor user has Admin tag"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "59ca2066-267a-4930-a90f-e51fb474faad",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8301,7 +8314,7 @@
   ],
   "variable": [
     {
-      "id": "30d9c2c7-a4ab-41a1-8e5b-ffc416bbdb8d",
+      "id": "38ff5dfb-0f31-4338-a198-d514191f9ba0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
