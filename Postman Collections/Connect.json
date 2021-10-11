@@ -7518,7 +7518,7 @@
                 }
               ]
             },
-            "description": "Gets list of facilities for vendor based on filtering and sorting\r\n\r\nTo simulate the vendor facility grid based on how it works now:\r\n- Use pagesize = 20\r\n- For paging, use multiples of 20 as the value\r\n- To simulate the *New* tab, set *statusId*=1\r\n- To simulate the *Accepted* tab, set *statusId*=3 and *statusId*=6\r\n- To simulate the *Declined* tab, set *statusId*=4\r\n- You can check and uncheck params to add/remove them, and update the values to test\r\n- The *total* property indicates the number of facilities that meet criteria"
+            "description": "Gets SSN and DOB info for candidate offer is for\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN"
           },
           "response": []
         },
@@ -8412,7 +8412,7 @@
   ],
   "variable": [
     {
-      "id": "92d102e5-0be9-4341-a6ac-25f45e7af7be",
+      "id": "f66dd4ba-4ec3-4498-a4bb-8b86c092b2c2",
       "key": "uri",
       "value": "http://localhost:8088"
     }
