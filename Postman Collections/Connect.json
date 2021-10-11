@@ -7456,7 +7456,7 @@
           "response": []
         },
         {
-          "name": "Job Details Copy",
+          "name": "Candidate DOB SSN",
           "id": "ac065c28-f546-44bd-b6cd-1600d6e88a59",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8412,7 +8412,7 @@
   ],
   "variable": [
     {
-      "id": "2fc266cd-6f7a-4665-a5dc-2c766b752d71",
+      "id": "92d102e5-0be9-4341-a6ac-25f45e7af7be",
       "key": "uri",
       "value": "http://localhost:8088"
     }
