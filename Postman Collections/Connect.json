@@ -7464,60 +7464,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": {
-              "raw": "{{uri}}/ayaconnect/vendorjobs/1411907",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "ayaconnect",
-                "vendorjobs",
-                "1411907"
-              ],
-              "query": [
-                {
-                  "key": "skip",
-                  "value": "40",
-                  "description": "Number of records to skip",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.termsheetrequired",
-                  "value": "false",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.systemname",
-                  "value": "dch",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.name",
-                  "value": "duplicate covid",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.city",
-                  "value": "",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.vms",
-                  "value": "aya",
-                  "disabled": true
-                },
-                {
-                  "key": "filter.state",
-                  "value": "ca",
-                  "disabled": true
-                },
-                {
-                  "key": "filte",
-                  "value": null,
-                  "disabled": true
-                }
-              ]
-            },
+            "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
             "description": "Gets SSN and DOB info for candidate offer is for\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN"
           },
           "response": []
@@ -8412,7 +8359,7 @@
   ],
   "variable": [
     {
-      "id": "f66dd4ba-4ec3-4498-a4bb-8b86c092b2c2",
+      "id": "f7dbe2db-9d55-4f43-adc3-d51b964a8c7d",
       "key": "uri",
       "value": "http://localhost:8088"
     }
