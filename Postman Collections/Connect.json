@@ -7508,6 +7508,58 @@
           ]
         },
         {
+          "name": "Candidate DOB SSN Copy",
+          "id": "bca64fe2-708b-493b-8cef-63eecce9b5c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
+            "description": "Gets SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN"
+          },
+          "response": [
+            {
+              "id": "71f77839-45a9-4a67-b0a5-e487d36a0f2e",
+              "name": "Candidate DOB SSN",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Length",
+                  "value": "117"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Server",
+                  "value": "Microsoft-IIS/10.0"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ASP.NET"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 11 Oct 2021 17:44:37 GMT"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"candidateSSN\": null,\n    \"applicationInfoSSN\": \"\",\n    \"candidateDateOfBirth\": \"1981-09-26T00:00:00\",\n    \"userInfoDateOfBirth\": null\n}"
+            }
+          ]
+        },
+        {
           "name": "Lookups",
           "id": "8cbda281-936f-4241-bac0-4f505d893671",
           "protocolProfileBehavior": {
@@ -8020,58 +8072,6 @@
             }
           },
           "response": []
-        },
-        {
-          "name": "Candidate DOB SSN Copy",
-          "id": "bca64fe2-708b-493b-8cef-63eecce9b5c0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
-            "description": "Gets SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN"
-          },
-          "response": [
-            {
-              "id": "71f77839-45a9-4a67-b0a5-e487d36a0f2e",
-              "name": "Candidate DOB SSN",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "117"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-IIS/10.0"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 11 Oct 2021 17:44:37 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"candidateSSN\": null,\n    \"applicationInfoSSN\": \"\",\n    \"candidateDateOfBirth\": \"1981-09-26T00:00:00\",\n    \"userInfoDateOfBirth\": null\n}"
-            }
-          ]
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8449,7 +8449,7 @@
   ],
   "variable": [
     {
-      "id": "aa1da733-5df9-4d34-a105-78b60b2da234",
+      "id": "dd81eea4-20b0-40bd-b160-303fb06054f0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
