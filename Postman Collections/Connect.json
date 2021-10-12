@@ -7528,45 +7528,7 @@
             "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
             "description": "Updates SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- ssn: SSN, must be in SSN format (either with or without -). Use applicationInfoSSN value if provided in GET\n- dateOfBirth: candidate date of birth. Use userInfoDateOfBirth value if provided in GET\n- userId: candidate's userId, supplied in GET endpoint"
           },
-          "response": [
-            {
-              "id": "71f77839-45a9-4a67-b0a5-e487d36a0f2e",
-              "name": "Candidate DOB SSN",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "117"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-IIS/10.0"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 11 Oct 2021 17:44:37 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"candidateSSN\": null,\n    \"applicationInfoSSN\": \"\",\n    \"candidateDateOfBirth\": \"1981-09-26T00:00:00\",\n    \"userInfoDateOfBirth\": null\n}"
-            }
-          ]
+          "response": []
         },
         {
           "name": "Lookups",
@@ -8458,7 +8420,7 @@
   ],
   "variable": [
     {
-      "id": "bdd0fb86-d758-4882-91f6-40215e5c92e8",
+      "id": "c44ad5cd-1a47-4fe8-a145-1158029012ec",
       "key": "uri",
       "value": "http://localhost:8088"
     }
