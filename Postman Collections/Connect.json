@@ -7467,45 +7467,7 @@
             "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
             "description": "Gets SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN\n- userId: userId for vendor candidate. used as property when updating vendor candidate info"
           },
-          "response": [
-            {
-              "id": "8203a4fb-4f0d-471e-bd29-3a38d32e46bd",
-              "name": "Candidate DOB SSN",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Content-Length",
-                  "value": "117"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Server",
-                  "value": "Microsoft-IIS/10.0"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ASP.NET"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 11 Oct 2021 17:44:37 GMT"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"candidateSSN\": null,\n    \"applicationInfoSSN\": \"\",\n    \"candidateDateOfBirth\": \"1981-09-26T00:00:00\",\n    \"userInfoDateOfBirth\": null\n}"
-            }
-          ]
+          "response": []
         },
         {
           "name": "Candidate DOB SSN",
@@ -8420,7 +8382,7 @@
   ],
   "variable": [
     {
-      "id": "a0462130-8e93-42e1-8124-61074660b486",
+      "id": "f8ba0e60-b09f-4949-b172-b5b5a14e90ff",
       "key": "uri",
       "value": "http://localhost:8088"
     }
