@@ -7516,6 +7516,15 @@
           "request": {
             "method": "PUT",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ssn\": \"123a456789\",\r\n    \"dateOfBirth\": \"1988-01-01\",\r\n    \"userId\": 898303\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
             "description": "Gets SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- candidateSsn: VendorCandidate record ssn\n- candidateDateOfBirth: VendorCandidate DOB\n- applicationInfoSsn: ApplicationInfo record ssn\n- userinfoDateofBirth: UserInfo record SSN"
           },
@@ -8449,7 +8458,7 @@
   ],
   "variable": [
     {
-      "id": "ef61f46e-572f-418d-bbe5-b70f0deb2dfd",
+      "id": "19163608-afb6-42c9-b33f-ca91d614c6ac",
       "key": "uri",
       "value": "http://localhost:8088"
     }
