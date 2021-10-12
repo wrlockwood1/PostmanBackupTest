@@ -7508,7 +7508,7 @@
           ]
         },
         {
-          "name": "Candidate DOB SSN Copy",
+          "name": "Candidate DOB SSN",
           "id": "bca64fe2-708b-493b-8cef-63eecce9b5c0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8449,7 +8449,7 @@
   ],
   "variable": [
     {
-      "id": "dd81eea4-20b0-40bd-b160-303fb06054f0",
+      "id": "a1a06047-6ffa-47e2-a108-2e88882fa707",
       "key": "uri",
       "value": "http://localhost:8088"
     }
