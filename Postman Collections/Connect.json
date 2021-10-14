@@ -8042,13 +8042,12 @@
                 {
                   "key": "filter.submittalCount.value",
                   "value": "1",
-                  "type": "text"
+                  "description": "value being compared (via type property)"
                 },
                 {
                   "key": "filter.submittalCount.type",
                   "value": "gt",
-                  "description": "gt: greater than, eq: equals, lt: less than, gte: greater than or equal, lte: less than or equal",
-                  "type": "text"
+                  "description": "gt: greater than, eq: equals, lt: less than, gte: greater than or equal, lte: less than or equal"
                 }
               ]
             }
@@ -8431,7 +8430,7 @@
   ],
   "variable": [
     {
-      "id": "ea24a14e-2bac-4fe4-8a6b-e553df8f36de",
+      "id": "6623db27-b416-4269-b466-70ea396c8a62",
       "key": "uri",
       "value": "http://localhost:8088"
     }
