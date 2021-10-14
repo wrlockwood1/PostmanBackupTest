@@ -8053,6 +8053,60 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Jobs Copy",
+          "id": "266e4294-f59e-4e3e-ae13-72d78eb551ae",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/VendorJobs?pageSize=25&skip=0&sort.field=profession&sort.type=asc&filter.isHot=false&filter.submittalCount.value=0&filter.submittalCount.type=gt",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "VendorJobs"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "25"
+                },
+                {
+                  "key": "skip",
+                  "value": "0"
+                },
+                {
+                  "key": "sort.field",
+                  "value": "profession"
+                },
+                {
+                  "key": "sort.type",
+                  "value": "asc"
+                },
+                {
+                  "key": "filter.isHot",
+                  "value": "false"
+                },
+                {
+                  "key": "filter.submittalCount.value",
+                  "value": "0",
+                  "description": "value being compared (via type property)"
+                },
+                {
+                  "key": "filter.submittalCount.type",
+                  "value": "gt",
+                  "description": "gt: greater than, eq: equals, lt: less than, gte: greater than or equal, lte: less than or equal"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "9c4307c6-49fb-42cd-8172-ddc79e97330b",
@@ -8430,7 +8484,7 @@
   ],
   "variable": [
     {
-      "id": "f4cb26a6-c6b7-47df-b756-44a01faa37bd",
+      "id": "a1bcc1ba-80ab-440f-aead-037df065ecd8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
