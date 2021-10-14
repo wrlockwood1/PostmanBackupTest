@@ -8010,7 +8010,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{uri}}/AyaConnect/VendorJobs?pageSize=25&skip=0&sort.field=profession&sort.type=asc&filter.isHot=false&filter.submittalCount.value=1&filter.submittalCount.type=gt",
+              "raw": "{{uri}}/AyaConnect/VendorJobs?pageSize=25&skip=0&sort.field=profession&sort.type=asc&filter.isHot=false&filter.submittalCount.value=0&filter.submittalCount.type=gt",
               "host": [
                 "{{uri}}"
               ],
@@ -8041,7 +8041,7 @@
                 },
                 {
                   "key": "filter.submittalCount.value",
-                  "value": "1",
+                  "value": "0",
                   "description": "value being compared (via type property)"
                 },
                 {
@@ -8430,7 +8430,7 @@
   ],
   "variable": [
     {
-      "id": "cad15645-aae0-4f7d-8728-a17c98163517",
+      "id": "f4cb26a6-c6b7-47df-b756-44a01faa37bd",
       "key": "uri",
       "value": "http://localhost:8088"
     }
