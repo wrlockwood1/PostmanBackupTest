@@ -7518,14 +7518,14 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"ssn\": \"123-45-7890\",\r\n    \"dateOfBirth\": \"1988-01-01\",\r\n    \"userId\": 898303 // userId from get endpoint\r\n}",
+              "raw": "{\r\n    \"ssn\": \"123457890\",\r\n    \"dateOfBirth\": \"1988-01-01\",\r\n    \"userId\": 1673949 // userId from GET endpoint\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
                 }
               }
             },
-            "url": "{{uri}}/ayaconnect/vendors/candidate-offer/39924/candidate",
+            "url": "{{uri}}/ayaconnect/vendors/candidate-offer/23285/candidate",
             "description": "Updates SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- ssn: SSN, must be in SSN format (either with or without -). Use applicationInfoSSN value if provided in GET\n- dateOfBirth: candidate date of birth. Use userInfoDateOfBirth value if provided in GET\n- userId: candidate's userId, supplied in GET endpoint"
           },
           "response": []
@@ -8430,7 +8430,7 @@
   ],
   "variable": [
     {
-      "id": "9924efa4-fa1d-4c99-8c73-700402540a93",
+      "id": "4939931d-d8aa-4e0a-a84b-6a86eefcbfba",
       "key": "uri",
       "value": "http://localhost:8088"
     }
