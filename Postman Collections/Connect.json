@@ -7526,7 +7526,7 @@
               }
             },
             "url": "{{uri}}/ayaconnect/vendors/candidate-offer/23285/candidate",
-            "description": "Updates SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- ssn: SSN, must be in SSN format (either with or without -). Use applicationInfoSSN value if provided in GET\n- dateOfBirth: candidate date of birth. Use userInfoDateOfBirth value if provided in GET\n- userId: candidate's userId, supplied in GET endpoint"
+            "description": "Updates SSN and DOB info for candidate offer is for\n\nNumber in endpoint represents offerId\n\n- ssn: SSN, must be in 9 char SSN format. Use applicationInfoSSN value if provided in GET\n- dateOfBirth: candidate date of birth. Use userInfoDateOfBirth value if provided in GET\n- userId: candidate's userId, supplied in GET endpoint"
           },
           "response": []
         },
@@ -8430,7 +8430,7 @@
   ],
   "variable": [
     {
-      "id": "4939931d-d8aa-4e0a-a84b-6a86eefcbfba",
+      "id": "51741e02-86e8-4025-b813-211396e43c01",
       "key": "uri",
       "value": "http://localhost:8088"
     }
