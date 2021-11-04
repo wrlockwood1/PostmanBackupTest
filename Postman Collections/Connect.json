@@ -8370,7 +8370,7 @@
             "auth": {
               "type": "bearer",
               "bearer": {
-                "token": "{{access_token}}"
+                "token": "{{Bearer}}"
               }
             },
             "method": "GET",
@@ -8400,6 +8400,19 @@
             ],
             "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogo",
             "description": "Prod: https://api-dev.ayahealthcare.com\nLocal: http://localhost:8088"
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "43bdf698-745f-4fd6-b2c9-072ae0a30785",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
           },
           "response": []
         }
@@ -8523,7 +8536,7 @@
   ],
   "variable": [
     {
-      "id": "f31a1f05-267b-4763-9a17-3b9eff38eabb",
+      "id": "13ad613c-65ad-4b9f-ba50-a5adb45b3e0c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
