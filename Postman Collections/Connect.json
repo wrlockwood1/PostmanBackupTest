@@ -8415,6 +8415,19 @@
             "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogos"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "d4c4a76b-1c2c-44c4-adc5-7a5b304b41e4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "4e164457-f6d7-4982-8774-c4239735583a"
@@ -8536,7 +8549,7 @@
   ],
   "variable": [
     {
-      "id": "7aef0802-d3c9-47da-a50d-c300815a18b7",
+      "id": "0a82dfed-b0ad-4654-ae8c-ec67e519398b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
