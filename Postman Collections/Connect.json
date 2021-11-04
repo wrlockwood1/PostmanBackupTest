@@ -8316,7 +8316,51 @@
     },
     {
       "name": "TD-6860",
-      "item": [],
+      "item": [
+        {
+          "name": "Featured Logo",
+          "id": "35de9559-a95d-46aa-ae13-aec92eb5d91c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{bearer}}"
+              }
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "type": "text",
+                "value": " application/json, text/plain, */*"
+              },
+              {
+                "key": "Origin",
+                "type": "text",
+                "value": " http://localhost:53081",
+                "disabled": true
+              },
+              {
+                "key": "Referer",
+                "type": "text",
+                "value": " http://localhost:53081/",
+                "disabled": true
+              },
+              {
+                "key": "User-Agent",
+                "type": "text",
+                "value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+              }
+            ],
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogos/recent",
+            "description": "Prod: https://api-dev.ayahealthcare.com\nLocal: http://localhost:8088"
+          },
+          "response": []
+        }
+      ],
       "id": "4e164457-f6d7-4982-8774-c4239735583a"
     },
     {
@@ -8436,7 +8480,7 @@
   ],
   "variable": [
     {
-      "id": "3661a5e3-2296-4a09-8af1-9dd56ac76857",
+      "id": "c806e3ce-e2b3-4c0e-872c-f04a9f5c29a0",
       "key": "uri",
       "value": "http://localhost:8088"
     }
