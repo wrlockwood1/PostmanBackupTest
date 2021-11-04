@@ -8417,15 +8417,15 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Update Local Pool Per Diem Candidate",
           "id": "d4c4a76b-1c2c-44c4-adc5-7a5b304b41e4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "PUT",
             "header": [],
-            "url": null
+            "url": "Local Pool Per Diem Candidate"
           },
           "response": []
         }
@@ -8549,7 +8549,7 @@
   ],
   "variable": [
     {
-      "id": "184b975c-b2db-4781-973a-9a1e93fa29ac",
+      "id": "f09a7c6d-4ddb-44c3-893d-26abd0c776a7",
       "key": "uri",
       "value": "http://localhost:8088"
     }
