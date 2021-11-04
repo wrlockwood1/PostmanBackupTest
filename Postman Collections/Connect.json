@@ -8410,9 +8410,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "POST",
             "header": [],
-            "url": null
+            "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogos"
           },
           "response": []
         }
@@ -8536,7 +8536,7 @@
   ],
   "variable": [
     {
-      "id": "a726aef4-b551-49a1-b475-8ac70952d276",
+      "id": "fd516a2b-a985-4d16-9c9c-3484384e7dda",
       "key": "uri",
       "value": "http://localhost:8088"
     }
