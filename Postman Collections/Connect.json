@@ -8315,6 +8315,11 @@
       "id": "316b79fc-2c43-44c8-86c2-c331961c7ca7"
     },
     {
+      "name": "New Folder",
+      "item": [],
+      "id": "4e164457-f6d7-4982-8774-c4239735583a"
+    },
+    {
       "name": "Get Menu",
       "id": "b3f02bea-a5ab-47a4-868c-0da7a9d17b0b",
       "protocolProfileBehavior": {
@@ -8431,7 +8436,7 @@
   ],
   "variable": [
     {
-      "id": "b63ba36f-4d67-45e3-b447-9167a2615e3a",
+      "id": "a59dbbed-8411-4f7b-a8b6-4d4b13837f45",
       "key": "uri",
       "value": "http://localhost:8088"
     }
