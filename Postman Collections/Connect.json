@@ -8433,11 +8433,6 @@
           "id": "f2929a23-5cbb-4e19-96d5-40a568fca3c2"
         },
         {
-          "name": "New Folder",
-          "item": [],
-          "id": "c43c8a1e-898e-4512-8cb6-f1713ced4d3f"
-        },
-        {
           "name": "Update Local Pool Per Diem Candidate",
           "id": "d4c4a76b-1c2c-44c4-adc5-7a5b304b41e4",
           "protocolProfileBehavior": {
@@ -8579,7 +8574,7 @@
   ],
   "variable": [
     {
-      "id": "ff876d58-6f8d-4df1-8345-c3c9a0e6ee5f",
+      "id": "3e719336-7424-445f-ba23-e1538f95c377",
       "key": "uri",
       "value": "http://localhost:8088"
     }
