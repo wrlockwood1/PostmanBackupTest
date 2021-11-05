@@ -6607,7 +6607,7 @@
           "response": []
         },
         {
-          "name": "Get Filtered Jobs",
+          "name": "Get Filtered Submittals",
           "id": "b483b6ce-4544-4e44-a468-bd0628489888",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -6636,7 +6636,7 @@
           "response": []
         },
         {
-          "name": "Get Filtered Jobbs",
+          "name": "Get Filtered Jobs",
           "id": "34a616a7-45b9-43bb-a37e-34635e22d127",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8638,7 +8638,7 @@
   ],
   "variable": [
     {
-      "id": "c9e173a7-6b01-482a-9c23-a77ee8d0371a",
+      "id": "26105fa6-0e9e-4a83-a1aa-d0740efca139",
       "key": "uri",
       "value": "http://localhost:8088"
     }
