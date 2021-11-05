@@ -6636,7 +6636,7 @@
           "response": []
         },
         {
-          "name": "Get Filtered Submittals",
+          "name": "Get Filtered Jobs Copy",
           "id": "34a616a7-45b9-43bb-a37e-34635e22d127",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8638,7 +8638,7 @@
   ],
   "variable": [
     {
-      "id": "6e93eed9-bca1-48bd-838b-8edd4168d145",
+      "id": "a6f33053-0be0-4269-b511-fb378b62111b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
