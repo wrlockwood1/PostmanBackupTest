@@ -6607,8 +6607,37 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "Get Filtered Jobs",
           "id": "b483b6ce-4544-4e44-a468-bd0628489888",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/JobAdmin/GetFilteredJobs?{\"take\":10,\"skip\":0,\"page\":1,\"pageSize\":10,\"sort\":[{\"field\":\"rateCategoryOrder\",\"dir\":\"asc\"}],\"filter\":{\"filters\":[]}}",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "JobAdmin",
+                "GetFilteredJobs"
+              ],
+              "query": [
+                {
+                  "key": "{\"take\":10,\"skip\":0,\"page\":1,\"pageSize\":10,\"sort\":[{\"field\":\"rateCategoryOrder\",\"dir\":\"asc\"}],\"filter\":{\"filters\":[]}}",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "77d7c18a-1f02-4158-9855-3e6f63857d1a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -8593,7 +8622,7 @@
   ],
   "variable": [
     {
-      "id": "8db17e63-9042-4cdd-a252-c2710b9905df",
+      "id": "95d957c8-82f8-46ea-a16e-bcc1f75afc5e",
       "key": "uri",
       "value": "http://localhost:8088"
     }
