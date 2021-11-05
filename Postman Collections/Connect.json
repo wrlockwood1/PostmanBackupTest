@@ -8385,52 +8385,57 @@
                 "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogos"
               },
               "response": []
+            },
+            {
+              "name": "Featured Logo",
+              "id": "c6d77102-c6f8-4e4c-bfc9-a0725d44c11b",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{Bearer}}"
+                  }
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "type": "text",
+                    "value": " application/json, text/plain, */*"
+                  },
+                  {
+                    "key": "Origin",
+                    "type": "text",
+                    "value": " http://localhost:53081",
+                    "disabled": true
+                  },
+                  {
+                    "key": "Referer",
+                    "type": "text",
+                    "value": " http://localhost:53081/",
+                    "disabled": true
+                  },
+                  {
+                    "key": "User-Agent",
+                    "type": "text",
+                    "value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
+                  }
+                ],
+                "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogo",
+                "description": "Prod: https://api-dev.ayahealthcare.com\nLocal: http://localhost:8088"
+              },
+              "response": []
             }
           ],
           "id": "f2929a23-5cbb-4e19-96d5-40a568fca3c2"
         },
         {
-          "name": "Featured Logo",
-          "id": "c6d77102-c6f8-4e4c-bfc9-a0725d44c11b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{Bearer}}"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "type": "text",
-                "value": " application/json, text/plain, */*"
-              },
-              {
-                "key": "Origin",
-                "type": "text",
-                "value": " http://localhost:53081",
-                "disabled": true
-              },
-              {
-                "key": "Referer",
-                "type": "text",
-                "value": " http://localhost:53081/",
-                "disabled": true
-              },
-              {
-                "key": "User-Agent",
-                "type": "text",
-                "value": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36"
-              }
-            ],
-            "url": "{{uri}}/AyaConnect/Admin/Facilities/756/featuredLogo",
-            "description": "Prod: https://api-dev.ayahealthcare.com\nLocal: http://localhost:8088"
-          },
-          "response": []
+          "name": "New Folder",
+          "item": [],
+          "id": "c43c8a1e-898e-4512-8cb6-f1713ced4d3f"
         },
         {
           "name": "Update Local Pool Per Diem Candidate",
@@ -8574,7 +8579,7 @@
   ],
   "variable": [
     {
-      "id": "664e068a-84d1-44f8-af7c-960c7ef0a85e",
+      "id": "ff876d58-6f8d-4df1-8345-c3c9a0e6ee5f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
