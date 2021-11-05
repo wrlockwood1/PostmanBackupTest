@@ -6605,6 +6605,19 @@
             "url": "{{uri}}/AyaConnect/Lookup"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "b483b6ce-4544-4e44-a468-bd0628489888",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "0060b601-476e-4d52-9d35-1dc75380d5c4",
@@ -8580,7 +8593,7 @@
   ],
   "variable": [
     {
-      "id": "f6c37510-abe3-4dd3-8dd1-832ea410db7a",
+      "id": "380b58ae-3c6f-494b-b0ed-4932e524219d",
       "key": "uri",
       "value": "http://localhost:8088"
     }
