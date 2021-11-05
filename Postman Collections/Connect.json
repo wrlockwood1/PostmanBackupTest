@@ -8433,7 +8433,7 @@
           "id": "f2929a23-5cbb-4e19-96d5-40a568fca3c2"
         },
         {
-          "name": "TD-6903",
+          "name": "New Folder",
           "item": [],
           "id": "c43c8a1e-898e-4512-8cb6-f1713ced4d3f"
         },
@@ -8579,7 +8579,7 @@
   ],
   "variable": [
     {
-      "id": "e0ddf3d2-51a9-4cf7-b5fe-9f3512341a11",
+      "id": "b9908378-7683-4fa5-a92d-688f1d0becb7",
       "key": "uri",
       "value": "http://localhost:8088"
     }
