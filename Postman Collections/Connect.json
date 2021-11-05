@@ -8433,26 +8433,32 @@
           "id": "f2929a23-5cbb-4e19-96d5-40a568fca3c2"
         },
         {
-          "name": "Update Local Pool Per Diem Candidate",
-          "id": "d4c4a76b-1c2c-44c4-adc5-7a5b304b41e4",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n    \"id\": 229652,\r\n    \"sclEmployeeId\": null,\r\n    \"sclSupervisorId\": 45540,\r\n    \"sclDepartmentCode\": 22802409,\r\n    \"sclHireDate\": \"2021-11-29T08:00:00.000Z\"\r\n}",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "{{uri}}AyaConnect/Client/LocalPool/ClientPerDiem/229652/"
-          },
-          "response": []
+          "name": "TD-6903",
+          "item": [
+            {
+              "name": "Update Local Pool Per Diem Candidate",
+              "id": "d4c4a76b-1c2c-44c4-adc5-7a5b304b41e4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"id\": 229652,\r\n    \"sclEmployeeId\": null,\r\n    \"sclSupervisorId\": 45540,\r\n    \"sclDepartmentCode\": 22802409,\r\n    \"sclHireDate\": \"2021-11-29T08:00:00.000Z\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{uri}}AyaConnect/Client/LocalPool/ClientPerDiem/229652/"
+              },
+              "response": []
+            }
+          ],
+          "id": "c43c8a1e-898e-4512-8cb6-f1713ced4d3f"
         }
       ],
       "id": "4e164457-f6d7-4982-8774-c4239735583a"
@@ -8574,7 +8580,7 @@
   ],
   "variable": [
     {
-      "id": "3e719336-7424-445f-ba23-e1538f95c377",
+      "id": "b84b6fae-12fb-400f-ba4d-313e56a5433b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
