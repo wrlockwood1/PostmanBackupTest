@@ -8596,6 +8596,38 @@
                   "response": []
                 },
                 {
+                  "name": "Update Job Attachment",
+                  "id": "09c08eab-a5aa-4a86-bc76-d41e476a8d0d",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "url": {
+                      "raw": "{{uri}}/AyaConnect/client/jobs/1492198/attachments/1?internalOnly=false",
+                      "host": [
+                        "{{uri}}"
+                      ],
+                      "path": [
+                        "AyaConnect",
+                        "client",
+                        "jobs",
+                        "1492198",
+                        "attachments",
+                        "1"
+                      ],
+                      "query": [
+                        {
+                          "key": "internalOnly",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
                   "name": "Add Job Attachment",
                   "id": "b0dc35ae-6427-4f95-bc55-ffe2b5520e00",
                   "protocolProfileBehavior": {
@@ -8636,38 +8668,6 @@
                     "method": "GET",
                     "header": [],
                     "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Update Job Attachment Copy",
-                  "id": "09c08eab-a5aa-4a86-bc76-d41e476a8d0d",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "PUT",
-                    "header": [],
-                    "url": {
-                      "raw": "{{uri}}/AyaConnect/client/jobs/1492198/attachments/1?internalOnly=false",
-                      "host": [
-                        "{{uri}}"
-                      ],
-                      "path": [
-                        "AyaConnect",
-                        "client",
-                        "jobs",
-                        "1492198",
-                        "attachments",
-                        "1"
-                      ],
-                      "query": [
-                        {
-                          "key": "internalOnly",
-                          "value": "false"
-                        }
-                      ]
-                    }
                   },
                   "response": []
                 }
@@ -8913,7 +8913,7 @@
   ],
   "variable": [
     {
-      "id": "e72f4978-1de5-4914-98f9-5598a807af55",
+      "id": "47c809a2-3348-4d6f-93bd-0e474c0f57a4",
       "key": "uri",
       "value": "http://localhost:8088"
     }
