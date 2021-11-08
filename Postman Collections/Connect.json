@@ -8638,7 +8638,7 @@
               "id": "b86ec1d1-b00b-4260-9f91-05d5d39c9cff"
             },
             {
-              "name": "Vendor Copy",
+              "name": "Admin",
               "item": [
                 {
                   "name": "Download Job Attachment",
@@ -8818,7 +8818,7 @@
   ],
   "variable": [
     {
-      "id": "f1cfaced-42f6-442d-bcb7-c5b0b00f1993",
+      "id": "e32e9ec0-7efa-4280-a4c6-b9c4a5ba1c89",
       "key": "uri",
       "value": "http://localhost:8088"
     }
