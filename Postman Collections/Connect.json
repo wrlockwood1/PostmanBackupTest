@@ -8580,7 +8580,7 @@
               "id": "46b4c6e7-137d-48db-933d-98335f5f34b5"
             },
             {
-              "name": "Client Copy",
+              "name": "Vendor",
               "item": [
                 {
                   "name": "Download Job Attachment",
@@ -8591,7 +8591,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachment/1"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachment/1"
                   },
                   "response": []
                 },
@@ -8604,7 +8604,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments/preview/1"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments/preview/1"
                   },
                   "response": []
                 },
@@ -8617,7 +8617,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
                   },
                   "response": []
                 },
@@ -8760,7 +8760,7 @@
   ],
   "variable": [
     {
-      "id": "1119c736-de2a-4d5b-9ed1-9055bee492e7",
+      "id": "5cc9c75b-3e37-4555-8bf9-c437ba06e1b4",
       "key": "uri",
       "value": "http://localhost:8088"
     }
