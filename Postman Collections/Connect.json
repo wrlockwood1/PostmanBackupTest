@@ -8596,7 +8596,7 @@
                   "response": []
                 },
                 {
-                  "name": "Update Job Attachment",
+                  "name": "Delete Job Attachment",
                   "id": "09c08eab-a5aa-4a86-bc76-d41e476a8d0d",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -8913,7 +8913,7 @@
   ],
   "variable": [
     {
-      "id": "d35e1132-c4bb-42c7-b11f-bbcf34ffbaab",
+      "id": "4d0fad8f-20a8-4cc3-82ea-3c9a9b494bde",
       "key": "uri",
       "value": "http://localhost:8088"
     }
