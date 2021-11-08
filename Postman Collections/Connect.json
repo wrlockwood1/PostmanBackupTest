@@ -8564,7 +8564,7 @@
                   "response": []
                 },
                 {
-                  "name": "Job Attachments Copy",
+                  "name": "Update Job Attachment",
                   "id": "0fb1c767-30a1-4921-a6de-e9915c82a331",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -8572,7 +8572,57 @@
                   "request": {
                     "method": "PUT",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
+                    "url": {
+                      "raw": "{{uri}}/AyaConnect/client/jobs/1492198/attachments/1?internalOnly=false",
+                      "host": [
+                        "{{uri}}"
+                      ],
+                      "path": [
+                        "AyaConnect",
+                        "client",
+                        "jobs",
+                        "1492198",
+                        "attachments",
+                        "1"
+                      ],
+                      "query": [
+                        {
+                          "key": "internalOnly",
+                          "value": "false"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Add Job Attachment",
+                  "id": "b0dc35ae-6427-4f95-bc55-ffe2b5520e00",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [],
+                    "url": {
+                      "raw": "{{uri}}/AyaConnect/client/jobs/1492198/attachments?internalOnly=false",
+                      "host": [
+                        "{{uri}}"
+                      ],
+                      "path": [
+                        "AyaConnect",
+                        "client",
+                        "jobs",
+                        "1492198",
+                        "attachments"
+                      ],
+                      "query": [
+                        {
+                          "key": "internalOnly",
+                          "value": "false"
+                        }
+                      ]
+                    }
                   },
                   "response": []
                 },
@@ -8831,7 +8881,7 @@
   ],
   "variable": [
     {
-      "id": "49840050-2209-454e-830e-baefa58634d7",
+      "id": "29b51c0e-6ea7-4696-b2f0-71432b312409",
       "key": "uri",
       "value": "http://localhost:8088"
     }
