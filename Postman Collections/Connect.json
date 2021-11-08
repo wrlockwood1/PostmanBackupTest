@@ -8491,7 +8491,7 @@
           "id": "f2929a23-5cbb-4e19-96d5-40a568fca3c2"
         },
         {
-          "name": "TD-6903 (Local Pool Candidate Update)",
+          "name": "TD6903 (Local Pool Candidate Update)",
           "item": [
             {
               "name": "Update Local Pool Per Diem Candidate",
@@ -8638,7 +8638,7 @@
   ],
   "variable": [
     {
-      "id": "855dd12f-e217-4a57-977c-031f2fc50b40",
+      "id": "df4f5c50-b681-40b1-8b8e-2aa6eb19e990",
       "key": "uri",
       "value": "http://localhost:8088"
     }
