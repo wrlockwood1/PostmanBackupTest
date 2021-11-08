@@ -8564,13 +8564,13 @@
                   "response": []
                 },
                 {
-                  "name": "Update Job Attachment",
+                  "name": "Job Attachments Copy",
                   "id": "0fb1c767-30a1-4921-a6de-e9915c82a331",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
                   },
                   "request": {
-                    "method": "PUT",
+                    "method": "GET",
                     "header": [],
                     "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
                   },
@@ -8831,7 +8831,7 @@
   ],
   "variable": [
     {
-      "id": "4e8c1cf2-4046-4b1e-93e7-510d8c76c9a6",
+      "id": "7ff1a26c-2ee1-4023-89e1-818d5fad7631",
       "key": "uri",
       "value": "http://localhost:8088"
     }
