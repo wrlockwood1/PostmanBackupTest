@@ -8373,7 +8373,7 @@
       "id": "316b79fc-2c43-44c8-86c2-c331961c7ca7"
     },
     {
-      "name": "TD-6860 (Horizontal and Vertical Privilege Escalations)",
+      "name": "TD6860 (Horizontal and Vertical Privilege Escalations)",
       "item": [
         {
           "name": "TD-6900 (Featured Logos)",
@@ -8638,7 +8638,7 @@
   ],
   "variable": [
     {
-      "id": "8840c697-4344-4adc-b963-7002fadb6ee0",
+      "id": "95deb30a-e7c0-4e10-9007-05178db7945d",
       "key": "uri",
       "value": "http://localhost:8088"
     }
