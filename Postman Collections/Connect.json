@@ -8580,7 +8580,7 @@
               "id": "46b4c6e7-137d-48db-933d-98335f5f34b5"
             },
             {
-              "name": "Client Copy",
+              "name": "Vendor",
               "item": [
                 {
                   "name": "Download Job Attachment",
@@ -8591,7 +8591,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachment/1"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachment/1"
                   },
                   "response": []
                 },
@@ -8604,7 +8604,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments/preview/1"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments/preview/1"
                   },
                   "response": []
                 },
@@ -8617,7 +8617,7 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
                   },
                   "response": []
                 },
@@ -8630,12 +8630,70 @@
                   "request": {
                     "method": "GET",
                     "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
                   },
                   "response": []
                 }
               ],
               "id": "b86ec1d1-b00b-4260-9f91-05d5d39c9cff"
+            },
+            {
+              "name": "Vendor Copy",
+              "item": [
+                {
+                  "name": "Download Job Attachment",
+                  "id": "51807bbe-76fe-4af0-9312-a43c39a758b1",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachment/1"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Download Job Attachment Preview",
+                  "id": "0f2a2a94-9989-4c88-b58b-c085addf9e42",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments/preview/1"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Job Attachments",
+                  "id": "e7e24fb3-916b-4904-a8c7-cc9cd594adc1",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "Job Attachments Page Count",
+                  "id": "22554446-41bc-4d0d-a265-2ff642de4dd6",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
+                  },
+                  "response": []
+                }
+              ],
+              "id": "ec6de67b-7707-4f9a-95f0-30e1917100d2"
             }
           ],
           "id": "54c3e36d-b12c-4952-826a-d22e2b6a373c"
@@ -8760,7 +8818,7 @@
   ],
   "variable": [
     {
-      "id": "6afb6b51-b386-4580-abd5-49b5a1261211",
+      "id": "f94cb787-b279-4dbd-8632-985ecfa06f26",
       "key": "uri",
       "value": "http://localhost:8088"
     }
