@@ -8562,138 +8562,9 @@
                     "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
                   },
                   "response": []
-                },
-                {
-                  "name": "Job Attachments Page Count",
-                  "id": "b01f92bd-0d1c-4afe-8652-db7884efe885",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
-                  },
-                  "response": []
                 }
               ],
               "id": "46b4c6e7-137d-48db-933d-98335f5f34b5"
-            },
-            {
-              "name": "Vendor",
-              "item": [
-                {
-                  "name": "Download Job Attachment",
-                  "id": "685a1a2d-ce1f-4811-b3ae-97fcd6b24350",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachment/1"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Download Job Attachment Preview",
-                  "id": "6a7a6734-573a-4c7b-b659-d268d55d5dd4",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments/preview/1"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Job Attachments",
-                  "id": "a4c2850d-6667-467e-840b-01aeff91fdd7",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Job Attachments Page Count",
-                  "id": "f6a4070d-e710-4a20-a490-f80305fa723b",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
-                  },
-                  "response": []
-                }
-              ],
-              "id": "b86ec1d1-b00b-4260-9f91-05d5d39c9cff"
-            },
-            {
-              "name": "Admin",
-              "item": [
-                {
-                  "name": "Download Job Attachment",
-                  "id": "51807bbe-76fe-4af0-9312-a43c39a758b1",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachment/1"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Download Job Attachment Preview",
-                  "id": "0f2a2a94-9989-4c88-b58b-c085addf9e42",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments/preview/1"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Job Attachments",
-                  "id": "e7e24fb3-916b-4904-a8c7-cc9cd594adc1",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments"
-                  },
-                  "response": []
-                },
-                {
-                  "name": "Job Attachments Page Count",
-                  "id": "22554446-41bc-4d0d-a265-2ff642de4dd6",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/vendor/jobs/1492198/attachments"
-                  },
-                  "response": []
-                }
-              ],
-              "id": "ec6de67b-7707-4f9a-95f0-30e1917100d2"
             }
           ],
           "id": "54c3e36d-b12c-4952-826a-d22e2b6a373c"
@@ -8818,7 +8689,7 @@
   ],
   "variable": [
     {
-      "id": "f20eae99-cac7-4899-84f3-487ba4a90df5",
+      "id": "0fac0414-672a-42cd-9bac-53cc3f14981a",
       "key": "uri",
       "value": "http://localhost:8088"
     }
