@@ -8519,7 +8519,7 @@
           "id": "c43c8a1e-898e-4512-8cb6-f1713ced4d3f"
         },
         {
-          "name": "New Folder",
+          "name": "TD6901 (Job Attachments)",
           "item": [],
           "id": "54c3e36d-b12c-4952-826a-d22e2b6a373c"
         }
@@ -8643,7 +8643,7 @@
   ],
   "variable": [
     {
-      "id": "bde4a067-6dfb-4596-ac7f-98e38b19d275",
+      "id": "39ba91cd-cb35-4d08-b0aa-7920e9f30850",
       "key": "uri",
       "value": "http://localhost:8088"
     }
