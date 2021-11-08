@@ -8525,7 +8525,7 @@
               "name": "Client",
               "item": [
                 {
-                  "name": "New Request",
+                  "name": "Job Attachments",
                   "id": "bc33f1ff-13f0-4d92-97bc-7d6fd6f516e6",
                   "protocolProfileBehavior": {
                     "disableBodyPruning": true
@@ -8663,7 +8663,7 @@
   ],
   "variable": [
     {
-      "id": "559c866f-c566-4ab2-9ee3-3585bc346bc6",
+      "id": "637dac63-67b4-4af1-bc93-abca8ada0619",
       "key": "uri",
       "value": "http://localhost:8088"
     }
