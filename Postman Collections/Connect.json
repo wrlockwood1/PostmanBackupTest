@@ -8564,6 +8564,19 @@
                   "response": []
                 },
                 {
+                  "name": "Update Job Attachment",
+                  "id": "0fb1c767-30a1-4921-a6de-e9915c82a331",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "PUT",
+                    "header": [],
+                    "url": "{{uri}}/AyaConnect/client/jobs/1492198/attachments"
+                  },
+                  "response": []
+                },
+                {
                   "name": "Job Attachments Page Count",
                   "id": "b01f92bd-0d1c-4afe-8652-db7884efe885",
                   "protocolProfileBehavior": {
@@ -8818,7 +8831,7 @@
   ],
   "variable": [
     {
-      "id": "0d4cdb14-8476-485b-bcbc-45cafe90d5fb",
+      "id": "4e8c1cf2-4046-4b1e-93e7-510d8c76c9a6",
       "key": "uri",
       "value": "http://localhost:8088"
     }
