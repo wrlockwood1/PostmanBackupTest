@@ -8904,6 +8904,19 @@
                 "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
               },
               "response": []
+            },
+            {
+              "name": "Bulk Shift Series Copy",
+              "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/client/shifts/bulk-series/1"
+              },
+              "response": []
             }
           ],
           "id": "1a11e81d-8dea-487f-9c3a-d54915147283"
@@ -9028,7 +9041,7 @@
   ],
   "variable": [
     {
-      "id": "70256314-ffc5-45c5-8495-61b21839fb97",
+      "id": "1a3e2280-1297-405c-91cf-12401e08da63",
       "key": "uri",
       "value": "http://localhost:8088"
     }
