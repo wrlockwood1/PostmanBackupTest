@@ -8791,7 +8791,7 @@
               "response": []
             },
             {
-              "name": "Bulk Shift Series Copy",
+              "name": "Booked Candidates",
               "id": "cda90854-e231-4f63-84fa-ea409c36e09b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9028,7 +9028,7 @@
   ],
   "variable": [
     {
-      "id": "6156dfe7-cf91-42ac-9ebe-34c311d4c7b0",
+      "id": "f9a93cea-5019-4fb3-9adf-ad8efa2ec55c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
