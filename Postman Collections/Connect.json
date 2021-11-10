@@ -8812,7 +8812,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/history"
+                "url": "{{uri}}/AyaConnect/client/shifts/412487/history"
               },
               "response": []
             },
@@ -9041,7 +9041,7 @@
   ],
   "variable": [
     {
-      "id": "8b99d668-8c12-4515-b5e2-01d2b8ecc2ae",
+      "id": "1d1fa6d7-419f-444f-a42b-860227ab9c59",
       "key": "uri",
       "value": "http://localhost:8088"
     }
