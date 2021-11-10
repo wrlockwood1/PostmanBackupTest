@@ -8810,9 +8810,9 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "GET",
+                "method": "PUT",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/history"
+                "url": "{{uri}}/AyaConnect/client/shifts/1/cancel-clinician"
               },
               "response": []
             }
@@ -8939,7 +8939,7 @@
   ],
   "variable": [
     {
-      "id": "d50f7614-4973-4548-9113-617ea3642340",
+      "id": "28ad0ee5-ac85-410c-b16e-1a579f85f7c2",
       "key": "uri",
       "value": "http://localhost:8088"
     }
