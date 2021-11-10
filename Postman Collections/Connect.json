@@ -8791,7 +8791,7 @@
               "response": []
             },
             {
-              "name": "Bulk Shift Series Copy",
+              "name": "Approval Details",
               "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9041,7 +9041,7 @@
   ],
   "variable": [
     {
-      "id": "c4d9a5ee-b46f-4e1a-89ff-48027c7c9b1d",
+      "id": "9c8a8777-375a-47dc-9fed-db1161fa9f36",
       "key": "uri",
       "value": "http://localhost:8088"
     }
