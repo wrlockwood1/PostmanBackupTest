@@ -8791,19 +8791,6 @@
               "response": []
             },
             {
-              "name": "Approval Details",
-              "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/approval-details"
-              },
-              "response": []
-            },
-            {
               "name": "Booked Candidates",
               "id": "cda90854-e231-4f63-84fa-ea409c36e09b",
               "protocolProfileBehavior": {
@@ -8887,6 +8874,19 @@
                 "method": "PUT",
                 "header": [],
                 "url": "{{uri}}/AyaConnect/client/shifts/1/reconfirm"
+              },
+              "response": []
+            },
+            {
+              "name": "Approval Details",
+              "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/client/shifts/1/approval-details"
               },
               "response": []
             },
@@ -9041,7 +9041,7 @@
   ],
   "variable": [
     {
-      "id": "207c01d1-dc0d-431d-b081-1b9489b8a77a",
+      "id": "e26a64e7-c885-4673-b752-143a68b5725a",
       "key": "uri",
       "value": "http://localhost:8088"
     }
