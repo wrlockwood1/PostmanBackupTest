@@ -8799,7 +8799,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/bulk-series/1"
+                "url": "{{uri}}/AyaConnect/client/shifts//1/booked-candidates"
               },
               "response": []
             },
@@ -9028,7 +9028,7 @@
   ],
   "variable": [
     {
-      "id": "f9a93cea-5019-4fb3-9adf-ad8efa2ec55c",
+      "id": "ee1cb34b-88a7-43d2-9898-5a674a3fd9f1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
