@@ -8843,7 +8843,7 @@
               "response": []
             },
             {
-              "name": "Approve Or Reject Shifts Copy",
+              "name": "Approve Or Reject Shifts",
               "id": "61cb4d10-fb2e-44e6-bf3f-b4f037543071",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8993,7 +8993,7 @@
   ],
   "variable": [
     {
-      "id": "f79d3426-4573-4d9f-8d35-680e8d2443d1",
+      "id": "80ef4b20-6191-4111-8610-e28020869904",
       "key": "uri",
       "value": "http://localhost:8088"
     }
