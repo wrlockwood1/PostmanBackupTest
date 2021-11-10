@@ -8825,7 +8825,7 @@
               "request": {
                 "method": "PUT",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/cancel-clinician"
+                "url": "{{uri}}/AyaConnect/client/shifts/1/confirm"
               },
               "response": []
             }
@@ -8952,7 +8952,7 @@
   ],
   "variable": [
     {
-      "id": "a265fc46-0400-45e9-b86c-dbfe2484599c",
+      "id": "116fc11f-e63c-4b67-8709-82afe930136a",
       "key": "uri",
       "value": "http://localhost:8088"
     }
