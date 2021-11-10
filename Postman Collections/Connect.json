@@ -8802,6 +8802,19 @@
                 "url": "{{uri}}/AyaConnect/client/shifts/1/history"
               },
               "response": []
+            },
+            {
+              "name": "Shift History Copy",
+              "id": "74a62167-1e80-4fef-9ba7-93f02bc7e8a0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/client/shifts/1/history"
+              },
+              "response": []
             }
           ],
           "id": "1a11e81d-8dea-487f-9c3a-d54915147283"
@@ -8926,7 +8939,7 @@
   ],
   "variable": [
     {
-      "id": "297672fa-6783-43f6-acbf-04b1ea16ea86",
+      "id": "d16c3209-9a96-4aa6-bc8b-ae6143a3a046",
       "key": "uri",
       "value": "http://localhost:8088"
     }
