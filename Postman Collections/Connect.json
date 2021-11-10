@@ -8852,7 +8852,7 @@
               "response": []
             },
             {
-              "name": "Confirm Single Shift",
+              "name": "Confirm Single Shifts",
               "id": "ea931f9a-acec-4907-913d-3b21847c226d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9028,7 +9028,7 @@
   ],
   "variable": [
     {
-      "id": "c25de318-9544-4d53-b1f8-64c761f1fb19",
+      "id": "70256314-ffc5-45c5-8495-61b21839fb97",
       "key": "uri",
       "value": "http://localhost:8088"
     }
