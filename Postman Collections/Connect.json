@@ -8786,87 +8786,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/bulk-series/1"
-              },
-              "response": []
-            },
-            {
-              "name": "Shift History",
-              "id": "e7420fb0-1a35-4476-9ca0-0aa40b689048",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/history"
-              },
-              "response": []
-            },
-            {
-              "name": "Cancel Clinician Shift",
-              "id": "74a62167-1e80-4fef-9ba7-93f02bc7e8a0",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/cancel-clinician"
-              },
-              "response": []
-            },
-            {
-              "name": "Confirm Single Shift",
-              "id": "ea931f9a-acec-4907-913d-3b21847c226d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/confirm"
-              },
-              "response": []
-            },
-            {
-              "name": "Reconfirm Shift",
-              "id": "fef8b53c-b8d8-4ece-854f-4a200252572b",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/reconfirm"
-              },
-              "response": []
-            },
-            {
-              "name": "Approve Or Reject Shifts",
-              "id": "61cb4d10-fb2e-44e6-bf3f-b4f037543071",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"shiftIds\": [308670, 308671], // The shifts the user is approving or rejecting. If any entries here, seriesId should be \"\"\r\n    \"seriesId\": \"\", // The shift series Id the user is approving or rejecting; if any value here, shiftIds should be []\r\n    \"userApprovalStatus\": 3,  //1: user is approving a shift; 3: user is rejecting a shift\r\n    \"comment\": \"because i felt like it\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
+                "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments"
               },
               "response": []
             }
@@ -8993,7 +8913,7 @@
   ],
   "variable": [
     {
-      "id": "80ef4b20-6191-4111-8610-e28020869904",
+      "id": "0d3c4ad1-ff3e-4ade-b663-177c911c118e",
       "key": "uri",
       "value": "http://localhost:8088"
     }
