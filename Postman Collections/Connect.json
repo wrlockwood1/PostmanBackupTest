@@ -8817,7 +8817,7 @@
               "response": []
             },
             {
-              "name": "Cancel Clinician Shift Copy",
+              "name": "Confirm Single Shift",
               "id": "ea931f9a-acec-4907-913d-3b21847c226d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8952,7 +8952,7 @@
   ],
   "variable": [
     {
-      "id": "00ba901c-8c90-4658-9f12-a0ac75953521",
+      "id": "a265fc46-0400-45e9-b86c-dbfe2484599c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
