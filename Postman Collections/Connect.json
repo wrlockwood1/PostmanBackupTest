@@ -3689,34 +3689,6 @@
                 "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
               },
               "response": []
-            },
-            {
-              "name": "Approve Or Reject Shifts Copy",
-              "id": "61cb4d10-fb2e-44e6-bf3f-b4f037543071",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{Bearer}}"
-                  }
-                },
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"shiftIds\": [308670, 308671], // The shifts the user is approving or rejecting. If any entries here, seriesId should be \"\"\r\n    \"seriesId\": \"\", // The shift series Id the user is approving or rejecting; if any value here, shiftIds should be []\r\n    \"userApprovalStatus\": 3,  //1: user is approving a shift; 3: user is rejecting a shift\r\n    \"comment\": \"because i felt like it\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
-              },
-              "response": []
             }
           ],
           "id": "6910b2f0-1e2d-46a5-8e0d-ea7d045e0441"
@@ -4065,6 +4037,34 @@
             "method": "GET",
             "header": [],
             "url": "{{uri}}/AyaConnect/Client/Shifts/913/Candidates/342432"
+          },
+          "response": []
+        },
+        {
+          "name": "Approve Or Reject Shifts Copy",
+          "id": "61cb4d10-fb2e-44e6-bf3f-b4f037543071",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{Bearer}}"
+              }
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"shiftIds\": [308670, 308671], // The shifts the user is approving or rejecting. If any entries here, seriesId should be \"\"\r\n    \"seriesId\": \"\", // The shift series Id the user is approving or rejecting; if any value here, shiftIds should be []\r\n    \"userApprovalStatus\": 3,  //1: user is approving a shift; 3: user is rejecting a shift\r\n    \"comment\": \"because i felt like it\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
           },
           "response": []
         },
@@ -8993,7 +8993,7 @@
   ],
   "variable": [
     {
-      "id": "ea9d32fd-499d-421d-8c2c-eecd07c433ae",
+      "id": "2fcf453a-ed1b-4512-aa02-0035ca04ddaf",
       "key": "uri",
       "value": "http://localhost:8088"
     }
