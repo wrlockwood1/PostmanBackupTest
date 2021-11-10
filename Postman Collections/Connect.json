@@ -8756,19 +8756,6 @@
                   "response": []
                 },
                 {
-                  "name": "Job Attachments Copy",
-                  "id": "209831be-65ec-438b-82cb-dc8f11c22a2f",
-                  "protocolProfileBehavior": {
-                    "disableBodyPruning": true
-                  },
-                  "request": {
-                    "method": "GET",
-                    "header": [],
-                    "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments"
-                  },
-                  "response": []
-                },
-                {
                   "name": "Job Attachments Page Count",
                   "id": "22554446-41bc-4d0d-a265-2ff642de4dd6",
                   "protocolProfileBehavior": {
@@ -8789,7 +8776,21 @@
         },
         {
           "name": "TD6904 (Shifts)",
-          "item": [],
+          "item": [
+            {
+              "name": "Job Attachments Copy",
+              "id": "209831be-65ec-438b-82cb-dc8f11c22a2f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments"
+              },
+              "response": []
+            }
+          ],
           "id": "1a11e81d-8dea-487f-9c3a-d54915147283"
         }
       ],
@@ -8912,7 +8913,7 @@
   ],
   "variable": [
     {
-      "id": "ae714225-6679-4d0e-aed2-b070b9cf73fd",
+      "id": "f78d0020-2c87-409b-80d0-41bae6979697",
       "key": "uri",
       "value": "http://localhost:8088"
     }
