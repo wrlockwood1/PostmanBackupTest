@@ -8825,6 +8825,15 @@
               "request": {
                 "method": "POST",
                 "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"ids:\": [],\r\n    \"other\": \"\",\r\n    \"perDiemCanceledBy\": 1,\r\n    \"perDiemCancelReason\": 1\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
                 "url": "{{uri}}/AyaConnect/client/shifts/cancelShiftByFacility"
               },
               "response": []
@@ -9006,7 +9015,7 @@
   ],
   "variable": [
     {
-      "id": "11288919-c2c6-47ce-bd8d-c82b535eeadd",
+      "id": "788eb684-3170-42a0-877e-1877b51d9475",
       "key": "uri",
       "value": "http://localhost:8088"
     }
