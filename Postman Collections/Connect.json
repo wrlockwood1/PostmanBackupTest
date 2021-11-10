@@ -8791,6 +8791,19 @@
               "response": []
             },
             {
+              "name": "Bulk Shift Series Copy",
+              "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/client/shifts/bulk-series/1"
+              },
+              "response": []
+            },
+            {
               "name": "Booked Candidates",
               "id": "cda90854-e231-4f63-84fa-ea409c36e09b",
               "protocolProfileBehavior": {
@@ -8902,19 +8915,6 @@
                   }
                 },
                 "url": "{{uri}}/ayaconnect/client/shifts/approval-statuses"
-              },
-              "response": []
-            },
-            {
-              "name": "Bulk Shift Series Copy",
-              "id": "373fa465-71cd-4283-a1bc-2a6424a4051e",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/bulk-series/1"
               },
               "response": []
             }
@@ -9041,7 +9041,7 @@
   ],
   "variable": [
     {
-      "id": "1a3e2280-1297-405c-91cf-12401e08da63",
+      "id": "b63b9241-3019-4bc2-aceb-991a7d97daae",
       "key": "uri",
       "value": "http://localhost:8088"
     }
