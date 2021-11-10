@@ -8778,8 +8778,21 @@
           "name": "TD6904 (Shifts)",
           "item": [
             {
-              "name": "Job Attachments Copy",
+              "name": "Bulk Shift Series",
               "id": "209831be-65ec-438b-82cb-dc8f11c22a2f",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": "{{uri}}/AyaConnect/admin/jobs/1492198/attachments"
+              },
+              "response": []
+            },
+            {
+              "name": "Bulk Shift Series Copy",
+              "id": "e7420fb0-1a35-4476-9ca0-0aa40b689048",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
               },
@@ -8913,7 +8926,7 @@
   ],
   "variable": [
     {
-      "id": "550c940a-17a8-4bda-87f6-ca9ec74743c4",
+      "id": "a03ee463-ffa6-4e81-af90-a320fd91b008",
       "key": "uri",
       "value": "http://localhost:8088"
     }
