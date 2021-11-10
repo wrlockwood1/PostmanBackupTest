@@ -8804,7 +8804,7 @@
               "response": []
             },
             {
-              "name": "Shift History Copy",
+              "name": "Cancel Clinician Shift",
               "id": "74a62167-1e80-4fef-9ba7-93f02bc7e8a0",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8939,7 +8939,7 @@
   ],
   "variable": [
     {
-      "id": "6a61588e-821b-4fbc-96b3-61f46af0b04c",
+      "id": "d50f7614-4973-4548-9113-617ea3642340",
       "key": "uri",
       "value": "http://localhost:8088"
     }
