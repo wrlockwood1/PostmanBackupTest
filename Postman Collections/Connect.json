@@ -8791,7 +8791,7 @@
               "response": []
             },
             {
-              "name": "Bulk Shift Series Copy",
+              "name": "Shift History",
               "id": "e7420fb0-1a35-4476-9ca0-0aa40b689048",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -8926,7 +8926,7 @@
   ],
   "variable": [
     {
-      "id": "f1e56b0b-c912-4935-9164-68169c95488d",
+      "id": "ebabff9c-1cd8-48b1-97c0-cb458b05c256",
       "key": "uri",
       "value": "http://localhost:8088"
     }
