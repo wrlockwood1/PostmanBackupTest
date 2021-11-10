@@ -8838,7 +8838,7 @@
               "request": {
                 "method": "PUT",
                 "header": [],
-                "url": "{{uri}}/AyaConnect/client/shifts/1/confirm"
+                "url": "{{uri}}/AyaConnect/client/shifts/1/reconfirm"
               },
               "response": []
             }
@@ -8965,7 +8965,7 @@
   ],
   "variable": [
     {
-      "id": "3b9addb3-11b7-4bfa-826c-50e88a10eb37",
+      "id": "2bd40b9e-dca4-4231-89b6-7e2b7c76531e",
       "key": "uri",
       "value": "http://localhost:8088"
     }
