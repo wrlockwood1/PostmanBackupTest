@@ -174,13 +174,14 @@
               }
             ],
             "url": {
-              "raw": "{{uri}}/AyaConnect/JobApprovalProcess?unitId=480&facilityProfileGroupId=33256",
+              "raw": "{{uri}}/AyaConnect/JobApprovalProcess/copy-process",
               "host": [
                 "{{uri}}"
               ],
               "path": [
                 "AyaConnect",
-                "JobApprovalProcess"
+                "JobApprovalProcess",
+                "copy-process"
               ],
               "query": [
                 {
@@ -209,14 +210,6 @@
                   "key": "facilitySearch",
                   "value": "University of Washington",
                   "disabled": true
-                },
-                {
-                  "key": "unitId",
-                  "value": "480"
-                },
-                {
-                  "key": "facilityProfileGroupId",
-                  "value": "33256"
                 }
               ]
             },
@@ -9171,7 +9164,7 @@
   ],
   "variable": [
     {
-      "id": "c2379e7a-37a4-444e-850c-aacfc5ccc346",
+      "id": "2837d176-f317-41ec-af44-ba7d0925d12b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
