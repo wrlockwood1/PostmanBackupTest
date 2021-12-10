@@ -9038,7 +9038,7 @@
               "response": []
             },
             {
-              "name": "New Request",
+              "name": "Cancel Series",
               "id": "fecc1302-3b66-4f95-bbd3-44fe45f0e350",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9173,7 +9173,7 @@
   ],
   "variable": [
     {
-      "id": "1e8b49bf-485e-465e-81dd-0c19e82657ce",
+      "id": "0b7347a0-3ae5-4076-b27f-91e10df720b8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
