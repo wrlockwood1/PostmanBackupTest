@@ -9036,6 +9036,19 @@
                 "url": "{{uri}}/AyaConnect/Client/Shifts/Series/6051fa5d-a341-4792-924d-bf486f7a28d5/shifts/448088"
               },
               "response": []
+            },
+            {
+              "name": "New Request",
+              "id": "fecc1302-3b66-4f95-bbd3-44fe45f0e350",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+              },
+              "response": []
             }
           ],
           "id": "8366c359-6121-417c-9cde-c0349de970f1"
@@ -9160,7 +9173,7 @@
   ],
   "variable": [
     {
-      "id": "23037084-3e8e-4d25-a2d1-4ea55d2ce1f8",
+      "id": "fed081b6-4a73-4652-98e6-bbd9221df75f",
       "key": "uri",
       "value": "http://localhost:8088"
     }
