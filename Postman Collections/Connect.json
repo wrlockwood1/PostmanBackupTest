@@ -9025,7 +9025,7 @@
               "response": []
             },
             {
-              "name": "New Request",
+              "name": "Shift Series",
               "id": "345ee2dd-53ff-4079-844c-0c1cd08a37a3",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9160,7 +9160,7 @@
   ],
   "variable": [
     {
-      "id": "917e5287-5710-4a75-87e9-338acf0af16b",
+      "id": "f4571bd9-44e3-4aed-9d1b-e0e901166794",
       "key": "uri",
       "value": "http://localhost:8088"
     }
