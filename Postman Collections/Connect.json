@@ -9009,7 +9009,7 @@
                 "disableBodyPruning": true
               },
               "request": {
-                "method": "PUT",
+                "method": "POST",
                 "header": [],
                 "body": {
                   "mode": "raw",
@@ -9020,7 +9020,7 @@
                     }
                   }
                 },
-                "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-single-shift-series/AyaConnect/Client/Shifts/cancel-single-shift-series"
+                "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-single-shift-series"
               },
               "response": []
             }
@@ -9147,7 +9147,7 @@
   ],
   "variable": [
     {
-      "id": "ccf3cf75-5105-4128-b641-66c886287ecf",
+      "id": "2364aeba-3995-4b12-a815-aede5c9bdf06",
       "key": "uri",
       "value": "http://localhost:8088"
     }
