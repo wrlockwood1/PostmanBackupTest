@@ -9003,7 +9003,7 @@
           "name": "CNW11068 (Shifts)",
           "item": [
             {
-              "name": "Cancel Shift By Facility Copy",
+              "name": "Cancel Single Shift in Series",
               "id": "5099e9b8-9dd1-4888-8f47-b020ce9e9e3d",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -9147,7 +9147,7 @@
   ],
   "variable": [
     {
-      "id": "c8fbbb0d-168f-459c-8de0-817d80cde6d2",
+      "id": "9d4b8a59-7b6e-49de-a693-cc65f9a271b3",
       "key": "uri",
       "value": "http://localhost:8088"
     }
