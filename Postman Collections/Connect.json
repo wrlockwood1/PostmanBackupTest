@@ -2241,7 +2241,7 @@
                 "auth": {
                   "type": "bearer",
                   "bearer": {
-                    "token": "{{Bearer}}"
+                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwWYVcB22MeJuxhKNiE1hQ7u73-BdT19YTpvEGsY73Wo2xRmA5EFq0ypinqBYYNCSt-Gp7FHnCeHHp2jdNBjYun5npyH0mWaaxPTYQSq9-Remkjr1ktA7D9vvmH_FzFijHsNrmPFx1SCbsEdIjpHloS_2fzaxi1Cp7Q3yrmmfvULjMfDd1sZPCqrtg5Vy7SD1hfYIpEx1WeD1xLKDViZE0CppmgbAeiTtqiqwcO_-u5rhBkspUvAO7ppxGHMlU6PLo2mICR-VicmCfIXWE5PYqjKeUxvxMplBhLVrnhfGmWt7LILtQpKbgsZh7dIDPOsLeyt7p9dajc6pJUAMV_NPCmqGeH-2po8R3edVtA5IAB92tIISp3NI3QTZ_yGc0g2U6CR5e6uOMj4Z20kBbtvUVrHvuW2suKFq3DT3M9N8CYNxTmOS7AfDayKewt-Bn1BNGBXYqwWtsKMxqM81WHR822p-s_3AodbNxze1DlOKUw7hNUtN8ucum9Xc15Np9VLMJ-JDUM9H3loCrg1EDRzQPIvd2C9uXIShifzu4bq0YQYrCdmpsdiq5iTHuKNFdzMbkxiA7UFwhjD_e8Qyp0nX7KJ_ZVgDzgEaGLv53DTwkJ3-PNb9gq7NKxGJGhpV92xxTzumD69A1w5JaJaRoW6koOOwOhfJ4_A5yZFXNWUF3xG7NFgSfxDHGOxBTb1dcNWf7F7SQtVugDJ8IYaXz5v2uR1QI62EdrCEKxV5hqmrx_K97z6GkvvPafrgT9fsGack4DsoosGPa-egmW6NxvAIOMI"
                   }
                 },
                 "method": "GET",
@@ -2258,33 +2258,23 @@
                   "raw": ""
                 },
                 "url": {
-                  "raw": "{{uri}}/ayaconnect/client/traveler?sortType=desc&facilityGroupIds=32896&statuses=CAN",
+                  "raw": "http://localhost:8088/ayaconnect/client/traveler/419558",
+                  "protocol": "http",
                   "host": [
-                    "{{uri}}"
+                    "localhost"
                   ],
+                  "port": "8088",
                   "path": [
                     "ayaconnect",
                     "client",
-                    "traveler"
+                    "traveler",
+                    "419558"
                   ],
                   "query": [
                     {
                       "key": "id",
                       "value": "11960",
                       "disabled": true
-                    },
-                    {
-                      "key": "sortType",
-                      "value": "desc"
-                    },
-                    {
-                      "key": "facilityGroupIds",
-                      "value": "32896"
-                    },
-                    {
-                      "key": "statuses",
-                      "value": "CAN",
-                      "type": "text"
                     }
                   ]
                 }
@@ -9230,7 +9220,7 @@
   ],
   "variable": [
     {
-      "id": "68513792-8470-4ebc-b715-7cd32bbb0a33",
+      "id": "24847aeb-8087-44ff-848b-d07569c47f72",
       "key": "uri",
       "value": "http://localhost:8088"
     }
