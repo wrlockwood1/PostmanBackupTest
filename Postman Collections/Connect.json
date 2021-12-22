@@ -3003,6 +3003,12 @@
                 "disableBodyPruning": true
               },
               "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwXsypzBeF63Ox-SUUONjs0fvDTidFZKXnNYog61qPTlCbaFez2Qp0cSxNCtl0cZChqe9W8_6jHhLg9bq74CriZQUobEm5ARdLWIvgeb3uwG4HM75YAN1iDpywHnz8YPvQfI93w75tugxlYq25prf_6Wg5qbNlVnumk307XdEmtzX2v9brCjmJbHezHXXPecSl8wuqyi_hTmnoXlIManI389pUQMeljlccLK4uDU0Zbvcvc1jjIcH9Sdk2jC2Dis-Es9L_JF9awGBfhn-sxKHegBSmY9cJkaEUwwWQmf0q-fr8wJfgjgluoSIQ50xz3VvtrqjwskmSN5FVsb0gmUciMnWQyt06Twl16g_EiwpcgO3SGkAVxT8TlZO1HYY92l1Y3A2HN4KkCQJX3VNxFLWY5yRtVdlofRk7-V8P364tF-Dv5Kno73N0Qyf9Bshy7WfowEbJgb8CkYvH3Fa8jDQY0OJnW9YrUFtrDCGVY7A-WV8tGTFii9ERTUErF2UX-Ca2e39faT3v0ZhVhR3ZV3FBEV8vM1C1Z_J-ZTLlavhF6c-1wjVESSJRpNm7hCcT7-6fjzNimGZLLSYLvMN1i_znXzvPG9QWVUVbvbjf4_TFqeGEm9C3YN0wd07Mz8F5fV4DOfJGfpHAwOtIhZQaEshV4qC3eVe3FmiC9e3bRBS4nQPglsiVffi__onz-ZczNiIzn7wj7AixI7s_egW0Fj-F2PU5zZhw1emL434PUWtPOB1iyc7ySG63g84LE-iuekv_koWbFnPybO-lpBvMO7ObPS"
+                  }
+                },
                 "method": "PUT",
                 "header": [
                   {
@@ -3014,7 +3020,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"id\": 259344,\n    \"travelerId\": 671437,\n    \"facilityId\": 42211,\n    \"internalId\": null,\n    \"sclEmployeeId\": null,\n    \"sclBadgeNumber\": null,\n    \"sclEmployeeId\": null,\n    \"sclDepartmentCode\": null,\n    \"sclHireDate\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5\n}"
+                  "raw": "{\n    \"id\": 419558,\n    \"travelerId\": 921689,\n    \"facilityId\": 42249,\n    \"systemId\":913,\n    \"internalId\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5,\n    \"businessUnitId\":2,\n    \"onsiteManagerKerberosId\":\"11111\"\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/nyu",
                 "description": "This is an extension of the PUT Traveler method.  It has all the same properties plus DepartmentId, BuildingId, FloorId, etc"
@@ -9220,7 +9226,7 @@
   ],
   "variable": [
     {
-      "id": "24847aeb-8087-44ff-848b-d07569c47f72",
+      "id": "7c026ab0-407f-4edf-973a-bb18a231a8f1",
       "key": "uri",
       "value": "http://localhost:8088"
     }
