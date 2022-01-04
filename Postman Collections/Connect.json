@@ -2241,7 +2241,7 @@
                 "auth": {
                   "type": "bearer",
                   "bearer": {
-                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwWYVcB22MeJuxhKNiE1hQ7u73-BdT19YTpvEGsY73Wo2xRmA5EFq0ypinqBYYNCSt-Gp7FHnCeHHp2jdNBjYun5npyH0mWaaxPTYQSq9-Remkjr1ktA7D9vvmH_FzFijHsNrmPFx1SCbsEdIjpHloS_2fzaxi1Cp7Q3yrmmfvULjMfDd1sZPCqrtg5Vy7SD1hfYIpEx1WeD1xLKDViZE0CppmgbAeiTtqiqwcO_-u5rhBkspUvAO7ppxGHMlU6PLo2mICR-VicmCfIXWE5PYqjKeUxvxMplBhLVrnhfGmWt7LILtQpKbgsZh7dIDPOsLeyt7p9dajc6pJUAMV_NPCmqGeH-2po8R3edVtA5IAB92tIISp3NI3QTZ_yGc0g2U6CR5e6uOMj4Z20kBbtvUVrHvuW2suKFq3DT3M9N8CYNxTmOS7AfDayKewt-Bn1BNGBXYqwWtsKMxqM81WHR822p-s_3AodbNxze1DlOKUw7hNUtN8ucum9Xc15Np9VLMJ-JDUM9H3loCrg1EDRzQPIvd2C9uXIShifzu4bq0YQYrCdmpsdiq5iTHuKNFdzMbkxiA7UFwhjD_e8Qyp0nX7KJ_ZVgDzgEaGLv53DTwkJ3-PNb9gq7NKxGJGhpV92xxTzumD69A1w5JaJaRoW6koOOwOhfJ4_A5yZFXNWUF3xG7NFgSfxDHGOxBTb1dcNWf7F7SQtVugDJ8IYaXz5v2uR1QI62EdrCEKxV5hqmrx_K97z6GkvvPafrgT9fsGack4DsoosGPa-egmW6NxvAIOMI"
+                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwU30tzb1NWqwRJYZNevadV5cJmVnbdGin7y_os9iSpHDda40PGHyN-6Y9LyDkIOwAh8Vlt0Yhp2ibZaF-2hEGq_eIQlCJPkoGe2K4ZBe6UgvzvmW_yfxTkByrx34-xDoAMTZ2EZASBga1Ji4WxzCTew6VPcfG0oOq0Eo8Fz6ks50sq8WWv7ReyNqVzTpEhk3oGIwwoev8_Q0Qi1m_aGzK1SJgmfvDipecnDyjCiZ3eFo2jipG0q0TAn8e-q3v_49U_sdmQcYRhM7vlmUvTC8-WHvqRGKLDo3zSg5UyD0ZhTvKrIeaVycv5qRQI7gk6CyC1EZ8WaRXgx1kDKM8kTfYRLFlx-oNouGpAKKaDw6o5EbCN6gaH1FS5bYuJ_VXUstahb6OWq1rutXjLrEpQ8Vc0Y9nNTTp13Jv1NcQjLUR2OLo8oNUvtiMWbyUfQ7vV_stTjiAtnJmYrkqg99jnLFIsNz1rhKffNtu9s7KB8sFNqIx96rIrf7MBf6N0TY93zpIFFI35aopan9eR9BU7CIh1_VmAHmUvjjGHSvOZSQYzbtTjXWFrvezAR19upSJCG5K-dK2zb4ulf4Bpdi_TX_opSg6_m0neUiJn1vVMzMSfAdmIn5QT4UZ6cP9CrOL_OW5UclKsvsdYQaoBs1W2hFgzjTx784ZfCqG4y3dZzlCMav9kaw3DhH6dJs6NF2DUZmBuF-VXsUR8koG-lolpzfGJBCNnbiUBvj2MbNgxhpRBAbkGbe0jHxHtlPUEZDdw1hJUacyXW6-_Fpsfy7n1jWD6H"
                   }
                 },
                 "method": "GET",
@@ -9226,7 +9226,7 @@
   ],
   "variable": [
     {
-      "id": "7c026ab0-407f-4edf-973a-bb18a231a8f1",
+      "id": "eecace6e-7a47-431d-a29f-471211836f4b",
       "key": "uri",
       "value": "http://localhost:8088"
     }
