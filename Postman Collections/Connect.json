@@ -3006,7 +3006,7 @@
                 "auth": {
                   "type": "bearer",
                   "bearer": {
-                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwXsypzBeF63Ox-SUUONjs0fvDTidFZKXnNYog61qPTlCbaFez2Qp0cSxNCtl0cZChqe9W8_6jHhLg9bq74CriZQUobEm5ARdLWIvgeb3uwG4HM75YAN1iDpywHnz8YPvQfI93w75tugxlYq25prf_6Wg5qbNlVnumk307XdEmtzX2v9brCjmJbHezHXXPecSl8wuqyi_hTmnoXlIManI389pUQMeljlccLK4uDU0Zbvcvc1jjIcH9Sdk2jC2Dis-Es9L_JF9awGBfhn-sxKHegBSmY9cJkaEUwwWQmf0q-fr8wJfgjgluoSIQ50xz3VvtrqjwskmSN5FVsb0gmUciMnWQyt06Twl16g_EiwpcgO3SGkAVxT8TlZO1HYY92l1Y3A2HN4KkCQJX3VNxFLWY5yRtVdlofRk7-V8P364tF-Dv5Kno73N0Qyf9Bshy7WfowEbJgb8CkYvH3Fa8jDQY0OJnW9YrUFtrDCGVY7A-WV8tGTFii9ERTUErF2UX-Ca2e39faT3v0ZhVhR3ZV3FBEV8vM1C1Z_J-ZTLlavhF6c-1wjVESSJRpNm7hCcT7-6fjzNimGZLLSYLvMN1i_znXzvPG9QWVUVbvbjf4_TFqeGEm9C3YN0wd07Mz8F5fV4DOfJGfpHAwOtIhZQaEshV4qC3eVe3FmiC9e3bRBS4nQPglsiVffi__onz-ZczNiIzn7wj7AixI7s_egW0Fj-F2PU5zZhw1emL434PUWtPOB1iyc7ySG63g84LE-iuekv_koWbFnPybO-lpBvMO7ObPS"
+                    "token": "CfDJ8Mx1Nqwx6TBCpvPbo_AmSwU30tzb1NWqwRJYZNevadV5cJmVnbdGin7y_os9iSpHDda40PGHyN-6Y9LyDkIOwAh8Vlt0Yhp2ibZaF-2hEGq_eIQlCJPkoGe2K4ZBe6UgvzvmW_yfxTkByrx34-xDoAMTZ2EZASBga1Ji4WxzCTew6VPcfG0oOq0Eo8Fz6ks50sq8WWv7ReyNqVzTpEhk3oGIwwoev8_Q0Qi1m_aGzK1SJgmfvDipecnDyjCiZ3eFo2jipG0q0TAn8e-q3v_49U_sdmQcYRhM7vlmUvTC8-WHvqRGKLDo3zSg5UyD0ZhTvKrIeaVycv5qRQI7gk6CyC1EZ8WaRXgx1kDKM8kTfYRLFlx-oNouGpAKKaDw6o5EbCN6gaH1FS5bYuJ_VXUstahb6OWq1rutXjLrEpQ8Vc0Y9nNTTp13Jv1NcQjLUR2OLo8oNUvtiMWbyUfQ7vV_stTjiAtnJmYrkqg99jnLFIsNz1rhKffNtu9s7KB8sFNqIx96rIrf7MBf6N0TY93zpIFFI35aopan9eR9BU7CIh1_VmAHmUvjjGHSvOZSQYzbtTjXWFrvezAR19upSJCG5K-dK2zb4ulf4Bpdi_TX_opSg6_m0neUiJn1vVMzMSfAdmIn5QT4UZ6cP9CrOL_OW5UclKsvsdYQaoBs1W2hFgzjTx784ZfCqG4y3dZzlCMav9kaw3DhH6dJs6NF2DUZmBuF-VXsUR8koG-lolpzfGJBCNnbiUBvj2MbNgxhpRBAbkGbe0jHxHtlPUEZDdw1hJUacyXW6-_Fpsfy7n1jWD6H"
                   }
                 },
                 "method": "PUT",
@@ -3020,7 +3020,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"id\": 419558,\n    \"travelerId\": 921689,\n    \"facilityId\": 42249,\n    \"systemId\":913,\n    \"internalId\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5,\n    \"businessUnitId\":2,\n    \"onsiteManagerKerberosId\":\"11111\"\n}"
+                  "raw": "{\n    \"id\": 419558,\n    \"travelerId\": 921689,\n    \"facilityId\": 42249,\n    \"systemId\":913,\n    \"internalId\": null,\n    \"departmentId\": 14,\n    \"buildingId\": 25,\n    \"floorId\": 1,\n    \"payrollLocationId\": 5,\n    \"businessUnitId\":1,\n    \"onsiteManagerKerberosId\":\"2222\"\n}"
                 },
                 "url": "{{uri}}/ayaconnect/client/traveler/nyu",
                 "description": "This is an extension of the PUT Traveler method.  It has all the same properties plus DepartmentId, BuildingId, FloorId, etc"
@@ -9226,7 +9226,7 @@
   ],
   "variable": [
     {
-      "id": "eecace6e-7a47-431d-a29f-471211836f4b",
+      "id": "94d72d9d-2424-4f87-823b-3b7fd2e99b00",
       "key": "uri",
       "value": "http://localhost:8088"
     }
