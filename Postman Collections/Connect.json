@@ -3085,8 +3085,7 @@
               },
               "request": {
                 "method": "GET",
-                "header": [],
-                "url": null
+                "header": []
               },
               "response": []
             }
@@ -6746,8 +6745,7 @@
           },
           "request": {
             "method": "GET",
-            "header": [],
-            "url": null
+            "header": []
           },
           "response": []
         }
@@ -8205,6 +8203,47 @@
       "description": "Requests related to vendor module"
     },
     {
+      "name": "Banks",
+      "item": [
+        {
+          "name": "AddBank",
+          "id": "2777ddfb-09bf-4d6e-a125-56d1c30c8c84",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "CfDJ8OkN94RRNIZGo_dGqQa2mrdtJBaJUN4NbvriUT53hsuqk2INB-GuR-YCvlZ3mOB0cjp0QwrtIP2oq8xruB-hVlEKBhl6Au8C5AZPHqszaULEav6WMmJ9UoTRWxstteRF-ywgsikNV1oYY4mv9zQAVCDaeEeYUhGjxnEcbfmJCrWB7rAreKtfyoRg8eGeqAz_P3aCLMOltWVbRPj_1VDenxFEEFIFy4jnL_iSP8f5jfbXUEFYf3Z8zQZMBN2BMXt-hJ7u99n2Cfr2bhJr3Q6pwPRG2-9XG-nzQN_vU05yRuSTs_2sn6Ogho0egs_iuRPuG5AqMUaBc3tXhdWoW_vaNYrPy0Y7wcFD2SJlL_PQdxXQ2TzyEh8ouo-afkMXaQy3566DxdyKvHTdr07pP2q4wFd-EpL7M1GpuHKaxQV2OHNsIrXLuo22UWo1Bcc22DrUKvlIZaHiKB55K7q8St2jP3rMuhyscdggLmxcQJGDthadHQsLrvcrixLYxbiOTaTBl7WcJi4LPW1ekJNaU2am3_Jnvx1GZqZTM_ZOroZLg33FBFT3xEcsKyx2NMWMotlyahXUwH1TK2eFc9Y_jjVu5thofWZMhv2errgdFLHS68Rd24742cdOZ_eLHx7JjwwbP-p-6DGamXK_HgtB1bXYp1NFDOWAqkYcVp6hkSxUivLjsxLMR5TWKcZbK14XnBr8XOCBTuN-Q3uayzPGqIevt32fbx1lv4vN6ONFKtuBPeng"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{uri}}/AyaConnect/banks/bank?bankName=foo bank 3",
+              "host": [
+                "{{uri}}"
+              ],
+              "path": [
+                "AyaConnect",
+                "banks",
+                "bank"
+              ],
+              "query": [
+                {
+                  "key": "bankName",
+                  "value": "foo bank 3"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7b5f041e-7feb-4284-9cd2-a397a9f65cfc"
+    },
+    {
       "name": "Client",
       "item": [
         {
@@ -8259,8 +8298,7 @@
               },
               "request": {
                 "method": "GET",
-                "header": [],
-                "url": null
+                "header": []
               },
               "response": []
             }
@@ -8311,47 +8349,6 @@
         }
       ],
       "id": "ca1989f3-1772-40ef-ad5e-af3ab7ab010c"
-    },
-    {
-      "name": "Banks",
-      "item": [
-        {
-          "name": "AddBank",
-          "id": "2777ddfb-09bf-4d6e-a125-56d1c30c8c84",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "CfDJ8OkN94RRNIZGo_dGqQa2mrdtJBaJUN4NbvriUT53hsuqk2INB-GuR-YCvlZ3mOB0cjp0QwrtIP2oq8xruB-hVlEKBhl6Au8C5AZPHqszaULEav6WMmJ9UoTRWxstteRF-ywgsikNV1oYY4mv9zQAVCDaeEeYUhGjxnEcbfmJCrWB7rAreKtfyoRg8eGeqAz_P3aCLMOltWVbRPj_1VDenxFEEFIFy4jnL_iSP8f5jfbXUEFYf3Z8zQZMBN2BMXt-hJ7u99n2Cfr2bhJr3Q6pwPRG2-9XG-nzQN_vU05yRuSTs_2sn6Ogho0egs_iuRPuG5AqMUaBc3tXhdWoW_vaNYrPy0Y7wcFD2SJlL_PQdxXQ2TzyEh8ouo-afkMXaQy3566DxdyKvHTdr07pP2q4wFd-EpL7M1GpuHKaxQV2OHNsIrXLuo22UWo1Bcc22DrUKvlIZaHiKB55K7q8St2jP3rMuhyscdggLmxcQJGDthadHQsLrvcrixLYxbiOTaTBl7WcJi4LPW1ekJNaU2am3_Jnvx1GZqZTM_ZOroZLg33FBFT3xEcsKyx2NMWMotlyahXUwH1TK2eFc9Y_jjVu5thofWZMhv2errgdFLHS68Rd24742cdOZ_eLHx7JjwwbP-p-6DGamXK_HgtB1bXYp1NFDOWAqkYcVp6hkSxUivLjsxLMR5TWKcZbK14XnBr8XOCBTuN-Q3uayzPGqIevt32fbx1lv4vN6ONFKtuBPeng"
-              }
-            },
-            "method": "POST",
-            "header": [],
-            "url": {
-              "raw": "{{uri}}/AyaConnect/banks/bank?bankName=foo bank 3",
-              "host": [
-                "{{uri}}"
-              ],
-              "path": [
-                "AyaConnect",
-                "banks",
-                "bank"
-              ],
-              "query": [
-                {
-                  "key": "bankName",
-                  "value": "foo bank 3"
-                }
-              ]
-            }
-          },
-          "response": []
-        }
-      ],
-      "id": "7b5f041e-7feb-4284-9cd2-a397a9f65cfc"
     },
     {
       "name": "Common",
@@ -9076,8 +9073,7 @@
               },
               "request": {
                 "method": "GET",
-                "header": [],
-                "url": null
+                "header": []
               },
               "response": []
             },
@@ -9226,7 +9222,7 @@
   ],
   "variable": [
     {
-      "id": "94d72d9d-2424-4f87-823b-3b7fd2e99b00",
+      "id": "955c1979-4687-4d8b-a24c-22d65562e2ee",
       "key": "uri",
       "value": "http://localhost:8088"
     }
