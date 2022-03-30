@@ -9004,106 +9004,116 @@
             }
           ],
           "id": "1a11e81d-8dea-487f-9c3a-d54915147283"
-        },
-        {
-          "name": "CNW11068 (Shifts)",
-          "item": [
-            {
-              "name": "Cancel Single Shift in Series",
-              "id": "5099e9b8-9dd1-4888-8f47-b020ce9e9e3d",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"shiftId\": 448089,\r\n    \"perdiemReasonCode\": 8,\r\n    \"shiftType\": \"single\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-single-shift-series"
-              },
-              "response": []
-            },
-            {
-              "name": "Shift Series",
-              "id": "345ee2dd-53ff-4079-844c-0c1cd08a37a3",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": "{{uri}}/AyaConnect/Client/Shifts/Series/6051fa5d-a341-4792-924d-bf486f7a28d5/shifts/448088"
-              },
-              "response": []
-            },
-            {
-              "name": "Cancel Series",
-              "id": "fecc1302-3b66-4f95-bbd3-44fe45f0e350",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"shiftId\": 448088,\r\n    \"perdiemReasonCode\": 8,\r\n    \"shiftType\": \"bulk\"\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-series"
-              },
-              "response": []
-            },
-            {
-              "name": "Update Shift Series",
-              "id": "b86f1430-937e-4d9d-aed8-8280a45fa0f6",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "GET",
-                "header": []
-              },
-              "response": []
-            },
-            {
-              "name": "Update Single Shift Series",
-              "id": "e63dabb4-e440-488c-b0c4-b565bc70078a",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "method": "PUT",
-                "header": [],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n    \"shiftId\": 448087,\r\n    \"startDate\": \"2021-12-10T00:00:00Z\",\r\n    \"startTime\": \"2021-12-10T03:00:00Z\",\r\n    \"endTime\": \"\",\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"duration\": 2.5,\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": true,\r\n    \"shouldSendShiftNotification\": false,\r\n}",
-                  "options": {
-                    "raw": {
-                      "language": "json"
-                    }
-                  }
-                },
-                "url": "{{uri}}/AyaConnect/Client/Shifts/series/6051fa5d-a341-4792-924d-bf486f7a28d5"
-              },
-              "response": []
-            }
-          ],
-          "id": "8366c359-6121-417c-9cde-c0349de970f1"
         }
       ],
       "id": "4e164457-f6d7-4982-8774-c4239735583a"
+    },
+    {
+      "name": "CNW11068 (Shifts)",
+      "item": [
+        {
+          "name": "Cancel Single Shift in Series",
+          "id": "5099e9b8-9dd1-4888-8f47-b020ce9e9e3d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"shiftId\": 448089,\r\n    \"perdiemReasonCode\": 8,\r\n    \"shiftType\": \"single\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-single-shift-series"
+          },
+          "response": []
+        },
+        {
+          "name": "Shift Series",
+          "id": "345ee2dd-53ff-4079-844c-0c1cd08a37a3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Client/Shifts/Series/6051fa5d-a341-4792-924d-bf486f7a28d5/shifts/448088"
+          },
+          "response": []
+        },
+        {
+          "name": "Cancel Series",
+          "id": "fecc1302-3b66-4f95-bbd3-44fe45f0e350",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"shiftId\": 448088,\r\n    \"perdiemReasonCode\": 8,\r\n    \"shiftType\": \"bulk\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Client/Shifts/cancel-series"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Shift Series",
+          "id": "b86f1430-937e-4d9d-aed8-8280a45fa0f6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 448087,\r\n    \"facilityId\": 36249,\r\n    \"facility\": \"NYU Brooklyn Infusion Center MSP\",\r\n    \"professionId\": 102,\r\n    \"profession\": \"Anesthesia Assistant\",\r\n    \"specialtyId\": 957,\r\n    \"specialty\": \"Anesthesia Assistant\",\r\n    \"unitId\": null,\r\n    \"unit\": null,\r\n    \"comments\": \"\",\r\n    \"jobCode\": \"123\",\r\n    \"unionCode\": \"Non Union\",\r\n    \"unionCodeId\": 2,\r\n    \"chartString\": \"456\",\r\n    \"jobTitle\": \"test will\",\r\n    \"startDate\": \"2021-12-10T00:00:00Z\",\r\n    \"startTime\": \"2021-12-10T03:00:00Z\",\r\n    \"shiftHours\": 2.5,\r\n    \"facilityAddress\": \"902 Quentin Road\",\r\n    \"facilityCity\": \"Brooklyn\",\r\n    \"facilityZip\": \"11223\",\r\n    \"facilityStateCode\": \"NY\",\r\n    \"address\": null,\r\n    \"addressAlt\": null,\r\n    \"city\": null,\r\n    \"stateId\": null,\r\n    \"zipCode\": null,\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"shiftsCount\": 0,\r\n    \"seriesDates\": [],\r\n    \"startDates\": [],\r\n    \"duration\": 2.5,\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": true,\r\n    \"conversionType\": 0,\r\n    \"shouldSendShiftNotification\": false,\r\n    \"shiftSchedules\": [\r\n        {\r\n            \"startDates\": [\r\n                \"2021-12-10T00:00:00Z\"\r\n            ],\r\n            \"shiftLength\": 2.5,\r\n            \"startTime\": \"2021-12-10T10:00:00Z\",\r\n            \"endTime\": \"\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Client/Shifts/series"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Single Shift Series",
+          "id": "e63dabb4-e440-488c-b0c4-b565bc70078a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"shiftId\": 448087,\r\n    \"startDate\": \"2021-12-10T00:00:00Z\",\r\n    \"startTime\": \"2021-12-10T03:00:00Z\",\r\n    \"endTime\": \"\",\r\n    \"seriesId\": \"6051fa5d-a341-4792-924d-bf486f7a28d5\",\r\n    \"duration\": 2.5,\r\n    \"candidateId\": null,\r\n    \"isInternalPool\": true,\r\n    \"shouldSendShiftNotification\": false,\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{uri}}/AyaConnect/Client/Shifts/series/6051fa5d-a341-4792-924d-bf486f7a28d5"
+          },
+          "response": []
+        }
+      ],
+      "id": "8366c359-6121-417c-9cde-c0349de970f1"
     },
     {
       "name": "Get Menu",
@@ -9222,7 +9232,7 @@
   ],
   "variable": [
     {
-      "id": "955c1979-4687-4d8b-a24c-22d65562e2ee",
+      "id": "f59a5383-bdad-4a4d-a7b6-3958080ed39a",
       "key": "uri",
       "value": "http://localhost:8088"
     }
