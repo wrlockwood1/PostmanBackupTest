@@ -4131,6 +4131,25 @@
             "url": "{{uri}}/AyaConnect/Client/Shifts/362577/Booked-Candidates"
           },
           "response": []
+        },
+        {
+          "name": "Shift Template Post",
+          "id": "b71eb128-1197-4025-960f-6298a0abdec9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "addTokenTo": "header"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{uri}}/AyaConnect/Client/Shifts/362577/Booked-Candidates"
+          },
+          "response": []
         }
       ],
       "id": "3d870b53-4110-4f02-922c-13d2989a6a9e",
@@ -9232,7 +9251,7 @@
   ],
   "variable": [
     {
-      "id": "f59a5383-bdad-4a4d-a7b6-3958080ed39a",
+      "id": "cb8b39f7-36b1-4b9a-aa78-e15fc9f27b8c",
       "key": "uri",
       "value": "http://localhost:8088"
     }
