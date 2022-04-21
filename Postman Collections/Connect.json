@@ -6406,7 +6406,7 @@
               "id": "f5ae4d73-9266-4cc7-8d44-85461752676f"
             },
             {
-              "name": "New Folder",
+              "name": "Work Locations",
               "item": [],
               "id": "d8700174-9da7-4fc5-b0db-e7901e3000d0"
             },
@@ -9256,7 +9256,7 @@
   ],
   "variable": [
     {
-      "id": "ff13142b-91bf-45a5-9634-364ca5af155a",
+      "id": "40329138-7917-448d-a87c-06a34de4d9a8",
       "key": "uri",
       "value": "http://localhost:8088"
     }
