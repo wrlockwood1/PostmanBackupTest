@@ -1821,7 +1821,7 @@
 					"response": []
 				},
 				{
-					"name": "Approve",
+					"name": "Approve Client Timecard",
 					"id": "61530963-f017-4f9d-a5ea-9f17deb169e1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9280,7 +9280,7 @@
 	],
 	"variable": [
 		{
-			"id": "fc5b6248-2059-444d-a592-e31d8a2926a2",
+			"id": "cbdd3299-8cfa-433d-91c7-2768d306c5b1",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
