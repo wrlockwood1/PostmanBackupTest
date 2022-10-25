@@ -7026,7 +7026,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"existingFileids\":[\r\n        1952\r\n    ]\r\n}",
+							"raw": "{\r\n    \"existingFileIds\":[\r\n        1952\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -7034,15 +7034,17 @@
 							}
 						},
 						"url": {
-							"raw": "{{uri}}/ayaconnect/jobs/1868259/attachments",
+							"raw": "{{uri}}/ayaconnect/client/jobs/1868259/attachments/duplicate",
 							"host": [
 								"{{uri}}"
 							],
 							"path": [
 								"ayaconnect",
+								"client",
 								"jobs",
 								"1868259",
-								"attachments"
+								"attachments",
+								"duplicate"
 							],
 							"query": [
 								{
@@ -9387,7 +9389,7 @@
 	],
 	"variable": [
 		{
-			"id": "0e005a84-7af6-46a1-8cda-9d3888e71c68",
+			"id": "922cf812-d1ec-48f2-8798-4625eb694a05",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
