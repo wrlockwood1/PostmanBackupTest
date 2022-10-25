@@ -7022,11 +7022,17 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8B_6Z0UeBq5OqmHfmZwD1jSH3RhFFTYJx8lzj3OXHSbMhVpBDkkJ0P_iZIfsBN0lVP8CaQxRPvnjkljQQyk8mUR0egZ1puMcC2t9X_CNVL5av-FmaZifcJWytZkMt9CHnJNU4Lbh57Et36gKZ01l7A73ME2P45MDi6ufc0ECG0A8Lc6P1z6Vyiv9S6RjQqWiwcSJJGB7Nbe7wqSXRR5m00_ELojRu_qGj4BvPwSdtUjNePhpzIGmMegmi3YZ37YBJkI_dCkeTKBszn3C8sJAIr82JHJGfT18_5SvgghHGEuOEbvzPN4fDscehDBgb7gPwyjyjv30u-KakXYLOq1Qvu6hCuhseNUiFiA0KywKcJrm1bffofLrdEkpRZtjHLM0iPVBVc3EpzWk_rZ9XUgm1oQZE1z5sw6QNOTjUAlTt5kx4nF4QH3fnQLzO3PxRo8sS259or5LaMZoPU_VdtAxQ7ST__2dRNF3haNROx7mLla6p3UdGCybPJuiMs1pF3_qXc61TERwmfUwHvoeo73eE9NOi2QqYV6_fiF12ZfeqOoEfSJbukSixRe_CySMZdrFnSw4m6AjQ9HOU3_xtQ8Y5UMOf-kno9nBRw1yNXQo_fJYlml5KR6XtbZffC7wp-e1GxHTBdF0Ycrn8tV71cgpboSOwgLGHD5Q3SS1h3aMP8xtReBDIW5YMiHBeb1JWY1hG8fz7rDOZ4ExqNOoKi1DcxyuCpe0PUTXW0DtqMk4E7juaxdUPDQ6CFMTVD3X1_6uziOUcdaO0dcNVHsXVShDtCsVmD6OmDNTNd5lpA9SZWOgQ2BIYwv4as7EJ8jkVYLraTV41w1WQgy4QVEy5QoXaONDbN5FuNCcXHyEGweZ7u4278xDa-VXXKMnE975deREZ3PmCGs28pLv9yDRX1IWOf8"
+							}
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"existingFileIds\":[\r\n        1952\r\n    ]\r\n}",
+							"raw": "{\r\n    \"existingFileIds\":\r\n    [\r\n       1952\r\n        \r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9389,7 +9395,7 @@
 	],
 	"variable": [
 		{
-			"id": "922cf812-d1ec-48f2-8798-4625eb694a05",
+			"id": "57e27df7-34f1-4f9a-98e1-26a846f96702",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
