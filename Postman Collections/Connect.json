@@ -7016,6 +7016,53 @@
 					"response": []
 				},
 				{
+					"name": "Add Duplicate Job Attachments",
+					"id": "1ad1c3a5-a230-4332-a312-97d5bc6d28c5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/paging.PNG"
+								},
+								{
+									"key": "internalOnly",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{uri}}/ayaconnect/jobs/1234603/attachments",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"ayaconnect",
+								"jobs",
+								"1234603",
+								"attachments"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get all job attachments",
 					"id": "6b370fe6-332a-4ada-8a1d-29240b923a84",
 					"protocolProfileBehavior": {
@@ -9346,7 +9393,7 @@
 	],
 	"variable": [
 		{
-			"id": "988c4939-fe43-4574-b875-371f04a4284a",
+			"id": "07640a13-8ca1-4e5e-871c-60670be3756d",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
