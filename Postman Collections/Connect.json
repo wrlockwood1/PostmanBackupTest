@@ -7025,29 +7025,23 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "file",
-									"type": "file",
-									"src": "/C:/Users/NoorBakkal/OneDrive - ayahealthcare.com/Documents/Aya/Unwanted/paging.PNG"
-								},
-								{
-									"key": "internalOnly",
-									"value": "1",
-									"type": "text"
+							"mode": "raw",
+							"raw": "{\r\n    \"existingFileids\":[\r\n        1952\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
-							"raw": "{{uri}}/ayaconnect/jobs/1234603/attachments",
+							"raw": "{{uri}}/ayaconnect/jobs/1868259/attachments",
 							"host": [
 								"{{uri}}"
 							],
 							"path": [
 								"ayaconnect",
 								"jobs",
-								"1234603",
+								"1868259",
 								"attachments"
 							],
 							"query": [
@@ -9393,7 +9387,7 @@
 	],
 	"variable": [
 		{
-			"id": "07640a13-8ca1-4e5e-871c-60670be3756d",
+			"id": "0e005a84-7af6-46a1-8cda-9d3888e71c68",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
