@@ -8427,6 +8427,18 @@
 										"url": "{{uri}}/ayaconnect/client/integration/bullhorn/get-jobs-list"
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "fbd3646d-1928-4f64-a2b6-aaaa3492eba8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "adb7af16-0b49-40d7-b7fa-97e15ccf3782"
@@ -9414,7 +9426,7 @@
 	],
 	"variable": [
 		{
-			"id": "79e0a1d2-1c0a-4ffa-9cd9-807af23aad1f",
+			"id": "ab4f659d-3e37-4540-b62e-47d723a93576",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
