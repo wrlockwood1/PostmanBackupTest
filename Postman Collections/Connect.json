@@ -5786,7 +5786,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Update Status (Mobile)",
 					"id": "6986a9cc-d038-46e7-9b74-0b4c1ce1a178",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9466,7 +9466,7 @@
 	],
 	"variable": [
 		{
-			"id": "04a3527a-1ebc-43b4-8687-900fed26ecff",
+			"id": "175ff6d5-d0fe-4519-9f66-f67328beb28b",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
