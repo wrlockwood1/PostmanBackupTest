@@ -5792,8 +5792,31 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8NF7ZnK4N2tApyeWEAr4-bS4tv1XEJV9DQ6AufNVfKJ67QYICcvj4qcFYTGT3eWhGldCbTjbx6p5B5vSR8vUhE8jm4ThvnVb0NSktP3x4GNnJ3JmRKBdls6MUQ8J7wybN4Ip0cJt6hTlEoLc_rLzFQGPz7ERwhNUlsIThj1jWKR7Yivao54E3CGLRdRWJnzRcdZwFTmDvXT7R1RbVojWEO_IEyCCfihHgbQAlu9aCEDD4e9xVkyzxuBd107NA5lVS5IqlA4icCRadRfe-ZLeFNXC-thv5Se3Ed-D471GGL3KSP4TqsG5RyVCeN6Bz_33-Ul0_SON8WzUsReNfta6VPFw4G-6HAmyNTTQSdobVTXzDw3FW3zpcqmADyMcr0VyYG5XhMZRk6nQPf5z6KixR4F5OGTyOTWHC4q3MSLLWBatwl7h-MLI8fBQ_cT_wq4-4WxmJT00R2x0fnPKJ-04U_AR6uiMX1iIHrZtBnELHIKYs21ueMZ3dLfW83z9PcK3sYqK1u-XkAIDpPbNIwDNDJHsfXt9tu8MtLpj-ebB2n_A3sY9jfxExMwQ5LmGh0q0U4exaWk3mbHpyxLjgqAlko7oN9lZPb127au4mcvfIfsZTV2Qp6cJl5RXWVV7Qnek7RsIAJc06LwqOYSPvDhcIkjaaVvg52hxX5UH5Ra1LbK0hh_6Gkvu0tY2icnVyvQTdd9UZChl44SHQX7T0NBUsy_aicYuhD3XorLXsTv4I9RVcrhPN9O5YM2JWZJDRYHgHoYvAk2Scv0U9HFgWyJOTk_aLpiBpkKWivPsXI3aWu8A"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer CfDJ8Dm5J7tTEkBDi1kfN3IfBwocGxxG_V5Q9E7Ck_CzWjX0xPpdNosrdgw_TaGWfX0SCLMSO-EBzgCriEcYMcooCU7AH3aFtguvC3GWOfLYDOxrn8HneY7cQD0wv0m1NwP2hfREZ2bq_C8DXb_NYojZ8qnOrbaNFDgaEcU9PmgK60eg_nm0qy77SDgVF7l8bsx0Zz4wohcFP4N2uLd9dqjpecxH7E9qzFK87NalOt8nD2nF58tcFtr5rq3E5_37y1PCrUg9-g0UQkPu5sVHqeUtS6Fx2SrQqZucNAWOXaQNraUr6ZELnkQjzVLey-SEYqShkWwaRNiR95FXceN7e1rqZGYmFJYTdwDKU3uIdegE81XDflXYU8acxdQFD9VAg0Dot_RLVbOdHu9gMxMrjOwiK47Je1TMTjUD9w45C_Jo3Pm2IfRzGvs_eG7HOC2qcIXoqgqkaRqikTESwjXjLDgUAZfgOddQAWJi_QW-lomjfERdVMmvtaKHAni9u7u_Ddx5i0THWTxn6Nx5o0VxtFTKoyLCkoDSaMMFAuFSIybdNw-q5-vyfeGqOA5Zi6SQLISFiLpYXnnAFiIhF-H9x1_gzqJNiZQohS-7qL92fYYHD5lSiUkHbXihRc3xmA0bsllWlJIgmH2AP8yg8RaWiMPXv-kouuwlfQh7eD7egNKQAlhU0S65CSfcil5NFzSLOTHYUXbksx40FEnml1vgEyMdCXDEzA7ymcWqOl4aQcJ3vu9BrzxbXWNNR5OA2lEjSxntig2bKfIdvwziDGBqAckGxciCguDzP6KgC8IOeL03ZGlv",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"statusId\": 1,\r\n \"note\": null,\r\n \"declineReasonId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{uri}}/AyaConnectMobile/submittal/15061220/status"
 					},
 					"response": []
 				}
@@ -9466,7 +9489,7 @@
 	],
 	"variable": [
 		{
-			"id": "175ff6d5-d0fe-4519-9f66-f67328beb28b",
+			"id": "c8c5f6e8-dd86-4e69-a949-e00f3321e2e8",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
