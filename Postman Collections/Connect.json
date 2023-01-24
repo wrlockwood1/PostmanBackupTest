@@ -5784,6 +5784,18 @@
 						"url": "{{uri}}/AyaConnect/vendors/Shifts/23234/Submittals"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "6986a9cc-d038-46e7-9b74-0b4c1ce1a178",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "aa8350c1-8d91-4e72-8f2e-89c87b88ae96"
@@ -9454,7 +9466,7 @@
 	],
 	"variable": [
 		{
-			"id": "aadbe5bd-1b77-425d-9198-8143719d1128",
+			"id": "04a3527a-1ebc-43b4-8687-900fed26ecff",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
