@@ -8451,7 +8451,7 @@
 							"name": "Bullhorn",
 							"item": [
 								{
-									"name": "Get Jobs List",
+									"name": "Load Job Ids",
 									"id": "b60e9424-2f4b-4898-901b-71c460d8400e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9489,7 +9489,7 @@
 	],
 	"variable": [
 		{
-			"id": "d49e8ba9-5b33-435a-b324-28521ec9ea43",
+			"id": "3d3b3bb3-101a-4945-add5-4bce87a3c662",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
