@@ -8504,7 +8504,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "Import Jobs",
 									"id": "cc9a11f8-ed41-42fa-bb91-2d1b5620669b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9501,7 +9501,7 @@
 	],
 	"variable": [
 		{
-			"id": "e632184b-ac88-48f4-95a7-ae3cbf2764e6",
+			"id": "35049c98-7113-4c9b-ad96-ab273896e0d5",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
