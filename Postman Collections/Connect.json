@@ -8523,7 +8523,7 @@
 							"name": "IntegrationMapping",
 							"item": [
 								{
-									"name": "New Request",
+									"name": "GetMappings",
 									"id": "7bca7d99-7791-460a-8a5e-f037f1b94722",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9569,7 +9569,7 @@
 	],
 	"variable": [
 		{
-			"id": "7c640834-6983-47e2-b345-7ed00df53505",
+			"id": "79486978-44cc-4e70-93e9-4d6cf00f89af",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
