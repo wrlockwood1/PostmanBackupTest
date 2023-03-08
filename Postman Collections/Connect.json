@@ -8520,7 +8520,7 @@
 							"id": "adb7af16-0b49-40d7-b7fa-97e15ccf3782"
 						},
 						{
-							"name": "New Folder",
+							"name": "IntegrationMapping",
 							"item": [],
 							"id": "86e4924f-1f51-435a-84d2-e9ea8189559a"
 						},
@@ -9556,7 +9556,7 @@
 	],
 	"variable": [
 		{
-			"id": "028b6c8b-2b58-4598-b232-da8d7fe24116",
+			"id": "29488fb0-3d77-43cc-9b44-c88b6a5afd93",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
