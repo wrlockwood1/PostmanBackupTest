@@ -8745,41 +8745,22 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8088/ayaconnect/invoices/getfiltered?viewTypeId=3&take=1&sort=null&skip=0&groups=null&filter=",
-							"protocol": "http",
+							"raw": "https://api-int.ayahealthcare.com/background/invoice-notification/draft-email?numberOfDays=7",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"api-int",
+								"ayahealthcare",
+								"com"
 							],
-							"port": "8088",
 							"path": [
-								"ayaconnect",
-								"invoices",
-								"getfiltered"
+								"background",
+								"invoice-notification",
+								"draft-email"
 							],
 							"query": [
 								{
-									"key": "viewTypeId",
-									"value": "3"
-								},
-								{
-									"key": "take",
-									"value": "1"
-								},
-								{
-									"key": "sort",
-									"value": "null"
-								},
-								{
-									"key": "skip",
-									"value": "0"
-								},
-								{
-									"key": "groups",
-									"value": "null"
-								},
-								{
-									"key": "filter",
-									"value": ""
+									"key": "numberOfDays",
+									"value": "7"
 								}
 							]
 						}
@@ -9565,7 +9546,7 @@
 	],
 	"variable": [
 		{
-			"id": "eaa3a5a7-89ca-4cf8-9b86-b50a26d44477",
+			"id": "cc19cddd-d4bc-4aff-a782-36479e579868",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
