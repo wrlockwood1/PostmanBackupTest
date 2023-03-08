@@ -8546,7 +8546,12 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"clientName\": \"string\",\r\n  \"integrationType\": \"string\",\r\n  \"entityType\": 1,\r\n  \"fieldName\": \"string\",\r\n  \"mapFrom\": \"string\",\r\n  \"mapTo\": \"string\"\r\n}"
+											"raw": "{\r\n  \"clientName\": \"string\",\r\n  \"integrationType\": \"string\",\r\n  \"entityType\": 1,\r\n  \"fieldName\": \"string\",\r\n  \"mapFrom\": \"string\",\r\n  \"mapTo\": \"string\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
 										},
 										"url": "{{uri}}/ayanova/integrations/mappings"
 									},
@@ -9587,7 +9592,7 @@
 	],
 	"variable": [
 		{
-			"id": "ad28ea7f-c7d5-4e8d-9eb5-2d350c0fc490",
+			"id": "8fee47d7-e5ba-4646-bc2e-67aefc374607",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
