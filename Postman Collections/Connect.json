@@ -8556,6 +8556,18 @@
 										"url": "{{uri}}/ayanova/integrations/mappings"
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "516928fe-001f-422e-bcc1-aa148b4515f6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "86e4924f-1f51-435a-84d2-e9ea8189559a"
@@ -9592,7 +9604,7 @@
 	],
 	"variable": [
 		{
-			"id": "8fee47d7-e5ba-4646-bc2e-67aefc374607",
+			"id": "96af1dd1-4b06-4e2c-aa12-33915adb043c",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
