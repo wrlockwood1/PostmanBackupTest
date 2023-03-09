@@ -8590,7 +8590,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"id\": 1\r\n}\r\n",
+											"raw": "{\r\n  \"id\": 2\r\n}\r\n",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -9636,7 +9636,7 @@
 	],
 	"variable": [
 		{
-			"id": "513a9c43-38d5-4d87-b021-676df94aa567",
+			"id": "f6aeafd2-dd69-4430-afe7-c3a4f7a8c0a2",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
