@@ -8558,7 +8558,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "UpdateMapping",
 									"id": "516928fe-001f-422e-bcc1-aa148b4515f6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9604,7 +9604,7 @@
 	],
 	"variable": [
 		{
-			"id": "96af1dd1-4b06-4e2c-aa12-33915adb043c",
+			"id": "af8e8261-df1e-4a43-8ceb-5b376bd3c5b8",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
