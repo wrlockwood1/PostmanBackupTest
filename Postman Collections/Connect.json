@@ -8564,8 +8564,18 @@
 										"disableBodyPruning": true
 									},
 									"request": {
-										"method": "GET",
-										"header": []
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n  \"clientName\": \"Updated clientName\",\r\n  \"integrationType\": \"Updated integrationType\",\r\n  \"entityType\": 2,\r\n  \"fieldName\": \"Updated fieldName\",\r\n  \"mapFrom\": \"Updated mapFrom\",\r\n  \"mapTo\": \"Updated mapTo\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{uri}}/ayanova/integrations/mappings"
 									},
 									"response": []
 								}
@@ -9604,7 +9614,7 @@
 	],
 	"variable": [
 		{
-			"id": "af8e8261-df1e-4a43-8ceb-5b376bd3c5b8",
+			"id": "5d90206b-2231-4aa9-97c5-45239767b8ab",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
