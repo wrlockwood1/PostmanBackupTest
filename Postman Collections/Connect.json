@@ -8619,7 +8619,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GetMappings with ClientName Filter",
 									"id": "e21ad745-210b-4bb8-9bb9-0204b54879ab",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9665,7 +9665,7 @@
 	],
 	"variable": [
 		{
-			"id": "0bc42775-6ad6-4b89-b346-454fbccf8a58",
+			"id": "b1a75255-c6ff-41d7-97f2-87527c158982",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
