@@ -8769,6 +8769,18 @@
 										"header": []
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "316609ee-b28a-40b2-bead-e09c35d7e2a7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "86e4924f-1f51-435a-84d2-e9ea8189559a"
@@ -9805,7 +9817,7 @@
 	],
 	"variable": [
 		{
-			"id": "53598cf3-4f63-49e9-a8ec-3da88b142d23",
+			"id": "2ce090bd-4fea-4117-a24b-4cd8f5ee0ff9",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
