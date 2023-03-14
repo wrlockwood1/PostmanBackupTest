@@ -8759,19 +8759,37 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GetMappings with Valid EntityType Filter",
 									"id": "6998174e-f4e3-4299-b380-5fe0b77537a0",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
-										"header": []
+										"header": [],
+										"url": {
+											"raw": "{{uri}}/ayanova/integrations/mappings/?EntityType=1",
+											"host": [
+												"{{uri}}"
+											],
+											"path": [
+												"ayanova",
+												"integrations",
+												"mappings",
+												""
+											],
+											"query": [
+												{
+													"key": "EntityType",
+													"value": "1"
+												}
+											]
+										}
 									},
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GetMappings with Invalid EntityType Filter",
 									"id": "316609ee-b28a-40b2-bead-e09c35d7e2a7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9817,7 +9835,7 @@
 	],
 	"variable": [
 		{
-			"id": "2ce090bd-4fea-4117-a24b-4cd8f5ee0ff9",
+			"id": "8cafd3bd-2cd1-4a27-b536-f85a040bd76f",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
