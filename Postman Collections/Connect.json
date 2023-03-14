@@ -8729,7 +8729,7 @@
 									"response": []
 								},
 								{
-									"name": "GetMappings with Invalid IntegrattionType Filter",
+									"name": "GetMappings with Valid EntityType Filter",
 									"id": "1f4e2770-f8c6-4c3e-91f8-10d18a862f5d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9805,7 +9805,7 @@
 	],
 	"variable": [
 		{
-			"id": "35f1903e-f56e-4cd9-bfd8-1b48ad3183a7",
+			"id": "53598cf3-4f63-49e9-a8ec-3da88b142d23",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
