@@ -8628,7 +8628,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName='clientName'",
+											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=clientName",
 											"host": [
 												"{{uri}}"
 											],
@@ -8641,7 +8641,7 @@
 											"query": [
 												{
 													"key": "ClientName",
-													"value": "'clientName'"
+													"value": "clientName"
 												}
 											]
 										}
@@ -9695,7 +9695,7 @@
 	],
 	"variable": [
 		{
-			"id": "d56da348-1684-4ca5-8e45-4beb998202ba",
+			"id": "97157208-95cf-4af7-a2fc-1cf48e29f847",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
