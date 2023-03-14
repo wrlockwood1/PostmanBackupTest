@@ -8717,7 +8717,7 @@
 									"response": []
 								},
 								{
-									"name": "GetMappings with Valid IntegrattionName Filter",
+									"name": "GetMappings with Valid IntegrattionType Filter",
 									"id": "80f75ec9-3bf2-4f60-b2ed-bd57ed46a951",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9763,7 +9763,7 @@
 	],
 	"variable": [
 		{
-			"id": "2ed3b73b-5df7-4752-bd15-ff825ddfb1ae",
+			"id": "44bb41b6-2a97-46fa-bdfa-d6f880c2dddd",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
