@@ -8688,7 +8688,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=clientName&IntegrationType=integrationType&EntityType=5",
+											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=clientName&IntegrationType=integrationType&EntityType=2",
 											"host": [
 												"{{uri}}"
 											],
@@ -8709,7 +8709,7 @@
 												},
 												{
 													"key": "EntityType",
-													"value": "5"
+													"value": "2"
 												}
 											]
 										}
@@ -9751,7 +9751,7 @@
 	],
 	"variable": [
 		{
-			"id": "440c3a49-79ee-44c8-984c-bba8d84d64e8",
+			"id": "a814f62a-9e7b-41af-909d-dbcac4b495da",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
