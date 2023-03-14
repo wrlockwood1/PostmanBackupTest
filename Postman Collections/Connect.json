@@ -8568,7 +8568,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n  \"id\": 4,\r\n  \"clientName\": \"Updated clientName\",\r\n  \"integrationType\": \"Updated integrationType\",\r\n  \"entityType\": 2,\r\n  \"fieldName\": \"Updated fieldName\",\r\n  \"mapFrom\": \"Updated mapFrom\",\r\n  \"mapTo\": \"Updated mapTo\"\r\n}",
+											"raw": "{\r\n  \"id\": 1,\r\n  \"clientName\": \"Updated clientName\",\r\n  \"integrationType\": \"Updated integrationType\",\r\n  \"entityType\": 2,\r\n  \"fieldName\": \"Updated fieldName\",\r\n  \"mapFrom\": \"Updated mapFrom\",\r\n  \"mapTo\": \"Updated mapTo\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -8598,7 +8598,7 @@
 											}
 										},
 										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?id=4",
+											"raw": "{{uri}}/ayanova/integrations/mappings/?id=1",
 											"host": [
 												"{{uri}}"
 											],
@@ -8611,7 +8611,7 @@
 											"query": [
 												{
 													"key": "id",
-													"value": "4"
+													"value": "1"
 												}
 											]
 										}
@@ -9653,7 +9653,7 @@
 	],
 	"variable": [
 		{
-			"id": "db29ba1d-061b-4680-8a90-9c7e1dc4b14e",
+			"id": "ec719def-ef45-4af0-ad37-996f5f58dcdf",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
