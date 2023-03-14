@@ -8619,7 +8619,7 @@
 									"response": []
 								},
 								{
-									"name": "GetMappings with ClientName Filter",
+									"name": "GetMappings with Valid ClientName Filter",
 									"id": "e21ad745-210b-4bb8-9bb9-0204b54879ab",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9683,7 +9683,7 @@
 	],
 	"variable": [
 		{
-			"id": "8664c858-2e14-4b11-b5aa-518ea44e7e12",
+			"id": "cf596d72-035c-4894-9e9c-53a72a4065e3",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
