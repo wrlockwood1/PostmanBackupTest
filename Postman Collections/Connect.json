@@ -8679,7 +8679,7 @@
 									"response": []
 								},
 								{
-									"name": "New Request",
+									"name": "GetMappings with Valid Filters",
 									"id": "ce413156-2c82-457e-92e8-7596071e3dbb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -9725,7 +9725,7 @@
 	],
 	"variable": [
 		{
-			"id": "259b56e4-8cda-4faf-bac8-b5f86a109751",
+			"id": "d46e2983-904d-4509-89ce-3eec61f84f7e",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
