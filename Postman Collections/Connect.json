@@ -8515,6 +8515,18 @@
 										"url": "{{uri}}/ayaconnect/client/integration/bullhorn/import-jobs"
 									},
 									"response": []
+								},
+								{
+									"name": "New Request",
+									"id": "bb830e42-fdef-4f5a-bec8-1c8f4dfea979",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
 								}
 							],
 							"id": "adb7af16-0b49-40d7-b7fa-97e15ccf3782"
@@ -9871,7 +9883,7 @@
 	],
 	"variable": [
 		{
-			"id": "93b9d751-57ca-49e2-9589-a593507f98f2",
+			"id": "4cd09f51-5c7a-445d-8138-b841cf5d9eff",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
