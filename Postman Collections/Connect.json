@@ -2036,6 +2036,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8IlrTWyKCihJouVx7jmoST5MF0zNmIlUNB-pGCfp9LSetjBwsA8SABEna3F9ezCjOMt3JFlg_CFylsBcr1vxBAkLniKH9Kjf_8baGXqxiMqc1VlLx4SArGW4UOTcQFjveK_wRg4JV9sDeO9mvBGQq-EKMSmeq4JZ1Gv9dzTq934WWuguwh5FDjldm4gUEW3oP96aiV9Pmig_Nblj89q4Ft8wX3LYtPgWxKdngHgJ_gpq-1AeW_vXJMvRjObxzg7uUh41s6aXr02qTz-FTDOyrkaWxGbVqbPcDHCvc6dsHJR51Tp3ib_OJTutkoNOizSggVBPFxDDA7SZ7NvGHSUrBlqLFjwcxG8RKQwpF5bndlBVu95s7nV-GhhJaLwbQllQyM83CqvmLoSV4wM-xxms723owuMANZxMZOVp3J3B8IdSpA2_TIaVRrPgvMSQf4hhI3Vm5iv_d_vKIFbeUeyTvcC4W4TfPtXRV7vsV-PFbf1GcTDGKb80LBpa1jujHKQy1MzSnYAuAfRbPzpg7X7TXILKXj7Akcf7RPqlQ8wqzRlc0A4iaE-1yKVi2wjy-g0Dz4syG9Tsz2EghHZ5MsfAkrOLRnYNDftk2vcnhFjbOImKimwol3bd1hhKsu4uR1Rof1C61r66ag71jsfylaVCbboNQIqYO9Y9R85N5cIIXjiiyKKd2h8ej3OgGJbnZgbvvMQmZ0Gs5X5qdyc8dmNtSdi5jHTaKL4QStfeEqEEi1n5XEipwep1PIb13SqA8nnGfVWtKGjC7J6vTuUHS2Le3CsdME18IFV0sUC7t_SqvQTAuwzfC1Xrw4cKQ0hX2O_lYEBe_CI9PT9-9ss5_mhOaYzavlz2NHYXtfYMIjQVnK2MJ0XrLLDR5kK9QPKunWJXRw"
+							}
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -2047,7 +2053,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 0,\n    \"facilityProfileGroupId\": 5343,\n    \"specialtyId\": 1238,\n    \"professionId\": 942,\n    \"title\": \"Test Job\",\n    \"name\": \"Test Template\",\n    \"positions\": 1,\n    \"startDate\": null,\n    \"description\": \"test\",\n    \"hasShiftAlt\": false,\n    \"shiftHours\": 12,\n    \"shifts\": 1,\n    \"shiftsAlt\": null,\n    \"shiftAltHours\": null,\n    \"shiftM\": 0,\n    \"shiftH\": 8,\n    \"shiftToM\": 0,\n    \"shiftToH\": 20,\n    \"shiftAltM\": null,\n    \"shiftAltH\": null,\n    \"shiftAltToM\": null,\n    \"shiftAltToH\": null,\n    \"unitId\": \"\",\n    \"durationWeeks\": null\n}"
+							"raw": "{\n    \"id\": 0,\n    \"facilityProfileGroupId\": 5343,\n    \"specialtyId\": 1238,\n    \"professionId\": 942,\n    \"title\": \"Test Job\",\n    \"name\": \"Test Template\",\n    \"positions\": 1,\n    \"startDate\": null,\n    \"description\": \"test\",\n    \"hasShiftAlt\": false,\n    \"shiftHours\": 12,\n    \"shifts\": 1,\n    \"shiftsAlt\": null,\n    \"shiftAltHours\": null,\n    \"shiftM\": 0,\n    \"shiftH\": 8,\n    \"shiftToM\": 0,\n    \"shiftToH\": 20,\n    \"shiftAltM\": null,\n    \"shiftAltH\": null,\n    \"shiftAltToM\": null,\n    \"shiftAltToH\": null,\n    \"unitId\": \"\",\n    \"durationWeeks\": 13,\n    \"isStaffLineOfBusiness\": false\n}"
 						},
 						"url": "{{uri}}/AyaConnect/JobTemplates"
 					},
@@ -9907,7 +9913,7 @@
 	],
 	"variable": [
 		{
-			"id": "f1ab9fc7-47dd-4c5e-88f6-a0a38187daee",
+			"id": "1da611bd-a347-4aa3-96f2-e3fe88d93cf8",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
