@@ -5804,9 +5804,9 @@
 					},
 					"request": {
 						"auth": {
-							"type": "oauth2",
-							"oauth2": {
-								"addTokenTo": "header"
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8E1QFFPTgKtBgCFGVtyTZs4d7Vi5Ac5YbSjWBFg0tm9sTylLcwnkh3WyA5COrfUrqB2QgJfQyceEZmqZ3VCMSmyjx1uAGKZeAcfRNZVgxiD-ZOxm6KlbkDCOWiyf9aOxgej33cqpxr0IgJbpRh-DB-Aumt5MpGmvkgtap7SFQaF4pn92GYVUWVXwVM4Hhn7tMYY1W2NUBQ5TWmDyvqfHxuseXymMgK_pzh0w9e5vK4xBTEkAbQFCjbHBqGo3Yc4ECzidkh3Ifi4er5YmdBNtUMngDOXuo8LlTpu0B7rNno1LAW0o6exz6bDsb2joix5cm7pz-6xXF6kFcGM5-Ey0tSquNq0yNwM3sVbd6LiADXPbqQiOOOCMnpJsdjre0tGR9uRTOy08Z-sBRsf61ExziZjuGk1ZuLmzSeY3u_0Khqc_vcYOK0chebdN3d2wxYOvwBOCx2xLRHLAr6GRUGL4ivjWNJwYsu72F1SWIx7BDPyZ0kpD7RgsyL5A_Yv_pM9rA1DItfJVJZvsQ5XkrSFQhcG5Lkje6srnjRUpty5VX8fuGykuU0hNq0rVhGuZ5uqkbolIL1C4laRoM0kQkAui0rqGREH5T60Bi3-iBw1PfdA14p0mS69_hTICojSfZfBzduis4yWm-BZeqwwsRmdD_VIXRanpQwTE75g4DRsX-VE9eopSi7jNZQUdYrdrYYXiEqGgC0dPzWKWzA0of661DJxQHqSrBb19xMrWYSxdB86kEmeOG-AwZKLBsTms-zKepFkn1ccTOrlzQ00A9z4YzMcIXmH31hVgHpD2s455U7D5sirPTqK3aDZn5mt22M-0SZyWRrH0Qy0VrEwXANyF5a6Z91c3nqorurneIigX1q-0fr5PG3kqSzMgkeDS_kleyvIPwA4k-LMLY6BoVJmXVaEFqvPJeEJSL8WRDoNAGM97"
 							}
 						},
 						"method": "POST",
@@ -9621,7 +9621,7 @@
 	],
 	"variable": [
 		{
-			"id": "f88e1ec0-83e3-4896-93dc-7eec404ced7a",
+			"id": "62ed5f37-10e0-4eab-a6c4-5ae1722724ed",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
