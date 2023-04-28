@@ -5797,6 +5797,34 @@
 					"response": []
 				},
 				{
+					"name": "Create Vendor Submittal",
+					"id": "24a3bca8-33c7-41e6-8d3c-c3be3e340866",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"addTokenTo": "header"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shiftId\": 304317,\r\n    \"seriesId\": \"\",\r\n    \"candidateIds\": [34231] \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{uri}}/AyaConnect/vendors/Shifts/Submittals"
+					},
+					"response": []
+				},
+				{
 					"name": "Shift Vendor Submittals",
 					"id": "4c1a60fa-7e1c-4463-b6a7-c4d6c67e0fc6",
 					"protocolProfileBehavior": {
@@ -8562,326 +8590,6 @@
 							"id": "adb7af16-0b49-40d7-b7fa-97e15ccf3782"
 						},
 						{
-							"name": "IntegrationMapping",
-							"item": [
-								{
-									"name": "GetMappings",
-									"id": "7bca7d99-7791-460a-8a5e-f037f1b94722",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": "{{uri}}/ayanova/integrations/mappings"
-									},
-									"response": []
-								},
-								{
-									"name": "CreateMapping",
-									"id": "8edf27b4-5bb4-4c82-9b9d-b244c0e0df01",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"clientName\": \"clientName\",\r\n  \"integrationType\": \"integrationType\",\r\n  \"entityType\": 1,\r\n  \"fieldName\": \"fieldName\",\r\n  \"mapFrom\": \"mapFrom\",\r\n  \"mapTo\": \"mapTo\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{uri}}/ayanova/integrations/mappings"
-									},
-									"response": []
-								},
-								{
-									"name": "UpdateMapping",
-									"id": "516928fe-001f-422e-bcc1-aa148b4515f6",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n  \"id\": 1,\r\n  \"clientName\": \"Updated clientName\",\r\n  \"integrationType\": \"Updated integrationType\",\r\n  \"entityType\": 2,\r\n  \"fieldName\": \"Updated fieldName\",\r\n  \"mapFrom\": \"Updated mapFrom\",\r\n  \"mapTo\": \"Updated mapTo\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{uri}}/ayanova/integrations/mappings"
-									},
-									"response": []
-								},
-								{
-									"name": "DeleteMapping",
-									"id": "95f9a788-b821-4f12-9fc8-88ca08abf654",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "DELETE",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?id=1",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "id",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Valid ClientName Filter",
-									"id": "e21ad745-210b-4bb8-9bb9-0204b54879ab",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=clientName",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "ClientName",
-													"value": "clientName"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Invalid ClientName Filter",
-									"id": "8ab75a56-2a8c-4ac0-a018-99ecaabb4072",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=xxx",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "ClientName",
-													"value": "xxx"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Valid Filters",
-									"id": "ce413156-2c82-457e-92e8-7596071e3dbb",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?ClientName=clientName&IntegrationType=integrationType&EntityType=1",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "ClientName",
-													"value": "clientName"
-												},
-												{
-													"key": "IntegrationType",
-													"value": "integrationType"
-												},
-												{
-													"key": "EntityType",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Valid IntegrationType Filter",
-									"id": "80f75ec9-3bf2-4f60-b2ed-bd57ed46a951",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?IntegrationType=integrationType",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "IntegrationType",
-													"value": "integrationType"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Invalid IntegrationType Filter",
-									"id": "1f4e2770-f8c6-4c3e-91f8-10d18a862f5d",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?IntegrationType=zzz",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "IntegrationType",
-													"value": "zzz"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Valid EntityType Filter",
-									"id": "6998174e-f4e3-4299-b380-5fe0b77537a0",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?EntityType=1",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "EntityType",
-													"value": "1"
-												}
-											]
-										}
-									},
-									"response": []
-								},
-								{
-									"name": "GetMappings with Invalid EntityType Filter",
-									"id": "316609ee-b28a-40b2-bead-e09c35d7e2a7",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{uri}}/ayanova/integrations/mappings/?EntityType=0",
-											"host": [
-												"{{uri}}"
-											],
-											"path": [
-												"ayanova",
-												"integrations",
-												"mappings",
-												""
-											],
-											"query": [
-												{
-													"key": "EntityType",
-													"value": "0"
-												}
-											]
-										}
-									},
-									"response": []
-								}
-							],
-							"id": "86e4924f-1f51-435a-84d2-e9ea8189559a"
-						},
-						{
 							"name": "NYU-UpdateUnit",
 							"id": "37b524a1-c21f-4032-82f4-c7645db93ced",
 							"protocolProfileBehavior": {
@@ -9913,7 +9621,7 @@
 	],
 	"variable": [
 		{
-			"id": "173446b5-7c31-4157-8e0d-e74109c381a5",
+			"id": "28717d4f-5240-4fc9-a28c-fb2a57bba849",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
