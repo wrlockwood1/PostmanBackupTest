@@ -5813,14 +5813,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"shiftId\": 304317,\r\n    \"seriesId\": \"\",\r\n    \"candidateIds\": [34231] \r\n}",
+							"raw": "{\r\n    \"jobId\": 2055284,\r\n    \"vendorCandidateId\": 246360,\r\n    \"note\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{uri}}/AyaConnect/vendors/Shifts/Submittals"
+						"url": "{{uri}}/AyaConnect/vendors"
 					},
 					"response": []
 				},
@@ -9621,7 +9621,7 @@
 	],
 	"variable": [
 		{
-			"id": "28717d4f-5240-4fc9-a28c-fb2a57bba849",
+			"id": "cb93f4a9-e5f4-428e-bea1-369766ea24d5",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
