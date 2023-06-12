@@ -5858,7 +5858,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{uri}}/AyaConnect/vendors/Shifts/23234/Submittals"
+						"url": "{{uri}}/AyaConnect/client/submittals/attachments/meta-data/1851963"
 					},
 					"response": []
 				},
@@ -9640,7 +9640,7 @@
 	],
 	"variable": [
 		{
-			"id": "b68b9b13-a1c0-40f3-be09-c8b85a6fb675",
+			"id": "659caf56-946c-46c6-a4fe-8b06ba879956",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
