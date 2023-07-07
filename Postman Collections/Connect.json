@@ -5896,7 +5896,48 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{uri}}/AyaConnect/client/submittals/file/vms-test-file"
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}/AyaConnect/client/submittals?pageSize=10&skip=0&sortField=submissionSentOn&sortType=desc",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"AyaConnect",
+								"client",
+								"submittals"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "skip",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "sortField",
+									"value": "submissionSentOn",
+									"type": "text"
+								},
+								{
+									"key": "sortType",
+									"value": "desc",
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -9690,7 +9731,7 @@
 	],
 	"variable": [
 		{
-			"id": "64bd6ea6-83f4-42ee-b484-77a304f03851",
+			"id": "e546d0f0-f79f-4e7f-8158-1a7deb2bbdf7",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
