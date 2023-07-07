@@ -5872,12 +5872,12 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8IdHGgehJoJAjfnfT7NrmuwVifRd2a6eEz0wix9W-L2QKtthrYqSjWMk1mUGdg8HMf23KguYc61Y6jsSxl52iHIRhb1R1lFjOZtu86iSBU5W0kMWvaJXcSdTsjLrtrJj1FFW5-sp2TpX21DZyTSDJKPe_ivJXOcpbUAf5500j_DBm621tRUnqHLo4p-MQJIHicI2_frDUwspWStHxOf2W2PvZoM-0lPVa_6sdKy_3IWU0aYFVcApe4XV1x9P99L9H13q8SOXDpY32JgRYUPPYHCXar4QnjJT9Y-PrWIJob8VbpcncnRfGUpQF9vuLr9TQv6Q_Np12XYj8u8KhSiRJ-Mkq8dywC7ntzOJhcbNYaSzRUktgHQ53VaC_vfeKvbn5UP5GO5o7w20Ri-gak6q4_FOiKpG24kUV4OnmxmX2QxNZ7d5lfRF-LS6lu5D6f0nIpryHjUVgNTSJJYDTMQK5U3SP4oZKp5XNAz5KUsBQ2--rMQfBJPgNtnvpL_Qalw1iuv3X6zVuqBKc6GoNGDDrLOynwsQ8Ao-7__byHEZY-TRO1EgamvOAVClBQUHqrKmqjmkFsuHHQlCPQUbdeQs8rXrYscR-u9bh3Zrh3953JODEgiy6bypp-m0g_y14orKoNOntowz-3VHx8fMbss_87EnFjfLah-TWJbQlsLFSi1Gx0hbuqzlSdndq9U6JLdF7FE0tfWN8zXv6JK0W-Aoh0JCwaY8JOJktgLbDfQWXdOjJHUqvJ8HbbMHuLjHMbFmOIFOjrLj9vbn4UqvUTzUkLlkaXlms2WGzZ0uY9oeJUnJJqb8kZFLss0PQ0fy-PRe0G-qucDtaAyDBzco8hFCtATY_4YtiYdpz6QRG_36oWwzECkP-iwZii9iyOjmzcYI-v2qrVPlCSJLBs-91-twtgE"
+								"token": "CfDJ8GIMwvwraRRJhtXPp4TM0W5tI5FMfhIEE0osGwr2sKMszYVnLXpfQToICf6aAXWwCfvUMO1wP0Zg4oPGwErhn3tCG35c7k7YHMtKBC1JM-kyD_Js9ZtA0yyAvWUU-74M8TDpSClNyid_MyPwOQAtCBcA4P9BJXB33IF0gmexj53ZwquBJEigEtQliRO_GdiU9_9_RIvloTZUTRvQun6I5LKS1C4IwdKovM7OQhWRQ7h8TOvDGK6-JW3KQW2k7i10Z9eTLNMkiVxxT-sczV9rj2kCj0-8YLlBRb8htDF_OfsnrgIbMaqtNdNMPc2T447MLoLEZHXy8XJ_X9kQLI0-DAYBFi8MGH4as8UKpFZOXK_kZt_kPYvUW7Fd_YiNw2GKKQQBHjSLuwDVOkr7cdKs5-AYJifKD-AqYypaPYzbKtvbI0DHMxetB4foDDlG9VHMRdryzdNaalJgvtFMKZHGCSnio-oaNvJZ1oDqLS6onmgM1R4l40D9h9V4JDJxJufgVRGWlAWBNIHg3zVaNBG7XR1EQWB021UKMDlOwEQhtwze6JmSYelLzGlqkxsxcd5STLDalV2IBZU4_b0L2nE3r5JF3xLaDs09a2aGfVcoW6exEMgFxOz5fPgwFvpV38nFJo_J9J-XsGHlHY_9yrSW3hVGQbbzF-ko4D227uwAUWls0D4hwT2msd4elMexSOat5oGlwZU5dS0Q4gxsJZML3CWDw_sqc0iw-gMTlSqgGwaUq6uRHxWMU6XZaul4lZWcT1qdVbmUExGt0RPQ5-X6PO8VXmNRXKxLqcWhEp_IXUekFFVaxEDnK468z9RQD1Fl12O1glHXBuS2rSmzC4qEVxxpYsUwIAy48dVUHsyLoco4BJX7_jNfRbkV06DM3Z0cTrYVogtRNuK7kWLxNNVFbh8"
 							}
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{uri}}/AyaConnect/client/submittals/attachments/meta-data/1851963"
+						"url": "{{uri}}/AyaConnect/client/submittals/file/vms-test-file"
 					},
 					"response": []
 				},
@@ -9671,7 +9671,7 @@
 	],
 	"variable": [
 		{
-			"id": "6c003599-ee77-4fc3-b670-bb4148c24c1f",
+			"id": "3b024107-50da-4e3d-b091-b5d94c26174b",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
