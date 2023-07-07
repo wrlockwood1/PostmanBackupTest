@@ -5844,7 +5844,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Client Submittal Attachments",
+					"name": "Get Client Submittal Attachments Meta Data",
 					"id": "70317192-bc90-4275-b7a3-8e33277f4911",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9671,7 +9671,7 @@
 	],
 	"variable": [
 		{
-			"id": "4e70b3f2-7d7e-4f2e-a537-9d686973d97c",
+			"id": "6c003599-ee77-4fc3-b670-bb4148c24c1f",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
