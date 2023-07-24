@@ -5958,46 +5958,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"jobId\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": {
-							"raw": "{{uri}}/AyaConnect/client/submittals?pageSize=10&skip=0&sortField=submissionSentOn&sortType=desc",
-							"host": [
-								"{{uri}}"
-							],
-							"path": [
-								"AyaConnect",
-								"client",
-								"submittals"
-							],
-							"query": [
-								{
-									"key": "pageSize",
-									"value": "10",
-									"type": "text"
-								},
-								{
-									"key": "skip",
-									"value": "0",
-									"type": "text"
-								},
-								{
-									"key": "sortField",
-									"value": "submissionSentOn",
-									"type": "text"
-								},
-								{
-									"key": "sortType",
-									"value": "desc",
-									"type": "text"
-								}
-							]
-						}
+						"url": "{{uri}}/AyaConnect/jobclient/1/submittals"
 					},
 					"response": []
 				},
@@ -9791,7 +9759,7 @@
 	],
 	"variable": [
 		{
-			"id": "366d03ee-bec8-4838-816c-02dec8c2d594",
+			"id": "88a82da6-cc56-4704-b050-8fcd5413921d",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
