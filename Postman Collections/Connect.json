@@ -5942,6 +5942,66 @@
 					"response": []
 				},
 				{
+					"name": "Job - Get Submittals",
+					"id": "adef891b-86a1-45b9-a81f-dfbfbf5980d5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8GIMwvwraRRJhtXPp4TM0W5tI5FMfhIEE0osGwr2sKMszYVnLXpfQToICf6aAXWwCfvUMO1wP0Zg4oPGwErhn3tCG35c7k7YHMtKBC1JM-kyD_Js9ZtA0yyAvWUU-74M8TDpSClNyid_MyPwOQAtCBcA4P9BJXB33IF0gmexj53ZwquBJEigEtQliRO_GdiU9_9_RIvloTZUTRvQun6I5LKS1C4IwdKovM7OQhWRQ7h8TOvDGK6-JW3KQW2k7i10Z9eTLNMkiVxxT-sczV9rj2kCj0-8YLlBRb8htDF_OfsnrgIbMaqtNdNMPc2T447MLoLEZHXy8XJ_X9kQLI0-DAYBFi8MGH4as8UKpFZOXK_kZt_kPYvUW7Fd_YiNw2GKKQQBHjSLuwDVOkr7cdKs5-AYJifKD-AqYypaPYzbKtvbI0DHMxetB4foDDlG9VHMRdryzdNaalJgvtFMKZHGCSnio-oaNvJZ1oDqLS6onmgM1R4l40D9h9V4JDJxJufgVRGWlAWBNIHg3zVaNBG7XR1EQWB021UKMDlOwEQhtwze6JmSYelLzGlqkxsxcd5STLDalV2IBZU4_b0L2nE3r5JF3xLaDs09a2aGfVcoW6exEMgFxOz5fPgwFvpV38nFJo_J9J-XsGHlHY_9yrSW3hVGQbbzF-ko4D227uwAUWls0D4hwT2msd4elMexSOat5oGlwZU5dS0Q4gxsJZML3CWDw_sqc0iw-gMTlSqgGwaUq6uRHxWMU6XZaul4lZWcT1qdVbmUExGt0RPQ5-X6PO8VXmNRXKxLqcWhEp_IXUekFFVaxEDnK468z9RQD1Fl12O1glHXBuS2rSmzC4qEVxxpYsUwIAy48dVUHsyLoco4BJX7_jNfRbkV06DM3Z0cTrYVogtRNuK7kWLxNNVFbh8"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}/AyaConnect/client/submittals?pageSize=10&skip=0&sortField=submissionSentOn&sortType=desc",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"AyaConnect",
+								"client",
+								"submittals"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "skip",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "sortField",
+									"value": "submissionSentOn",
+									"type": "text"
+								},
+								{
+									"key": "sortType",
+									"value": "desc",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Update Status (Mobile)",
 					"id": "6986a9cc-d038-46e7-9b74-0b4c1ce1a178",
 					"protocolProfileBehavior": {
@@ -9731,7 +9791,7 @@
 	],
 	"variable": [
 		{
-			"id": "047a80d7-7660-4c8c-920a-225c079afa64",
+			"id": "366d03ee-bec8-4838-816c-02dec8c2d594",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
