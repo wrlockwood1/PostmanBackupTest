@@ -5965,7 +5965,7 @@
 								}
 							}
 						},
-						"url": "{{url}}/AyaConnect/jobclient/2160669/submittals"
+						"url": "{{uri}}/AyaConnect/jobclient/2160669/submittals"
 					},
 					"response": []
 				},
@@ -9759,7 +9759,7 @@
 	],
 	"variable": [
 		{
-			"id": "5acf3dcf-c3a3-435f-b804-58be155be8db",
+			"id": "2ee1beb4-efff-4693-aadd-706a0778ff3e",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
