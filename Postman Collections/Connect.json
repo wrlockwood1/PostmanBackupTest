@@ -5891,7 +5891,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8GIMwvwraRRJhtXPp4TM0W5tI5FMfhIEE0osGwr2sKMszYVnLXpfQToICf6aAXWwCfvUMO1wP0Zg4oPGwErhn3tCG35c7k7YHMtKBC1JM-kyD_Js9ZtA0yyAvWUU-74M8TDpSClNyid_MyPwOQAtCBcA4P9BJXB33IF0gmexj53ZwquBJEigEtQliRO_GdiU9_9_RIvloTZUTRvQun6I5LKS1C4IwdKovM7OQhWRQ7h8TOvDGK6-JW3KQW2k7i10Z9eTLNMkiVxxT-sczV9rj2kCj0-8YLlBRb8htDF_OfsnrgIbMaqtNdNMPc2T447MLoLEZHXy8XJ_X9kQLI0-DAYBFi8MGH4as8UKpFZOXK_kZt_kPYvUW7Fd_YiNw2GKKQQBHjSLuwDVOkr7cdKs5-AYJifKD-AqYypaPYzbKtvbI0DHMxetB4foDDlG9VHMRdryzdNaalJgvtFMKZHGCSnio-oaNvJZ1oDqLS6onmgM1R4l40D9h9V4JDJxJufgVRGWlAWBNIHg3zVaNBG7XR1EQWB021UKMDlOwEQhtwze6JmSYelLzGlqkxsxcd5STLDalV2IBZU4_b0L2nE3r5JF3xLaDs09a2aGfVcoW6exEMgFxOz5fPgwFvpV38nFJo_J9J-XsGHlHY_9yrSW3hVGQbbzF-ko4D227uwAUWls0D4hwT2msd4elMexSOat5oGlwZU5dS0Q4gxsJZML3CWDw_sqc0iw-gMTlSqgGwaUq6uRHxWMU6XZaul4lZWcT1qdVbmUExGt0RPQ5-X6PO8VXmNRXKxLqcWhEp_IXUekFFVaxEDnK468z9RQD1Fl12O1glHXBuS2rSmzC4qEVxxpYsUwIAy48dVUHsyLoco4BJX7_jNfRbkV06DM3Z0cTrYVogtRNuK7kWLxNNVFbh8"
+								"token": "CfDJ8P6qegchOqRHl9Cn3IpEKrqy167fEknToqa_hRp-3t54PuHtnVZLWuJl-s_fL_KL0O3W71F6-b2LELYxLx-IISugsmhHu1fhvPI5wkGxXOdCJxb6hF6k_nEMaD6Hz2wPCF9eqJwGCEv8cU_M2peoEg-4e8AX9ncvZZslY3y3Ckfc8qpbdrpqsOVjq2Ynpza2DW8k3q0jAo96HbURAo11RoYmtJQq6H1m8IfRY24ZWdoHCeUR86JpZ71CdHaxeLGwp7MzPtOiUjXHN-08Y11ehspwDTkk_JD1OFv_WwZ13UXWp1bH7T_YkOJFC38v0AU5QqGOD8YSy8_cQm7Icx8V-hf5utGDC2oP9up-pahn5_cWZuzumwC3PPNqzdCpHHmw1o_UZzodGdTw4KnT7FBS3ouZtfGcqwit1JU9RKar53cnakhoQhoIsOkB3wlmId_jwmWhRQyz7fhS6rvLOzBn20M-cl7xORVgDwZbhtClC8C9H-t3ErX-p_E19d7l6L7nO1bYjMu8hcHpYgCJLabwRoHwDDIOySm6YV47fWbSBFb-gzmrqx0JwaL5tH5HAafp7DVAfzMA7AQJU5U6xVr8b1E3ItdLBT49oAA0K-doKS1BIz0ViT0XE7NPnOQDMjaU3il9pvHRlcY1awXqZwYbZ64OjMbJUfjl5QV-8udvNuzt1HxaUzwVYRbG5HWJP1XhDysUlmQ7Hd_G69V-x8v0aeucE1fi1Y9G4GwFkh5C2YQCIDnWr-n5A0A8OpinmrOCDQ4m1WSpJU8Swc49kW-WKqbhg50Jj4tdO1A4uWv_55bzh6csCQm0mPpcknlFArlrKqN9lIQYG7zeycTSIdGfjf_2ZxvrD2JoWRARpIgNrgtIUCSMT_b9Ih7nxy4Cg8bhfLNyBOGTUwysq9eAnCwtMmM"
 							}
 						},
 						"method": "GET",
@@ -5918,23 +5918,19 @@
 							"query": [
 								{
 									"key": "pageSize",
-									"value": "10",
-									"type": "text"
+									"value": "10"
 								},
 								{
 									"key": "skip",
-									"value": "0",
-									"type": "text"
+									"value": "0"
 								},
 								{
 									"key": "sortField",
-									"value": "submissionSentOn",
-									"type": "text"
+									"value": "submissionSentOn"
 								},
 								{
 									"key": "sortType",
-									"value": "desc",
-									"type": "text"
+									"value": "desc"
 								}
 							]
 						}
@@ -9759,7 +9755,7 @@
 	],
 	"variable": [
 		{
-			"id": "b58175f9-0224-4906-a55f-a61309dd7304",
+			"id": "9eac64df-7d28-4d5f-9c85-76eb496dab0e",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
