@@ -5878,7 +5878,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachment",
+							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachment?attachmentId=14",
 							"host": [
 								"{{uri}}"
 							],
@@ -5892,8 +5892,7 @@
 							"query": [
 								{
 									"key": "attachmentId",
-									"value": "14",
-									"disabled": true
+									"value": "14"
 								}
 							]
 						}
@@ -9774,7 +9773,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a58ae9e-5ad7-459b-8d57-84d08ec08940",
+			"id": "0bbad038-4db1-42e5-b637-276b15667567",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
