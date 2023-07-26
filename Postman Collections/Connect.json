@@ -5877,7 +5877,27 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{uri}}/AyaConnect/client/submittals/file/vms-test-file"
+						"url": {
+							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachments?attachmentId",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"AyaConnect",
+								"client",
+								"submittals",
+								"1986691",
+								"attachments"
+							],
+							"query": [
+								{
+									"key": "attachmentId",
+									"value": null,
+									"description": "14",
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -9755,7 +9775,7 @@
 	],
 	"variable": [
 		{
-			"id": "9eac64df-7d28-4d5f-9c85-76eb496dab0e",
+			"id": "67206c1c-fb89-44e3-a130-f43f69168ca1",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
