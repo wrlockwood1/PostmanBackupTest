@@ -5872,13 +5872,13 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8GIMwvwraRRJhtXPp4TM0W5tI5FMfhIEE0osGwr2sKMszYVnLXpfQToICf6aAXWwCfvUMO1wP0Zg4oPGwErhn3tCG35c7k7YHMtKBC1JM-kyD_Js9ZtA0yyAvWUU-74M8TDpSClNyid_MyPwOQAtCBcA4P9BJXB33IF0gmexj53ZwquBJEigEtQliRO_GdiU9_9_RIvloTZUTRvQun6I5LKS1C4IwdKovM7OQhWRQ7h8TOvDGK6-JW3KQW2k7i10Z9eTLNMkiVxxT-sczV9rj2kCj0-8YLlBRb8htDF_OfsnrgIbMaqtNdNMPc2T447MLoLEZHXy8XJ_X9kQLI0-DAYBFi8MGH4as8UKpFZOXK_kZt_kPYvUW7Fd_YiNw2GKKQQBHjSLuwDVOkr7cdKs5-AYJifKD-AqYypaPYzbKtvbI0DHMxetB4foDDlG9VHMRdryzdNaalJgvtFMKZHGCSnio-oaNvJZ1oDqLS6onmgM1R4l40D9h9V4JDJxJufgVRGWlAWBNIHg3zVaNBG7XR1EQWB021UKMDlOwEQhtwze6JmSYelLzGlqkxsxcd5STLDalV2IBZU4_b0L2nE3r5JF3xLaDs09a2aGfVcoW6exEMgFxOz5fPgwFvpV38nFJo_J9J-XsGHlHY_9yrSW3hVGQbbzF-ko4D227uwAUWls0D4hwT2msd4elMexSOat5oGlwZU5dS0Q4gxsJZML3CWDw_sqc0iw-gMTlSqgGwaUq6uRHxWMU6XZaul4lZWcT1qdVbmUExGt0RPQ5-X6PO8VXmNRXKxLqcWhEp_IXUekFFVaxEDnK468z9RQD1Fl12O1glHXBuS2rSmzC4qEVxxpYsUwIAy48dVUHsyLoco4BJX7_jNfRbkV06DM3Z0cTrYVogtRNuK7kWLxNNVFbh8"
+								"token": "CfDJ8P6qegchOqRHl9Cn3IpEKrrHftjUvN5h92SkuLINyrXvaE9b5JhxEx6MLNejy7jcVgniHmJz9NqRwC9qTCDHfTrq38U3Cc4BfTNrg8ErQ0Le1ETRpNoKbvRSI-Bux8IVG00PnE552TO0spsezSGmE3nOQX75307Fi-BIJL0qt4piw5gW-BLSq35CLZw0tyhOlzfDTrbH5-8y8MCb2PMQ2S3pRhJneuWHtG3sehbypJVyToG-Ix3LZ3WngBENSjSM7wcERui9cMF8YunvxPELCyJjThjTlZ2HANvKbZ6xQ08nPQIL_VBtQketVX-Ty0hh8XWDdK2xOUsjIJ4Yz5szREvDMia7fW1HpHw20WqXgnl_Z5k-XR7CxZ1azIi52tMjganH85d-FJtAeMWgd1Jsr5GobTCRYeoa9PdUB8ydhV1RHXHa70S4MvUQcvl4lQ9b9R0aClpsDWoDvnf2ELjXSJKEQ8E8sJkHZsxlksfC1dhZ2K_G5Ypd6Y6_9UtZtTyEU2hnfEzHjyRrlI-WYwcPT-jh1PeeuQX9h-K06yw2x0ohq6DOGZw4x-zLssyuf2PyHA3bWvvr9jwcVpciyt6wJJ9ANJACVQhs6rGAKmzh3CuIiL1X7kbIP3E1v_QBfyQETGf4loeqEbq1n3-kxnXKClVp7zJa4ujuvR0rBRkdxAVom_bqPaN3L-g0cqBEdJ4-0tR4J0o9DbK8haTwwDdWGBFOfubQyrhv2YccOlvnxKNhmhKaQt0mAfvO0cXp4ACQeW4RyGIl9SjOhAkvsZeBEiicmdQI6xSuIGyz7CBpoDQU880bcx2_juIsuJojJliX04fPr8O7mqtqeDE5CpjDV28F3XD0kNcLvJ6bfAvkQFM9fbJKdgAJKU-PmhOn_crgOTYUndr2_mx3ZdeqQ9yNMbc"
 							}
 						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachments?attachmentId=14",
+							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachment",
 							"host": [
 								"{{uri}}"
 							],
@@ -5887,12 +5887,13 @@
 								"client",
 								"submittals",
 								"1986691",
-								"attachments"
+								"attachment"
 							],
 							"query": [
 								{
 									"key": "attachmentId",
-									"value": "14"
+									"value": "14",
+									"disabled": true
 								}
 							]
 						}
@@ -9773,7 +9774,7 @@
 	],
 	"variable": [
 		{
-			"id": "5ede31a3-b530-4fda-b926-9bba1ef03b83",
+			"id": "5a58ae9e-5ad7-459b-8d57-84d08ec08940",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
