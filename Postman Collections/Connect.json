@@ -5947,7 +5947,7 @@
 					"response": []
 				},
 				{
-					"name": "Foo",
+					"name": "Submittal Update Status",
 					"id": "adef891b-86a1-45b9-a81f-dfbfbf5980d5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9764,7 +9764,7 @@
 	],
 	"variable": [
 		{
-			"id": "13a2745f-56e0-43ae-97b0-6d1931c5355e",
+			"id": "1fc931f2-de38-42ea-a854-88192d8ca4cb",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
