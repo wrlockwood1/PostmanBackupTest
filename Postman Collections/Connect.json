@@ -5963,7 +5963,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"jobId\": 2160669\r\n}",
+							"raw": "{\"statusId\":3,\"note\":null,\"declineReasonId\":null}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9764,7 +9764,7 @@
 	],
 	"variable": [
 		{
-			"id": "357736a4-dca9-4b39-9d20-c562226f2d82",
+			"id": "5afef576-16fe-4d4d-94ca-ad083a6ab7fd",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
