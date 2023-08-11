@@ -5863,7 +5863,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Client Submittal Attachments Blob",
+					"name": "Nova Create Connect Client Submittal",
 					"id": "af233ddf-ddc2-41df-a8f9-f904acc017f9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -5872,30 +5872,21 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8P6qegchOqRHl9Cn3IpEKrrHftjUvN5h92SkuLINyrXvaE9b5JhxEx6MLNejy7jcVgniHmJz9NqRwC9qTCDHfTrq38U3Cc4BfTNrg8ErQ0Le1ETRpNoKbvRSI-Bux8IVG00PnE552TO0spsezSGmE3nOQX75307Fi-BIJL0qt4piw5gW-BLSq35CLZw0tyhOlzfDTrbH5-8y8MCb2PMQ2S3pRhJneuWHtG3sehbypJVyToG-Ix3LZ3WngBENSjSM7wcERui9cMF8YunvxPELCyJjThjTlZ2HANvKbZ6xQ08nPQIL_VBtQketVX-Ty0hh8XWDdK2xOUsjIJ4Yz5szREvDMia7fW1HpHw20WqXgnl_Z5k-XR7CxZ1azIi52tMjganH85d-FJtAeMWgd1Jsr5GobTCRYeoa9PdUB8ydhV1RHXHa70S4MvUQcvl4lQ9b9R0aClpsDWoDvnf2ELjXSJKEQ8E8sJkHZsxlksfC1dhZ2K_G5Ypd6Y6_9UtZtTyEU2hnfEzHjyRrlI-WYwcPT-jh1PeeuQX9h-K06yw2x0ohq6DOGZw4x-zLssyuf2PyHA3bWvvr9jwcVpciyt6wJJ9ANJACVQhs6rGAKmzh3CuIiL1X7kbIP3E1v_QBfyQETGf4loeqEbq1n3-kxnXKClVp7zJa4ujuvR0rBRkdxAVom_bqPaN3L-g0cqBEdJ4-0tR4J0o9DbK8haTwwDdWGBFOfubQyrhv2YccOlvnxKNhmhKaQt0mAfvO0cXp4ACQeW4RyGIl9SjOhAkvsZeBEiicmdQI6xSuIGyz7CBpoDQU880bcx2_juIsuJojJliX04fPr8O7mqtqeDE5CpjDV28F3XD0kNcLvJ6bfAvkQFM9fbJKdgAJKU-PmhOn_crgOTYUndr2_mx3ZdeqQ9yNMbc"
+								"token": "CfDJ8JKYxcGVordBkyTAbqkQH6esi8Ei9_KfdjFbsbfuWaPhOeev2MtglOm8-V9pv9XTh0cUqiJ6YkLyLf9D46-JnUR96BmmenGL-ZD4cguSg6p5RJskgWojToeLMgIlv2zXxuj5CiK-L8CRb-J8gxB_OJJSC34d7U_xzOShu62LTQgXwH_ArVaQ6yaZKy-RuS9b4fBG0uNmh4M9Fz647RRtbbxn4hY4Gvx84U6RaOgYmqGioUDNIx7J86Nsi1rQZRy5mJfWmNu34-wYhMukgeQJlJItY_QTX_aORXSraw7hLTVHYICxIVwAN2XTdxiGcnxPJJtiiLTNVmd8_5Sd9hPxZDzThg06cwtJaenGRyOBeh58g6zM2oljzwBgtbaEhXffWoOOA3wXbzn0L6UXE2HHEwsdtgJirHpJa4j4_ec_YjPoSjYAffAWJD2QiRTfHRVJw_nsWqsuz7Py5x7e6eS5kze_qQGwgtxhHBnpuSsR0Lc-NGzdaNm-evI3gw3CN5-mrfaZPQktdEuh3l1CNoVXuVKdF5UtAmnGMVNgea9-6kgOFrruuhjgyeKreALo9iWGiFMQUaSAFJ5f2cdGylWQd4WNQqIS6DX4r7S2aXmaGC61_ZKkk5J2SB7UyXgg1sSCEm1_hmcawhGdE69GArlUQUvMQr3hHskNar-BMPV4o1b354FOFhUHhR0sn8XIN_6ecKF9I7h_jkfPbTPgWC5Wlo1bilfGSd2dWFrVaZbq51FYSkUzZ8RH_q1DbgSrNSwus5oF_98IirDN5TezO8-w7udIhCQpFZj8ZOTtI6e-5A5y6_jcbCQ3o7wjmUeQvmlVFrkk_bL8CoV_mGmH15HaZFQVLHliHcnjO5FhylvwceXHotC3zSVu0jKxe03mfoC6xAtvEU6g1xWY3awBLre2wT4"
 							}
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [],
-						"url": {
-							"raw": "{{uri}}/AyaConnect/client/submittals/1986691/attachment?attachmentId=14",
-							"host": [
-								"{{uri}}"
-							],
-							"path": [
-								"AyaConnect",
-								"client",
-								"submittals",
-								"1986691",
-								"attachment"
-							],
-							"query": [
-								{
-									"key": "attachmentId",
-									"value": "14"
+						"body": {
+							"mode": "raw",
+							"raw": "{\"sendToEmails\":[],\"attachmentUrl\":\"vms-test-file.pdf\",\"candidateId\":1742405,\"clientNote\":\"\",\"submittalType\":0,\"status\":2}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
-						}
+							}
+						},
+						"url": "{{uri}}/ayanova/accountManager/submittals/4754355/jobs/2179766/status"
 					},
 					"response": []
 				},
@@ -9773,7 +9764,7 @@
 	],
 	"variable": [
 		{
-			"id": "9bc425fd-dd9c-4c2f-a86f-432c0582e119",
+			"id": "26a3a64c-3976-4876-afd4-129161b15cad",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
