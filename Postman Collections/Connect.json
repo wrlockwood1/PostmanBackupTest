@@ -5900,7 +5900,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8P6qegchOqRHl9Cn3IpEKrqy167fEknToqa_hRp-3t54PuHtnVZLWuJl-s_fL_KL0O3W71F6-b2LELYxLx-IISugsmhHu1fhvPI5wkGxXOdCJxb6hF6k_nEMaD6Hz2wPCF9eqJwGCEv8cU_M2peoEg-4e8AX9ncvZZslY3y3Ckfc8qpbdrpqsOVjq2Ynpza2DW8k3q0jAo96HbURAo11RoYmtJQq6H1m8IfRY24ZWdoHCeUR86JpZ71CdHaxeLGwp7MzPtOiUjXHN-08Y11ehspwDTkk_JD1OFv_WwZ13UXWp1bH7T_YkOJFC38v0AU5QqGOD8YSy8_cQm7Icx8V-hf5utGDC2oP9up-pahn5_cWZuzumwC3PPNqzdCpHHmw1o_UZzodGdTw4KnT7FBS3ouZtfGcqwit1JU9RKar53cnakhoQhoIsOkB3wlmId_jwmWhRQyz7fhS6rvLOzBn20M-cl7xORVgDwZbhtClC8C9H-t3ErX-p_E19d7l6L7nO1bYjMu8hcHpYgCJLabwRoHwDDIOySm6YV47fWbSBFb-gzmrqx0JwaL5tH5HAafp7DVAfzMA7AQJU5U6xVr8b1E3ItdLBT49oAA0K-doKS1BIz0ViT0XE7NPnOQDMjaU3il9pvHRlcY1awXqZwYbZ64OjMbJUfjl5QV-8udvNuzt1HxaUzwVYRbG5HWJP1XhDysUlmQ7Hd_G69V-x8v0aeucE1fi1Y9G4GwFkh5C2YQCIDnWr-n5A0A8OpinmrOCDQ4m1WSpJU8Swc49kW-WKqbhg50Jj4tdO1A4uWv_55bzh6csCQm0mPpcknlFArlrKqN9lIQYG7zeycTSIdGfjf_2ZxvrD2JoWRARpIgNrgtIUCSMT_b9Ih7nxy4Cg8bhfLNyBOGTUwysq9eAnCwtMmM"
+								"token": "CfDJ8JKYxcGVordBkyTAbqkQH6f-rnOzpc4jwKJDjeNAMHy_TBdgrlP9yHxbigJsvb707BJZ_sZaljw4lNfmtbN0h2SHv8HOU0ZlIcadQf1h2OQ8XjQuwFBtIvDgWLJOvgR2RVd34KOgC37JGdzPRbnbizflGuixbD3SE89ePrbh5y58WONokFwdRnxiK5uvwuwxSL1ycQBT962mk-3vCaupXJPt0_gIOcgW7YqvJ28iScCLLTZ1z1RCxKDRtSnXvUgST8NSP0ZJl7M4JzLLLvs7wsgzTKi-GcNHpPdkJj6Mj44ln1qx_FVQcYAC771nW1ATW1NsOBztvDkr4nwPBxtgGkPlcYbLaz3L2pmox5igVdT8Vx-uqYwCiZyLwFNmUxiN6N9D_VL5ujsCkFisK2-klw6aoN5YX_w7-AWAZXPZ4jmFLxQpmxBBG9ElHD52qVv-O4N-hbMdv-W4iCPJYwXBO8WyBN1pRPgMU_5ary5mRM3tALsTEqb-j5FbnkQRa6o3zr-W6Zd9zyQ8abZ0hOwzQ91e_UCb3D46zoDJzALOl4iqqitlR5N3m3-3YLG7BOtpSfpGmK4e96AzJJn61dadO-axRrERwPJ3H2QDa54VDHRdOb3DjWsXYj6lF9nn93j7QIenRgJiF0_rlzOZRU5_IvAedQyjI912hlRDpG7H36RYNxe_688NNaLQBEKJFAkMrk0DBUqDKQLXv-1-6Ujf1uIy9sgmeWB73vyG4Jh-FYyr-kxssS1uYoDHn8Azki59-Wh_fv4eb_JqTMdKVD-nOCmLP3GRENHYjIvgiBotGVLVbPxzrbAwFZykJi60Y82Ef6vfUOa2LWjJJCJ5ODkS0fH1CYGJEgfuF4eCwT9JwzZt4IRudhy4EZyESDCekljmTveBTY2plxZrybuYerDxOxI"
 							}
 						},
 						"method": "GET",
@@ -9764,7 +9764,7 @@
 	],
 	"variable": [
 		{
-			"id": "b33ce9a4-214d-40fb-817d-38846737dd99",
+			"id": "f16e77fe-b970-491b-9c56-ad0fc266551c",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
