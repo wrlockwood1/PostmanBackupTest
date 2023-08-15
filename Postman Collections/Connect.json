@@ -5891,7 +5891,7 @@
 					"response": []
 				},
 				{
-					"name": "Get Status Lookup",
+					"name": "Get Submittals",
 					"id": "42f9c938-e0d3-44ab-8d74-3fcf42556ce8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9764,7 +9764,7 @@
 	],
 	"variable": [
 		{
-			"id": "02ef18c0-ab37-4636-b347-bc82268aed2d",
+			"id": "b33ce9a4-214d-40fb-817d-38846737dd99",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
