@@ -5970,35 +5970,7 @@
 								}
 							}
 						},
-						"url": {
-							"raw": "{{uri}}/AyaConnect/client/submittals?pageSize=10&skip=0&sortField=submissionSentOn&sortType=desc",
-							"host": [
-								"{{uri}}"
-							],
-							"path": [
-								"AyaConnect",
-								"client",
-								"submittals"
-							],
-							"query": [
-								{
-									"key": "pageSize",
-									"value": "10"
-								},
-								{
-									"key": "skip",
-									"value": "0"
-								},
-								{
-									"key": "sortField",
-									"value": "submissionSentOn"
-								},
-								{
-									"key": "sortType",
-									"value": "desc"
-								}
-							]
-						}
+						"url": "{{uri}}/AyaConnect/client/statuses"
 					},
 					"response": []
 				},
@@ -9820,7 +9792,7 @@
 	],
 	"variable": [
 		{
-			"id": "642121b9-b3b4-47f3-b1e4-12d44b432a06",
+			"id": "08e4f8a3-3eda-48a3-b874-7a47cddff77e",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
