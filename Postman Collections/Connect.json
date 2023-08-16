@@ -5956,7 +5956,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8JKYxcGVordBkyTAbqkQH6f-rnOzpc4jwKJDjeNAMHy_TBdgrlP9yHxbigJsvb707BJZ_sZaljw4lNfmtbN0h2SHv8HOU0ZlIcadQf1h2OQ8XjQuwFBtIvDgWLJOvgR2RVd34KOgC37JGdzPRbnbizflGuixbD3SE89ePrbh5y58WONokFwdRnxiK5uvwuwxSL1ycQBT962mk-3vCaupXJPt0_gIOcgW7YqvJ28iScCLLTZ1z1RCxKDRtSnXvUgST8NSP0ZJl7M4JzLLLvs7wsgzTKi-GcNHpPdkJj6Mj44ln1qx_FVQcYAC771nW1ATW1NsOBztvDkr4nwPBxtgGkPlcYbLaz3L2pmox5igVdT8Vx-uqYwCiZyLwFNmUxiN6N9D_VL5ujsCkFisK2-klw6aoN5YX_w7-AWAZXPZ4jmFLxQpmxBBG9ElHD52qVv-O4N-hbMdv-W4iCPJYwXBO8WyBN1pRPgMU_5ary5mRM3tALsTEqb-j5FbnkQRa6o3zr-W6Zd9zyQ8abZ0hOwzQ91e_UCb3D46zoDJzALOl4iqqitlR5N3m3-3YLG7BOtpSfpGmK4e96AzJJn61dadO-axRrERwPJ3H2QDa54VDHRdOb3DjWsXYj6lF9nn93j7QIenRgJiF0_rlzOZRU5_IvAedQyjI912hlRDpG7H36RYNxe_688NNaLQBEKJFAkMrk0DBUqDKQLXv-1-6Ujf1uIy9sgmeWB73vyG4Jh-FYyr-kxssS1uYoDHn8Azki59-Wh_fv4eb_JqTMdKVD-nOCmLP3GRENHYjIvgiBotGVLVbPxzrbAwFZykJi60Y82Ef6vfUOa2LWjJJCJ5ODkS0fH1CYGJEgfuF4eCwT9JwzZt4IRudhy4EZyESDCekljmTveBTY2plxZrybuYerDxOxI"
+								"token": "CfDJ8HuC2rVvsxZBsp5ZMwvV08Ng-sOkXledOp1zqvUUTr-BtgsByCs4Wi2AreTvHvV-4FGRbYw7EZXHYNTZHh3cD1oYlruaqGMXvhfWLcfSPbzoEe2oXwnhKsfusvGrjKHCIc78PjXlbrGsjgxsYw13vAMyWrweYo4hKCoZH-MlSCq8wVBDH5lnukAoTlj93RyOMDBFKRxxe2lMCripJiaWpPqCTZb_0GDDPPuS30-EoFeHf8ba2Bl64QgevGlFW201OInuF7cVxnrVo7fkmhMvtR3P4U-4vxu7LNr5cr5MnMTl_CXFBWDQk7BTOCml4kug5pv0tgirzyQ4GCpUdQcPGqeqMRC7XQdMo_e91tX5uIFyil4ROQUtOssAE-VJFXDngXtGBPUEVexGYeEdqd6KKcPLjNOpspprlKqgnvmTvd5gVjOSsr3Ufyo2I9IrGrc8z7t4JzHfiMnQcSGGO4aacklQRz3IUcfvh2FBTtHWvSxjEKqUe6Kt5Xm1CoxUyzyc8qARujGe7WXEuKLQv2Jes53M-GldkdPs2tk4QRLZDrHY16xD3CHZUehLmPRrO7y20a1yXIMLRDP8SwlBNrhHKppPKkS552dythwEBPmYzArZHVWPVo47VR3e58MnnfBTaMwIz9kB8iuEBb5agpxaD0QTDdh4ZF3NmJt5gYK2oV_y_E-JLaKnd_dTFHmxAu3IKjOcGavH3hIR_JgAZBu4SMDcuiSh5DI-d9Giosd3lT-o--2UlEKMg9rpv7cUl8J-XhX0-hYVa8YQ9A1_v8MW-hnaMS5d7SG0TLWOdBUQM7x0gizymZTKx7pFNMlJy1BEmAYIgqV6V3Ry8UDNfh7eeDRgxhcMbu9BD-MFwZlZRoWQ5yAklHda70KlkTcrlEXZ6YmMg_WBYwYF2BrJAQ9k_lg"
 							}
 						},
 						"method": "GET",
@@ -5970,7 +5970,7 @@
 								}
 							}
 						},
-						"url": "{{uri}}/AyaConnect/client/statuses"
+						"url": "{{uri}}/AyaConnect/client/submittals/statuses"
 					},
 					"response": []
 				},
@@ -9792,7 +9792,7 @@
 	],
 	"variable": [
 		{
-			"id": "08e4f8a3-3eda-48a3-b874-7a47cddff77e",
+			"id": "01b7eddb-cb9c-4cac-9d7c-cf6840cc13fe",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
