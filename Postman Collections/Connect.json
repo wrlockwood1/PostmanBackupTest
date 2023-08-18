@@ -6026,7 +6026,7 @@
 								}
 							}
 						},
-						"url": "{{uri}}/AyaConnect/JobClient/2181261/submittals"
+						"url": "{{uri}}/AyaConnect/Client/Submittals/2052292/expanded"
 					},
 					"response": []
 				},
@@ -9876,7 +9876,7 @@
 	],
 	"variable": [
 		{
-			"id": "c7918080-6e82-444e-8caf-ea6d92d84df2",
+			"id": "d65e54a1-52df-46a0-b982-7883de935fda",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
