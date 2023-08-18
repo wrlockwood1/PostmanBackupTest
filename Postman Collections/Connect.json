@@ -6003,6 +6003,34 @@
 					"response": []
 				},
 				{
+					"name": "Get Submittal Details",
+					"id": "5c68c9ef-39e7-4100-ba30-0429d06e304e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8HuC2rVvsxZBsp5ZMwvV08MQ2h2wWEixoIBwUQkC7SNsSCRK3pt6fNxm7QfGnH6MAqXRhmZM1vHUqt-P_71jwusIvH4dOO0-EDdXo3M8O2gyOTeEXv-uTnSIUkiS4Qs2bEIlflS9g_QDxA13KEiUTlLGiIP6nM1Bsf0yoPwyeXv8_4lzy8ylJo7H1NVPaHeligyidmasoCIhWtSu3mHAusoEljVv7m43z9g890BowKqj6KMAFkUuDsnRFrogPdGd9cTLf0J6-GTuLovjD46qJsZ-oNbHZEbzwcTZIt63O10cVE6A88xUkOsWk-BmPSHh2_uG3c7ltQ_FYvy7K0JpqGlmO_o7RTNPIMgGOxtfAk6BuQV5-wxR-ndboIcVXnrlsqes-CD_bdH8Lrpvpq7xGoVAanvY4woznLadcs8bf_YK7RrSZmQ8C_sSlz-CNQ3OoJiugoK_zkYK0ODoxCKSd3am-2M7sGCfiJdfx5qDub73lVIc0UmY0gLbt1-bgnuHEhrgravNiXhfJbIpEvEX6P3fX9tN2ni_4p4p2X_uXrOfrYYfH0SWbw8lkGjo75Z6x5aPujUj5nfo-uEBf00jgNOSsV8I0YeTLvPPe6x_uudPGMwjYeRqpQxk-YwJpKA7MTxoIp9nU8Omgp6c_LoGpv-tA3kD2jbHhOUVQvs5U2DLxZp7aiMaSa-o6z_zzJTK5T46u-IYi-bO5n9gelPxN1-boEjvL1nB5I-VDmds3XVdLTITAl7zBk0YaUHML-wf_ot1E8ftsp33OIImxCW9mUiaPOfKvvs0RxpIz520WvcpMKIrOWWQAlBI8KIj2q512FuU36b3PAmNw0qxyQsVIYLbKHcYu5FBgG7iOYcwEQGaxg2kKFMnomtsmvBE8sTCrtwQvpVYgUJLQataz-yhwZc"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{uri}}/AyaConnect/JobClient/2181261/submittals"
+					},
+					"response": []
+				},
+				{
 					"name": "Get Submittal Statuses",
 					"id": "c439b3c9-44eb-43ab-9dd1-d957294379d2",
 					"protocolProfileBehavior": {
@@ -9848,7 +9876,7 @@
 	],
 	"variable": [
 		{
-			"id": "ffe5d844-bf5a-497a-9c82-dbbc621f2fd5",
+			"id": "c7918080-6e82-444e-8caf-ea6d92d84df2",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
