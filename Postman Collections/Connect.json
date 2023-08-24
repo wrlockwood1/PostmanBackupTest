@@ -2330,7 +2330,7 @@
 					"response": []
 				},
 				{
-					"name": "VendorJobs",
+					"name": "Vendor Jobs",
 					"id": "9f29cadb-b899-40f3-87fe-1d3bd96be2ee",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -9895,7 +9895,7 @@
 	],
 	"variable": [
 		{
-			"id": "d4ea6402-c6d6-4412-8501-7bd06c5e2241",
+			"id": "5f5be781-081a-4d82-b8b3-5b610475c563",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
