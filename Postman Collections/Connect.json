@@ -2330,6 +2330,25 @@
 					"response": []
 				},
 				{
+					"name": "VendorJobs",
+					"id": "9f29cadb-b899-40f3-87fe-1d3bd96be2ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{Bearer}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{uri}}/AyaConnect/Job/222026/history"
+					},
+					"response": []
+				},
+				{
 					"name": "Hospital Profile",
 					"id": "f4c961fe-029c-448d-853a-bac990139897",
 					"protocolProfileBehavior": {
@@ -9876,7 +9895,7 @@
 	],
 	"variable": [
 		{
-			"id": "d65e54a1-52df-46a0-b982-7883de935fda",
+			"id": "d4ea6402-c6d6-4412-8501-7bd06c5e2241",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
