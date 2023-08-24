@@ -2343,8 +2343,29 @@
 							}
 						},
 						"method": "GET",
-						"header": [],
-						"url": "{{uri}}/AyaConnect/Job/222026/history"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer CfDJ8E7GqelASERKlGiLRpEy7PAhl72jdDi2wxYvUZIqSSrQRlH2pfw0q4vDoBmoodAmcZDerU6_U_Oy3aJhbdcifEpxpxG9Ful1_4gH1EPBwPe0NbfTofiCQYjyVnQFzTL5PvflfNNO41Q998fRBjx-p4SaFMLgK03KvYSiXt-YuBH_zZ4wZhDB3Il22OwB13CkJbj0QZQ-1rkDUcuacckFYFRcK5hnjDSFm2w4Y7tyoWaPWkF4fikJ0ewrtUBbN2gTmBle8ky4tfCkGhoGVQcj2PF8WIvHseNzWCeKFI_xqI4EVblsNr6wUe3jt-eETWriIBiSsmjfyNeX0JtDX2N6u7rdXtK-xPRGjHI9BX6Uai4DBUq8vbXlyss3aTkKb0jwypscsm7brvkNRBdgVnVvVChhor6sQ3ilddvW_zrjF_9EIO0yuuYihfEgtk78SVK1yALd09CTGZ8ZEmCUBWDEw3FDyVLLc_Ug2i7lvorCkxu1kCoZhOkDNrSrryfZO14NgqThDrTuSwGnp6-0gXXUDMrIm8gX3KYQEA3EN-QOXHT9AVMOxKTX8db7dywXcLhrBlgLfUlEogso3dVflGK8qbRjZjF2kFv2lw_KoNNcyqHC4mor0Gw7WRw1rPhw58EQiLrNbKGWQAQkVKg3Tjl1cvLZsQ3DMG9RnC6B4f1Jytnw2juqpB40iovN0PHintQY_y2Jnp-rF3jLPnp574WPyrO4d5r8FjWPhIWyaIM-NOAJUEEN3ab_m-iyjNJJQwC6TOJjrdSiJ0gZxOjxte2cDzilZlWLDXMNIfnmM38itHBCn-rXG8ro57Lfd86rM7W_zJOQz8bHdiaUycHzydoacQafXfNrz-aogfRePr_s7CqLWLFFQLpWB8xMw_srBUs4jBPMRx9kXpa4kIThucDSfgvLRdCKJVKUdzTO26roKAwLFiI1Jkje5z7i25gflJpJvQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{uri}}/AyaConnect/VendorJobs?",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"AyaConnect",
+								"VendorJobs"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -9895,7 +9916,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f5be781-081a-4d82-b8b3-5b610475c563",
+			"id": "465ddbc3-f73f-430a-8257-919f9db950cc",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
