@@ -5268,6 +5268,25 @@
 								"url": "{{uri}}/ayaconnect/client/traveler/extension/182108/complete"
 							},
 							"response": []
+						},
+						{
+							"name": "RequestExtension",
+							"id": "4c7fc96a-d717-4b15-84bb-98c29d6b2754",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "CfDJ8EeLgppTECZBnAamSgjXDtXxlO4Ve52QZwIVq_Ysx1YvMfOE7dVKn8pDAEU8hM94Gp-y0GGML8yRQ0NrtN3J3PDzPuCwnMmCiE3QJ4hpAr5NmZBArmnWiQFtzlQVIVUEGmwT-Z92VdEzo1wPQb8C2Iq3bmB5uy-xeF6aNL4sYB7fryGnePno1O2e_dw-xh7fam32NRi_uXi66izrpNFUKZZHSw5WraKS1lbNRkVMGSLRwESwx04H9A7ySCfZT3DDvvh1dNoI7NHMAyFKbfySEh_eCtr0wMLsmstTbWkPV2xOZ8UHnOebhDDH6ucZM1TqAhLVysD1YSoqSjuM4HrBzR6An2xjo34sHL9UiLtz8TgjhBMzfovdp-xkr_CKqASAagijNZUFTy1yeUvy-cwxgQlJ1GVzUaaYYdaxYxzRbPz7mVhqQv0ALFXK38lN4paY-3joFUz4LnQqmkKHsRLsXutoC5NWvlhd0PlrbOHak7EG_9_dywX3wOJRpspWhcQo3SM8uh3eW-7BXsIDkZ4qZJ6CuG2VMh0xm-xuRSg_XIHzPiqNuSOR39qdDJ4_KZKd3X6rR3L6RmJjDrL7CPSpoRZ88sjeRsKquTc8-JyaWPKYh65rikxzfNGUJ6VdLbroG-h6-o5qjUzPb7qOzTVaOqOKmIFynuTAWDMrMQyQbKWrT-TJcVWGkn8xqtvSbNvZ30CB69ELq119H0IS_QpI-KY-itAL3YZTEXCqVi4LxhiM"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"url": "{{uri}}/ayaconnect/client/traveler/extension/182108/complete"
+							},
+							"response": []
 						}
 					],
 					"id": "bf2875b4-6c05-427c-9c11-c6f254499914"
@@ -9916,7 +9935,7 @@
 	],
 	"variable": [
 		{
-			"id": "465ddbc3-f73f-430a-8257-919f9db950cc",
+			"id": "074ef7bc-fcac-4f6b-a75d-bbd6b35f9191",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
