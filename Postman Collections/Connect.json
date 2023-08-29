@@ -5284,7 +5284,16 @@
 								},
 								"method": "POST",
 								"header": [],
-								"url": "{{uri}}/ayaconnect/client/traveler/extension/182108/complete"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"travelerId\": 940419,\r\n    \"durationWeeks\": 13,\r\n    \"startDate\": \"9/17/2023, 12:00:00 AM\",\r\n    \"endDate\": \"12/17/2023, 12:00:00 AM\",\r\n    \"jobTitle\": \"2 YR Exp - 1st Timer - ER RN - NIGHTS 7P-7A\",\r\n    \"billingRate\": 100,\r\n    \"additionalExpectations\": null,\r\n    \"extensionDetails\": null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{uri}}/ayaconnect/client/traveler/extension/940419/request"
 							},
 							"response": []
 						}
@@ -9935,7 +9944,7 @@
 	],
 	"variable": [
 		{
-			"id": "074ef7bc-fcac-4f6b-a75d-bbd6b35f9191",
+			"id": "99a43403-64e4-4ce7-9af2-b3fdafc6f2fd",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
