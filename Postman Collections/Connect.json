@@ -5280,7 +5280,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"travelerId\": 940419,\r\n    \"durationWeeks\": 13,\r\n    \"startDate\": \"9/17/2023, 12:00:00 AM\",\r\n    \"endDate\": \"12/17/2023, 12:00:00 AM\",\r\n    \"jobTitle\": \"2 YR Exp - 1st Timer - ER RN - NIGHTS 7P-7A\",\r\n    \"billingRate\": 100,\r\n    \"additionalExpectations\": null,\r\n    \"extensionDetails\": null\r\n}",
+									"raw": "{\r\n    \"travelerId\": 940419,\r\n    \"durationWeeks\": 13,\r\n    \"startDate\": \"9/17/2023, 12:00:00 AM\",\r\n    \"endDate\": \"12/17/2023, 12:00:00 AM\",\r\n    \"jobTitle\": \"2 YR Exp - 1st Timer - ER RN - NIGHTS 7P-7A\",\r\n    \"billingRate\": 100,\r\n    \"additionalExpectations\": null,\r\n    \"extensionDetails\": null,\r\n    \"isSubcontractor\": true\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -9938,7 +9938,7 @@
 	],
 	"variable": [
 		{
-			"id": "966ae164-4ae6-49f2-b216-20dd64a91c80",
+			"id": "86652571-b8d5-41da-a16b-dd42aaef7392",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
