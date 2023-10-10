@@ -4261,6 +4261,19 @@
 					"response": []
 				},
 				{
+					"name": "Get Approval Processes",
+					"id": "534417a9-e16a-4a8a-af1e-a825c8a27c3c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{uri}}/AyaConnect/Client/Shifts/913/Candidates/342432"
+					},
+					"response": []
+				},
+				{
 					"name": "GetAvailableCandidatesBySeries",
 					"id": "2b4b73c5-d2da-4db3-b204-2e5a5a7e5104",
 					"protocolProfileBehavior": {
@@ -9938,7 +9951,6 @@
 	],
 	"variable": [
 		{
-			"id": "c4c50e4e-53b2-4c44-9e5f-21ab4431d43c",
 			"key": "uri",
 			"value": "http://localhost:8088"
 		}
