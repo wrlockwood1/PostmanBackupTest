@@ -6050,6 +6050,62 @@
 					"response": []
 				},
 				{
+					"name": "Get Available Candidates",
+					"id": "85e3b3fd-8503-417b-8ab5-193eb838aec0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8JKYxcGVordBkyTAbqkQH6f-rnOzpc4jwKJDjeNAMHy_TBdgrlP9yHxbigJsvb707BJZ_sZaljw4lNfmtbN0h2SHv8HOU0ZlIcadQf1h2OQ8XjQuwFBtIvDgWLJOvgR2RVd34KOgC37JGdzPRbnbizflGuixbD3SE89ePrbh5y58WONokFwdRnxiK5uvwuwxSL1ycQBT962mk-3vCaupXJPt0_gIOcgW7YqvJ28iScCLLTZ1z1RCxKDRtSnXvUgST8NSP0ZJl7M4JzLLLvs7wsgzTKi-GcNHpPdkJj6Mj44ln1qx_FVQcYAC771nW1ATW1NsOBztvDkr4nwPBxtgGkPlcYbLaz3L2pmox5igVdT8Vx-uqYwCiZyLwFNmUxiN6N9D_VL5ujsCkFisK2-klw6aoN5YX_w7-AWAZXPZ4jmFLxQpmxBBG9ElHD52qVv-O4N-hbMdv-W4iCPJYwXBO8WyBN1pRPgMU_5ary5mRM3tALsTEqb-j5FbnkQRa6o3zr-W6Zd9zyQ8abZ0hOwzQ91e_UCb3D46zoDJzALOl4iqqitlR5N3m3-3YLG7BOtpSfpGmK4e96AzJJn61dadO-axRrERwPJ3H2QDa54VDHRdOb3DjWsXYj6lF9nn93j7QIenRgJiF0_rlzOZRU5_IvAedQyjI912hlRDpG7H36RYNxe_688NNaLQBEKJFAkMrk0DBUqDKQLXv-1-6Ujf1uIy9sgmeWB73vyG4Jh-FYyr-kxssS1uYoDHn8Azki59-Wh_fv4eb_JqTMdKVD-nOCmLP3GRENHYjIvgiBotGVLVbPxzrbAwFZykJi60Y82Ef6vfUOa2LWjJJCJ5ODkS0fH1CYGJEgfuF4eCwT9JwzZt4IRudhy4EZyESDCekljmTveBTY2plxZrybuYerDxOxI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{uri}}/AyaConnect/client/submittals?pageSize=10&skip=0&sortField=submissionSentOn&sortType=desc",
+							"host": [
+								"{{uri}}"
+							],
+							"path": [
+								"AyaConnect",
+								"client",
+								"submittals"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "sortField",
+									"value": "submissionSentOn"
+								},
+								{
+									"key": "sortType",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get Job Submittals",
 					"id": "84c6d508-d66f-4985-956b-004cbe11a475",
 					"protocolProfileBehavior": {
