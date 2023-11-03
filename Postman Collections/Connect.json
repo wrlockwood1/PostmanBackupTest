@@ -7173,6 +7173,34 @@
 								"url": "{{uri}}/AyaConnect/Facility/Features"
 							},
 							"response": []
+						},
+						{
+							"name": "Facility Admin",
+							"id": "b21565f3-fc33-45c5-ba3a-4e08151957c5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{Bearer}}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"facilityId\":\"37165\",\"featureId\":6,\"isEnabled\":\"true\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{uri}}/AyaConnect/Facility/Features"
+							},
+							"response": []
 						}
 					],
 					"id": "fd546357-a2d0-4b78-97db-e22869b5e7d6",
