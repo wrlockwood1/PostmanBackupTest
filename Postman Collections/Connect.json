@@ -8200,7 +8200,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"Facilities\": [1, 2, 3], // Array of integers representing facility IDs\r\n  \"ReleaseTypeId\": 1, // Use 1 for Job or 2 for Shift\r\n  \"ReleaseEntityId\": 123 // Optional, include if needed\r\n}\r\n",
+							"raw": "{\r\n  \"Facilities\": [3416],\r\n  \"ReleaseTypeId\": 1,\r\n  \"ReleaseEntityId\": null\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
