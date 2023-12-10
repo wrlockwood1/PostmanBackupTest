@@ -8199,14 +8199,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{uri}}/ayaconnect/vendorjobs/1411907",
+							"raw": "{{uri}}/ayaconnect/VendorRelease/Groups",
 							"host": [
 								"{{uri}}"
 							],
 							"path": [
 								"ayaconnect",
-								"vendorjobs",
-								"1411907"
+								"VendorRelease",
+								"Groups"
 							],
 							"query": [
 								{
