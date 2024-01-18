@@ -10024,6 +10024,34 @@
 				"url": "{{uri}}//AyaConnect/Admin/Vendors/7/phones"
 			},
 			"response": []
+		},
+		{
+			"name": "CreateExtension",
+			"id": "bbd59431-f301-46ef-86c3-e6bf58f45901",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "CfDJ8GRJzCoxvC1Ct4DtviTvu_MDdazCm46CBQfSAtovQb-C81CXfGuoLIGbVfuNXaMt3Liwzo9bRcFViSe2dvKHm4lYJhsoh5KOBD2z0wN1UgcCzIV5qN0waEJiJTyvk7-glI3IvyHeigHKel3oc9J1-yHqSygo1AVdGMt_Le4ENEw0v3gXa0n1C2LR0yPRHUPH646K4AbyiBkQB0YhA5V7Y0O3u0CFcBtcBrZ046ugP_JDSeHwks-D1h0mHYVBm-rJrJHGQp1cmTk79LjQjfh6afGlO4bf0tNX6jNVndzacMeCcmPcRFGevWuMfMeeZebZ4tw8W6bflxsiY9iEI9eZnWEvOBsYo5Vbfb-wRFNALindZyA220Q7gLazWqz2ewmSTeVOzUmVqQY1D1W2bvWXR2SAFr4EjL1qfAWS-B9L2h3oxS_7aaiEw5-D6dtHc5h_GOlRpE8zjJDCPTjpL7GG4Ypdg5idLLRqXhIyh1j3QD7Hrql39v2f5X60UJ5S_qyg0J2jXdLqhUbgbaDaZJRxlHv1e6TWCItO1wotFKkoNzp_yq6vsuMHfoVREJ1JVSgep6tMcplllYcL9o8VmPErZdhmWBKMnVhMDoB5XPJiOXagWR9m0xyXtft-FcOBAE6FI3ZhTJIHhg4N5dhnYO-GNGlkhQH07sEGgR17OiGnZdbCE4cuLfumKaWLepvb6hUgggzMlmPxTAJRrc49yWO2_Q0n6ACxQZuDPI-Jf9hIxKmIg8ao_7pJK8FHPUA28siMoxzn-vCzsY9a5gQqGQmRhmRMcvbqD9bExnfPgtGCu-uvxWmmTq_JSQZAdHh3XA_M1BvEfMzXIOBHsRDwS21MLyRwwr-kfYWpXE8FyW9R9aD1"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"travelerId\":1094239,\"durationWeeks\":13,\"startDate\":\"1/8/2024, 12:00:00 AM\",\"endDate\":\"4/8/2024, 12:00:00 AM\",\"jobTitle\":\"EXT: C Kim\",\"billingRate\":91,\"additionalExpectations\":null,\"extensionDetails\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{uri}}/AyaConnect/Client/Traveler/Extension/1094239/request"
+			},
+			"response": []
 		}
 	],
 	"auth": {
