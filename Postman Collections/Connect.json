@@ -6218,14 +6218,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    // \"statusId\":4,\r\n    \"note\":null,\r\n    \"declineReasonId\":null,\r\n    \"submittalStatusId\": 8,\r\n    \"submittalSubStatusId\":6\r\n}",
+							"raw": "{\r\n  \"statusId\": null,\r\n  \"submittalStatusId\": 7,\r\n  \"submittalSubStatusId\": null,\r\n  \"note\": \"\",\r\n  \"declineReasonId\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{uri}}/AyaConnect/Client/Submittals/2043129/status"
+						"url": "{{uri}}/AyaConnect/Client/Submittals/2834853/status"
 					},
 					"response": []
 				},
