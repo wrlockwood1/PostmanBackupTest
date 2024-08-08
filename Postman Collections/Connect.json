@@ -1909,6 +1909,25 @@
 						"url": "{{uri}}/AyaConnect/Timecard/approveTimeCard"
 					},
 					"response": []
+				},
+				{
+					"name": "Timecards Approval",
+					"id": "bd284c87-992c-4ca0-935a-67406ffc1212",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8IUyllEKRyJIu5-ztHopsin_lpMuHK_-g08mpd6VmqmQBYoOVvYugZnfUON8-gVxrCXwg58NHftMsRMZFaaa7k-MlYXbiH8qecq-Z1meEeud71pySpXeyvt3zefpiGblN3soB84_-6VzV1DKA1gSBk3nhPi51VBftsfDTVuHsT0eIrukmLOIMjHbpSBjC5tnkEgFtLdIK0HvrziuwS6uZO6Ry1uE1LuA3gJFYl8Tu7zJb9j8rlZntK33cmEnNLVuxE4an68F6SXNOAbaMfk79V-guxVSwiOa_NuWuHzRjvmTvgraReY6T5uT3tW3bYGGmX4e_CX2_vtS9T1A9nHXfAeMRm8FufXZtikX8Kbq3lE2xQLQiQ2i5ovKWRPTLvDR2TmrKHVwTUTnu315Qmr0c0xxf8c5ZsxSknfltmVLyVBwvQv7yhWKs_eICCVLkYrc_JoN5e8pQW-_Xp34IAEqneinhT16ea5pSMe5hW26qX2NYLCBkchUT7xfnCLX4B_UpwhmSmgstGkGM_zg_7Sg7TVowiwgeX82aBdZThpkYINIY2A5ZlUmeeJ3zswvEB57Gy2i9aLdnCfZL_0cNhdLUZYesBSX3HbLo2gw5gvnVzcaKD2na3dBZjbBuJNaUVwmeUjRAyx-21leKMI-mto3tUclWd_QcxrUgmvzSTf2RUGgiz4BcxU5gDsNMX208x6CL48SjxhRFRk45SPLxMm7P39isAL1WzjCZsFFsj7Voa44zg_e7GQs2M-L0g9M_802cHEbiRbYPlXXusUr3MCx7fzWe1NE3Klph1Gpm2o6uWVB_Rj3vsHSRUZDZcLenfVSk733o1H-KqKB_woIx-cTi0-12QzbaE8OH1z84ZRM7bGHfe0iXKpZulSz28R8m2GuUdfdFfEySrhhSgLQiN7zpT_d3HA4j-iHIjhE3PQk2lXS"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "{{uri}}/background/timecard/notification/pendingapproval"
+					},
+					"response": []
 				}
 			],
 			"id": "066a31bc-e626-437c-b470-8ac8ee3af305",
