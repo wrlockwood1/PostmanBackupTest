@@ -7728,6 +7728,53 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Get",
+							"id": "33786433-7c35-45f2-a3a5-1710c9029eb0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{Bearer}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{uri}}/ayaconnect/vendor/candidates?pageSize=10&skip=0&sort.field=firstName&sort.type=asc",
+									"host": [
+										"{{uri}}"
+									],
+									"path": [
+										"ayaconnect",
+										"vendor",
+										"candidates"
+									],
+									"query": [
+										{
+											"key": "pageSize",
+											"value": "10"
+										},
+										{
+											"key": "skip",
+											"value": "0"
+										},
+										{
+											"key": "sort.field",
+											"value": "firstName"
+										},
+										{
+											"key": "sort.type",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "6a3fada1-f786-47c3-bf5c-319b98c693d8"
