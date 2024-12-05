@@ -9308,6 +9308,75 @@
 					"response": []
 				},
 				{
+					"name": "Get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e942719b-6441-4f22-8364-8bf1bc8be89b",
+								"exec": [
+									"pm.environment.get(\"variable_key\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b75f381a-33de-4c02-a0d0-7ef462211792",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8NR87fvdpM5AmrmFFHYBagnJHpeUI6xJl6bKMgHviRsJuWjhmVwCMrTcu7ayb2AVGVA9B8E8zENHxFAYPUHot6FEVIfummZcIfAMeS77QzhBdBk60z2MpesNvMm5VBg59b4TL38PStA1viy3HGa1GheChYYf0cB-_XMa8MsKuR_r4tyslxxByWL9q-0wt8GQDeBsj74_gbuiMGV_Jh-3olmdTiJp0Pvbq0JBaeWHm6V8haacd5XT7AbkPjrjWmjCAQdW_8IjDHZrxckni7zF1THilsEKJ6ZlMP15nYjxasyx73VPh1ndr4V8AWuOXc4HDTiL3qevxVaVyYPqrkgA_HxO6IAwFQD1_eU4zMhWTEhsATgtXKFV2EKoYmg8Vr2MxXvT7AjTHvd8Oa4CR7hMQR48GL_Vp_lE2Rg4Wa8bdkcvuzyq7GBEW5hCkHOH035GK9DS9XfLCZt7pogvEwmS6HZqG3Q9vdAqWXHGKZvKrc7kn3ogj29I7gYyCrLJkHd-CQDjoT3uCD3XZBI8FsOM3TsIrQ6gKRXe33bQqTgLigfL0t4vdXzV1XIDTzdbuI_gZDFWLFkbQeYm0o_nwcl9zgd62OeGuSK5wU3hnl0Od8l8xT1YC9rTZK6pMoFyYchFyK5MlMkFzcYqsDBOJd93mBO0YlyfkNbXdN68n4ut5z9gdRE_L7hOsJTnn9IpQBNrwoA31UfCkeSoU7TdMrFIESmFj_Lf_FxT0rBMUIM7OeOtBHjwNitxfSjL4wJiv5UHLFa1IF0K8psuq514hakFq0ppMqcWUvPrB49_9YhYSNnrf3WV692gPWKV8_TQTRx4I0uCqewxwoXIjSJegxxaYQZTfRoTMgasWxXrf2NOrcUj"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/ayaconnect/invoices/getfiltered?viewTypeId=3&take=1&sort=null&skip=0&groups=null&filter=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"ayaconnect",
+								"invoices",
+								"getfiltered"
+							],
+							"query": [
+								{
+									"key": "viewTypeId",
+									"value": "3"
+								},
+								{
+									"key": "take",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "null"
+								},
+								{
+									"key": "skip",
+									"value": "0"
+								},
+								{
+									"key": "groups",
+									"value": "null"
+								},
+								{
+									"key": "filter",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Trigger Draft Invoice Available Email",
 					"event": [
 						{
