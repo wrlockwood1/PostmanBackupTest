@@ -576,6 +576,66 @@
 					},
 					"response": [
 						{
+							"id": "1bb7171f-3ce7-4551-bea1-599d55509db2",
+							"name": "Get Eligible Units For Existing Process",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{uri}}/AyaConnect/JobApprovalProcess/units?processId=18",
+									"host": [
+										"{{uri}}"
+									],
+									"path": [
+										"AyaConnect",
+										"JobApprovalProcess",
+										"units"
+									],
+									"query": [
+										{
+											"key": "processId",
+											"value": "18"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 29 Oct 2019 16:33:21 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"id\": 5343,\n        \"name\": \"Harborview Medical Center\",\n        \"units\": [\n            {\n                \"id\": 1454,\n                \"name\": \"9MB TSICU Trauma/Surg\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1455,\n                \"name\": \"2EH MCICU Med/COR ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1456,\n                \"name\": \"9EH BICU BURN/PED ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1457,\n                \"name\": \"2WH  NEURO ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1458,\n                \"name\": \"HMC BOARDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1459,\n                \"name\": \"3E MEDICIN/TELEMETRY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1460,\n                \"name\": \"3W NEURO ACUTE UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1461,\n                \"name\": \"6MB PLANNED SURGERY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1462,\n                \"name\": \"6EH ORTHOPEDICS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1463,\n                \"name\": \"5EH MED SURG SPEC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1465,\n                \"name\": \"7E General Surgery\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1466,\n                \"name\": \"8E BURN RECONST\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1467,\n                \"name\": \"4EH MED/SURG\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1469,\n                \"name\": \"4W REHAB MEDICINE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1470,\n                \"name\": \"OPERATING ROOM\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1471,\n                \"name\": \"HMC AMBULATORY CARE UT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1472,\n                \"name\": \"HMC RECOVERY ROOM (PACU)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1473,\n                \"name\": \"HMC ANESTHESIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1474,\n                \"name\": \"Cardiology HMC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1475,\n                \"name\": \"HMC VASCULAR LAB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1476,\n                \"name\": \"HMC SLEEP DISORDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1478,\n                \"name\": \"MRI MAGNETIC RESONANCE IMAGING\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1479,\n                \"name\": \"HMC RADIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1480,\n                \"name\": \"ANGIOGRAPHY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1481,\n                \"name\": \"RESPIRATORY CARE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1482,\n                \"name\": \"HMC EMERGENCY DEPT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1484,\n                \"name\": \"ACUTE PT/OT/SPEECH\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1485,\n                \"name\": \"4W Physical Therapist -REHAB THERAPIES\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1486,\n                \"name\": \"CENTRAL PROCESSING UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1487,\n                \"name\": \"Acute Care Float MS/Tele Tele units\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1488,\n                \"name\": \"NURSING FLOATS - CC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1489,\n                \"name\": \"CLINIC FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1490,\n                \"name\": \"DIAGNOSTIC PROCEDURE SUPPORT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1633,\n                \"name\": \"Airlift Northwest\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3547,\n                \"name\": \"CNA (HA-Hospital Assistant)  FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3667,\n                \"name\": \"Ambulatory Procedure Area\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4060,\n                \"name\": \"316074- 6 Maleng\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4068,\n                \"name\": \"Women's Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4090,\n                \"name\": \"7MB Specialty Clinics\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6570,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6664,\n                \"name\": \"Family Medicine Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7109,\n                \"name\": \"HMC Psychiatry -5WA, 5WB, 5MB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7252,\n                \"name\": \"Adult Medicine Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33256,\n        \"name\": \"University of Washington Medical Center\",\n        \"units\": [\n            {\n                \"id\": 2,\n                \"name\": \"Cardiology Clinic Regional Heart Center\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 39,\n                \"name\": \"6 NE General Medicine\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 67,\n                \"name\": \"4SE Short Stay/Post Op\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 68,\n                \"name\": \"4 NE Med/Surg Neuro\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Endoscopy- Digestive Health Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 112,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 153,\n                \"name\": \"7 SA Med / Surg Transplant\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 177,\n                \"name\": \"4 S Special Procedures\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 196,\n                \"name\": \"Acute Care Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 199,\n                \"name\": \"6 SA Medical and Oncology ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 206,\n                \"name\": \"ICRU Interventional Cardiology Recovery Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 251,\n                \"name\": \"8 SA\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 282,\n                \"name\": \"Urology Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 285,\n                \"name\": \"7 SE Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 301,\n                \"name\": \"5 NE Cardiothoracic Surgery, Cardiac Telemetry\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 330,\n                \"name\": \"6 SE Med / Surg Orthopaedic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 359,\n                \"name\": \"8 N Rehab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 380,\n                \"name\": \"Cardiac Cath Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 397,\n                \"name\": \"6 S Antepartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 408,\n                \"name\": \"Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 413,\n                \"name\": \"CVOR Cardiovascular Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 425,\n                \"name\": \"Electrophysiology Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 446,\n                \"name\": \"ICU Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 450,\n                \"name\": \"5 SE Cardiac Care Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 464,\n                \"name\": \"Eastside Specialty Clinic  Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 480,\n                \"name\": \"Labor & Delivery 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 494,\n                \"name\": \"Eastside  Specialty Clinic GI /Endoscopy Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 497,\n                \"name\": \"Postpartum 5 S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 505,\n                \"name\": \"Ambulatory PACU Roosevelt ASC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 524,\n                \"name\": \"7 NE BMT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 563,\n                \"name\": \"5 E Surgical ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 584,\n                \"name\": \"ED\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 602,\n                \"name\": \"8 NE Oncology/Blood & Marrow Transplant Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 604,\n                \"name\": \"Neonatal ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 667,\n                \"name\": \"5 SA Cardiovascular Critical Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 805,\n                \"name\": \"UWMC Medical Specialties Clinic Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1146,\n                \"name\": \"UW Roosevelt Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1328,\n                \"name\": \"PreAnesthesia Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1344,\n                \"name\": \"Labor and Delivery Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1376,\n                \"name\": \"Vascular Access Team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1494,\n                \"name\": \"Adult Congenital Heart Disease Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1597,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1808,\n                \"name\": \"IVF Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1871,\n                \"name\": \"Ambulatory Surgical Specialties Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2200,\n                \"name\": \"7 North\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2854,\n                \"name\": \"Bone and Joint Surgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2995,\n                \"name\": \"4WH Inpatient Trauma Rehabilitation\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3444,\n                \"name\": \"Neurosurgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3508,\n                \"name\": \"Advanced Heart Failure Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3611,\n                \"name\": \"University of Washington Liver Transplant Program\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3762,\n                \"name\": \"Mens's Health Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3866,\n                \"name\": \"Interventional Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3867,\n                \"name\": \"4S Infusion Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3874,\n                \"name\": \"Cardiac Device Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4029,\n                \"name\": \"Cardiothoracic surgery team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4320,\n                \"name\": \"Anesthesia Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6146,\n                \"name\": \"08-7300 Ambulatory Otolaryngology Clinic (ENT)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6644,\n                \"name\": \"Diabetes Care Center Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6722,\n                \"name\": \"Center for Interstitial Lung Disease\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6746,\n                \"name\": \"Urology Oncology clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6911,\n                \"name\": \"08-7152 Radiation Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7067,\n                \"name\": \"5S Postpartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7269,\n                \"name\": \"Short Stay Boarding Unit\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    }\n]"
+						},
+						{
 							"id": "494ef806-128a-43eb-9df2-d35201cb1e93",
 							"name": "200 OK Response with Units",
 							"originalRequest": {
@@ -635,66 +695,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "[\n    {\n        \"id\": 280,\n        \"name\": \"UW Medical Center - Roosevelt\",\n        \"units\": [\n            {\n                \"id\": 3898,\n                \"name\": \"Pharmacy\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5343,\n        \"name\": \"Harborview Medical Center\",\n        \"units\": [\n            {\n                \"id\": 1454,\n                \"name\": \"9MB TSICU Trauma/Surg\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1455,\n                \"name\": \"2EH MCICU Med/COR ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1456,\n                \"name\": \"9EH BICU BURN/PED ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1457,\n                \"name\": \"2WH NICU NEURO ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1458,\n                \"name\": \"HMC BOARDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1459,\n                \"name\": \"3E MEDICIN/TELEMETRY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1460,\n                \"name\": \"3W NEURO ACUTE UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1461,\n                \"name\": \"6MB PLANNED SURGERY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1462,\n                \"name\": \"6EH ORTHOPEDICS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1463,\n                \"name\": \"5EH MED SURG SPEC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1465,\n                \"name\": \"7E General Surgery\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1466,\n                \"name\": \"8E BURN RECONST\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1467,\n                \"name\": \"4EH MED/SURG\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1469,\n                \"name\": \"4W REHAB MEDICINE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1470,\n                \"name\": \"OPERATING ROOM\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1471,\n                \"name\": \"HMC AMBULATORY CARE UT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1472,\n                \"name\": \"HMC RECOVERY ROOM (PACU)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1473,\n                \"name\": \"HMC ANESTHESIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1474,\n                \"name\": \"Cardiology HMC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1475,\n                \"name\": \"HMC VASCULAR LAB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1476,\n                \"name\": \"HMC SLEEP DISORDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1478,\n                \"name\": \"MRI MAGNETIC RESONANCE IMAGING\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1479,\n                \"name\": \"HMC RADIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1480,\n                \"name\": \"ANGIOGRAPHY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1481,\n                \"name\": \"RESPIRATORY CARE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1482,\n                \"name\": \"HMC EMERGENCY DEPT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1484,\n                \"name\": \"ACUTE PT/OT/SPEECH\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1485,\n                \"name\": \"4W Physical Therapist -REHAB THERAPIES\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1486,\n                \"name\": \"CENTRAL PROCESSING UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1487,\n                \"name\": \"Acute Care Float MS/Tele Tele units\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1488,\n                \"name\": \"NURSING FLOATS - CC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1489,\n                \"name\": \"CLINIC FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1490,\n                \"name\": \"DIAGNOSTIC PROCEDURE SUPPORT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1633,\n                \"name\": \"Airlift Northwest\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3547,\n                \"name\": \"CNA (HA-Hospital Assistant)  FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3667,\n                \"name\": \"Ambulatory Procedure Area\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4060,\n                \"name\": \"316074- 6 Maleng\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4068,\n                \"name\": \"Women's Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4090,\n                \"name\": \"7MB Specialty Clinics\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6570,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6664,\n                \"name\": \"Family Medicine Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7109,\n                \"name\": \"HMC Psychiatry -5WA, 5WB, 5MB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7252,\n                \"name\": \"Adult Medicine Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 5613,\n        \"name\": \"Valley Medical Center\",\n        \"units\": [\n            {\n                \"id\": 3429,\n                \"name\": \"O.R. - 7020\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3475,\n                \"name\": \"General Surgery 7S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3476,\n                \"name\": \"Neuro 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3477,\n                \"name\": \"Critical Care 4S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3478,\n                \"name\": \"General Medicine 2W\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3479,\n                \"name\": \"Renal Respiratory 3N\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3480,\n                \"name\": \"Joint and Spine 5S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3481,\n                \"name\": \"Outpatient Infusion\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3483,\n                \"name\": \"Blank Unit #1\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3484,\n                \"name\": \"Blank Unit #2\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3485,\n                \"name\": \"Blank Unit #3\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3533,\n                \"name\": \"ER -7230\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3534,\n                \"name\": \"Birth Center - 7000\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3544,\n                \"name\": \"ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3561,\n                \"name\": \"NICU - 6172\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3562,\n                \"name\": \"Pediatrics - Mother Baby - 6087\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3906,\n                \"name\": \"Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3907,\n                \"name\": \"Wound Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3908,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6925,\n                \"name\": \"ED TECH- ER/ CCU/PCA Nursing Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7214,\n                \"name\": \"LCSW (Licensed Clinical Social Worker)\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33256,\n        \"name\": \"University of Washington Medical Center\",\n        \"units\": [\n            {\n                \"id\": 2,\n                \"name\": \"Cardiology Clinic Regional Heart Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 39,\n                \"name\": \"6 NE General Medicine\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 67,\n                \"name\": \"4SE Short Stay/Post Op\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 68,\n                \"name\": \"4 NE Med/Surg Neuro\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Endoscopy- Digestive Health Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 112,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 153,\n                \"name\": \"7 SA Med / Surg Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 177,\n                \"name\": \"4 S Special Procedures\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 196,\n                \"name\": \"Acute Care Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 199,\n                \"name\": \"6 SA Medical and Oncology ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 206,\n                \"name\": \"ICRU Interventional Cardiology Recovery Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 251,\n                \"name\": \"8 SA\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 282,\n                \"name\": \"Urology Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 285,\n                \"name\": \"7 SE Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 301,\n                \"name\": \"5 NE Cardiothoracic Surgery, Cardiac Telemetry\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 330,\n                \"name\": \"6 SE Med / Surg Orthopaedic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 359,\n                \"name\": \"8 N Rehab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 380,\n                \"name\": \"Cardiac Cath Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 397,\n                \"name\": \"6 S Antepartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 408,\n                \"name\": \"Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 413,\n                \"name\": \"CVOR Cardiovascular Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 425,\n                \"name\": \"Electrophysiology Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 446,\n                \"name\": \"ICU Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 450,\n                \"name\": \"5 SE Cardiac Care Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 464,\n                \"name\": \"Eastside Specialty Clinic  Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 480,\n                \"name\": \"Labor & Delivery 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 494,\n                \"name\": \"Eastside  Specialty Clinic GI /Endoscopy Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 497,\n                \"name\": \"Postpartum 5 S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 505,\n                \"name\": \"Ambulatory PACU Roosevelt ASC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 524,\n                \"name\": \"7 NE BMT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 563,\n                \"name\": \"5 E Surgical ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 584,\n                \"name\": \"ED\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 602,\n                \"name\": \"8 NE Oncology/Blood & Marrow Transplant Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 604,\n                \"name\": \"Neonatal ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 667,\n                \"name\": \"5 SA Cardiovascular Critical Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 805,\n                \"name\": \"UWMC Medical Specialties Clinic Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1146,\n                \"name\": \"UW Roosevelt Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1328,\n                \"name\": \"PreAnesthesia Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1344,\n                \"name\": \"Labor and Delivery Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1376,\n                \"name\": \"Vascular Access Team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1494,\n                \"name\": \"Adult Congenital Heart Disease Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1597,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1808,\n                \"name\": \"IVF Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1871,\n                \"name\": \"Ambulatory Surgical Specialties Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2200,\n                \"name\": \"7 North\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2854,\n                \"name\": \"Bone and Joint Surgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2995,\n                \"name\": \"4WH Inpatient Trauma Rehabilitation\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3444,\n                \"name\": \"Neurosurgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3508,\n                \"name\": \"Advanced Heart Failure Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3611,\n                \"name\": \"University of Washington Lung Transplant Program\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3762,\n                \"name\": \"Mens's Health Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3866,\n                \"name\": \"Interventional Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3867,\n                \"name\": \"4S Infusion Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3874,\n                \"name\": \"Cardiac Device Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4029,\n                \"name\": \"Cardiothoracic surgery team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4320,\n                \"name\": \"Anesthesia Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6146,\n                \"name\": \"08-7300 Ambulatory Otolaryngology Clinic (ENT)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6644,\n                \"name\": \"Diabetes Care Center Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6722,\n                \"name\": \"Center for Interstitial Lung Disease\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6746,\n                \"name\": \"Urology Oncology clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6911,\n                \"name\": \"08-7152 Radiation Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7067,\n                \"name\": \"5S Postpartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7269,\n                \"name\": \"Short Stay Boarding Unit\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33364,\n        \"name\": \"UW Medicine Eastside Specialty Center\",\n        \"units\": [\n            {\n                \"id\": 3884,\n                \"name\": \"Outpatient Pharmacy\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 34045,\n        \"name\": \"Pioneer Square Clinic\",\n        \"units\": [\n            {\n                \"id\": 6946,\n                \"name\": \"31-7453 Pioneer Square Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    }\n]"
-						},
-						{
-							"id": "1bb7171f-3ce7-4551-bea1-599d55509db2",
-							"name": "Get Eligible Units For Existing Process",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"type": "text",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{uri}}/AyaConnect/JobApprovalProcess/units?processId=18",
-									"host": [
-										"{{uri}}"
-									],
-									"path": [
-										"AyaConnect",
-										"JobApprovalProcess",
-										"units"
-									],
-									"query": [
-										{
-											"key": "processId",
-											"value": "18"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Date",
-									"value": "Tue, 29 Oct 2019 16:33:21 GMT"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "[\n    {\n        \"id\": 5343,\n        \"name\": \"Harborview Medical Center\",\n        \"units\": [\n            {\n                \"id\": 1454,\n                \"name\": \"9MB TSICU Trauma/Surg\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1455,\n                \"name\": \"2EH MCICU Med/COR ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1456,\n                \"name\": \"9EH BICU BURN/PED ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1457,\n                \"name\": \"2WH  NEURO ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1458,\n                \"name\": \"HMC BOARDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1459,\n                \"name\": \"3E MEDICIN/TELEMETRY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1460,\n                \"name\": \"3W NEURO ACUTE UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1461,\n                \"name\": \"6MB PLANNED SURGERY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1462,\n                \"name\": \"6EH ORTHOPEDICS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1463,\n                \"name\": \"5EH MED SURG SPEC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1465,\n                \"name\": \"7E General Surgery\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1466,\n                \"name\": \"8E BURN RECONST\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1467,\n                \"name\": \"4EH MED/SURG\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1469,\n                \"name\": \"4W REHAB MEDICINE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1470,\n                \"name\": \"OPERATING ROOM\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1471,\n                \"name\": \"HMC AMBULATORY CARE UT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1472,\n                \"name\": \"HMC RECOVERY ROOM (PACU)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1473,\n                \"name\": \"HMC ANESTHESIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1474,\n                \"name\": \"Cardiology HMC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1475,\n                \"name\": \"HMC VASCULAR LAB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1476,\n                \"name\": \"HMC SLEEP DISORDERS\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1478,\n                \"name\": \"MRI MAGNETIC RESONANCE IMAGING\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1479,\n                \"name\": \"HMC RADIOLOGY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1480,\n                \"name\": \"ANGIOGRAPHY\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1481,\n                \"name\": \"RESPIRATORY CARE\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1482,\n                \"name\": \"HMC EMERGENCY DEPT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1484,\n                \"name\": \"ACUTE PT/OT/SPEECH\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1485,\n                \"name\": \"4W Physical Therapist -REHAB THERAPIES\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1486,\n                \"name\": \"CENTRAL PROCESSING UNIT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1487,\n                \"name\": \"Acute Care Float MS/Tele Tele units\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1488,\n                \"name\": \"NURSING FLOATS - CC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1489,\n                \"name\": \"CLINIC FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1490,\n                \"name\": \"DIAGNOSTIC PROCEDURE SUPPORT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1633,\n                \"name\": \"Airlift Northwest\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3547,\n                \"name\": \"CNA (HA-Hospital Assistant)  FLOAT POOL\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3667,\n                \"name\": \"Ambulatory Procedure Area\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4060,\n                \"name\": \"316074- 6 Maleng\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4068,\n                \"name\": \"Women's Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4090,\n                \"name\": \"7MB Specialty Clinics\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6570,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6664,\n                \"name\": \"Family Medicine Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7109,\n                \"name\": \"HMC Psychiatry -5WA, 5WB, 5MB\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7252,\n                \"name\": \"Adult Medicine Clinic\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    },\n    {\n        \"id\": 33256,\n        \"name\": \"University of Washington Medical Center\",\n        \"units\": [\n            {\n                \"id\": 2,\n                \"name\": \"Cardiology Clinic Regional Heart Center\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 39,\n                \"name\": \"6 NE General Medicine\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 67,\n                \"name\": \"4SE Short Stay/Post Op\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 68,\n                \"name\": \"4 NE Med/Surg Neuro\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 86,\n                \"name\": \"Endoscopy- Digestive Health Center\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 112,\n                \"name\": \"PACU\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 153,\n                \"name\": \"7 SA Med / Surg Transplant\",\n                \"hasExistingProcess\": true\n            },\n            {\n                \"id\": 177,\n                \"name\": \"4 S Special Procedures\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 196,\n                \"name\": \"Acute Care Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 199,\n                \"name\": \"6 SA Medical and Oncology ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 206,\n                \"name\": \"ICRU Interventional Cardiology Recovery Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 251,\n                \"name\": \"8 SA\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 282,\n                \"name\": \"Urology Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 285,\n                \"name\": \"7 SE Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 301,\n                \"name\": \"5 NE Cardiothoracic Surgery, Cardiac Telemetry\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 330,\n                \"name\": \"6 SE Med / Surg Orthopaedic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 359,\n                \"name\": \"8 N Rehab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 380,\n                \"name\": \"Cardiac Cath Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 397,\n                \"name\": \"6 S Antepartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 408,\n                \"name\": \"Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 413,\n                \"name\": \"CVOR Cardiovascular Operating Room\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 425,\n                \"name\": \"Electrophysiology Lab\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 446,\n                \"name\": \"ICU Float Pool\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 450,\n                \"name\": \"5 SE Cardiac Care Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 464,\n                \"name\": \"Eastside Specialty Clinic  Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 480,\n                \"name\": \"Labor & Delivery 6S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 494,\n                \"name\": \"Eastside  Specialty Clinic GI /Endoscopy Bellevue\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 497,\n                \"name\": \"Postpartum 5 S\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 505,\n                \"name\": \"Ambulatory PACU Roosevelt ASC\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 524,\n                \"name\": \"7 NE BMT\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 563,\n                \"name\": \"5 E Surgical ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 584,\n                \"name\": \"ED\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 602,\n                \"name\": \"8 NE Oncology/Blood & Marrow Transplant Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 604,\n                \"name\": \"Neonatal ICU\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 667,\n                \"name\": \"5 SA Cardiovascular Critical Care\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 805,\n                \"name\": \"UWMC Medical Specialties Clinic Transplant\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1146,\n                \"name\": \"UW Roosevelt Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1328,\n                \"name\": \"PreAnesthesia Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1344,\n                \"name\": \"Labor and Delivery Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1376,\n                \"name\": \"Vascular Access Team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1494,\n                \"name\": \"Adult Congenital Heart Disease Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1597,\n                \"name\": \"Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1808,\n                \"name\": \"IVF Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 1871,\n                \"name\": \"Ambulatory Surgical Specialties Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2200,\n                \"name\": \"7 North\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2854,\n                \"name\": \"Bone and Joint Surgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 2995,\n                \"name\": \"4WH Inpatient Trauma Rehabilitation\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3444,\n                \"name\": \"Neurosurgery Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3508,\n                \"name\": \"Advanced Heart Failure Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3611,\n                \"name\": \"University of Washington Liver Transplant Program\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3762,\n                \"name\": \"Mens's Health Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3866,\n                \"name\": \"Interventional Radiology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3867,\n                \"name\": \"4S Infusion Unit\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 3874,\n                \"name\": \"Cardiac Device Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4029,\n                \"name\": \"Cardiothoracic surgery team\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 4320,\n                \"name\": \"Anesthesia Tech\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6146,\n                \"name\": \"08-7300 Ambulatory Otolaryngology Clinic (ENT)\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6644,\n                \"name\": \"Diabetes Care Center Clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6722,\n                \"name\": \"Center for Interstitial Lung Disease\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6746,\n                \"name\": \"Urology Oncology clinic\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 6911,\n                \"name\": \"08-7152 Radiation Oncology\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7067,\n                \"name\": \"5S Postpartum\",\n                \"hasExistingProcess\": false\n            },\n            {\n                \"id\": 7269,\n                \"name\": \"Short Stay Boarding Unit\",\n                \"hasExistingProcess\": false\n            }\n        ],\n        \"hasExistingProcess\": false\n    }\n]"
 						}
 					]
 				},
@@ -844,6 +844,50 @@
 					},
 					"response": [
 						{
+							"id": "6d4bd569-1a2e-4844-9069-ad780cfde042",
+							"name": "200 OK Request/Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "        {\r\n            \"level\": 3,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ ],\r\n            \"unitIds\": [450]\r\n        }\r\n\r\n"
+								},
+								"url": "{{uri}}/AyaConnect/JobApprovalProcess"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 20 Nov 2019 01:17:26 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
 							"id": "72792d4a-45f2-4443-8bfb-e412789f5dbd",
 							"name": "500 Error Adding Process With Existing Facility",
 							"originalRequest": {
@@ -938,50 +982,6 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "Aya.Core.Common.Exceptions.ValidationException: Error with process tiers: process type is tier based, but no tiers are included\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessTiers(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 235\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcessProperties(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 223\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.ValidateProcess(JobApprovalProcessEditDto process, Boolean isNewProcess) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 211\r\n   at Aya.Core.BL.Services.Job.JobApprovalProcess.JobApprovalProcessService.AddProcessAsync(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.BL\\Services\\Job\\JobApprovalProcess\\JobApprovalProcessService.cs:line 91\r\n   at Aya.Core.Api.Controllers.AyaConnect.Job.JobApprovalProcessController.Add(JobApprovalProcessEditDto process) in D:\\a\\1\\s\\Aya.Core.Api\\Controllers\\AyaConnect\\Job\\JobApprovalProcessController.cs:line 53\r\n   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\r\n   at System.Threading.Tasks.ValueTask`1.get_Result()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\r\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()\r\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync()"
-						},
-						{
-							"id": "6d4bd569-1a2e-4844-9069-ad780cfde042",
-							"name": "200 OK Request/Response",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "        {\r\n            \"level\": 3,\r\n            \"type\": 2,\r\n            \"tiers\": [\r\n                {\r\n                    \"tierNumber\": 1,\r\n                    \"tierType\": 1,\r\n                    \"tierApproverIds\": [\"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\"]\r\n                }\r\n                \r\n            ],\r\n            \"canEdit\": true,\r\n            \"canDelete\": true,\r\n            \"jobs\": [],\r\n            \"facilityProfileGroupIds\": [ ],\r\n            \"unitIds\": [450]\r\n        }\r\n\r\n"
-								},
-								"url": "{{uri}}/AyaConnect/JobApprovalProcess"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "plain",
-							"header": [
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 20 Nov 2019 01:17:26 GMT"
-								},
-								{
-									"key": "Content-Length",
-									"value": "0"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": null
 						}
 					]
 				},
@@ -1376,70 +1376,6 @@
 					},
 					"response": [
 						{
-							"id": "8d45a0c0-d288-486f-b915-60e7140c0538",
-							"name": "200 OK Response With Approvers For Units",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "{{uri}}/AyaConnect/JobApprovalProcess/approvers?unitIds=2&unitIds=67",
-									"host": [
-										"{{uri}}"
-									],
-									"path": [
-										"AyaConnect",
-										"JobApprovalProcess",
-										"approvers"
-									],
-									"query": [
-										{
-											"key": "unitIds",
-											"value": "2"
-										},
-										{
-											"key": "unitIds",
-											"value": "67"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Date",
-									"value": "Mon, 07 Oct 2019 15:53:48 GMT"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "[\n    {\n        \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n        \"fullName\": \"Tyson Fugett\"\n    },\n    {\n        \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n        \"fullName\": \"Test UW\"\n    }\n]"
-						},
-						{
 							"id": "659f1e19-33a5-4804-8c10-489e304729da",
 							"name": "200 OK Eligible Approvers For Facility Profile Groups",
 							"originalRequest": {
@@ -1515,6 +1451,70 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "[\n    {\n        \"userId\": \"3b144de2-fbf7-4871-8e6e-8e67a5af34dc\",\n        \"fullName\": \"Rachel Lutz\"\n    },\n    {\n        \"userId\": \"4974ad87-0b6f-4095-9470-f63172205fee\",\n        \"fullName\": \"Karen White\"\n    },\n    {\n        \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n        \"fullName\": \"Tyson Fugett\"\n    },\n    {\n        \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n        \"fullName\": \"Test UW\"\n    },\n    {\n        \"userId\": \"aafe4cd7-2674-4b72-a131-32105929379e\",\n        \"fullName\": \"Carrie Steiner\"\n    },\n    {\n        \"userId\": \"fbc40ea7-7c4a-45da-b234-70885848acb9\",\n        \"fullName\": \"Test UW\"\n    }\n]"
+						},
+						{
+							"id": "8d45a0c0-d288-486f-b915-60e7140c0538",
+							"name": "200 OK Response With Approvers For Units",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{uri}}/AyaConnect/JobApprovalProcess/approvers?unitIds=2&unitIds=67",
+									"host": [
+										"{{uri}}"
+									],
+									"path": [
+										"AyaConnect",
+										"JobApprovalProcess",
+										"approvers"
+									],
+									"query": [
+										{
+											"key": "unitIds",
+											"value": "2"
+										},
+										{
+											"key": "unitIds",
+											"value": "67"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Oct 2019 15:53:48 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"userId\": \"7ba5fc83-2b2a-4b3a-aa0f-f5554349869e\",\n        \"fullName\": \"Tyson Fugett\"\n    },\n    {\n        \"userId\": \"9cf85acf-b6c8-4546-a98d-8e15cf4371f8\",\n        \"fullName\": \"Test UW\"\n    }\n]"
 						}
 					]
 				},
@@ -1548,59 +1548,6 @@
 						"description": "## Steps To Test\r\n* Update the hospitalId and unitId properties based on the unit you are looking to save a job for\r\n\r\n>Make sure that the unit id and facility id matchup, ie. the unit id you are saving for falls under the facility you are saving for, and that the user you are logged in as is a member of that facility\r\n\r\n>If you are saving an existing job, update the id property with the Job Id you are saving for, otherwise the id property should be set to 0\r\n\r\n>If you want to help differentiate the jobs you’re saving, you can update the jobTitle property\r\n\r\n* Click **Send**\r\n\r\n>If the job was routed to a process with no approvals, the error will start with Failed to send job added notification\r\n\r\n>If the job was routed to a process that’s tier based, the error will start with \"Job Pending Email Notifications disabled for specified facility.\"\r\n\r\n>If you saved an existing job, the error will probably start with \"Job Edited Email Notifications disabled for specified facility.\"\r\n\r\n>**Please use the examples saved for the Postman request as a guide, they show what I’m talking about above**\r\n\r\n* To see the new ids of the saved jobs, log into Connect as the same user and go to the Jobs grid. Look for the title that matches up with the jobTitle you saved for your job\r\n\r\n* If tier based, the job should now have an approval process applied to it, and you can use the Approve/Reject Jobs With Process endpoints in Postman to test approval actions"
 					},
 					"response": [
-						{
-							"id": "d0ee2528-5b73-4d94-9f2f-a74dc99259d4",
-							"name": "Save New Job With Process - Type No Approval Process",
-							"originalRequest": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #2\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 196,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Transfer-Encoding",
-									"value": "chunked"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
-								},
-								{
-									"key": "Server",
-									"value": "Kestrel"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "ASP.NET"
-								},
-								{
-									"key": "Date",
-									"value": "Fri, 15 Nov 2019 16:40:18 GMT"
-								}
-							],
-							"cookie": [],
-							"responseTime": null,
-							"body": "{\n    \"jobId\": 1146189,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Failed to send job added notification: The SMTP server has unexpectedly disconnected.\\r\\n\\r\\nMailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.SendCommandAsync(String command, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at Aya.Core.Common.Messaging.EmailSender.BatchSender.SendAsync() in C:\\\\Dev\\\\AyaHealthcare\\\\Applications\\\\Aya.Core.Api\\\\Aya.Core.Common\\\\Messaging\\\\EmailSender.cs:line 284\"\n    ]\n}"
-						},
 						{
 							"id": "61bfd211-d62d-47f0-a9f0-6bcea0a5edf1",
 							"name": "Save Existing Job With Process - No Approval Type",
@@ -1653,6 +1600,59 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": "{\n    \"jobId\": 0,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Job Edited Email Notifications disabled for specified facility.\"\n    ]\n}"
+						},
+						{
+							"id": "d0ee2528-5b73-4d94-9f2f-a74dc99259d4",
+							"name": "Save New Job With Process - Type No Approval Process",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"viewTypeId\": 3,\n  \"job\": {\n    \"id\": \"0\",\n    \"hospitalId\": 36765,\n    \"expertiseCode\": 230,\n    \"professionCode\": 1,\n    \"jobTitle\": \"Will L Process Test Unit Process 11-15 #2\",\n    \"numPositions\": 1,\n    \"startDate\": \"2019-10-18T07:00:00.000Z\",\n    \"description\": \"*Aya Interview\\n# of Needs: 1\\nStart Date: 4/9 \\nDuration: 13 weeks\\nShift: 3-12 hour Nights includes working weekends when needed\\n\\n4SE Short Stay is a procedural and surgical short stay unit with some medicine overflow.  Typical patients are post cardiac cath, EP, Interventional Radiology, Surgical (gyn, urology, general surgery.  \\n\\nPatients typically stay 24 hours then discharge home.  RNs pull sheaths on cardiac patients.  We do not expect travelers have this skill.  However, strong cardiac tele required.\",\n    \"altShift\": false,\n    \"hours\": 12,\n    \"shifts\": 3,\n    \"shiftsAlt\": \"\",\n    \"hoursAlt\": \"\",\n    \"shiftH\": \"19\",\n    \"shiftM\": \"00\",\n    \"shiftToH\": \"07\",\n    \"shiftToM\": \"00\",\n    \"authorId\": \"\",\n    \"templateId\": 611,\n    \"unitId\": 196,\n    \"jobEnteredFrom\": 7,\n    \"releaseSchedulingEnabled\": true\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{uri}}/AyaConnect/JobClient/SaveJobWithProcess"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 15 Nov 2019 16:40:18 GMT"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"jobId\": 1146189,\n    \"responseStatus\": 1,\n    \"errors\": [\n        \"Failed to send job added notification: The SMTP server has unexpectedly disconnected.\\r\\n\\r\\nMailKit.Net.Smtp.SmtpProtocolException: The SMTP server has unexpectedly disconnected.\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadAheadAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpStream.ReadResponseAsync(Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.SendCommandAsync(String command, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at MailKit.Net.Smtp.SmtpClient.AuthenticateAsync(Encoding encoding, ICredentials credentials, Boolean doAsync, CancellationToken cancellationToken)\\r\\n   at Aya.Core.Common.Messaging.EmailSender.BatchSender.SendAsync() in C:\\\\Dev\\\\AyaHealthcare\\\\Applications\\\\Aya.Core.Api\\\\Aya.Core.Common\\\\Messaging\\\\EmailSender.cs:line 284\"\n    ]\n}"
 						},
 						{
 							"id": "d4027c5f-b582-4ce6-a5b5-ae3d1002f972",
@@ -5509,7 +5509,8 @@
 								"exec": [
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -5518,6 +5519,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "CfDJ8N1G4NgZIjlKhfvXUlIg10gFYLPhS-VFzMOgjtlwo3UwlxhmPpish8IpRdcpTn2M-1g7IGnxTLuKMpOjomFC3oAbs5Ke_RtWalvqR6rTgZ2Pi_Ir3lx7w4CdVxh7mQO7FppDWtJ6yNUTDgj5q8ZifbpmbgKaAFzZQ9-eHx-Pe6BdEB9B-xEUD4wqjYTqvfPICw9mbHCUPc2N2ddzoCXU9lbsx6lHKkmIRjME_ECy8L9f9Ak-HToEvGXpa0Dq5rPuBRvdkZ1uXtI7O5Rh6pVciuf7TKaE9SE01p1yogkQ_Vtl-LjoM982Tx5YXr0LDgyu8aiLR0aK_VPjAgl-LPY2ffqsmg2axzo0DRBLoI37_ehynPd8vqOvB_4fygcR3jJ5R5FfXaJ21zMk5kLxtsNQaOyh8bUnF_0_Df1YVfh1CzIhPI7OgOVAexsxVhQ0dbWrPlRZusduLAHZ_bfbAJ4qvCvAegab9wpWRiDVkfQdDSTQji-Sb-VjiTYoqNmpGTm9pr91kLOa9rKSli6eCW2IXR_fc2IBUM9RYR9m3ed4qdkQSlz4hUcd9XKZ5byDljI8VO32ELr8o6Gb-YpOuDBxZpsAZweId3KhHsL2khZNGx03ajKiNb-RT07kRWxjjFVHlRP2pQFYmzFORoaPR1SrDymu7fyYGHbD6fikukNKCMk7GXwNrYVwHo6HWYu0mrH0bzOWth1ZbiNoe70IobuYJ7b4ahTlbq0rjX7Wvq2xiIRyFkSt26Dz9kOtlUUTFTEoNxmm5ipBzM23vgf9CYVjgCoBrOgyF5aG2cTDFL-wZLaSpJMu6cnl-nsfkgGi7MdcouUwRyYzn2APUxXND3hVVtd8L2S270zWnyiLsRwOA1iF0EDNxVaLHnqLZmnrsEAEnpQXO5yNqTilDOVo7x6XO-I"
+							}
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -5912,14 +5919,14 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "CfDJ8E1QFFPTgKtBgCFGVtyTZs4d7Vi5Ac5YbSjWBFg0tm9sTylLcwnkh3WyA5COrfUrqB2QgJfQyceEZmqZ3VCMSmyjx1uAGKZeAcfRNZVgxiD-ZOxm6KlbkDCOWiyf9aOxgej33cqpxr0IgJbpRh-DB-Aumt5MpGmvkgtap7SFQaF4pn92GYVUWVXwVM4Hhn7tMYY1W2NUBQ5TWmDyvqfHxuseXymMgK_pzh0w9e5vK4xBTEkAbQFCjbHBqGo3Yc4ECzidkh3Ifi4er5YmdBNtUMngDOXuo8LlTpu0B7rNno1LAW0o6exz6bDsb2joix5cm7pz-6xXF6kFcGM5-Ey0tSquNq0yNwM3sVbd6LiADXPbqQiOOOCMnpJsdjre0tGR9uRTOy08Z-sBRsf61ExziZjuGk1ZuLmzSeY3u_0Khqc_vcYOK0chebdN3d2wxYOvwBOCx2xLRHLAr6GRUGL4ivjWNJwYsu72F1SWIx7BDPyZ0kpD7RgsyL5A_Yv_pM9rA1DItfJVJZvsQ5XkrSFQhcG5Lkje6srnjRUpty5VX8fuGykuU0hNq0rVhGuZ5uqkbolIL1C4laRoM0kQkAui0rqGREH5T60Bi3-iBw1PfdA14p0mS69_hTICojSfZfBzduis4yWm-BZeqwwsRmdD_VIXRanpQwTE75g4DRsX-VE9eopSi7jNZQUdYrdrYYXiEqGgC0dPzWKWzA0of661DJxQHqSrBb19xMrWYSxdB86kEmeOG-AwZKLBsTms-zKepFkn1ccTOrlzQ00A9z4YzMcIXmH31hVgHpD2s455U7D5sirPTqK3aDZn5mt22M-0SZyWRrH0Qy0VrEwXANyF5a6Z91c3nqorurneIigX1q-0fr5PG3kqSzMgkeDS_kleyvIPwA4k-LMLY6BoVJmXVaEFqvPJeEJSL8WRDoNAGM97"
+								"token": "CfDJ8JLNVFHa7m1Ej3babvBFpN3BHaZnetjioj7sNKFRP6Z8vDAF88p61SwnKpY3GAfFLCSGKDqtjUWsUOhnNAeG5-X7EE5jDJIzoShYTVoGsI6aFUo0y_t5qpoKEmHC7jh1dgYy6uiawhT6bn58-6Tt-8fDA6CVnwYGk4lT1W1-LOjwxfDjpPF5LocdOWYnEPKTO8WAEqjyNV01tQBclbLnQBrY1F2Nsfki3f7qqYnyjjXhGF6J8qZQ7RdZZ4qiSc6Dd5gOwaTI3Z9zStEkqIAuFK_4hpuhtjXeG_EJAveoWqgjUrlxixd_ME0MnX92DTR8d4kS-PpNRjR_5qoytVgG3uSYZf-7Sud2YPFkFbOoES8u2ixp2xI5MPP56zAR-mxF__ZPSw2xhfFTDWeRY3VJaEEnmpHbvOK87dwr1nhJ5HYb1AlRvhkQAD7owip9x6liFNW36S4jCH2Q0hLMG0S4NhqhB37wCLT3KaGT_PwZjB5SJrCGSopGiTyxttGr45xxb9O4xWsYZY-rXf0fl72KU-Zn2snSq4ZnjPoT3S6EYTaIFYzbg2A2nmZKp66J5YbFB56oL418YbIuzaT_FwYudskzYhrEYrfHO9sMwppQN0H8umSjKvVFkqnXgCFGsbboWdZtIwZC-v0j6uufooa7UV9YQ-9Tj-1TgkvyadPaSGCxLjV5BvlZtCW3jst660gnIpOrtGd_rUTakLQfE_RZ05pVZvAkQ8UTCbDZMLYu0l4Lu62Jo1FTzitF6ZVmrHG2gKo3-vrdkOiRQsoGLZ8e2kAJWgWDShfd4MyoRuCVfK10GvHu0e9900WYOf16e2q-95nWhTGdkoIf6HK7U5Db0uHBTtvMkuzq_Ditw5d4SVCPaurt01zDs30FH_oCdaR7jQ"
 							}
 						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"jobId\": 2055284,\r\n    \"vendorCandidateId\": 246360,\r\n    \"note\": null\r\n}",
+							"raw": "{\r\n    \"jobId\": 2571999,\r\n    \"vendorCandidateId\": 246360,\r\n    \"note\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
