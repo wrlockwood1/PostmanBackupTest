@@ -9308,7 +9308,7 @@
 					"response": []
 				},
 				{
-					"name": "Get",
+					"name": "GetBillableInvoiceClientDetails",
 					"event": [
 						{
 							"listen": "test",
