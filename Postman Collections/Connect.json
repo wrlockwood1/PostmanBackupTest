@@ -4913,20 +4913,21 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "{{Bearer}}"
+								"token": "CfDJ8LTcHghSv39Khjy1VLBT4NA6z0nScOq4cgMpOetIRCdnCkNsbRsp2UoGORehCsrJCOCnQkFxx9gIImgDOTEkpSgR6lc1AFN48CyN6dz2pW7MixhXHcBb9emhzItKyxL8BqIMOOOq4mRb8FtU0Z3PLyicQHCA0lmoOsChln5iU0dcKkKBDpUT6znlflUsNVzcey1tb5SjmSvu6N2guCxqbWBofKVP940cMSNolwbNDpJYmZjUu6-uONwJPC9BmolGoSBuzpvnPoC1WfkeL2KyVVhogJ_ZuNYj86jyXYeb33tObuuFmM0L_KOsp5Ye8fK7VF8H2q_XpW1Efur4kW8cGc0bmXiWIO-ItZi7qO9is5OuS--8SFmdcY-Ehv8EGS1BTumrOSX7sAcMJhnar3AOU075Lq1ra81XZklODxvNU5tk98szVmjj84JUEnmsWtHKDU4KwjMkqIBxK2itL3amhq2LytQhGdlSB3hjK_u0P_nQBc3R17UFdqlGdSQKsT_LlHQhL5bCb9RmuY4rbRk3eBIv4jGTkM_IkJrM_iBhIRVHZWHiBIaFxTb3i-wgXZG7-5deLZPJk2W61dRtReO2UYN2X2lYrZJjrjZnLJu0k9tIWYCCvSIhsGKyI2-U5eNNZRKkiY20hTGVptx1VVgB0gk37hPDNe9uxYIxEj_OpRuY89agSAXAuvc1NpGnq2JVV33cJo05aUkQ2CB54gxuIekiuNSJNcsXE0A2Pe1mBrrzbLvSkMcB7DznNlhO9xOeipCdmj0vWhAid5QVTao-kS7xD7hm3_qfATL-lxrm1toGqEy-7g2nedv8vf3beC13LpEle6p1YSDNNGfHtjegqLiROJx4zr85_79Q44MvMksgmNazMMVHQaBGkUJ6VY-1DmRzfBJPnQaycQF_QEvEBjW8y6_1xtmJohkUG2zDTKLmy0U2LRX71Zmm2iTEiyLLxg"
 							}
 						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{uri}}/ayaconnect/dashboard/pending-woc",
+							"raw": "{{uri}}/lotusone/client/homepage/preferences",
 							"host": [
 								"{{uri}}"
 							],
 							"path": [
-								"ayaconnect",
-								"dashboard",
-								"pending-woc"
+								"lotusone",
+								"client",
+								"homepage",
+								"preferences"
 							],
 							"query": [
 								{
